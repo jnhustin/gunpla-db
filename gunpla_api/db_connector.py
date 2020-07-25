@@ -107,7 +107,7 @@ class DbConnector():
 
   def process_delete_results(self, cursor) :
     status_message =  cursor.statusmessage
-    return status_message
+    return { 'status_message': status_message }
 
 
   def rollback(self) :

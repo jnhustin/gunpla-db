@@ -58,6 +58,12 @@ def db_post_route():
       CONTROLLER.post_timeline(request)
     elif insert_table == 'model_scale':
       CONTROLLER.post_model_scale(request)
+    elif insert_table == 'product_line':
+      CONTROLLER.post_product_line(request)
+    elif insert_table == 'brand':
+      CONTROLLER.post_brand(request)
+    elif insert_table == 'franchise':
+      CONTROLLER.post_franchise(request)
 
     response = Response(status=200, response=json.dumps({'message': 'success'}))
 
@@ -68,7 +74,7 @@ def db_post_route():
   except DatabaseException as e:
     response = Response(status=500, response=json.dumps({'message': 'error'}))
   except Exception as e:
-    logger.exception('[db_post] - unknown error occured')
+    logger.exception('unknown error occured')
     response = Response(status=400, response=json.dumps({'message': 'error'}))
 
   logger.info('request complete')

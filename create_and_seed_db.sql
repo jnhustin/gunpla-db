@@ -17,7 +17,8 @@ CREATE TABLE users (
 
 CREATE TABLE timelines (
   timeline_id     serial PRIMARY KEY,
-  timeline_name   varchar (100) UNIQUE NOT NULL,
+  access_name     varchar (100) UNIQUE NOT NULL,
+  display_name    varchar (100) UNIQUE NOT NULL,
   created_date    date NOT NULL,
   updated_date    date NOT NULL,
   user_update_id  int REFERENCES users (user_id)
@@ -33,8 +34,9 @@ CREATE TABLE scales (
 
 CREATE TABLE product_lines (
   product_line_id     serial PRIMARY KEY,
-  product_line_long   varchar(15) NOT NULL,
-  product_line_short  varchar(3) NOT NULL,
+  access_name         varchar(15) NOT NULL,
+  display_name        varchar(15) NOT NULL,
+  short_name  varchar(3) NOT NULL,
   created_date        date NOT NULL,
   updated_date        date NOT NULL,
   user_update_id      int REFERENCES users (user_id)
@@ -42,7 +44,8 @@ CREATE TABLE product_lines (
 
 CREATE TABLE brands (
   brand_id        serial PRIMARY KEY,
-  brand_name      varchar(40) UNIQUE NOT NULL,
+  access_name     varchar(40) UNIQUE NOT NULL,
+  display_name    varchar(40) UNIQUE NOT NULL,
   created_date    date NOT NULL,
   updated_date    date NOT NULL,
   user_update_id  int REFERENCES users (user_id)
@@ -50,7 +53,8 @@ CREATE TABLE brands (
 
 CREATE TABLE franchises (
   franchise_id      serial PRIMARY KEY,
-  franchise_name    varchar(40) UNIQUE NOT NULL,
+  access_name       varchar(40) UNIQUE NOT NULL,
+  display_name      varchar(40) UNIQUE NOT NULL,
   created_date      date NOT NULL,
   updated_date      date NOT NULL,
   user_update_id    int REFERENCES users (user_id)
@@ -75,17 +79,29 @@ CREATE TABLE models (
   updated_date      date
 );
 
-
+INSERT INTO models (
+  timeline_id,
+  franchise_id,
+  product_line_id,
+  brand_id,
+  scale_id,
+  model_name,
+  japanese_name,
+  SKU,
+  info,
+  info_source,
+  release_date)
+VALUES()
 INSERT INTO users (user_name, created_date, updated_date)
 VALUES
   ('initial_user', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
 ;
 
-INSERT INTO timelines (timeline_name, created_date, updated_date, user_update_id)
+INSERT INTO timelines (access_name, display_name, created_date, updated_date, user_update_id)
 VALUES
-  ('after colony', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
-  ('universal century', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
-  ('cosmic era', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1)
+  ('after_colony', 'after colony', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
+  ('universal_century', 'universal century', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
+  ('cosmic_era', 'cosmic era', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1)
 ;
 
 
@@ -96,23 +112,23 @@ VALUES
   ('1/60', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1)
 ;
 
-INSERT INTO product_lines (product_line_long, product_line_short, created_date, updated_date, user_update_id)
+INSERT INTO product_lines (access_name, display_name, short_name, created_date, updated_date, user_update_id)
 VALUES
-  ('high', 'hg', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
-  ('real', 'rg', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
-  ('master', 'mg', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
-  ('perfect', 'mg', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1)
+  ('high_grade', 'high grade', 'hg', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
+  ('real_grade', 'real grade', 'rg', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
+  ('master_grade', 'master grade', 'mg', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
+  ('perfect_grade', 'perfect grade', 'mg', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1)
 ;
 
-INSERT INTO brands (brand_name, created_date, updated_date, user_update_id)
+INSERT INTO brands (access_name, display_name, created_date, updated_date, user_update_id)
 VALUES
-  ('bandai', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
-  ('kotobukiya', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1)
+  ('bandai', 'bandai', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
+  ('kotobukiya', 'kotobukiya', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1)
 ;
 
-INSERT INTO franchises (franchise_name, created_date, updated_date, user_update_id)
+INSERT INTO franchises (access_name, display_name, created_date, updated_date, user_update_id)
 VALUES
-  ('gundam wing', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
-  ('00 gundam', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
-  ('zeta gundam', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1)
+  ('gundam_wing', 'gundam wing', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
+  ('00_gundam', '00 gundam', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
+  ('zeta gundam', 'zeta gundam', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1)
 ;
