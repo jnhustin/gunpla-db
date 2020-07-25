@@ -4,7 +4,7 @@ from gunpla_api.app import create_app
 app = create_app()
 
 if __name__ == '__main__':
-  port = '0079'
+  port = '10079'
   print(f'running on port: {port}')
   app.run(
     host     =  '0.0.0.0',

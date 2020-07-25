@@ -17,6 +17,7 @@ class DbConnector():
   password =  config.db_password
   db_name  =  config.db_name
 
+
   def __init__(self):
     self.initialize_conn()
 

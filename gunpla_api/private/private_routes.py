@@ -49,20 +49,20 @@ def lifecheck():
 @private.route('/db_post/', methods=['POST'])
 def db_post_route():
 
-  logger.info('received request')
+  logger.info('request received')
 
   try:
-    insert_table = VALIDATION.get_field('table', request.json)
-    logger.debug(f'insert request to table: {insert_table}')
-    if insert_table == 'timeline':
+    table = VALIDATION.get_json_field('table', request.json)
+    logger.debug(f'insert request to table: {table}')
+    if table == 'timeline':
       CONTROLLER.post_timeline(request)
-    elif insert_table == 'model_scale':
+    elif table == 'model_scale':
       CONTROLLER.post_model_scale(request)
-    elif insert_table == 'product_line':
+    elif table == 'product_line':
       CONTROLLER.post_product_line(request)
-    elif insert_table == 'brand':
+    elif table == 'brand':
       CONTROLLER.post_brand(request)
-    elif insert_table == 'franchise':
+    elif table == 'franchise':
       CONTROLLER.post_franchise(request)
 
     response = Response(status=200, response=json.dumps({'message': 'success'}))
