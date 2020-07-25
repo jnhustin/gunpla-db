@@ -8,7 +8,7 @@ from gunpla_api.logger  import Logger
 from gunpla_api.controller  import Controller
 from gunpla_api.validation  import Validation
 from gunpla_api.gunpla_db   import GunplaDb
-from gunpla_api.exceptions  import BadRequestException
+from gunpla_api.exceptions  import BadRequestException, DatabaseException, DatabaseUniqueException
 
 logger  =  Logger().get_logger()
 private =  Blueprint(
@@ -49,11 +49,11 @@ def lifecheck():
 @private.route('/db_post/', methods=['POST'])
 def db_post_route():
 
-  logger.info('received request to insert timeline')
+  logger.info('received request')
 
   try:
-    insert_table = VALIDATION.get_field('table')
-
+    insert_table = VALIDATION.get_field('table', request.json)
+    logger.debug(f'insert request to table: {insert_table}')
     if insert_table == 'timeline':
       CONTROLLER.post_timeline(request)
     elif insert_table == 'model_scale':
@@ -63,11 +63,13 @@ def db_post_route():
 
   except BadRequestException as e:
     response = Response(status=400, response=json.dumps({'message': 'error'}))
+  except DatabaseUniqueException as e:
+    response = Response(status=400, response=json.dumps({'message': 'bad request'}))
   except DatabaseException as e:
     response = Response(status=500, response=json.dumps({'message': 'error'}))
   except Exception as e:
-    logger.exception('some error')
+    logger.exception('[db_post] - unknown error occured')
     response = Response(status=400, response=json.dumps({'message': 'error'}))
 
-  logger.info('completed request to insert timeline')
+  logger.info('request complete')
   return response

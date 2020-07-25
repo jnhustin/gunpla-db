@@ -6,3 +6,6 @@ class BadRequestException(Exception):
 class DatabaseException(Exception):
   pass
 
+class DatabaseUniqueException(Exception):
+  pass
+

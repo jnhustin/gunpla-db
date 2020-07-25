@@ -5,6 +5,7 @@ from os.path import join, dirname
 
 from gunpla_api.config import Config
 from gunpla_api.logger import Logger
+from gunpla_api.exceptions import DatabaseUniqueException
 
 logger = Logger()
 
@@ -38,35 +39,36 @@ class DbConnector():
       else:
         return self.conn
 
-    except Exception as ex:
-      print('exception!!! db_connector.select: ', ex)
+    except Exception:
+      logger.exception('db_connector.get_conn error')
       raise
 
 
-  def execute_sql(self, function, sql, vals, close=True):
-    self.get_conn()
-    cursor =  self.conn.cursor()
+  def execute_sql(self, function, sql, vals, is_close_conn=True):
     try:
+      self.get_conn()
+      cursor =  self.conn.cursor()
       cursor.execute(sql, vals)
       result = function(cursor)
-    except psycopg2.Error as e:
-      extra = {'sql': sql, 'vals': vals, 'pg_code': e.pgcode, 'pg_error': e.pgerror}
-      print('\nFailed sql execute')
-      print(extra)
+    except psycopg2.errors.UniqueViolation:
+      logger.exception('db_connector unique constraint violation', extra={'sql': sql, 'vals': vals})
+      self.rollback()
+      raise DatabaseUniqueException()
+    except psycopg2.Error:
+      logger.exception('some psycopg error', extra={'sql': sql, 'vals': vals, 'pg_code': e.pgcode})
       self.rollback()
       raise
-    except Exception as ex:
-      extra = {'sql': sql, 'vals': vals, 'ex': str(ex)}
-      print('\nFailed sql execute')
-      print(extra)
+    except Exception as e:
+      logger.exception('unknown database execution error', extra={'sql': sql, 'vals': vals, 'error': str(e)})
       self.rollback()
       raise
 
-    if close:
+    if is_close_conn:
       self.conn.commit()
       self.conn.close()
 
     return result
+
 
   def commit_sql(self, cursor=None):
     try:
