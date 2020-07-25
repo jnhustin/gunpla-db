@@ -26,7 +26,7 @@ class DbConnector():
       port     =  self.port,
       user     =  self.user,
       password =  self.password,
-      dbname  =  self.db_name, )
+      dbname   =  self.db_name, )
     return
 
 
@@ -43,9 +43,9 @@ class DbConnector():
       raise
 
 
-  def execute_sql(self, sql, vals, function, close=True):
-    self.conn =  self.get_conn()
-    cursor    =  self.conn.cursor()
+  def execute_sql(self, function, sql, vals, close=True):
+    self.get_conn()
+    cursor =  self.conn.cursor()
     try:
       cursor.execute(sql, vals)
       result = function(cursor)
@@ -79,11 +79,11 @@ class DbConnector():
 
   def process_insert_results(self, cursor):
     status_message =  cursor.statusmessage
-    pkeys          =  [ key[0] for key in cursor.fetchall() ]
+    # pkeys          =  [ key[0] for key in cursor.fetchall() ]
 
     return {
       'status_message' :  status_message,
-      'pkeys'          :  pkeys,
+      # 'pkeys'          :  pkeys,
     }
 
 

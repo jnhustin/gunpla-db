@@ -1,8 +1,14 @@
 import json
 from flask              import Blueprint, Response, request
+
 from gunpla_api.config  import Config
 from gunpla_api.logger  import Logger
+
 # from gunpla_api.utils   import Utils
+from gunpla_api.controller  import Controller
+from gunpla_api.validation  import Validation
+from gunpla_api.gunpla_db   import GunplaDb
+from gunpla_api.exceptions  import BadRequestException
 
 logger  =  Logger().get_logger()
 private =  Blueprint(
@@ -12,6 +18,8 @@ private =  Blueprint(
 )
 
 CONFIG =  Config()
+CONTROLLER =  Controller()
+VALIDATION =  Validation()
 # UTILS  =  Utils()
 
 # MAIN_CONTROLLER   =  MainController()
@@ -27,7 +35,6 @@ def lifecheck():
   logger.info(logging_json)
     # if multiple qs for 'search'- params = request.args.getlist('search')
     # have request as dict = request.args.to_dict()
-
   return Response(
     response =  json.dumps({
       'appName' :  app_name,
@@ -36,3 +43,31 @@ def lifecheck():
       'status'  :  200,
     })
   )
+
+
+@private.route('/db_post',  methods=['POST'])
+@private.route('/db_post/', methods=['POST'])
+def db_post_route():
+
+  logger.info('received request to insert timeline')
+
+  try:
+    insert_table = VALIDATION.get_field('table')
+
+    if insert_table == 'timeline':
+      CONTROLLER.post_timeline(request)
+    elif insert_table == 'model_scale':
+      CONTROLLER.post_model_scale(request)
+
+    response = Response(status=200, response=json.dumps({'message': 'success'}))
+
+  except BadRequestException as e:
+    response = Response(status=400, response=json.dumps({'message': 'error'}))
+  except DatabaseException as e:
+    response = Response(status=500, response=json.dumps({'message': 'error'}))
+  except Exception as e:
+    logger.exception('some error')
+    response = Response(status=400, response=json.dumps({'message': 'error'}))
+
+  logger.info('completed request to insert timeline')
+  return response
