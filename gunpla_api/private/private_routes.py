@@ -79,3 +79,23 @@ def db_post_route():
 
   logger.info('request complete')
   return response
+
+
+@private.route('/db_get',  methods=['GET'])
+@private.route('/db_get/', methods=['GET'])
+def db_get_route():
+  logger.info('request received')
+
+  try:
+    table =  request.args['table']
+
+    if table == 'timeline':
+      json_data = CONTROLLER.get_timelines()
+
+    response =  Response(status=200, response=json.dumps(json_data))
+  except Exception as e:
+    logger.exception('unknown error occured')
+    response = Response(status=400, response=json.dumps({'message': 'error'}))
+
+  logger.info('request complete')
+  return response

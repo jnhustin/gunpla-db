@@ -71,6 +71,7 @@ class GunplaDb:
     logger.debug('completed insert', extra=res)
     return
 
+
   def insert_franchise(self, access_name, display_name):
     query  =  self.get_standard_insert_query('franchises')
     values =  self.get_standard_insert_vals(access_name, display_name)
@@ -78,3 +79,12 @@ class GunplaDb:
     res    =  self.db.execute_sql(self.db.process_insert_results, query, values)
     logger.debug('completed insert', extra=res)
     return
+
+
+  def select_timelines(self):
+    query =  'SELECT timeline_id, access_name, display_name FROM timelines'
+
+    res =  self.db.execute_sql(self.db.process_select_results, query, None)
+    return res
+
+

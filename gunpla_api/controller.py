@@ -43,3 +43,16 @@ class Controller():
     access_name  =  self.utils.convert_to_snake_case(display_name)
     self.gunpla_db.insert_product_line(access_name, display_name)
     return
+
+
+  def get_timelines(self):
+    # get data
+    db_results : dict =  self.gunpla_db.select_timelines()
+    results    : list =  self.utils.db_data_to_dict(db_results)
+    json_data = {
+      'message' :  'success',
+      'length'  :  len(results),
+      'results' :  results,
+    }
+    return json_data
+
