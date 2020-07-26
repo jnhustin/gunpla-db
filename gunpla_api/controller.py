@@ -103,14 +103,30 @@ class Controller():
 
 
   def update_timeline(self, request):
-    display_name =  self.validation.get_json_field('display_name',request.json)
     timeline_id  =  self.validation.get_json_field('id',request.json)
+    display_name =  self.validation.get_json_field('display_name',request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
 
     db_results   =  self.db.execute_sql(
       self.db.process_update_results,
       self.timeline.get_update_query(timeline_id, access_name, display_name),
-      self.db.get_standard_param_dict(access_name, display_name),)
+      self.timeline.get_sql_vals(timeline_id, access_name, display_name),
+    )
+    logger.debug('completed update', extra=db_results)
+    return
+
+
+  def update_product_line(self, request):
+    product_line_id =  self.validation.get_json_field('id',request.json)
+    short_name      =  self.validation.get_json_field('short_name', request.json, optional=True)
+    display_name    =  self.validation.get_json_field('display_name', request.json, optional=True)
+    access_name     =  self.utils.convert_to_snake_case(display_name) if display_name else None
+
+    db_results   =  self.db.execute_sql(
+      self.db.process_update_results,
+      self.product_line.get_update_query(product_line_id, access_name, display_name, short_name),
+      self.product_line.get_sql_vals(product_line_id, access_name, display_name, short_name),
+    )
     logger.debug('completed update', extra=db_results)
     return
 

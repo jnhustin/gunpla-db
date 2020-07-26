@@ -87,8 +87,8 @@ def update_route(table):
       CONTROLLER.update_timeline(request)
     # elif table == 'model_scale':
     #   CONTROLLER.update_model_scale(request)
-    # elif table == 'product_line':
-    #   CONTROLLER.update_product_line(request)
+    elif table == 'product_line':
+      CONTROLLER.update_product_line(request)
     # elif table == 'brand':
     #   CONTROLLER.update_brand(request)
     # elif table == 'franchise':
@@ -96,8 +96,8 @@ def update_route(table):
 
     response = Response(status=200, response=json.dumps({'message': 'success'}))
 
-  except BadRequestException:
-    response = Response(status=400, response=json.dumps({'message': 'error'}))
+  except BadRequestException as e:
+    response = Response(status=400, response=json.dumps({'message': f'error, {e}'}))
   except DatabaseUniqueException:
     response = Response(status=400, response=json.dumps({'message': 'bad request'}))
   except DatabaseException:
