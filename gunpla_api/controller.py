@@ -93,7 +93,6 @@ class Controller():
 
 
   def get_timelines(self):
-    # get data
     db_results =  self.db.execute_sql(
       self.db.process_select_results,
       self.timeline.get_select_all_query(),
@@ -101,4 +100,17 @@ class Controller():
     results =  self.utils.db_data_to_dict(db_results)
 
     return results
+
+
+  def update_timeline(self, request):
+    display_name =  self.validation.get_json_field('display_name',request.json)
+    timeline_id  =  self.validation.get_json_field('id',request.json)
+    access_name  =  self.utils.convert_to_snake_case(display_name)
+
+    db_results   =  self.db.execute_sql(
+      self.db.process_update_results,
+      self.timeline.get_update_query(timeline_id, access_name, display_name),
+      self.db.get_standard_param_dict(access_name, display_name),)
+    logger.debug('completed update', extra=db_results)
+    return
 

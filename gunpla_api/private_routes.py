@@ -77,3 +77,36 @@ def insert_route(table):
   return response
 
 
+@private.route('/update/<table>',  methods=['PUT'])
+@private.route('/update/<table>/', methods=['PUT'])
+def update_route(table):
+
+  logger.info(f'request received - update to table: {table}')
+  try:
+    if   table == 'timeline':
+      CONTROLLER.update_timeline(request)
+    # elif table == 'model_scale':
+    #   CONTROLLER.update_model_scale(request)
+    # elif table == 'product_line':
+    #   CONTROLLER.update_product_line(request)
+    # elif table == 'brand':
+    #   CONTROLLER.update_brand(request)
+    # elif table == 'franchise':
+    #   CONTROLLER.update_franchise(request)
+
+    response = Response(status=200, response=json.dumps({'message': 'success'}))
+
+  except BadRequestException:
+    response = Response(status=400, response=json.dumps({'message': 'error'}))
+  except DatabaseUniqueException:
+    response = Response(status=400, response=json.dumps({'message': 'bad request'}))
+  except DatabaseException:
+    response = Response(status=500, response=json.dumps({'message': 'error'}))
+  except Exception as e:
+    logger.exception('unknown error occured')
+    response = Response(status=400, response=json.dumps({'message': 'error'}))
+
+  logger.info('request complete')
+  return response
+
+

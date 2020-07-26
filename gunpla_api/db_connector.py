@@ -128,3 +128,10 @@ class DbConnector():
       'display_name' :  display_name,
       'user_id'      :  self.user_id,
     }
+
+  def get_standard_param_dict(self, access_name, display_name):
+    return {
+      'access_name'  :  access_name,
+      'display_name' :  display_name,
+      'user_id'      :  self.user_id,
+    }

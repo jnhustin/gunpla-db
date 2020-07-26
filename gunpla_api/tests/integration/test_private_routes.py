@@ -26,8 +26,8 @@ class TestPrivateRoutes(unittest.TestCase):
   """
   # python -m unittest gunpla_api.tests.integration.test_private_routes.TestPrivateRoutes.test_insert_timeline
   def test_insert_timeline(self):
-    test_url = '/api/private/insert/timeline/'
-    test_cases = [
+    test_url   =  '/api/private/insert/timeline/'
+    test_cases =  [
       {
         'access_name'          :  'foo_bar',
         'display_name'         :  'foo bar',
@@ -49,6 +49,6 @@ class TestPrivateRoutes(unittest.TestCase):
         self.assertEqual(post_res.status_code, assert_status_code)
       finally:
 
-        # verify & delete entry
+        # delete entry
         self.db.execute_sql(self.db.process_delete_results, f"DELETE FROM timelines WHERE access_name='{access_name}'")
 
