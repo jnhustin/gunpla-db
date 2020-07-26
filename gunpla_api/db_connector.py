@@ -17,6 +17,8 @@ class DbConnector():
   password =  config.db_password
   db_name  =  config.db_name
 
+  user_id = 1
+
 
   def __init__(self):
     self.initialize_conn()
@@ -115,3 +117,18 @@ class DbConnector():
     self.conn.rollback()
     self.conn.close()
     return
+
+
+  def get_standard_insert_query(self, table):
+    return (
+      f'INSERT INTO {table} (access_name, display_name, created_date, updated_date, user_update_id)'
+      'VALUES (%(access_name)s, %(display_name)s, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, %(user_id)s);'
+    )
+
+
+  def get_standard_insert_vals(access_name, display_name):
+    return {
+      'access_name'  :  access_name,
+      'display_name' :  display_name,
+      'user_id'      :  self.user_id,
+    }

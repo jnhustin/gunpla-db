@@ -9,7 +9,7 @@ class Utils():
 
 
   def db_data_to_dict(self, db_results):
-    """ sample structyre of db_results
+    """ sample structure of db_results
       {
         'status_message' :  'SELECT 3',
         'col_names'      :  ['timeline_id', 'access_name', 'display_name'],

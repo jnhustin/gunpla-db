@@ -7,7 +7,6 @@ from gunpla_api.logger  import Logger
 # from gunpla_api.utils   import Utils
 from gunpla_api.controller  import Controller
 from gunpla_api.validation  import Validation
-from gunpla_api.gunpla_db   import GunplaDb
 from gunpla_api.exceptions  import BadRequestException, DatabaseException, DatabaseUniqueException
 
 logger  =  Logger().get_logger()
@@ -45,33 +44,31 @@ def lifecheck():
   )
 
 
-@private.route('/db_post',  methods=['POST'])
-@private.route('/db_post/', methods=['POST'])
-def db_post_route():
+@private.route('/insert/<table>',  methods=['POST'])
+@private.route('/insert/<table>/', methods=['POST'])
+def insert_route(table):
 
-  logger.info('request received')
+  logger.info(f'request received - insert to table: {table}')
 
   try:
-    table = VALIDATION.get_json_field('table', request.json)
-    logger.debug(f'insert request to table: {table}')
-    if table == 'timeline':
-      CONTROLLER.post_timeline(request)
+    if   table == 'timeline':
+      CONTROLLER.insert_timeline(request)
     elif table == 'model_scale':
-      CONTROLLER.post_model_scale(request)
+      CONTROLLER.insert_model_scale(request)
     elif table == 'product_line':
-      CONTROLLER.post_product_line(request)
+      CONTROLLER.insert_product_line(request)
     elif table == 'brand':
-      CONTROLLER.post_brand(request)
+      CONTROLLER.insert_brand(request)
     elif table == 'franchise':
-      CONTROLLER.post_franchise(request)
+      CONTROLLER.insert_franchise(request)
 
     response = Response(status=200, response=json.dumps({'message': 'success'}))
 
-  except BadRequestException as e:
+  except BadRequestException:
     response = Response(status=400, response=json.dumps({'message': 'error'}))
-  except DatabaseUniqueException as e:
+  except DatabaseUniqueException:
     response = Response(status=400, response=json.dumps({'message': 'bad request'}))
-  except DatabaseException as e:
+  except DatabaseException:
     response = Response(status=500, response=json.dumps({'message': 'error'}))
   except Exception as e:
     logger.exception('unknown error occured')
@@ -81,21 +78,3 @@ def db_post_route():
   return response
 
 
-@private.route('/db_get',  methods=['GET'])
-@private.route('/db_get/', methods=['GET'])
-def db_get_route():
-  logger.info('request received')
-
-  try:
-    table =  request.args['table']
-
-    if table == 'timeline':
-      json_data = CONTROLLER.get_timelines()
-
-    response =  Response(status=200, response=json.dumps(json_data))
-  except Exception as e:
-    logger.exception('unknown error occured')
-    response = Response(status=400, response=json.dumps({'message': 'error'}))
-
-  logger.info('request complete')
-  return response

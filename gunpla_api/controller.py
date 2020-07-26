@@ -1,47 +1,91 @@
-from gunpla_api.gunpla_db   import GunplaDb
-from gunpla_api.config      import Config
-from gunpla_api.validation  import Validation
-from gunpla_api.utils       import Utils
+from gunpla_api.db_connector  import DbConnector
+from gunpla_api.config        import Config
+from gunpla_api.validation    import Validation
+from gunpla_api.utils         import Utils
+
+from gunpla_api.timeline.timeline         import Timeline
+from gunpla_api.model_scale.model_scale   import ModelScale
+from gunpla_api.product_line.product_line import ProductLine
+from gunpla_api.brand.brand               import Brand
+from gunpla_api.franchise.franchise       import Franchise
+
 
 class Controller():
   config     =  Config()
-  gunpla_db  =  GunplaDb()
+  db         =  DbConnector()
   validation =  Validation()
   utils      =  Utils()
 
+  timeline     =  Timeline()
+  model_scale  =  ModelScale()
+  product_line =  ProductLine()
+  brand        =  Brand()
+  franchise    =  Franchise()
 
-  def post_timeline(self, request):
+
+
+  def insert_timeline(self, request):
     display_name =  self.validation.get_json_field('display_name', request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
-    self.gunpla_db.insert_timeline(access_name, display_name)
+
+    res = self.db.execute_sql(
+      self.db.process_insert_results,
+      self.timeline.get_insert_query(),
+      self.timeline.get_insert_param_dict(access_name, display_name), )
+
+    logger.debug('completed insert', extra=res)
     return
 
 
-  def post_model_scale(self, request):
-    model_scale = self.validation.get_json_field('model_scale', request.json)
-    self.gunpla_db.insert_model_scale(model_scale)
+  def insert_model_scale(self, request):
+    model_scale =  self.validation.get_json_field('model_scale', request.json)
+
+    res = self.db.execute_sql(
+      self.db.process_insert_results,
+      self.model_scale.get_insert_query(),
+      self.model_scale.get_insert_param_dict(scale), )
+
+    logger.debug('completed insert', extra=res)
     return
 
 
-  def post_product_line(self, request):
+  def insert_product_line(self, request):
     display_name =  self.validation.get_json_field('display_name', request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
     short_name   =  self.validation.get_json_field('short_name', request.json)
-    self.gunpla_db.insert_product_line(access_name, display_name, short_name)
+
+    res = self.db.execute_sql(
+      self.db.process_insert_results,
+      self.product_line.get_insert_query(),
+      self.product_line.get_insert_param_dict(access_name, display_name, short_name), )
+
+    logger.debug('completed insert', extra=res)
     return
 
 
-  def post_brand(self, request):
+  def insert_brand(self, request):
     display_name =  self.validation.get_json_field('display_name', request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
-    self.gunpla_db.insert_product_line(access_name, display_name)
+
+    res = self.db.execute_sql(
+      self.db.process_insert_results,
+      self.brand.get_insert_query(),
+      self.brand.get_insert_param_dict(access_name, display_name), )
+
+    logger.debug('completed insert', extra=res)
     return
 
 
-  def post_franchise(self, request):
+  def insert_franchise(self, request):
     display_name =  self.validation.get_json_field('display_name', request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
-    self.gunpla_db.insert_product_line(access_name, display_name)
+
+    res = self.db.execute_sql(
+      self.db.process_insert_results,
+      self.franchise.get_insert_query(),
+      self.franchise.get_insert_param_dict(access_name, display_name), )
+
+    logger.debug('completed insert', extra=res)
     return
 
 
@@ -49,10 +93,8 @@ class Controller():
     # get data
     db_results : dict =  self.gunpla_db.select_timelines()
     results    : list =  self.utils.db_data_to_dict(db_results)
-    json_data = {
-      'message' :  'success',
-      'length'  :  len(results),
-      'results' :  results,
-    }
-    return json_data
+    query =  'SELECT timeline_id, access_name, display_name FROM timelines'
+
+    res =  self.db.execute_sql(self.db.process_select_results, query, None)
+    return res
 

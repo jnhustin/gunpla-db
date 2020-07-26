@@ -23,9 +23,11 @@ def create_app(config_class=Config):
 
 
   # REGISTER BLUEPRINTS
-  from gunpla_api.private.private_routes import private
+  from gunpla_api.private_routes import private
+  from gunpla_api.public_routes import public
 
   app.register_blueprint(private)
+  app.register_blueprint(public)
 
 
 
