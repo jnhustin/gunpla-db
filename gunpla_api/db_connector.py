@@ -7,7 +7,7 @@ from gunpla_api.config import Config
 from gunpla_api.logger import Logger
 from gunpla_api.exceptions import DatabaseUniqueException
 
-logger = Logger()
+logger = Logger().get_logger()
 
 class DbConnector():
   config   =  Config()
@@ -37,7 +37,7 @@ class DbConnector():
   def get_conn(self):
     try:
       if self.conn == None or self.conn.closed == 1:
-        print('conn down!')
+        logger.debug('conn down, reinitializing')
         self.initialize_conn()
       else:
         return self.conn
@@ -47,7 +47,7 @@ class DbConnector():
       raise
 
 
-  def execute_sql(self, function, sql, vals, is_close_conn=True):
+  def execute_sql(self, function, sql, vals=None, is_close_conn=True):
     try:
       self.get_conn()
       cursor =  self.conn.cursor()
@@ -57,7 +57,7 @@ class DbConnector():
       logger.exception('db_connector unique constraint violation', extra={'sql': sql, 'vals': vals})
       self.rollback()
       raise DatabaseUniqueException()
-    except psycopg2.Error:
+    except psycopg2.Error as e:
       logger.exception('some psycopg error', extra={'sql': sql, 'vals': vals, 'pg_code': e.pgcode})
       self.rollback()
       raise
@@ -84,12 +84,8 @@ class DbConnector():
 
   def process_insert_results(self, cursor):
     status_message =  cursor.statusmessage
-    # pkeys          =  [ key[0] for key in cursor.fetchall() ]
 
-    return {
-      'status_message' :  status_message,
-      # 'pkeys'          :  pkeys,
-    }
+    return { 'status_message' :  status_message, }
 
 
   def process_update_results(self, cursor) :
@@ -110,7 +106,7 @@ class DbConnector():
 
   def process_delete_results(self, cursor) :
     status_message =  cursor.statusmessage
-    return { 'status_message': status_message }
+    return { 'status_message': status_message, }
 
 
   def rollback(self) :
@@ -126,7 +122,7 @@ class DbConnector():
     )
 
 
-  def get_standard_insert_vals(access_name, display_name):
+  def get_standard_insert_vals(self, access_name, display_name):
     return {
       'access_name'  :  access_name,
       'display_name' :  display_name,

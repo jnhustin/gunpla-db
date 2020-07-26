@@ -49,7 +49,6 @@ def lifecheck():
 def insert_route(table):
 
   logger.info(f'request received - insert to table: {table}')
-
   try:
     if   table == 'timeline':
       CONTROLLER.insert_timeline(request)

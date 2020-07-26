@@ -2,13 +2,16 @@ from gunpla_api.db_connector  import DbConnector
 from gunpla_api.config        import Config
 from gunpla_api.validation    import Validation
 from gunpla_api.utils         import Utils
+from gunpla_api.logger        import Logger
 
 from gunpla_api.timeline.timeline         import Timeline
 from gunpla_api.model_scale.model_scale   import ModelScale
 from gunpla_api.product_line.product_line import ProductLine
 from gunpla_api.brand.brand               import Brand
 from gunpla_api.franchise.franchise       import Franchise
+from gunpla_api.franchise.franchise       import Franchise
 
+logger = Logger().get_logger()
 
 class Controller():
   config     =  Config()
@@ -43,7 +46,7 @@ class Controller():
     res = self.db.execute_sql(
       self.db.process_insert_results,
       self.model_scale.get_insert_query(),
-      self.model_scale.get_insert_param_dict(scale), )
+      self.model_scale.get_insert_param_dict(model_scale), )
 
     logger.debug('completed insert', extra=res)
     return
@@ -91,10 +94,11 @@ class Controller():
 
   def get_timelines(self):
     # get data
-    db_results : dict =  self.gunpla_db.select_timelines()
-    results    : list =  self.utils.db_data_to_dict(db_results)
-    query =  'SELECT timeline_id, access_name, display_name FROM timelines'
+    db_results =  self.db.execute_sql(
+      self.db.process_select_results,
+      self.timeline.get_select_all_query(),
+      None)
+    results =  self.utils.db_data_to_dict(db_results)
 
-    res =  self.db.execute_sql(self.db.process_select_results, query, None)
-    return res
+    return results
 

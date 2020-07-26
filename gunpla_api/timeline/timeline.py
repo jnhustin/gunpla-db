@@ -6,9 +6,12 @@ class Timeline():
 
 
   def get_insert_query(self):
-    return self.db.get_standard_insert_query('timeline')
+    return self.db.get_standard_insert_query('timelines')
 
 
   def get_insert_param_dict(self, access_name, display_name):
     return self.db.get_standard_insert_vals(access_name, display_name)
 
+
+  def get_select_all_query(self):
+    return 'SELECT timeline_id, access_name, display_name FROM timelines'

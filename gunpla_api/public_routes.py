@@ -41,14 +41,12 @@ def lifecheck():
     })
   )
 
-@public.route('/db_get',  methods=['GET'])
-@public.route('/db_get/', methods=['GET'])
-def db_get_route():
-  logger.info('request received')
+@public.route('/select/<table>',  methods=['GET'])
+@public.route('/select/<table>/', methods=['GET'])
+def db_get_route(table):
 
   try:
-    table =  request.args['table']
-
+    logger.info(f'request received - insert to table: {table}')
     if table == 'timeline':
       results = CONTROLLER.get_timelines()
 
