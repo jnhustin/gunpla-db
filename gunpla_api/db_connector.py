@@ -6,7 +6,7 @@ from os.path import join, dirname
 from gunpla_api.config      import Config
 from gunpla_api.logger      import Logger
 from gunpla_api.utils       import Utils
-from gunpla_api.exceptions  import DatabaseUniqueException
+from gunpla_api.exceptions  import DatabaseUniqueException, BadRequestException
 
 logger = Logger().get_logger()
 
@@ -91,6 +91,10 @@ class DbConnector():
 
   def process_update_results(self, cursor) :
     status_message =  cursor.statusmessage
+
+    if status_message == 'UPDATE 0':
+      raise BadRequestException('id does not exist')
+
     return { 'status_message' :  status_message, }
 
 

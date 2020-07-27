@@ -41,21 +41,20 @@ def lifecheck():
     })
   )
 
-@public.route('/select/<table>',  methods=['GET'])
-@public.route('/select/<table>/', methods=['GET'])
+@public.route('/<table>/select',  methods=['GET'])
+@public.route('/<table>/select/', methods=['GET'])
 def db_get_route(table):
 
+  logger.info(f'request received - insert to table: {table}')
   try:
-    logger.info(f'request received - insert to table: {table}')
-    if table == 'timeline':
-      results = CONTROLLER.get_timelines()
 
+    results = CONTROLLER.direct_select_request(table, request)
     response =  Response(status=200, response=json.dumps({
       'message' :  'success',
       'length'  :  len(results),
       'results' :  results,
     }))
-  except Exception as e:
+  except Exception:
     logger.exception('unknown error occured')
     response = Response(status=400, response=json.dumps({'message': 'error'}))
 

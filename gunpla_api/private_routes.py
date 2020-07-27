@@ -50,17 +50,7 @@ def insert_route(table):
 
   logger.info(f'request received - insert to table: {table}')
   try:
-    if   table == 'timeline':
-      CONTROLLER.insert_timeline(request)
-    elif table == 'model_scale':
-      CONTROLLER.insert_model_scale(request)
-    elif table == 'product_line':
-      CONTROLLER.insert_product_line(request)
-    elif table == 'brand':
-      CONTROLLER.insert_brand(request)
-    elif table == 'franchise':
-      CONTROLLER.insert_franchise(request)
-
+    CONTROLLER.direct_insert_request(table, request)
     response = Response(status=200, response=json.dumps({'message': 'success'}))
 
   except BadRequestException:
@@ -83,17 +73,7 @@ def update_route(table):
 
   logger.info(f'request received - update to table: {table}')
   try:
-    if   table == 'timeline':
-      CONTROLLER.update_timeline(request)
-    elif table == 'model_scale':
-      CONTROLLER.update_model_scale(request)
-    elif table == 'product_line':
-      CONTROLLER.update_product_line(request)
-    # elif table == 'brand':
-    #   CONTROLLER.update_brand(request)
-    # elif table == 'franchise':
-    #   CONTROLLER.update_franchise(request)
-
+    CONTROLLER.direct_update_request(table, request)
     response = Response(status=200, response=json.dumps({'message': 'success'}))
 
   except BadRequestException as e:
