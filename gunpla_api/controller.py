@@ -105,8 +105,8 @@ class Controller():
 
 
   def update_timeline(self, request):
-    timeline_id   =  self.get_json_field('id',request.json)
-    display_name  =  self.get_json_field('display_name',request.json)
+    timeline_id   =  self.get_json_field('id', request.json)
+    display_name  =  self.get_json_field('display_name', request.json)
     update_fields =  {
       'display_name' :  display_name,
       'access_name'  :  self.utils.convert_to_snake_case(display_name),
@@ -114,7 +114,7 @@ class Controller():
 
     db_results =  self.db.execute_sql(
       self.db.process_update_results,
-      self.timeline.get_update_query(timeline_id, update_fields),
+      self.db.get_update_query(self.timeline.table_name, update_fields, self.timeline.table_id),
       self.utils.append_fields_to_json(update_fields, timeline_id=timeline_id),
     )
 
@@ -123,16 +123,14 @@ class Controller():
 
 
   def update_model_scale(self, request):
-    timeline_id   =  self.get_json_field('id',request.json)
-    display_name  =  self.get_json_field('display_name',request.json)
+    scale_id      =  self.get_json_field('id', request.json)
     update_fields =  {
-      'display_name' :  display_name,
-      'access_name'  :  self.utils.convert_to_snake_case(display_name),
+      'scale_value' :  self.get_json_field('scale_value',request.json),
     }
     db_results =  self.db.execute_sql(
       self.db.process_update_results,
-      self.timeline.get_update_query(timeline_id, update_fields),
-      self.utils.append_fields_to_json(update_fields, timeline_id=timeline_id),
+      self.db.get_update_query(self.model_scale.table_name, update_fields, self.model_scale.table_id),
+      self.utils.append_fields_to_json(update_fields, scale_id=scale_id),
     )
 
     logger.debug('completed update', extra=db_results)
@@ -140,7 +138,7 @@ class Controller():
 
 
   def update_product_line(self, request):
-    product_line_id =  self.get_json_field('id',request.json)
+    product_line_id =  self.get_json_field('id', request.json)
     display_name    =  self.get_json_field('display_name', request.json, optional=True)
     update_fields   =  {
       'short_name'   :  self.get_json_field('short_name', request.json, optional=True),
@@ -150,7 +148,7 @@ class Controller():
 
     db_results =  self.db.execute_sql(
       self.db.process_update_results,
-      self.product_line.get_update_query(product_line_id, update_fields),
+      self.db.get_update_query(self.product_line.table_name, update_fields, self.product_line.table_id),
       self.utils.append_fields_to_json(update_fields, product_line_id=product_line_id),
     )
     logger.debug('completed update', extra=db_results)

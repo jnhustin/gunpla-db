@@ -123,9 +123,17 @@ class DbConnector():
     )
 
 
+  def get_update_query(self, table_name, update_fields, table_id):
+    query  =  f"UPDATE {table_name}"
+    query +=  self.generate_update_set_query(update_fields)
+    query +=  f"WHERE {table_id} = %({table_id})s;"
+    return query
+
+
   def generate_update_set_query(self, update_fields: dict):
     query  =  " SET "
     query +=  ",".join( [ f"{col} = %({col})s" for col, val in update_fields.items() if val != None ] )
     query +=  f", user_update_id = {self.user_id}, updated_date='NOW' "
     return query
+
 

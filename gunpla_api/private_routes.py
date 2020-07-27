@@ -85,8 +85,8 @@ def update_route(table):
   try:
     if   table == 'timeline':
       CONTROLLER.update_timeline(request)
-    # elif table == 'model_scale':
-    #   CONTROLLER.update_model_scale(request)
+    elif table == 'model_scale':
+      CONTROLLER.update_model_scale(request)
     elif table == 'product_line':
       CONTROLLER.update_product_line(request)
     # elif table == 'brand':
