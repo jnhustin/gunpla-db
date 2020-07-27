@@ -9,6 +9,8 @@ class Franchise():
     return self.db.get_standard_insert_query('franchises')
 
 
-  def get_insert_param_dict(self, access_name, display_name):
-    return self.db.get_standard_insert_vals(access_name, display_name)
+  def get_sql_vals(self, access_name, display_name):
+    vals            =  locals()
+    vals['user_id'] =  self.db.user_id
+    return vals
 

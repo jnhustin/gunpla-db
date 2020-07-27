@@ -8,7 +8,7 @@ class Utils():
     return string.replace(' ', '_')
 
 
-  def db_data_to_dict(self, db_results):
+  def db_data_to_json(self, db_results):
     """ sample structure of db_results
       {
         'status_message' :  'SELECT 3',
@@ -45,3 +45,9 @@ class Utils():
       results.append(row_data)
 
     return results
+
+
+  def append_fields_to_json(self, json_data, **kwargs):
+    for k,v in kwargs.items():
+      json_data[k] = v
+    return json_data

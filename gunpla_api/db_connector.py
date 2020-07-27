@@ -122,16 +122,8 @@ class DbConnector():
     )
 
 
-  def get_standard_insert_vals(self, access_name, display_name):
-    return {
-      'access_name'  :  access_name,
-      'display_name' :  display_name,
-      'user_id'      :  self.user_id,
-    }
-
-  def get_standard_sql_vals(self, access_name, display_name):
-    return {
-      'access_name'  :  access_name,
-      'display_name' :  display_name,
-      'user_id'      :  self.user_id,
-    }
+  def generate_update_set_query(self, update_fields: dict):
+    query  =  " SET "
+    query +=  ",".join( [ f"{col} = %({col})s" for col, val in update_fields.items() if val != None ] )
+    query +=  " "
+    return query

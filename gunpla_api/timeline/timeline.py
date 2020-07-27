@@ -9,21 +9,20 @@ class Timeline():
     return self.db.get_standard_insert_query('timelines')
 
 
-  def get_sql_vals(self, timeline_id, access_name, display_name):
-    json_data       =  self.db.get_standard_sql_vals(access_name, display_name)
-    json_data['id'] =  timeline_id
-    return json_data
-
   def get_select_all_query(self):
     return 'SELECT timeline_id, access_name, display_name FROM timelines'
 
 
-  def get_update_query(self, id, access_name, display_name):
-    query  = """
-      UPDATE timelines
-      SET access_name = %(access_name)s,
-        display_name = %(display_name)s
-      WHERE timeline_id = %(id)s;
-    """
+  def get_sql_vals(self, display_name, access_name):
+    vals            =  locals()
+    vals['user_id'] =  self.db.user_id
+    return vals
+
+
+  def get_update_query(self, timeline_id, update_fields):
+    query  =  "UPDATE timelines"
+    query +=  self.db.generate_update_set_query(update_fields)
+    query +=  "WHERE timeline_id = %(timeline_id)s;"
     return query
+
 

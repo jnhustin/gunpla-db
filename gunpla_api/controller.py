@@ -34,7 +34,7 @@ class Controller():
     res = self.db.execute_sql(
       self.db.process_insert_results,
       self.timeline.get_insert_query(),
-      self.timeline.get_insert_param_dict(access_name, display_name), )
+      self.timeline.get_sql_vals(access_name, display_name), )
 
     logger.debug('completed insert', extra=res)
     return
@@ -46,7 +46,7 @@ class Controller():
     res = self.db.execute_sql(
       self.db.process_insert_results,
       self.model_scale.get_insert_query(),
-      self.model_scale.get_insert_param_dict(model_scale), )
+      self.model_scale.get_sql_vals(model_scale), )
 
     logger.debug('completed insert', extra=res)
     return
@@ -60,7 +60,8 @@ class Controller():
     res = self.db.execute_sql(
       self.db.process_insert_results,
       self.product_line.get_insert_query(),
-      self.product_line.get_insert_param_dict(access_name, display_name, short_name), )
+      self.product_line.get_sql_vals(access_name, display_name, short_name),
+    )
 
     logger.debug('completed insert', extra=res)
     return
@@ -73,7 +74,7 @@ class Controller():
     res = self.db.execute_sql(
       self.db.process_insert_results,
       self.brand.get_insert_query(),
-      self.brand.get_insert_param_dict(access_name, display_name), )
+      self.brand.get_sql_vals(access_name, display_name), )
 
     logger.debug('completed insert', extra=res)
     return
@@ -86,7 +87,7 @@ class Controller():
     res = self.db.execute_sql(
       self.db.process_insert_results,
       self.franchise.get_insert_query(),
-      self.franchise.get_insert_param_dict(access_name, display_name), )
+      self.franchise.get_sql_vals(access_name, display_name), )
 
     logger.debug('completed insert', extra=res)
     return
@@ -95,22 +96,25 @@ class Controller():
   def get_timelines(self):
     db_results =  self.db.execute_sql(
       self.db.process_select_results,
-      self.timeline.get_select_all_query(),
-      None)
-    results =  self.utils.db_data_to_dict(db_results)
+      self.timeline.get_select_all_query())
+    results =  self.utils.db_data_to_json(db_results)
 
     return results
 
 
   def update_timeline(self, request):
-    timeline_id  =  self.validation.get_json_field('id',request.json)
-    display_name =  self.validation.get_json_field('display_name',request.json)
-    access_name  =  self.utils.convert_to_snake_case(display_name)
-    db_results   =  self.db.execute_sql(
+    timeline_id   =  self.validation.get_json_field('id',request.json)
+    display_name  =  self.validation.get_json_field('display_name',request.json)
+    update_fields =  {
+      'display_name' :  display_name,
+      'access_name'  :  self.utils.convert_to_snake_case(display_name),
+    }
+    db_results =  self.db.execute_sql(
       self.db.process_update_results,
-      self.timeline.get_update_query(timeline_id, access_name, display_name),
-      self.timeline.get_sql_vals(timeline_id, access_name, display_name),
+      self.timeline.get_update_query(timeline_id, update_fields),
+      self.utils.append_fields_to_json(update_fields, timeline_id=timeline_id),
     )
+
     logger.debug('completed update', extra=db_results)
     return
 
@@ -127,10 +131,8 @@ class Controller():
     db_results =  self.db.execute_sql(
       self.db.process_update_results,
       self.product_line.get_update_query(product_line_id, update_fields),
-      self.product_line.get_sql_vals(update_fields, product_line_id=product_line_id),
+      self.utils.append_fields_to_json(update_fields, product_line_id=product_line_id),
     )
     logger.debug('completed update', extra=db_results)
     return
-
-  # def update_product_line(self, request):
 

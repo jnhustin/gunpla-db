@@ -12,16 +12,14 @@ class ProductLine():
     )
 
 
-  def get_sql_vals(self, json_data, **kwargs):
-    for k,v in kwargs.items():
-      json_data[k] = v
-    return json_data
+  def get_sql_vals(self, display_name, access_name, short_name):
+    vals            =  locals()
+    vals['user_id'] =  self.db.user_id
+    return vals
 
 
   def get_update_query(self, product_line_id, update_fields):
-    query  =  "UPDATE product_lines SET "
-    query +=  ','.join(
-      [ f"{col} = %({col})s" for col, val in update_fields.items() if val != None ]
-    )
-    query +=  " WHERE product_line_id = %(product_line_id)s;"
+    query  =  "UPDATE product_lines"
+    query +=  self.db.generate_update_set_query(update_fields)
+    query +=  "WHERE product_line_id = %(product_line_id)s;"
     return query

@@ -12,9 +12,9 @@ class ModelScale():
     )
 
 
-  def get_insert_param_dict(self, scale):
+  def get_sql_vals(self, scale):
     return {
       'scale'   :  scale,
-      'user_id' :  db.user_id,
+      'user_id' :  self.db.user_id,
     }
 
