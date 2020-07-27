@@ -3,9 +3,10 @@ import psycopg2
 from dotenv  import load_dotenv
 from os.path import join, dirname
 
-from gunpla_api.config import Config
-from gunpla_api.logger import Logger
-from gunpla_api.exceptions import DatabaseUniqueException
+from gunpla_api.config      import Config
+from gunpla_api.logger      import Logger
+from gunpla_api.utils       import Utils
+from gunpla_api.exceptions  import DatabaseUniqueException
 
 logger = Logger().get_logger()
 
@@ -125,5 +126,6 @@ class DbConnector():
   def generate_update_set_query(self, update_fields: dict):
     query  =  " SET "
     query +=  ",".join( [ f"{col} = %({col})s" for col, val in update_fields.items() if val != None ] )
-    query +=  " "
+    query +=  f", user_update_id = {self.user_id}, updated_date='NOW' "
     return query
+

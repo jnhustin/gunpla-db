@@ -9,7 +9,6 @@ from gunpla_api.model_scale.model_scale   import ModelScale
 from gunpla_api.product_line.product_line import ProductLine
 from gunpla_api.brand.brand               import Brand
 from gunpla_api.franchise.franchise       import Franchise
-from gunpla_api.franchise.franchise       import Franchise
 
 logger = Logger().get_logger()
 
@@ -19,16 +18,19 @@ class Controller():
   validation =  Validation()
   utils      =  Utils()
 
+  # models
   timeline     =  Timeline()
   model_scale  =  ModelScale()
   product_line =  ProductLine()
   brand        =  Brand()
   franchise    =  Franchise()
 
+  # methods
+  get_json_field = validation.get_json_field
 
 
   def insert_timeline(self, request):
-    display_name =  self.validation.get_json_field('display_name', request.json)
+    display_name =  self.get_json_field('display_name', request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
 
     res = self.db.execute_sql(
@@ -41,7 +43,7 @@ class Controller():
 
 
   def insert_model_scale(self, request):
-    model_scale =  self.validation.get_json_field('model_scale', request.json)
+    model_scale =  self.get_json_field('model_scale', request.json)
 
     res = self.db.execute_sql(
       self.db.process_insert_results,
@@ -53,9 +55,9 @@ class Controller():
 
 
   def insert_product_line(self, request):
-    display_name =  self.validation.get_json_field('display_name', request.json)
+    display_name =  self.get_json_field('display_name', request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
-    short_name   =  self.validation.get_json_field('short_name', request.json)
+    short_name   =  self.get_json_field('short_name', request.json)
 
     res = self.db.execute_sql(
       self.db.process_insert_results,
@@ -68,7 +70,7 @@ class Controller():
 
 
   def insert_brand(self, request):
-    display_name =  self.validation.get_json_field('display_name', request.json)
+    display_name =  self.get_json_field('display_name', request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
 
     res = self.db.execute_sql(
@@ -81,7 +83,7 @@ class Controller():
 
 
   def insert_franchise(self, request):
-    display_name =  self.validation.get_json_field('display_name', request.json)
+    display_name =  self.get_json_field('display_name', request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
 
     res = self.db.execute_sql(
@@ -103,8 +105,26 @@ class Controller():
 
 
   def update_timeline(self, request):
-    timeline_id   =  self.validation.get_json_field('id',request.json)
-    display_name  =  self.validation.get_json_field('display_name',request.json)
+    timeline_id   =  self.get_json_field('id',request.json)
+    display_name  =  self.get_json_field('display_name',request.json)
+    update_fields =  {
+      'display_name' :  display_name,
+      'access_name'  :  self.utils.convert_to_snake_case(display_name),
+    }
+
+    db_results =  self.db.execute_sql(
+      self.db.process_update_results,
+      self.timeline.get_update_query(timeline_id, update_fields),
+      self.utils.append_fields_to_json(update_fields, timeline_id=timeline_id),
+    )
+
+    logger.debug('completed update', extra=db_results)
+    return
+
+
+  def update_model_scale(self, request):
+    timeline_id   =  self.get_json_field('id',request.json)
+    display_name  =  self.get_json_field('display_name',request.json)
     update_fields =  {
       'display_name' :  display_name,
       'access_name'  :  self.utils.convert_to_snake_case(display_name),
@@ -120,10 +140,10 @@ class Controller():
 
 
   def update_product_line(self, request):
-    product_line_id =  self.validation.get_json_field('id',request.json)
-    display_name    =  self.validation.get_json_field('display_name', request.json, optional=True)
+    product_line_id =  self.get_json_field('id',request.json)
+    display_name    =  self.get_json_field('display_name', request.json, optional=True)
     update_fields   =  {
-      'short_name'   :  self.validation.get_json_field('short_name', request.json, optional=True),
+      'short_name'   :  self.get_json_field('short_name', request.json, optional=True),
       'display_name' : display_name,
       'access_name'  :  self.utils.convert_to_snake_case(display_name) if display_name else None,
     }
