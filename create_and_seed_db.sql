@@ -51,8 +51,8 @@ CREATE TABLE brands (
   user_update_id  int REFERENCES users (user_id)
 );
 
-CREATE TABLE franchises (
-  franchise_id      serial PRIMARY KEY,
+CREATE TABLE series (
+  series_id         serial PRIMARY KEY,
   access_name       varchar(40) UNIQUE NOT NULL,
   display_name      varchar(40) UNIQUE NOT NULL,
   created_date      date NOT NULL,
@@ -70,7 +70,7 @@ CREATE TABLE models (
   info_source       varchar (200),
   release_date      date,
   timeline_id       int REFERENCES timelines (timeline_id),
-  franchise_id      int REFERENCES franchises (franchise_id),
+  series_id         int REFERENCES series (series_id),
   product_line_id   int REFERENCES product_lines (product_line_id),
   brand_id          int REFERENCES brands (brand_id),
   scale_id          int REFERENCES scales (scale_id),
@@ -114,7 +114,7 @@ VALUES
   ('kotobukiya', 'kotobukiya', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1)
 ;
 
-INSERT INTO franchises (access_name, display_name, created_date, updated_date, user_update_id)
+INSERT INTO series (access_name, display_name, created_date, updated_date, user_update_id)
 VALUES
   ('gundam_wing', 'gundam wing', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
   ('00_gundam', '00 gundam', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
@@ -129,7 +129,7 @@ INSERT INTO models (
   info_source,
   release_date,
   timeline_id,
-  franchise_id,
+  series_id,
   product_line_id,
   brand_id,
   scale_id,

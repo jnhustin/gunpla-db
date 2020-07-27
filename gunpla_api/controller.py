@@ -5,7 +5,7 @@ from gunpla_api.timeline.timeline         import Timeline
 from gunpla_api.model_scale.model_scale   import ModelScale
 from gunpla_api.product_line.product_line import ProductLine
 from gunpla_api.brand.brand               import Brand
-from gunpla_api.franchise.franchise       import Franchise
+from gunpla_api.series.series             import Series
 
 logger = Logger().get_logger()
 
@@ -17,7 +17,7 @@ class Controller():
   model_scale  =  ModelScale()
   product_line =  ProductLine()
   brand        =  Brand()
-  franchise    =  Franchise()
+  series          =  Series()
 
 
   def direct_select_request(self, table, request):
@@ -36,8 +36,8 @@ class Controller():
       self.product_line.insert_product_line(request)
     elif table == 'brand':
       self.brand.insert_brand(request)
-    elif table == 'franchise':
-      self.franchise.insert_franchise(request)
+    elif table == 'series':
+      self.series.insert_series(request)
 
 
   def direct_update_request(self, table, request):
@@ -47,7 +47,7 @@ class Controller():
       self.model_scale.update_model_scale(request)
     elif table == 'product_line':
       self.product_line.update_product_line(request)
-    # elif table == 'brand':
-    #   self.brand.update_brand(request)
-    # elif table == 'franchise':
-    #   self.franchise.update_franchise(request)
+    elif table == 'brand':
+      self.brand.update_brand(request)
+    # elif table == 'series':
+    #   self.series.update_series(request)

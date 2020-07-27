@@ -7,7 +7,7 @@ logger = Logger().get_logger()
 
 
 
-class Franchise():
+class Series():
   db         =  DbConnector()
   utils      =  Utils()
   validation =  Validation()
@@ -17,7 +17,7 @@ class Franchise():
 
 
   def get_insert_query(self):
-    return self.db.get_standard_insert_query('franchises')
+    return self.db.get_standard_insert_query('series')
 
 
   def get_sql_vals(self, access_name, display_name):
@@ -26,7 +26,7 @@ class Franchise():
     return vals
 
 
-  def insert_franchise(self, request):
+  def insert_series(self, request):
     display_name =  self.get_json_field('display_name', request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
 
