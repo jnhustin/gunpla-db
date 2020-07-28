@@ -41,14 +41,14 @@ def lifecheck():
     })
   )
 
-@public.route('/<table>/select',  methods=['GET'])
-@public.route('/<table>/select/', methods=['GET'])
+@public.route('/<table>',  methods=['GET'])
+@public.route('/<table>/', methods=['GET'])
 def db_get_route(table):
 
   logger.info(f'request received - insert to table: {table}')
   try:
 
-    results = CONTROLLER.direct_select_request(table, request)
+    results  =  CONTROLLER.direct_select_request(table, request)
     response =  Response(status=200, response=json.dumps({
       'message' :  'success',
       'length'  :  len(results),

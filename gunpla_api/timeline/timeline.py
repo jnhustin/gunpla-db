@@ -22,7 +22,7 @@ class Timeline():
 
 
   def get_select_all_query(self):
-    return f"SELECT timeline_id, access_name, display_name FROM {self.table_name}"
+    return f"SELECT timeline_id as id, access_name, display_name FROM {self.table_name};"
 
 
   def get_sql_vals(self, display_name, access_name):

@@ -25,10 +25,22 @@ class ProductLine():
     )
 
 
+  def get_select_all_query(self):
+    return f"SELECT product_line_id as id, access_name, display_name, short_name FROM {self.table_name};"
+
+
   def get_sql_vals(self, display_name, access_name, short_name):
     vals            =  locals()
     vals['user_id'] =  self.db.user_id
     return vals
+
+
+  def select_product_lines(self):
+    db_results =  self.db.execute_sql(
+      self.db.process_select_results,
+      self.get_select_all_query())
+    results =  self.utils.db_data_to_json(db_results)
+    return results
 
 
   def insert_product_line(self, request):

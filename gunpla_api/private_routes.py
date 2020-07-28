@@ -44,8 +44,8 @@ def lifecheck():
   )
 
 
-@private.route('/<table>/insert',  methods=['POST'])
-@private.route('/<table>/insert/', methods=['POST'])
+@private.route('/<table>',  methods=['POST'])
+@private.route('/<table>/', methods=['POST'])
 def insert_route(table):
 
   logger.info(f'request received - insert to table: {table}')
@@ -67,8 +67,8 @@ def insert_route(table):
   return response
 
 
-@private.route('/<table>/update',  methods=['PUT'])
-@private.route('/<table>/update/', methods=['PUT'])
+@private.route('/<table>',  methods=['PUT'])
+@private.route('/<table>/', methods=['PUT'])
 def update_route(table):
 
   logger.info(f'request received - update to table: {table}')

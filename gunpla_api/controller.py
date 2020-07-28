@@ -21,8 +21,16 @@ class Controller():
 
 
   def direct_select_request(self, table, request):
-    if table == 'timeline':
+    if   table == 'timeline':
       results = self.timeline.select_timelines()
+    elif table == 'model_scale':
+      results = self.model_scale.select_model_scales()
+    elif table == 'product_line':
+      results = self.product_line.select_product_lines()
+    elif table == 'brand':
+      results = self.brand.select_brands()
+    elif table == 'series':
+      results = self.series.select_series()
 
     return results
 
@@ -49,5 +57,5 @@ class Controller():
       self.product_line.update_product_line(request)
     elif table == 'brand':
       self.brand.update_brand(request)
-    # elif table == 'series':
-    #   self.series.update_series(request)
+    elif table == 'series':
+      self.series.update_series(request)

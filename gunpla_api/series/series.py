@@ -23,10 +23,23 @@ class Series():
     return self.db.get_standard_insert_query('series')
 
 
+  def get_select_all_query(self):
+    return f"SELECT series_id as id, access_name, display_name FROM {self.table_name};"
+
+
   def get_sql_vals(self, access_name, display_name):
     vals            =  locals()
     vals['user_id'] =  self.db.user_id
     return vals
+
+
+  def select_series(self):
+    db_results =  self.db.execute_sql(
+      self.db.process_select_results,
+      self.get_select_all_query())
+    results =  self.utils.db_data_to_json(db_results)
+
+    return results
 
 
   def insert_series(self, request):
