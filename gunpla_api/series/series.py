@@ -56,7 +56,7 @@ class Series():
 
 
   def update_series(self, request):
-    series_id   =  self.get_json_field('id', request.json)
+    series_id     =  self.get_json_field('id', request.json)
     display_name  =  self.get_json_field('display_name', request.json)
     update_fields =  {
       'display_name' :  display_name,

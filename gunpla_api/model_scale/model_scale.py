@@ -43,6 +43,7 @@ class ModelScale():
 
     return results
 
+
   def insert_model_scale(self, request):
     model_scale =  self.get_json_field('model_scale', request.json)
 

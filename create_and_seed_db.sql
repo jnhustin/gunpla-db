@@ -42,8 +42,8 @@ CREATE TABLE product_lines (
   user_update_id      int REFERENCES users (user_id)
 );
 
-CREATE TABLE brands (
-  brand_id        serial PRIMARY KEY,
+CREATE TABLE manufacturers (
+  manufacturer_id        serial PRIMARY KEY,
   access_name     varchar(40) UNIQUE NOT NULL,
   display_name    varchar(40) UNIQUE NOT NULL,
   created_date    date NOT NULL,
@@ -72,7 +72,7 @@ CREATE TABLE models (
   timeline_id       int REFERENCES timelines (timeline_id),
   series_id         int REFERENCES series (series_id),
   product_line_id   int REFERENCES product_lines (product_line_id),
-  brand_id          int REFERENCES brands (brand_id),
+  manufacturer_id          int REFERENCES manufacturers (manufacturer_id),
   scale_id          int REFERENCES scales (scale_id),
   updated_date      date,
   created_date      date,
@@ -108,7 +108,7 @@ VALUES
   ('perfect_grade', 'perfect grade', 'mg', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1)
 ;
 
-INSERT INTO brands (access_name, display_name, created_date, updated_date, user_update_id)
+INSERT INTO manufacturers (access_name, display_name, created_date, updated_date, user_update_id)
 VALUES
   ('bandai', 'bandai', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1),
   ('kotobukiya', 'kotobukiya', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1)
@@ -131,7 +131,7 @@ INSERT INTO models (
   timeline_id,
   series_id,
   product_line_id,
-  brand_id,
+  manufacturer_id,
   scale_id,
   updated_date,
   created_date,

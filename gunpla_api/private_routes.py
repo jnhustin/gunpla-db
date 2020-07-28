@@ -90,3 +90,26 @@ def update_route(table):
   return response
 
 
+@private.route('/<table>/<_id>',  methods=['DELETE'])
+@private.route('/<table>/<_id>/', methods=['DELETE'])
+def delete_route(table, _id):
+
+  logger.info(f'request received - delete from table: {table}, id: {_id}')
+  try:
+    CONTROLLER.process_delete_request(table, _id)
+    response = Response(status=200, response=json.dumps({'message': 'success'}))
+
+  except BadRequestException as e:
+    response = Response(status=400, response=json.dumps({'message': f'error, {e}'}))
+  except DatabaseUniqueException:
+    response = Response(status=400, response=json.dumps({'message': 'bad request'}))
+  except DatabaseException:
+    response = Response(status=500, response=json.dumps({'message': 'error'}))
+  except Exception as e:
+    logger.exception('unknown error occured')
+    response = Response(status=400, response=json.dumps({'message': 'error'}))
+
+  logger.info('request complete')
+  return response
+
+

@@ -141,3 +141,5 @@ class DbConnector():
     return query
 
 
+  def get_delete_query(self, table_name, table_id):
+    return f"DELETE FROM {table_name} WHERE {table_id} = %(_id)s"
