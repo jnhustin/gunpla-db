@@ -3,3 +3,5 @@ psql db_nam < backup_file
 
 postgres
 postico
+
+brands -> manufacturer

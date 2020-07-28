@@ -53,7 +53,6 @@ class Timeline():
     return
 
 
-
   def update_timeline(self, request):
     timeline_id   =  self.get_json_field('id', request.json)
     display_name  =  self.get_json_field('display_name', request.json)

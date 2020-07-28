@@ -12,6 +12,9 @@ class Series():
   utils      =  Utils()
   validation =  Validation()
 
+  table_name =  'series'
+  table_id   =  'series_id'
+
   # methods
   get_json_field = validation.get_json_field
 
@@ -36,4 +39,22 @@ class Series():
       self.get_sql_vals(access_name, display_name), )
 
     logger.debug('completed insert', extra=res)
+    return
+
+
+  def update_series(self, request):
+    series_id   =  self.get_json_field('id', request.json)
+    display_name  =  self.get_json_field('display_name', request.json)
+    update_fields =  {
+      'display_name' :  display_name,
+      'access_name'  :  self.utils.convert_to_snake_case(display_name),
+    }
+
+    db_results =  self.db.execute_sql(
+      self.db.process_update_results,
+      self.db.get_update_query(self.table_name, update_fields, self.table_id),
+      self.utils.append_fields_to_json(update_fields, series_id=series_id),
+    )
+
+    logger.debug('completed update', extra=db_results)
     return
