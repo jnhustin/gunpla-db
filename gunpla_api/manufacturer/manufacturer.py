@@ -33,7 +33,7 @@ class manufacturer():
     return vals
 
 
-  def select_manufacturers(self):
+  def select(self):
     db_results =  self.db.execute_sql(
       self.db.process_select_results,
       self.get_select_all_query())
@@ -42,7 +42,7 @@ class manufacturer():
     return results
 
 
-  def insert_manufacturer(self, request):
+  def insert(self, request):
     display_name =  self.get_json_field('display_name', request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
 
@@ -55,7 +55,7 @@ class manufacturer():
     return
 
 
-  def update_manufacturer(self, request):
+  def update(self, request):
     manufacturer_id =  self.get_json_field('id', request.json)
     display_name    =  self.get_json_field('display_name', request.json)
     update_fields   =  {

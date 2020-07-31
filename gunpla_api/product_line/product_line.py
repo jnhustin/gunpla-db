@@ -35,7 +35,7 @@ class ProductLine():
     return vals
 
 
-  def select_product_lines(self):
+  def select(self):
     db_results =  self.db.execute_sql(
       self.db.process_select_results,
       self.get_select_all_query())
@@ -43,7 +43,7 @@ class ProductLine():
     return results
 
 
-  def insert_product_line(self, request):
+  def insert(self, request):
     display_name =  self.get_json_field('display_name', request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
     short_name   =  self.get_json_field('short_name', request.json)
@@ -58,7 +58,7 @@ class ProductLine():
     return
 
 
-  def update_product_line(self, request):
+  def update(self, request):
     product_line_id =  self.get_json_field('id', request.json)
     display_name    =  self.get_json_field('display_name', request.json, optional=True)
     update_fields   =  {

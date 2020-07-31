@@ -33,7 +33,7 @@ class Series():
     return vals
 
 
-  def select_series(self):
+  def select(self):
     db_results =  self.db.execute_sql(
       self.db.process_select_results,
       self.get_select_all_query())
@@ -42,7 +42,7 @@ class Series():
     return results
 
 
-  def insert_series(self, request):
+  def insert(self, request):
     display_name =  self.get_json_field('display_name', request.json)
     access_name  =  self.utils.convert_to_snake_case(display_name)
 
@@ -55,7 +55,7 @@ class Series():
     return
 
 
-  def update_series(self, request):
+  def update(self, request):
     series_id     =  self.get_json_field('id', request.json)
     display_name  =  self.get_json_field('display_name', request.json)
     update_fields =  {

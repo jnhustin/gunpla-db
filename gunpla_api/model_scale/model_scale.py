@@ -35,7 +35,7 @@ class ModelScale():
     }
 
 
-  def select_model_scales(self):
+  def select(self):
     db_results =  self.db.execute_sql(
       self.db.process_select_results,
       self.get_select_all_query())
@@ -44,7 +44,7 @@ class ModelScale():
     return results
 
 
-  def insert_model_scale(self, request):
+  def insert(self, request):
     model_scale =  self.get_json_field('model_scale', request.json)
 
     res = self.db.execute_sql(
@@ -56,7 +56,7 @@ class ModelScale():
     return
 
 
-  def update_model_scale(self, request):
+  def update(self, request):
     scale_id      =  self.get_json_field('id', request.json)
     update_fields =  {
       'scale_value' :  self.get_json_field('scale_value',request.json),
