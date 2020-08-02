@@ -1,12 +1,12 @@
-from gunpla_api.db_connector import DbConnector
 from gunpla_api.logger       import Logger
 from gunpla_api.utils        import Utils
+from gunpla_api.gunpla_sql   import GunplaSql
 from gunpla_api.validation   import Validation
 
 logger = Logger().get_logger()
 
 class Timeline():
-  db         =  DbConnector()
+  sql        =  GunplaSql()
   utils      =  Utils()
   validation =  Validation()
 
@@ -22,7 +22,7 @@ class Timeline():
 
 
   def get_insert_query(self):
-    return self.db.get_standard_insert_query({self.table_name})
+    return self.sql.get_standard_insert_query({self.table_name})
 
 
   def get_select_all_query(self):
@@ -34,6 +34,6 @@ class Timeline():
 
 
   def get_update_query(self, request):
-    update_fields = self.db.get_sql_vals(['display_name'], request)
-    return self.db.get_update_query(self.table_name, update_fields, self.table_id)
+    update_fields = self.sql.get_sql_vals(['display_name'], request)
+    return self.sql.get_update_query(self.table_name, update_fields, self.table_id)
 

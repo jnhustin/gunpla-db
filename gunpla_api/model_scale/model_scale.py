@@ -1,4 +1,4 @@
-from gunpla_api.db_connector import DbConnector
+from gunpla_api.gunpla_sql import GunplaSql
 from gunpla_api.logger       import Logger
 from gunpla_api.utils        import Utils
 from gunpla_api.validation   import Validation
@@ -7,7 +7,7 @@ logger = Logger().get_logger()
 
 
 class ModelScale():
-  db         =  DbConnector()
+  sql        =  GunplaSql()
   utils      =  Utils()
   validation =  Validation()
 
@@ -25,7 +25,7 @@ class ModelScale():
   def get_insert_query(self):
     return (
       f"INSERT INTO {self.table_name} (scale_value, created_date, updated_date, user_update_id)"
-      f"VALUES (%(scale_value)s, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, {self.db.user_id};"
+      f"VALUES (%(scale_value)s, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, {self.sql.user_id};"
     )
 
 
@@ -38,5 +38,5 @@ class ModelScale():
 
 
   def get_update_query(self, request):
-    update_fields = self.db.get_sql_vals(['scale_value'], request)
-    return self.db.get_update_query(self.table_name, update_fields, self.table_id)
+    update_fields = self.sql.get_sql_vals(['scale_value'], request)
+    return self.sql.get_update_query(self.table_name, update_fields, self.table_id)

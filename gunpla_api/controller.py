@@ -1,6 +1,7 @@
 from gunpla_api.db_connector  import DbConnector
 from gunpla_api.logger        import Logger
 from gunpla_api.utils         import Utils
+from gunpla_api.gunpla_sql    import GunplaSql
 from gunpla_api.exceptions    import UnsupportedTableException
 
 from gunpla_api.timeline.timeline           import Timeline
@@ -14,6 +15,7 @@ logger = Logger().get_logger()
 class Controller():
   db    =  DbConnector()
   utils =  Utils()
+  sql   =  GunplaSql()
 
   models =  {
     'timeline'     :  Timeline(),
@@ -42,7 +44,7 @@ class Controller():
     try:
       table        =  table.lower()
       insert_query =  self.models[table].get_insert_query()
-      sql_vals     =  self.db.get_sql_vals(self.models[table].insert_sql_vals, request)
+      sql_vals     =  self.sql.get_sql_vals(self.models[table].insert_sql_vals, request)
     except UnsupportedTableException:
       logger.exception('request to unsupported table')
 
@@ -55,7 +57,7 @@ class Controller():
     try:
       table        =  table.lower()
       update_query =  self.models[table].get_update_query(request)
-      sql_vals     =  self.db.get_sql_vals(self.models[table].update_sql_vals, request)
+      sql_vals     =  self.sql.get_sql_vals(self.models[table].update_sql_vals, request)
     except UnsupportedTableException:
       logger.exception('request to unsupported table')
 
@@ -68,7 +70,7 @@ class Controller():
     # get delete query
     table_name =  self.models[table].table_name
     table_id   =  self.models[table].table_id
-    query      =  self.db.get_delete_query(table_name, table_id)
+    query      =  self.sql.get_delete_query(table_name, table_id)
 
     # delete
     db_results =  self.db.execute_sql(self.db.process_delete_results, query, { '_id': _id })

@@ -1,4 +1,4 @@
-from gunpla_api.db_connector import DbConnector
+from gunpla_api.gunpla_sql import GunplaSql
 from gunpla_api.logger       import Logger
 from gunpla_api.utils        import Utils
 from gunpla_api.validation   import Validation
@@ -7,7 +7,7 @@ logger = Logger().get_logger()
 
 
 class ProductLine():
-  db         =  DbConnector()
+  sql        =  GunplaSql()
   utils      =  Utils()
   validation =  Validation()
 
@@ -37,7 +37,7 @@ class ProductLine():
 
 
   def get_update_query(self, request):
-    update_fields = self.db.get_sql_vals(['display_name', 'short_name'], request)
-    return self.db.get_update_query(self.table_name, update_fields, self.table_id)
+    update_fields = self.sql.get_sql_vals(['display_name', 'short_name'], request)
+    return self.sql.get_update_query(self.table_name, update_fields, self.table_id)
 
 
