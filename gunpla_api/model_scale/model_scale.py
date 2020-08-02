@@ -14,6 +14,10 @@ class ModelScale():
   table_name =  'scales'
   table_id   =  'scale_id'
 
+  insert_sql_vals =  ['scale_value']
+  update_sql_vals =  ['scale_value', table_id]
+
+
   # methods
   get_json_field = validation.get_json_field
 
@@ -24,15 +28,8 @@ class ModelScale():
   def get_insert_query(self):
     return (
       f"INSERT INTO {self.table_name} (scale_value, created_date, updated_date, user_update_id)"
-      "VALUES (%(scale)s, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, %(user_id)s);"
+      f"VALUES (%(scale_value)s, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, {self.db.user_id};"
     )
-
-
-  def get_sql_vals(self, scale):
-    return {
-      'scale'   :  scale,
-      'user_id' :  self.db.user_id,
-    }
 
 
   def select(self):
@@ -43,31 +40,6 @@ class ModelScale():
 
     return results
 
-
-  def insert(self, request):
-    model_scale =  self.get_json_field('model_scale', request.json)
-
-    res = self.db.execute_sql(
-      self.db.process_insert_results,
-      self.get_insert_query(),
-      self.get_sql_vals(model_scale), )
-
-    logger.debug('completed insert', extra=res)
-    return
-
-
-  def update(self, request):
-    scale_id      =  self.get_json_field('id', request.json)
-    update_fields =  {
-      'scale_value' :  self.get_json_field('scale_value',request.json),
-    }
-    db_results =  self.db.execute_sql(
-      self.db.process_update_results,
-      self.db.get_update_query(self.table_name, update_fields, self.table_id),
-      self.utils.append_fields_to_json(update_fields, scale_id=scale_id),
-    )
-
-    logger.debug('completed update', extra=db_results)
-    return
-
-
+  def get_update_query(self, request):
+    update_fields = self.db.get_sql_vals(['scale_value'], request)
+    return self.db.get_update_query(self.table_name, update_fields, self.table_id)

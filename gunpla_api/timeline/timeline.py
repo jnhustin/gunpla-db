@@ -13,8 +13,12 @@ class Timeline():
   table_name =  'timelines'
   table_id   =  'timeline_id'
 
+  insert_sql_vals =  ['display_name']
+  update_sql_vals =  ['display_name', table_id]
+
   # methods
   get_json_field = validation.get_json_field
+
 
 
   def get_insert_query(self):
@@ -25,47 +29,17 @@ class Timeline():
     return f"SELECT timeline_id as id, access_name, display_name FROM {self.table_name};"
 
 
-  def get_sql_vals(self, display_name, access_name):
-    vals            =  locals()
-    vals['user_id'] =  self.db.user_id
-    return vals
-
-
   def select(self):
     db_results =  self.db.execute_sql(
       self.db.process_select_results,
       self.get_select_all_query())
-    results =  self.utils.db_data_to_json(db_results)
+    res =  self.utils.db_data_to_json(db_results)
 
-    return results
-
-
-  def insert(self, request):
-    display_name =  self.get_json_field('display_name', request.json)
-    access_name  =  self.utils.convert_to_snake_case(display_name)
-
-    res = self.db.execute_sql(
-      self.db.process_insert_results,
-      self.get_insert_query(),
-      self.get_sql_vals(access_name, display_name), )
-
-    logger.debug('completed insert', extra=res)
-    return
+    logger.debug('completed select', extra=res)
+    return res
 
 
-  def update(self, request):
-    timeline_id   =  self.get_json_field('id', request.json)
-    display_name  =  self.get_json_field('display_name', request.json)
-    update_fields =  {
-      'display_name' :  display_name,
-      'access_name'  :  self.utils.convert_to_snake_case(display_name),
-    }
+  def get_update_query(self, request):
+    update_fields = self.db.get_sql_vals(['display_name'], request)
+    return self.db.get_update_query(self.table_name, update_fields, self.table_id)
 
-    db_results =  self.db.execute_sql(
-      self.db.process_update_results,
-      self.db.get_update_query(self.table_name, update_fields, self.table_id),
-      self.utils.append_fields_to_json(update_fields, timeline_id=timeline_id),
-    )
-
-    logger.debug('completed update', extra=db_results)
-    return

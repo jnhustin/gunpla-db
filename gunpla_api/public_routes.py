@@ -43,7 +43,7 @@ def lifecheck():
 
 @public.route('/<table>',  methods=['GET'])
 @public.route('/<table>/', methods=['GET'])
-def db_get_route(table):
+def get_route(table):
 
   logger.info(f'request received - insert to table: {table}')
   try:

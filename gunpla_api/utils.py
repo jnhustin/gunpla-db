@@ -33,17 +33,13 @@ class Utils():
           'universal_century',
           'display_name' :  'universal century'
         },
-        ]
+      ]
     """
 
     columns =  db_results['col_names']
     rows    =  db_results['results']
 
-    results = []
-    for row in rows:
-      row_data = { columns[i]: val for i, val in enumerate(row) }
-      results.append(row_data)
-
+    results = [ { columns[i]: val for i, val in enumerate(row) } for row in rows ]
     return results
 
 

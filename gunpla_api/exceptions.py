@@ -9,3 +9,6 @@ class DatabaseException(Exception):
 class DatabaseUniqueException(Exception):
   pass
 
+class UnsupportedTableException(Exception):
+  pass
+

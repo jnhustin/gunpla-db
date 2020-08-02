@@ -14,6 +14,9 @@ class ProductLine():
   table_name =  'product_lines'
   table_id   =  'product_line_id'
 
+  insert_sql_vals =  ['display_name', 'short_name']
+  update_sql_vals =  ['display_name', 'short_name', table_id]
+
   # methods
   get_json_field = validation.get_json_field
 
@@ -29,13 +32,7 @@ class ProductLine():
     return f"SELECT product_line_id as id, access_name, display_name, short_name FROM {self.table_name};"
 
 
-  def get_sql_vals(self, display_name, access_name, short_name):
-    vals            =  locals()
-    vals['user_id'] =  self.db.user_id
-    return vals
-
-
-  def select(self):
+  def select(self, request):
     db_results =  self.db.execute_sql(
       self.db.process_select_results,
       self.get_select_all_query())
@@ -43,35 +40,8 @@ class ProductLine():
     return results
 
 
-  def insert(self, request):
-    display_name =  self.get_json_field('display_name', request.json)
-    access_name  =  self.utils.convert_to_snake_case(display_name)
-    short_name   =  self.get_json_field('short_name', request.json)
+  def get_update_query(self, request):
+    update_fields = self.db.get_sql_vals(['display_name', 'short_name'], request)
+    return self.db.get_update_query(self.table_name, update_fields, self.table_id)
 
-    res = self.db.execute_sql(
-      self.db.process_insert_results,
-      self.get_insert_query(),
-      self.get_sql_vals(access_name, display_name, short_name),
-    )
-
-    logger.debug('completed insert', extra=res)
-    return
-
-
-  def update(self, request):
-    product_line_id =  self.get_json_field('id', request.json)
-    display_name    =  self.get_json_field('display_name', request.json, optional=True)
-    update_fields   =  {
-      'short_name'   :  self.get_json_field('short_name', request.json, optional=True),
-      'display_name' : display_name,
-      'access_name'  :  self.utils.convert_to_snake_case(display_name) if display_name else None,
-    }
-
-    db_results =  self.db.execute_sql(
-      self.db.process_update_results,
-      self.db.get_update_query(self.table_name, update_fields, self.table_id),
-      self.utils.append_fields_to_json(update_fields, product_line_id=product_line_id),
-    )
-    logger.debug('completed update', extra=db_results)
-    return
 
