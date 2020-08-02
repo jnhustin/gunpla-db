@@ -21,9 +21,6 @@ class ModelScale():
   # methods
   get_json_field = validation.get_json_field
 
-  def get_select_all_query(self):
-    return f"SELECT scale_id as id, scale_value as scale FROM {self.table_name};"
-
 
   def get_insert_query(self):
     return (
@@ -32,13 +29,13 @@ class ModelScale():
     )
 
 
-  def select(self):
-    db_results =  self.db.execute_sql(
-      self.db.process_select_results,
-      self.get_select_all_query())
-    results =  self.utils.db_data_to_json(db_results)
+  def get_select_all_query(self):
+    return f"SELECT scale_id as id, scale_value as scale FROM {self.table_name};"
 
-    return results
+
+  def get_select_query(self):
+    pass
+
 
   def get_update_query(self, request):
     update_fields = self.db.get_sql_vals(['scale_value'], request)

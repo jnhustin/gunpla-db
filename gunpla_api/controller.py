@@ -1,5 +1,6 @@
 from gunpla_api.db_connector  import DbConnector
 from gunpla_api.logger        import Logger
+from gunpla_api.utils         import Utils
 from gunpla_api.exceptions    import UnsupportedTableException
 
 from gunpla_api.timeline.timeline           import Timeline
@@ -11,7 +12,8 @@ from gunpla_api.series.series               import Series
 logger = Logger().get_logger()
 
 class Controller():
-  db         =  DbConnector()
+  db    =  DbConnector()
+  utils =  Utils()
 
   models =  {
     'timeline'     :  Timeline(),
@@ -23,7 +25,17 @@ class Controller():
 
 
   def direct_select_request(self, table, request):
-    return self.models[table].select(request)
+    try:
+      query_params =  request.args
+      query        =  self.models[table].get_select_query(query_params) if query_params else self.models[table].get_select_all_query()
+    except UnsupportedTableException:
+      logger.exception('request to unsupported table')
+
+    db_results =  self.db.execute_sql(self.db.process_select_results, query)
+    res        =  self.utils.db_data_to_json(db_results)
+
+    logger.debug('completed select', extra={'res': res})
+    return res
 
 
   def direct_insert_request(self, table, request):

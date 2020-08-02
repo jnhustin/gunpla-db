@@ -30,14 +30,8 @@ class Series():
     return f"SELECT series_id as id, access_name, display_name FROM {self.table_name};"
 
 
-  def select(self):
-    db_results =  self.db.execute_sql(
-      self.db.process_select_results,
-      self.get_select_all_query())
-    res =  self.utils.db_data_to_json(db_results)
-
-    logger.debug('completed select', extra=res)
-    return res
+  def get_select_query(self):
+    pass
 
 
   def get_update_query(self, request):
