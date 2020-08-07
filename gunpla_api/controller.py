@@ -9,6 +9,7 @@ from gunpla_api.model_scale.model_scale     import ModelScale
 from gunpla_api.product_line.product_line   import ProductLine
 from gunpla_api.manufacturer.manufacturer   import Manufacturer
 from gunpla_api.series.series               import Series
+from gunpla_api.model.model                 import Model
 
 logger = Logger().get_logger()
 
@@ -23,6 +24,7 @@ class Controller():
     'product_line' :  ProductLine(),
     'manufacturer' :  Manufacturer(),
     'series'       :  Series(),
+    'model'        :  Model(),
   }
 
 
@@ -36,7 +38,8 @@ class Controller():
     db_results =  self.db.execute_sql(self.db.process_select_results, query)
     res        =  self.utils.db_data_to_json(db_results)
 
-    logger.debug('completed select', extra={'res': res})
+    logger.debug('completed select', extra={'res_len': len(res)})
+
     return res
 
 

@@ -1,4 +1,4 @@
-
+import datetime
 
 
 class Utils():
@@ -39,7 +39,17 @@ class Utils():
     columns =  db_results['col_names']
     rows    =  db_results['results']
 
-    results = [ { columns[i]: val for i, val in enumerate(row) } for row in rows ]
+    results = []
+    # build 1 row at a time
+    for row in rows:
+
+      # for each row, convert cols to key and their corresponding val to dict[key] val
+      json_row = {}
+      for i, val in enumerate(row):
+        is_datetime_obj = type(val) == datetime.date
+        json_row[columns[i]] = self.get_date_str(val) if is_datetime_obj else val
+      results.append(json_row)
+
     return results
 
 
@@ -47,3 +57,7 @@ class Utils():
     for k,v in kwargs.items():
       json_data[k] = v
     return json_data
+
+
+  def get_date_str(self, date, format='%Y-%m-%d'):
+    return date.strftime(format)
