@@ -8,24 +8,18 @@ class Validation():
 
 
   def get_json_field(self, field, json, optional=False):
-    if optional:
-      return json.get(field)
     try:
-      return json[field]
+      return json.get(field) if optional else json[field]
     except:
       logger.exception('[get_json_field] error')
       raise BadRequestException(f'missing field: {field}')
 
 
   def get_query_param(self, field, params, optional=False):
-    # allow for multi params gets
-    field_vals: list = params.getlist(field)
-
-    if not optional and len(field_vals) == 0:
-      logger.exception('[get_query_param] error')
-      raise BadRequestException('missing required field')
-
-    return field_vals
+    try:
+      return params.get(field) if optional else params[field]
+    except:
+      raise BadRequestException(f'missing required field: "{field}"')
 
 
 

@@ -28,10 +28,9 @@ class Controller():
   }
 
 
+
   def direct_select_request(self, table, request):
     try:
-      # TODO - this default vals var is ugly
-      vals         =  None
       query_params =  request.args
 
       if query_params:
@@ -39,7 +38,8 @@ class Controller():
         query         =  self.models[table].get_select_query(search_params, query_params)
         vals          =  search_params
       else:
-        query = self.models[table].get_select_all_query()
+        query =  self.models[table].get_select_all_query()
+        vals  =  None
 
       db_results =  self.db.execute_sql(self.db.process_select_results, query, vals)
       res        =  self.utils.db_data_to_json(db_results)

@@ -12,12 +12,15 @@ class Model():
   utils      =  Utils()
   validation =  Validation()
 
-  table_name =  'models'
-  table_id   =  'model_id'
+  table_name   =  'models'
+  table_id     =  'model_id'
+  select_limit =  50
 
   # methods
   get_json_field  =  validation.get_json_field
   get_query_param =  validation.get_query_param
+
+
 
   def get_select_all_query(self):
     return f"""
@@ -46,8 +49,8 @@ class Model():
 
   def get_select_query(self, search_params, query_params):
     where_clause =  self.build_where_statement(search_params)
-    offset       =  self.get_query_param('page_number', query_params, optional=True) or 0    # TODO AFFECTED BY THIS GET_QUERY_PARAM
-    sort_order   =  'ASC' if self.get_query_param('sort_order', query_params, optional=True) ==  'ASC' else 'DESC'   # TODO AFFECTED BY THIS GET_QUERY_PARAM
+    offset       =  self.sql.get_pagination(query_params, self.select_limit)
+    sort_order   =  'DESC' if self.get_query_param('sort_order', query_params, optional=True) ==  'DESC' else 'ASC'
     sort_by      =  self.get_sort_col(query_params)
 
     return (
@@ -76,7 +79,7 @@ class Model():
       "GROUP BY mod.model_id, t.display_name, se.display_name, p.display_name, sc.scale_value, man.display_name "
       f"ORDER BY {sort_by} {sort_order} "
 
-      "LIMIT 100 "
+      f"LIMIT {self.select_limit} "
       f"OFFSET {offset} "
       ";"
     )
@@ -84,12 +87,12 @@ class Model():
 
   def get_search_params(self, query_params):
     filter_params =  {
-      'model_name'   :  self.get_query_param('model_name', query_params, optional=True),   # TODO AFFECTED BY THIS GET_QUERY_PARAM
-      'timeline'     :  self.get_query_param('timeline', query_params, optional=True),   # TODO AFFECTED BY THIS GET_QUERY_PARAM
-      'series'       :  self.get_query_param('series', query_params, optional=True),   # TODO AFFECTED BY THIS GET_QUERY_PARAM
-      'product_line' :  self.get_query_param('product_line', query_params, optional=True),   # TODO AFFECTED BY THIS GET_QUERY_PARAM
-      'manufacturer' :  self.get_query_param('manufacturer', query_params, optional=True),   # TODO AFFECTED BY THIS GET_QUERY_PARAM
-      'scale'        :  self.get_query_param('scale', query_params, optional=True),   # TODO AFFECTED BY THIS GET_QUERY_PARAM
+      'model_name'   :  self.get_query_param('model_name', query_params, optional=True),
+      'timeline'     :  self.get_query_param('timeline', query_params, optional=True),
+      'series'       :  self.get_query_param('series', query_params, optional=True),
+      'product_line' :  self.get_query_param('product_line', query_params, optional=True),
+      'manufacturer' :  self.get_query_param('manufacturer', query_params, optional=True),
+      'scale'        :  self.get_query_param('scale', query_params, optional=True),
     }
     sent_params      =  self.utils.remove_empty_json_keys(filter_params)
     formatted_params =  self.format_search_params(sent_params)
@@ -98,10 +101,12 @@ class Model():
 
   def format_search_params(self, sent_params: dict):
     # loops query_param dict and converts val lists into psycopg string-formatted vals
-    formatted        =  {}
     is_pattern_match =  ['model_name']
+
+    formatted =  {}
     for k, v in sent_params.items():
-      formatted[k] = f"({ '|'.join(v) })" if k in is_pattern_match else tuple(v)
+      split_vals   =  [ element.strip() for element in v.split(',') ]
+      formatted[k] =  f"({ '|'.join(split_vals) })" if k in is_pattern_match else tuple(split_vals)
 
     return formatted
 
@@ -119,10 +124,9 @@ class Model():
         'manufacturer' :  'man.manufacturer_id IN %(manufacturer)s',
         'scale'        :  'sc.scale_id IN %(scale)s',
       }
-      where_clause =  ' AND '.join([accepted_params[k] for k in accepted_params.keys() if k in search_params])
 
       sql  =  'WHERE '
-      sql +=  where_clause
+      sql +=  ' AND '.join([accepted_params[k] for k in accepted_params.keys() if k in search_params])
       sql +=  ' '
 
       return sql
@@ -141,9 +145,9 @@ class Model():
       'manufacturer' :  'man.display_name',
       'scale'        :  'sc.display_name',
     }
-    sort_by = self.get_query_param('sort_by', query_params, optional=True) # TODO AFFECTED BY THIS GET_QUERY_PARAM
-    return sort_options['model_id'] if len(sort_by) == 0 else sort_options[sort_by[0]] # TODO AFFECTED BY THIS GET_QUERY_PARAM
+    sort_by = self.get_query_param('sort_by', query_params, optional=True)
 
+    return sort_options['model_id'] if sort_by is None else sort_options[sort_by]
 
 
   def get_insert_query(self):

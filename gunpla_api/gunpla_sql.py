@@ -14,7 +14,8 @@ class GunplaSql():
 
 
   # methods
-  get_json_field = validation.get_json_field
+  get_json_field  =  validation.get_json_field
+  get_query_param =  validation.get_query_param
 
 
   def get_standard_insert_query(self, table):
@@ -49,3 +50,13 @@ class GunplaSql():
       sql_vals['access_name'] = self.utils.convert_to_snake_case(sql_vals['display_name'])
 
     return sql_vals
+
+
+  def get_pagination(self, query_params, limit):
+    # page will start at 1
+    sent_offset = self.get_query_param('page_number', query_params, optional=True)
+    if sent_offset is None:
+      return 0
+
+    return (int(sent_offset) - 1) * limit
+
