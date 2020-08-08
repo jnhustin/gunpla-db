@@ -17,7 +17,9 @@ class Validation():
       raise BadRequestException(f'missing field: {field}')
 
 
-  def get_query_param(self, field, params):
+  def get_query_param(self, field, params, optional=False):
+    if optional:
+      return params.get(field)
     try:
       return params[field]
     except:

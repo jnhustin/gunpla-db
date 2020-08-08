@@ -29,13 +29,17 @@ class Controller():
 
 
   def direct_select_request(self, table, request):
+    vals = None
     try:
       query_params =  request.args
-      query        =  self.models[table].get_select_query(query_params) if query_params else self.models[table].get_select_all_query()
+      if query_params:
+        query, vals = self.models[table].get_select_query(query_params)
+      else:
+        query = self.models[table].get_select_all_query()
     except UnsupportedTableException:
       logger.exception('request to unsupported table')
 
-    db_results =  self.db.execute_sql(self.db.process_select_results, query)
+    db_results =  self.db.execute_sql(self.db.process_select_results, query, vals)
     res        =  self.utils.db_data_to_json(db_results)
 
     logger.debug('completed select', extra={'res_len': len(res)})
