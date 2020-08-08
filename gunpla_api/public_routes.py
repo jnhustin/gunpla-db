@@ -54,6 +54,8 @@ def get_route(table):
       'length'  :  len(results),
       'results' :  results,
     }))
+  except BadRequestException as e:
+    response = Response(status=400, response=json.dumps({'message': f'error, {e}'}))
   except Exception:
     logger.exception('unknown error occured')
     response = Response(status=400, response=json.dumps({'message': 'error'}))

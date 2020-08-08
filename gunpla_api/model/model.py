@@ -3,6 +3,7 @@ from gunpla_api.gunpla_sql   import GunplaSql
 from gunpla_api.logger       import Logger
 from gunpla_api.utils        import Utils
 from gunpla_api.validation   import Validation
+from gunpla_api.exceptions   import BadRequestException
 
 logger = Logger().get_logger()
 
@@ -42,50 +43,58 @@ class Model():
     ;
     """
 
-  def get_select_query(self, args):
-    # meant for filters
-    display_name =  self.get_query_param('display_name', args, optional=True)
-    timeline     =  self.get_query_param('timeline', args, optional=True)
-    series       =  self.get_query_param('series', args, optional=True)
-    product_line =  self.get_query_param('product_line', args, optional=True)
-    manufacturer =  self.get_query_param('manufacturer', args, optional=True)
-    scale        =  self.get_query_param('scale', args, optional=True)
-    offset       =  self.get_query_param('page_number', args, optional=True)
 
-    return ("""
-      SELECT
-        mod.model_id,
-        mod.access_name,
-        mod.display_name,
-        mod.japanese_name,
-        mod.info,
-        mod.info_source,
-        mod.release_date,
-        t.display_name,
-        se.display_name,
-        p.display_name,
-        man.display_name,
-        sc.scale_value
-      FROM models mod
-      LEFT JOIN timelines     t   ON mod.timeline_id       = t.timeline_id
-      LEFT JOIN series        se  ON mod.series_id         = se.series_id
-      LEFT JOIN product_lines p   ON mod.product_line_id   = p.product_line_id
-      LEFT JOIN manufacturers man ON mod.manufacturer_id   = man.manufacturer_id
-      LEFT JOIN scales        sc  ON mod.timeline_id       = sc.scale_id
+  def get_search_params(self, args):
+    params =  {
+      'display_name' :  self.get_query_param('display_name', args, optional=True),
+      'timeline'     :  self.get_query_param('timeline', args, optional=True),
+      'series'       :  self.get_query_param('series', args, optional=True),
+      'product_line' :  self.get_query_param('product_line', args, optional=True),
+      'manufacturer' :  self.get_query_param('manufacturer', args, optional=True),
+      'scale'        :  self.get_query_param('scale', args, optional=True),
+    }
+    sent_params = { k: f'%{v}%' for k,v in params.items() if v != None }
+    return sent_params
 
-      -- WHERE CLAUSE
-      WHERE mod.display_name ILIKE %(display_name)s
-      AND t.display_name ILIKE %(timeline)s
 
-      GROUP BY mod.model_id, t.display_name, se.display_name, p.display_name, sc.scale_value, man.display_name
 
-      --ORDER BY mod.<COLUMN> <ASC/DESC>
+  def get_select_query(self, search_params, query_params):
+    where_clause =  self.build_where_statement(search_params)
+    offset       =  self.get_query_param('page_number', query_params, optional=True) or 0
+    sort_by      =  'ASC' if self.get_query_param('sort_by', query_params, optional=True) == 'ASC' else 'DESC'
+    column       =  self.get_query_param('column', query_params, optional=True) or 'model_id'
 
-      LIMIT 100
-      OFFSET 0
+    return (
+      "SELECT "
+      "mod.model_id, "
+      "mod.access_name, "
+      "mod.display_name, "
+      "mod.japanese_name, "
+      "mod.info, "
+      "mod.info_source, "
+      "mod.release_date, "
+      "t.display_name, "
+      "se.display_name, "
+      "p.display_name, "
+      "man.display_name, "
+      "sc.scale_value "
+      "FROM models mod "
+      "LEFT JOIN timelines     t   ON mod.timeline_id       = t.timeline_id "
+      "LEFT JOIN series        se  ON mod.series_id         = se.series_id "
+      "LEFT JOIN product_lines p   ON mod.product_line_id   = p.product_line_id "
+      "LEFT JOIN manufacturers man ON mod.manufacturer_id   = man.manufacturer_id "
+      "LEFT JOIN scales        sc  ON mod.timeline_id       = sc.scale_id "
 
-      ;
-    """, {'display_name': f'%{display_name}%', 'timeline': f'%{timeline}%'})
+      f"{where_clause}"
+
+      "GROUP BY mod.model_id, t.display_name, se.display_name, p.display_name, sc.scale_value, man.display_name "
+      f"ORDER BY mod.{column} {sort_by} " # this is bad practice to have the column reading directly from the ui
+
+      "LIMIT 100 "
+      f"OFFSET {offset} "
+      ";"
+    )
+
 
 
   def get_insert_query(self):
@@ -149,3 +158,28 @@ class Model():
       self.db.process_insert_results,
       self.get_insert_query(),
     )
+
+
+  def build_where_statement(self, search_params: dict):
+    try:
+      accepted_params = {
+        'display_name' :  'mod.display_name ILIKE %(display_name)s',
+        'timeline'     :  't.display_name ILIKE %(timeline)s',
+        'series'       :  'se.display_name ILIKE %(series)s',
+        'product_line' :  'p.display_name ILIKE %(product_line)s',
+        'manufacturer' :  'man.display_name ILIKE %(manufacturer)s',
+        'scale'        :  'sc.scale_value ILIKE %(scale)s',
+      }
+
+      # remove None values
+      requested_params =  { k:v for k,v in search_params.items() if v != None }
+      where_clause     =  ' AND '.join([accepted_params[k] for k in requested_params.keys()])
+
+      sql  =  'WHERE '
+      sql +=  where_clause
+      sql +=  ' '
+
+      return sql
+    except KeyError as e:
+      print(f'{e} not an accepted field')
+      raise BadRequestException(f'{e} not an accepted field')

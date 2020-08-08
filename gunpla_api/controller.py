@@ -32,10 +32,14 @@ class Controller():
     vals = None
     try:
       query_params =  request.args
+
       if query_params:
-        query, vals = self.models[table].get_select_query(query_params)
+        search_params =  self.models[table].get_search_params(query_params)
+        query         =  self.models[table].get_select_query(search_params, query_params)
+        vals          =  search_params
       else:
         query = self.models[table].get_select_all_query()
+
     except UnsupportedTableException:
       logger.exception('request to unsupported table')
 
