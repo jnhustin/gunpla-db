@@ -63,17 +63,18 @@ CREATE TABLE series (
 
 CREATE TABLE models (
   model_id          serial PRIMARY KEY,
-  model_name        varchar (100) UNIQUE NOT NULL,
+  access_name       varchar (100) UNIQUE NOT NULL,
+  display_name      varchar (100) UNIQUE NOT NULL,
   japanese_name     varchar (100) UNIQUE NOT NULL,
-  SKU               varchar (100) UNIQUE NOT NULL,
+  sku               varchar (100) UNIQUE NOT NULL,
   info              varchar (3000),
   info_source       varchar (200),
-  release_date      date,
-  timeline_id       int REFERENCES timelines (timeline_id),
-  series_id         int REFERENCES series (series_id),
-  product_line_id   int REFERENCES product_lines (product_line_id),
-  manufacturer_id          int REFERENCES manufacturers (manufacturer_id),
-  scale_id          int REFERENCES scales (scale_id),
+  release_date      date NOT NULL,
+  timeline_id       int REFERENCES timelines (timeline_id) NOT NULL,
+  series_id         int REFERENCES series (series_id) NOT NULL,
+  product_line_id   int REFERENCES product_lines (product_line_id) NOT NULL,
+  manufacturer_id   int REFERENCES manufacturers (manufacturer_id) NOT NULL,
+  scale_id          int REFERENCES scales (scale_id) NOT NULL,
   updated_date      date,
   created_date      date,
   user_update_id    int REFERENCES users (user_id)
@@ -122,9 +123,10 @@ VALUES
 ;
 
 INSERT INTO models (
-  model_name,
+  access_name,
+  display_name,
   japanese_name,
-  SKU,
+  sku,
   info,
   info_source,
   release_date,
@@ -139,9 +141,157 @@ INSERT INTO models (
 )
 VALUES
   (
+    'gundam_sandrock_ver_ew',
     'Gundam Sandrock Ver EW',
     'ガンダムサンドロック',
     '4543112715364', -- SKU
+    'Copyright Sotsu Agency / Sunrize\n- From the manga series Mobile Suit Gundam Wing: Endless Waltz: The Glory of Losers comes the Desert Combat ace Suit- the Sandrock!\n- Uses the XXXG frame utilized by the Gundam Wing!\n- Design based on new designs from mechanical designer Hajime Katoki, with redesigned decals also created by Katoki.\n- Recreate the Cross Crusher with combining gimmick, using the Shield with the Heat Shotel.\n- Cockpit hatch opens to reveal detailed cockpit.\n- Rear verniers included in high detail, and Beam Machine Gun can be mounted at the rear skirt.\n- Heat Shotel combine into a huge double-bladed weapon.\n- Beam Machine Gun features folding stock and grip.',
+    'https://www.1999.co.jp/eng/10156350',
+    '2011-10-01', -- release_date
+    1, -- after_colony
+    1, -- gundam_wing
+    3, -- master_grade
+    1, -- bandai
+    2, -- 1/100
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP,
+    1
+  )
+;
+
+INSERT INTO models (
+  access_name,
+  display_name,
+  japanese_name,
+  sku,
+  info,
+  info_source,
+  release_date,
+  timeline_id,
+  series_id,
+  product_line_id,
+  manufacturer_id,
+  scale_id,
+  updated_date,
+  created_date,
+  user_update_id
+)
+VALUES
+  (
+    'gundam_deathscythe_hell_ver_ew',
+    'Gundam Deathscythe Hell Ver EW',
+    'ガンダムサンドック',
+    '4543112764', -- SKU
+    'Copyright Sotsu Agency / Sunrize\n- From the manga series Mobile Suit Gundam Wing: Endless Waltz: The Glory of Losers comes the Desert Combat ace Suit- the Sandrock!\n- Uses the XXXG frame utilized by the Gundam Wing!\n- Design based on new designs from mechanical designer Hajime Katoki, with redesigned decals also created by Katoki.\n- Recreate the Cross Crusher with combining gimmick, using the Shield with the Heat Shotel.\n- Cockpit hatch opens to reveal detailed cockpit.\n- Rear verniers included in high detail, and Beam Machine Gun can be mounted at the rear skirt.\n- Heat Shotel combine into a huge double-bladed weapon.\n- Beam Machine Gun features folding stock and grip.',
+    'https://www.1999.co.jp/eng/10156350',
+    '2011-10-01', -- release_date
+    1, -- after_colony
+    1, -- gundam_wing
+    3, -- master_grade
+    1, -- bandai
+    2, -- 1/100
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP,
+    1
+  )
+;
+
+INSERT INTO models (
+  access_name,
+  display_name,
+  japanese_name,
+  sku,
+  info,
+  info_source,
+  release_date,
+  timeline_id,
+  series_id,
+  product_line_id,
+  manufacturer_id,
+  scale_id,
+  updated_date,
+  created_date,
+  user_update_id
+)
+VALUES
+  (
+    'gundam_deathscythe',
+    'Gundam Deathscythe',
+    'ガンダムサック',
+    '45431164', -- SKU
+    'Copyright Sotsu Agency / Sunrize\n- From the manga series Mobile Suit Gundam Wing: Endless Waltz: The Glory of Losers comes the Desert Combat ace Suit- the Sandrock!\n- Uses the XXXG frame utilized by the Gundam Wing!\n- Design based on new designs from mechanical designer Hajime Katoki, with redesigned decals also created by Katoki.\n- Recreate the Cross Crusher with combining gimmick, using the Shield with the Heat Shotel.\n- Cockpit hatch opens to reveal detailed cockpit.\n- Rear verniers included in high detail, and Beam Machine Gun can be mounted at the rear skirt.\n- Heat Shotel combine into a huge double-bladed weapon.\n- Beam Machine Gun features folding stock and grip.',
+    'https://www.1999.co.jp/eng/10156350',
+    '2011-10-01', -- release_date
+    1, -- after_colony
+    1, -- gundam_wing
+    3, -- master_grade
+    1, -- bandai
+    2, -- 1/100
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP,
+    1
+  )
+;
+
+INSERT INTO models (
+  access_name,
+  display_name,
+  japanese_name,
+  sku,
+  info,
+  info_source,
+  release_date,
+  timeline_id,
+  series_id,
+  product_line_id,
+  manufacturer_id,
+  scale_id,
+  updated_date,
+  created_date,
+  user_update_id
+)
+VALUES
+  (
+    'gundam_wing_zero_ver_ew',
+    'Gundam Wing Zero Ver EW',
+    'ガンサンドロック',
+    '45431115364', -- SKU
+    'Copyright Sotsu Agency / Sunrize\n- From the manga series Mobile Suit Gundam Wing: Endless Waltz: The Glory of Losers comes the Desert Combat ace Suit- the Sandrock!\n- Uses the XXXG frame utilized by the Gundam Wing!\n- Design based on new designs from mechanical designer Hajime Katoki, with redesigned decals also created by Katoki.\n- Recreate the Cross Crusher with combining gimmick, using the Shield with the Heat Shotel.\n- Cockpit hatch opens to reveal detailed cockpit.\n- Rear verniers included in high detail, and Beam Machine Gun can be mounted at the rear skirt.\n- Heat Shotel combine into a huge double-bladed weapon.\n- Beam Machine Gun features folding stock and grip.',
+    'https://www.1999.co.jp/eng/10156350',
+    '2011-10-01', -- release_date
+    1, -- after_colony
+    1, -- gundam_wing
+    3, -- master_grade
+    1, -- bandai
+    2, -- 1/100
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP,
+    1
+  )
+;
+INSERT INTO models (
+  access_name,
+  display_name,
+  japanese_name,
+  sku,
+  info,
+  info_source,
+  release_date,
+  timeline_id,
+  series_id,
+  product_line_id,
+  manufacturer_id,
+  scale_id,
+  updated_date,
+  created_date,
+  user_update_id
+)
+VALUES
+  (
+    'gundam_wing_zero',
+    'Gundam Wing Zero',
+    'ダムサンドロック',
+    '43112715364', -- SKU
     'Copyright Sotsu Agency / Sunrize\n- From the manga series Mobile Suit Gundam Wing: Endless Waltz: The Glory of Losers comes the Desert Combat ace Suit- the Sandrock!\n- Uses the XXXG frame utilized by the Gundam Wing!\n- Design based on new designs from mechanical designer Hajime Katoki, with redesigned decals also created by Katoki.\n- Recreate the Cross Crusher with combining gimmick, using the Shield with the Heat Shotel.\n- Cockpit hatch opens to reveal detailed cockpit.\n- Rear verniers included in high detail, and Beam Machine Gun can be mounted at the rear skirt.\n- Heat Shotel combine into a huge double-bladed weapon.\n- Beam Machine Gun features folding stock and grip.',
     'https://www.1999.co.jp/eng/10156350',
     '2011-10-01', -- release_date
