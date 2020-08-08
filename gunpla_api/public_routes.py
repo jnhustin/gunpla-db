@@ -49,7 +49,7 @@ def get_route(table):
   try:
 
     results  =  CONTROLLER.direct_select_request(table, request)
-    response =  Response(status=200, response=json.dumps({
+    response =  Response(status=200, headers={'content-type':'application/json'}, response=json.dumps({
       'message' :  'success',
       'length'  :  len(results),
       'results' :  results,

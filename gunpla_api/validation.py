@@ -18,12 +18,14 @@ class Validation():
 
 
   def get_query_param(self, field, params, optional=False):
-    if optional:
-      return params.get(field)
-    try:
-      return params[field]
-    except:
+    # allow for multi params gets
+    field_vals: list = params.getlist(field)
+
+    if not optional and len(field_vals) == 0:
       logger.exception('[get_query_param] error')
-      raise BadRequestException
+      raise BadRequestException('missing required field')
+
+    return field_vals
+
 
 

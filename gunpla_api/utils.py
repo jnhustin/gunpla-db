@@ -61,3 +61,15 @@ class Utils():
 
   def get_date_str(self, date, format='%Y-%m-%d'):
     return date.strftime(format)
+
+
+  def remove_empty_json_keys(self, json_data):
+    adjusted_json = {}
+    for k, v in json_data.items():
+      if type(v) == list and len(v) == 0:
+        continue
+      elif v == None:
+        continue
+
+      adjusted_json[k] = v
+    return adjusted_json
