@@ -4,12 +4,12 @@ from gunpla_api.utils         import Utils
 from gunpla_api.gunpla_sql    import GunplaSql
 from gunpla_api.exceptions    import UnsupportedTableException
 
-from gunpla_api.timeline.timeline           import Timeline
-from gunpla_api.model_scale.model_scale     import ModelScale
-from gunpla_api.product_line.product_line   import ProductLine
-from gunpla_api.manufacturer.manufacturer   import Manufacturer
-from gunpla_api.series.series               import Series
-from gunpla_api.model.model                 import Model
+from gunpla_api.resources.timeline       import Timeline
+from gunpla_api.resources.model_scale    import ModelScale
+from gunpla_api.resources.product_line   import ProductLine
+from gunpla_api.resources.manufacturer   import Manufacturer
+from gunpla_api.resources.series         import Series
+from gunpla_api.resources.model          import Model
 
 logger = Logger().get_logger()
 
