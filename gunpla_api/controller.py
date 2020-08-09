@@ -4,12 +4,12 @@ from gunpla_api.utils         import Utils
 from gunpla_api.gunpla_sql    import GunplaSql
 from gunpla_api.exceptions    import UnsupportedTableException
 
-from gunpla_api.timeline.timeline           import Timeline
-from gunpla_api.model_scale.model_scale     import ModelScale
-from gunpla_api.product_line.product_line   import ProductLine
-from gunpla_api.manufacturer.manufacturer   import Manufacturer
-from gunpla_api.series.series               import Series
-from gunpla_api.model.model                 import Model
+from gunpla_api.resources.timeline       import Timeline
+from gunpla_api.resources.model_scale    import ModelScale
+from gunpla_api.resources.product_line   import ProductLine
+from gunpla_api.resources.manufacturer   import Manufacturer
+from gunpla_api.resources.series         import Series
+from gunpla_api.resources.model          import Model
 
 logger = Logger().get_logger()
 
@@ -18,7 +18,7 @@ class Controller():
   utils =  Utils()
   sql   =  GunplaSql()
 
-  models =  {
+  resources =  {
     'timeline'     :  Timeline(),
     'model_scale'  :  ModelScale(),
     'product_line' :  ProductLine(),
@@ -31,17 +31,14 @@ class Controller():
 
   def direct_select_request(self, table, request):
     try:
+      table        =  table.lower()
+      resource     =  self.resources[table]
       query_params =  request.args
 
-      if query_params:
-        search_params =  self.models[table].get_search_params(query_params)
-        query         =  self.models[table].get_select_query(search_params, query_params)
-        vals          =  search_params
-      else:
-        query =  self.models[table].get_select_all_query()
-        vals  =  None
+      search_params =  resource.get_search_params(query_params)
+      query         =  resource.get_select_query(search_params, query_params)
 
-      db_results =  self.db.execute_sql(self.db.process_select_results, query, vals)
+      db_results =  self.db.execute_sql(self.db.process_select_results, query, search_params)
       res        =  self.utils.db_data_to_json(db_results)
     except UnsupportedTableException:
       logger.exception('request to unsupported table')
@@ -53,8 +50,9 @@ class Controller():
   def direct_insert_request(self, table, request):
     try:
       table        =  table.lower()
-      insert_query =  self.models[table].get_insert_query()
-      sql_vals     =  self.sql.get_sql_vals(self.models[table].insert_sql_vals, request)
+      resource     =  self.resources[table]
+      insert_query =  resource.get_insert_query()
+      sql_vals     =  self.sql.get_sql_vals(resource.required_insert_sql_vals, resource.optional_insert_sql_vals, request,)
     except UnsupportedTableException:
       logger.exception('request to unsupported table')
 
@@ -65,10 +63,13 @@ class Controller():
 
   def direct_update_request(self, table, request):
     try:
-      table        =  table.lower()
-      update_query =  self.models[table].get_update_query(request)
-      sql_vals     =  self.sql.get_sql_vals(self.models[table].update_sql_vals, request)
-    except UnsupportedTableException:
+      table         =  table.lower()
+      resource      =  self.resources[table]
+
+      update_fields =  self.sql.get_update_fields(resource.required_update_fields, resource.optional_update_fields, request)
+      update_query  =  self.sql.get_update_query(resource.table_id, resource.table_name, update_fields)
+      sql_vals      =  self.sql.get_sql_vals(resource.required_update_sql_vals, resource.optional_update_sql_vals, request)
+    except UnsupportedTableException :
       logger.exception('request to unsupported table')
 
     db_results =  self.db.execute_sql(self.db.process_update_results, update_query, sql_vals)
@@ -77,9 +78,12 @@ class Controller():
 
 
   def process_delete_request(self, table, _id):
+    table    =  table.lower()
+    resource =  self.resources[table]
+
     # get delete query
-    table_name =  self.models[table].table_name
-    table_id   =  self.models[table].table_id
+    table_name =  resource.table_name
+    table_id   =  resource.table_id
     query      =  self.sql.get_delete_query(table_name, table_id)
 
     # delete
