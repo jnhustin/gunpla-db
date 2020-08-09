@@ -1,4 +1,4 @@
-# from gunpla_api.gunpla_sql   import GunplaSql
+from gunpla_api.gunpla_sql   import GunplaSql
 # from gunpla_api.logger       import Logger
 # from gunpla_api.utils        import Utils
 # from gunpla_api.validation   import Validation
@@ -7,7 +7,7 @@
 
 
 class ModelScale():
-  # sql        =  GunplaSql()
+  sql        =  GunplaSql()
   # utils      =  Utils()
   # validation =  Validation()
 
@@ -17,7 +17,7 @@ class ModelScale():
   required_insert_sql_vals =  ['scale_value']
   optional_insert_sql_vals =  []
 
-  required_update_sql_vals =  ['scale_value', table_id]
+  required_update_sql_vals =  ['scale_value', '_id']
   optional_update_sql_vals =  []
 
   required_update_fields =  ['scale_value']

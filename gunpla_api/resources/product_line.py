@@ -1,4 +1,4 @@
-# from gunpla_api.gunpla_sql import GunplaSql
+from gunpla_api.gunpla_sql   import GunplaSql
 # from gunpla_api.logger       import Logger
 # from gunpla_api.utils        import Utils
 # from gunpla_api.validation   import Validation
@@ -7,7 +7,7 @@
 
 
 class ProductLine():
-  # sql        =  GunplaSql()
+  sql        =  GunplaSql()
   # utils      =  Utils()
   # validation =  Validation()
 
@@ -17,7 +17,7 @@ class ProductLine():
   required_insert_sql_vals =  ['display_name', 'short_name']
   optional_insert_sql_vals =  []
 
-  required_update_sql_vals =  [ table_id ]
+  required_update_sql_vals =  [ '_id' ]
   optional_update_sql_vals =  ['display_name', 'short_name']
 
   required_update_fields =  []

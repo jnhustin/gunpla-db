@@ -1,4 +1,4 @@
-# from gunpla_api.gunpla_sql   import GunplaSql
+from gunpla_api.gunpla_sql   import GunplaSql
 # from gunpla_api.logger       import Logger
 # from gunpla_api.utils        import Utils
 # from gunpla_api.validation   import Validation
@@ -8,7 +8,7 @@
 
 
 class Series():
-  # sql        =  GunplaSql()
+  sql        =  GunplaSql()
   # utils      =  Utils()
   # validation =  Validation()
 
@@ -18,7 +18,7 @@ class Series():
   required_insert_sql_vals =  ['display_name']
   optional_insert_sql_vals =  []
 
-  required_update_sql_vals =  ['display_name', table_id]
+  required_update_sql_vals =  ['display_name', '_id']
   optional_update_sql_vals =  []
 
   required_update_fields =  ['display_name']

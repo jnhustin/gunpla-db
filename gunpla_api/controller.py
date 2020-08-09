@@ -18,7 +18,7 @@ class Controller():
   utils =  Utils()
   sql   =  GunplaSql()
 
-  resource =  {
+  resources =  {
     'timeline'     :  Timeline(),
     'model_scale'  :  ModelScale(),
     'product_line' :  ProductLine(),
@@ -31,14 +31,16 @@ class Controller():
 
   def direct_select_request(self, table, request):
     try:
+      table        =  table.lower()
+      resource     =  self.resources[table]
       query_params =  request.args
 
       if query_params:
-        search_params =  self.resource[table].get_search_params(query_params)
-        query         =  self.resource[table].get_select_query(search_params, query_params)
+        search_params =  resource.get_search_params(query_params)
+        query         =  resource.get_select_query(search_params, query_params)
         vals          =  search_params
       else:
-        query =  self.resource[table].get_select_all_query()
+        query =  resource.get_select_all_query()
         vals  =  None
 
       db_results =  self.db.execute_sql(self.db.process_select_results, query, vals)
@@ -53,12 +55,9 @@ class Controller():
   def direct_insert_request(self, table, request):
     try:
       table        =  table.lower()
-      insert_query =  self.resource[table].get_insert_query()
-      sql_vals     =  self.sql.get_sql_vals(
-        self.resource[table].required_insert_sql_vals,
-        self.resource[table].optional_insert_sql_vals,
-        request,
-      )
+      resource     =  self.resources[table]
+      insert_query =  resource.get_insert_query()
+      sql_vals     =  self.sql.get_sql_vals(resource.required_insert_sql_vals, resource.optional_insert_sql_vals, request,)
     except UnsupportedTableException:
       logger.exception('request to unsupported table')
 
@@ -70,7 +69,7 @@ class Controller():
   def direct_update_request(self, table, request):
     try:
       table         =  table.lower()
-      resource      =  self.resource[table]
+      resource      =  self.resources[table]
 
       update_fields =  self.sql.get_update_fields(resource.required_update_fields, resource.optional_update_fields, request)
       update_query  =  self.sql.get_update_query(resource.table_id, resource.table_name, update_fields)
@@ -84,9 +83,12 @@ class Controller():
 
 
   def process_delete_request(self, table, _id):
+    table    =  table.lower()
+    resource =  self.resources[table]
+
     # get delete query
-    table_name =  self.resource[table].table_name
-    table_id   =  self.resource[table].table_id
+    table_name =  resource.table_name
+    table_id   =  resource.table_id
     query      =  self.sql.get_delete_query(table_name, table_id)
 
     # delete
