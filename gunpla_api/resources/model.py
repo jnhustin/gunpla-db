@@ -27,17 +27,8 @@ class Model():
   }
 
 
-  required_insert_sql_vals =  [
-    'display_name',
-    'japanese_name',
-    'sku',
-    'timeline_id',
-    'series_id',
-    'product_line_id',
-    'manufacturer_id',
-    'scale_id',
-  ]
-  optional_insert_sql_vals =  [ 'info', 'info_source', 'release_date', ]
+  required_insert_sql_vals =  [ 'display_name', 'timeline_id', 'series_id', 'product_line_id', 'manufacturer_id', 'scale_id', ]
+  optional_insert_sql_vals =  [ 'japanese_name', 'sku', 'info', 'info_source', 'release_date', ]
 
   # methods
   get_json_field  =  validation.get_json_field
@@ -176,7 +167,7 @@ class Model():
         "%(scale_id)s, "
         "CURRENT_TIMESTAMP, "
         "CURRENT_TIMESTAMP, "
-        "{self.sql.user_id}"
+        f"{self.sql.user_id}"
       ") "
       "; "
     )
