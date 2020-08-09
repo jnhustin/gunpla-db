@@ -35,15 +35,10 @@ class Controller():
       resource     =  self.resources[table]
       query_params =  request.args
 
-      if query_params:
-        search_params =  resource.get_search_params(query_params)
-        query         =  resource.get_select_query(search_params, query_params)
-        vals          =  search_params
-      else:
-        query =  resource.get_select_all_query()
-        vals  =  None
+      search_params =  resource.get_search_params(query_params)
+      query         =  resource.get_select_query(search_params, query_params)
 
-      db_results =  self.db.execute_sql(self.db.process_select_results, query, vals)
+      db_results =  self.db.execute_sql(self.db.process_select_results, query, search_params)
       res        =  self.utils.db_data_to_json(db_results)
     except UnsupportedTableException:
       logger.exception('request to unsupported table')

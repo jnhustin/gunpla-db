@@ -55,34 +55,6 @@ class Model():
 
 
 
-  def get_select_all_query(self):
-    # TODO - maybe just get rid of this
-    return (
-      "SELECT "
-        "mod.model_id, "
-        "mod.access_name, "
-        "mod.display_name, "
-        "mod.japanese_name, "
-        "mod.info, "
-        "mod.info_source, "
-        "mod.release_date, "
-        "t.display_name, "
-        "se.display_name, "
-        "p.display_name, "
-        "man.display_name, "
-        "sc.scale_value "
-      "FROM models mod "
-      "LEFT JOIN timelines     t   ON mod.timeline_id       = t.timeline_id "
-      "LEFT JOIN series        se  ON mod.series_id         = se.series_id "
-      "LEFT JOIN product_lines p   ON mod.product_line_id   = p.product_line_id "
-      "LEFT JOIN manufacturers man ON mod.manufacturer_id   = man.manufacturer_id "
-      "LEFT JOIN scales        sc  ON mod.timeline_id       = sc.scale_id "
-
-      "GROUP BY mod.model_id, t.display_name, se.display_name, p.display_name, sc.scale_value, man.display_name "
-      "ORDER BY mod.model_id ASC "
-    ";"
-  )
-
 
   def get_select_query(self, search_params, query_params):
     where_clause =  self.sql.build_where_query(self.accepted_select_params, search_params)
@@ -189,4 +161,6 @@ class Model():
       ") "
       "; "
     )
+
+
 

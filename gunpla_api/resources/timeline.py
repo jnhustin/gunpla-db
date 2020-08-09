@@ -31,10 +31,9 @@ class Timeline():
     return self.sql.get_standard_insert_query(self.table_name)
 
 
-  def get_select_all_query(self):
+  def get_select_query(self, search_params, query_params):
     return f"SELECT timeline_id as id, access_name, display_name FROM {self.table_name};"
 
 
-  def get_select_query(self, query_params):
-    pass
-
+  def get_search_params(self, query_params):
+    return {}

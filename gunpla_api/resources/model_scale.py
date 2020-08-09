@@ -35,10 +35,9 @@ class ModelScale():
     )
 
 
-  def get_select_all_query(self):
+  def get_select_query(self, search_params, query_params):
     return f"SELECT scale_id as id, scale_value as scale FROM {self.table_name};"
 
 
-  def get_select_query(self):
-    pass
-
+  def get_search_params(self, query_params):
+    return {}
