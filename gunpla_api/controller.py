@@ -18,7 +18,7 @@ class Controller():
   utils =  Utils()
   sql   =  GunplaSql()
 
-  models =  {
+  resource =  {
     'timeline'     :  Timeline(),
     'model_scale'  :  ModelScale(),
     'product_line' :  ProductLine(),
@@ -34,11 +34,11 @@ class Controller():
       query_params =  request.args
 
       if query_params:
-        search_params =  self.models[table].get_search_params(query_params)
-        query         =  self.models[table].get_select_query(search_params, query_params)
+        search_params =  self.resource[table].get_search_params(query_params)
+        query         =  self.resource[table].get_select_query(search_params, query_params)
         vals          =  search_params
       else:
-        query =  self.models[table].get_select_all_query()
+        query =  self.resource[table].get_select_all_query()
         vals  =  None
 
       db_results =  self.db.execute_sql(self.db.process_select_results, query, vals)
@@ -53,8 +53,12 @@ class Controller():
   def direct_insert_request(self, table, request):
     try:
       table        =  table.lower()
-      insert_query =  self.models[table].get_insert_query()
-      sql_vals     =  self.sql.get_sql_vals(self.models[table].insert_sql_vals, request)
+      insert_query =  self.resource[table].get_insert_query()
+      sql_vals     =  self.sql.get_sql_vals(
+        self.resource[table].required_insert_sql_vals,
+        self.resource[table].optional_insert_sql_vals,
+        request,
+      )
     except UnsupportedTableException:
       logger.exception('request to unsupported table')
 
@@ -65,10 +69,13 @@ class Controller():
 
   def direct_update_request(self, table, request):
     try:
-      table        =  table.lower()
-      update_query =  self.models[table].get_update_query(request)
-      sql_vals     =  self.sql.get_sql_vals(self.models[table].update_sql_vals, request)
-    except UnsupportedTableException:
+      table         =  table.lower()
+      resource      =  self.resource[table]
+
+      update_fields =  self.sql.get_update_fields(resource.required_update_fields, resource.optional_update_fields, request)
+      update_query  =  self.sql.get_update_query(resource.table_id, resource.table_name, update_fields)
+      sql_vals      =  self.sql.get_sql_vals(resource.required_update_sql_vals, resource.optional_update_sql_vals, request)
+    except UnsupportedTableException :
       logger.exception('request to unsupported table')
 
     db_results =  self.db.execute_sql(self.db.process_update_results, update_query, sql_vals)
@@ -78,8 +85,8 @@ class Controller():
 
   def process_delete_request(self, table, _id):
     # get delete query
-    table_name =  self.models[table].table_name
-    table_id   =  self.models[table].table_id
+    table_name =  self.resource[table].table_name
+    table_id   =  self.resource[table].table_id
     query      =  self.sql.get_delete_query(table_name, table_id)
 
     # delete
