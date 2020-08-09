@@ -16,6 +16,17 @@ class Model():
   table_id     =  'model_id'
   select_limit =  50
 
+  vals_for_sql_regex = ['model_name']
+  accepted_select_params = {
+    'model_name'   :  'mod.display_name ~* %(model_name)s',
+    'timeline'     :  't.timeline_id IN %(timeline)s',
+    'series'       :  'se.series_id IN %(series)s',
+    'product_line' :  'p.product_line_id IN %(product_line)s',
+    'manufacturer' :  'man.manufacturer_id IN %(manufacturer)s',
+    'scale'        :  'sc.scale_id IN %(scale)s',
+  }
+
+
   required_insert_sql_vals =  [
     'display_name',
     'japanese_name',
@@ -65,7 +76,7 @@ class Model():
 
 
   def get_select_query(self, search_params, query_params):
-    where_clause =  self.build_where_statement(search_params)
+    where_clause =  self.sql.build_where_query(self.accepted_select_params, search_params)
     offset       =  self.sql.get_pagination(query_params, self.select_limit)
     sort_order   =  'DESC' if self.get_query_param('sort_order', query_params, optional=True) == 'DESC' else 'ASC'
     sort_by      =  self.get_sort_col(query_params)
@@ -112,44 +123,8 @@ class Model():
       'scale'        :  self.get_query_param('scale', query_params, optional=True),
     }
     sent_params      =  self.utils.remove_empty_json_keys(filter_params)
-    formatted_params =  self.format_search_params(sent_params)
+    formatted_params =  self.sql.format_select_search_params(self.vals_for_sql_regex, sent_params)
     return formatted_params
-
-
-  def format_search_params(self, sent_params: dict):
-    # loops query_param dict and converts val lists into psycopg string-formatted vals
-    is_pattern_match =  ['model_name']
-
-    formatted =  {}
-    for k, v in sent_params.items():
-      split_vals   =  [ element.strip() for element in v.split(',') ]
-      formatted[k] =  f"({ '|'.join(split_vals) })" if k in is_pattern_match else tuple(split_vals)
-
-    return formatted
-
-
-  def build_where_statement(self, search_params: dict):
-    try:
-      if len(search_params) == 0:
-        return ''
-
-      accepted_params = {
-        'model_name'   :  'mod.display_name ~* %(model_name)s',
-        'timeline'     :  't.timeline_id IN %(timeline)s',
-        'series'       :  'se.series_id IN %(series)s',
-        'product_line' :  'p.product_line_id IN %(product_line)s',
-        'manufacturer' :  'man.manufacturer_id IN %(manufacturer)s',
-        'scale'        :  'sc.scale_id IN %(scale)s',
-      }
-
-      sql  =  'WHERE '
-      sql +=  ' AND '.join([accepted_params[k] for k in accepted_params.keys() if k in search_params])
-      sql +=  ' '
-
-      return sql
-    except KeyError as e:
-      logger.exception('user attempted unsupported field', extra={'search_params': search_params})
-      raise BadRequestException(f'{e} not an accepted field')
 
 
   def get_sort_col(self, query_params):
