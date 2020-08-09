@@ -21,7 +21,7 @@ class ModelScale():
   optional_update_sql_vals =  []
 
   required_update_fields =  ['scale_value']
-  optional_update_fields =  []
+  optional_update_fields =  optional_update_sql_vals
 
 
   # # methods

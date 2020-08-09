@@ -30,6 +30,25 @@ class Model():
   required_insert_sql_vals =  [ 'display_name', 'timeline_id', 'series_id', 'product_line_id', 'manufacturer_id', 'scale_id', ]
   optional_insert_sql_vals =  [ 'japanese_name', 'sku', 'info', 'info_source', 'release_date', ]
 
+  required_update_sql_vals =  [ '_id' ]
+  optional_update_sql_vals =  [
+    'display_name',
+    'timeline_id',
+    'series_id',
+    'product_line_id',
+    'manufacturer_id',
+    'scale_id',
+    'japanese_name',
+    'sku',
+    'info',
+    'info_source',
+    'release_date',
+  ]
+
+  required_update_fields =  []
+  optional_update_fields =  optional_update_sql_vals
+
+
   # methods
   get_json_field  =  validation.get_json_field
   get_query_param =  validation.get_query_param
@@ -63,7 +82,6 @@ class Model():
       "ORDER BY mod.model_id ASC "
     ";"
   )
-
 
 
   def get_select_query(self, search_params, query_params):

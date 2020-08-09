@@ -20,7 +20,7 @@ class Timeline():
   optional_update_sql_vals =  []
 
   required_update_fields =  ['display_name']
-  optional_update_fields =  []
+  optional_update_fields =  optional_update_sql_vals
 
   # # methods
   # get_json_field = validation.get_json_field

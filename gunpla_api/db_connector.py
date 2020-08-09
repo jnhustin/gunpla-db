@@ -1,6 +1,5 @@
 """ POSTGRESQL DB class """
 import psycopg2
-from dotenv  import load_dotenv
 from os.path import join, dirname
 
 from gunpla_api.config      import Config
