@@ -19,6 +19,7 @@ class Validation():
     try:
       return params.get(field) if optional else params[field]
     except:
+      logger.exception('[get_query_param] error')
       raise BadRequestException(f'missing required field: "{field}"')
 
 
