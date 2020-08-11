@@ -133,3 +133,7 @@ dmypy.json
 .env*
 
 backups/*
+
+scraper/html/
+
+.DS_Store
