@@ -6,16 +6,18 @@ from bs4 import BeautifulSoup, element
 
 
 PAGE_LINKS = {
-  'mg' :  'https://www.gundamplanet.com/gundam/master-grade.html?product_list_limit=108',
-  'hg' :  'https://www.gundamplanet.com/gundam/high-grade.html?product_list_limit=108',
-  'pg' :  'https://www.gundamplanet.com/gundam/perfect-grade.html',
-  'rg' :  'https://www.gundamplanet.com/gundam/real-grade.html',
   'og' :  'https://www.gundamplanet.com/gundam/other-grade.html?product_list_limit=108',
+  'mg' :  'https://www.gundamplanet.com/gundam/master-grade.html?product_list_limit=108',
+  'pg' :  'https://www.gundamplanet.com/gundam/perfect-grade.html',
+  'hg' :  'https://www.gundamplanet.com/gundam/high-grade.html?product_list_limit=108',
+  'rg' :  'https://www.gundamplanet.com/gundam/real-grade.html',
   'sd' :  'https://www.gundamplanet.com/gundam/sd-gundam.html?product_list_limit=108',
 }
 
 SITE_HTML_FOLDER =  'html/gundam_planet'
 OUTPUT_FILE      =  'output/gundam_planet.json'
+
+
 def main():
   """
     download the html
@@ -28,13 +30,12 @@ def main():
       append data to product_listing key
   """
 
-  location = 'base_pages'
-  download_html_pages(PAGE_LINKS, location)
+  storage_dir = 'base_pages'
+  download_html_pages(PAGE_LINKS, storage_dir)
 
-  dirs = os.listdir(f'{SITE_HTML_FOLDER}/base_pages')
+  dirs = os.listdir(f'{SITE_HTML_FOLDER}/{storage_dir}')
   for page in dirs:
-    get_details_page_from_product_line(page, location)
-
+    get_details_page_from_product_line(storage_dir, page)
 
   for product_line in PAGE_LINKS.keys():
     dirs = os.listdir(f'{SITE_HTML_FOLDER}/{product_line}')
@@ -44,21 +45,29 @@ def main():
 
   return
 
+
 def download_html_pages(links, location):
   # downloads the main html page where the contents will be stored
-  # TODO - check if page already exists or not!
   for product_line, link in links.items():
+    file_location = f'{SITE_HTML_FOLDER}/{location}/{product_line}.html'
+    if os.path.exists(file_location):
+      continue
+
     html = requests.get(link).text
-    with open(f'{SITE_HTML_FOLDER}/{location}/{product_line}.html', 'w') as f:
+    with open(f'{file_location}', 'w') as f:
       f.write(html)
   return
 
-def get_details_page_from_product_line(html, location):
-  product_line = html.split('.')[0]
-  # TODO - check if page already exists or not!
 
+def get_details_page_from_product_line(directory, html):
+  product_line  =  html.split('.')[0]
+  if os.path.exists(f'{SITE_HTML_FOLDER}/{product_line}'):
+    return
+  else:
+    os.mkdir(f'{SITE_HTML_FOLDER}/{product_line}')
 
-  with open(f'{SITE_HTML_FOLDER}/{location}/{html}', 'r') as f:
+  file_location =  f'{SITE_HTML_FOLDER}/{directory}/{html}'
+  with open(f'{file_location}', 'r') as f:
     page = f.read()
     f.close()
 
@@ -70,8 +79,9 @@ def get_details_page_from_product_line(html, location):
   for tag in a_tag:
     href       =  tag['href']
     image_link =  tag.find('img', class_='photo image')['src']
-    print(f'working on page: {href}')
+    print(f'working on page: {href.split("https://www.gundamplanet.com/")[1]}')
 
+    # TODO - check if the page already exists
     page       =  requests.get(href).text
     model_name =  href.split('https://www.gundamplanet.com/')[1]
 
@@ -95,7 +105,7 @@ def get_details_page_from_product_line(html, location):
 
 
 def process_details_page(product_line, page):
-  with open(f'html/gundam_planet/{product_line}/{page}', 'r') as html:
+  with open(f'{SITE_HTML_FOLDER}/{product_line}/{page}', 'r') as html:
     soup =  BeautifulSoup(html, 'html.parser')
 
   # find data
@@ -113,6 +123,9 @@ def process_details_page(product_line, page):
   # write data
   with open(OUTPUT_FILE, 'r+') as f:
     file_data = json.load(f)
+    if file_data.get(product_line) == None:
+      file_data[product_line] = {}
+
     file_data[product_line][page] = {**file_data[product_line][page], **json_data}
     f.seek(0)
     f.write(json.dumps(file_data, indent=2))
@@ -120,8 +133,13 @@ def process_details_page(product_line, page):
   return
 
 def get_misc_info(soup):
-  section =  soup.find('div', class_='product attibute description').find('div', class_='value').contents
-  return [str(row) for row in section if type(row) == element.Tag]
+  try:
+    section =  soup.find('div', class_='product attibute description').find('div', class_='value').contents
+    return [str(row) for row in section if type(row) == element.Tag]
+  except:
+    title = soup.find('title')
+    print(f'{title} failed misc info extract')
+    return []
 
 
 def get_product_images(soup):
@@ -138,9 +156,7 @@ def get_product_images(soup):
 
 def get_product_specifications(soup):
   # results = ['Brand', 'BANDAI', 'Grade/Scale', 'RG', 'Series', 'Neon Genesis Evangelion', 'Condition', 'This product needs to be assembled.']
-
-  # product_spec =  soup.find('div', {"class":"prod_spec_wrap"})
-  product_spec =  soup.find('div', class_='prod_spec_wrap')
+  product_spec = soup.find('div', class_='prod_spec_wrap')
 
   vals =  []
   for p in product_spec:
@@ -153,11 +169,17 @@ def get_product_specifications(soup):
 
 
 
+def cleanup():
+  with open(OUTPUT_FILE, 'r') as f:
+    json_data = json.load(f)
 
+  for val in json_data.keys():
+    print('val: ',val)
 
 if __name__ == '__main__':
   start_time = time.time()
-  main()
+  # main()
+  cleanup()
   seconds  =  time.time() - start_time
   print('Time Taken:', time.strftime("%H:%M:%S",time.gmtime(seconds)))
 
