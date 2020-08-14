@@ -173,8 +173,70 @@ def cleanup():
   with open(OUTPUT_FILE, 'r') as f:
     json_data = json.load(f)
 
-  for val in json_data.keys():
-    print('val: ',val)
+  for product_line in json_data.keys():
+
+    for model in json_data[product_line]:
+      print('about to process: ', model)
+      # json_data[product_line][model]['product_spec'] =  process_product_spec(json_data[product_line][model])
+      json_data[product_line][model]['misc_info']    =  process_misc_info(json_data[product_line][model])
+
+  with open(OUTPUT_FILE, 'w') as f:
+    f.write(json.dumps(json_data, indent=2))
+    f.close()
+
+
+def process_misc_info(model):
+  res = []
+  if model.get('misc_info') == None:
+    return res
+
+  for line in model['misc_info']:
+    # remove ul tags
+    if '<ul>' in line:
+      info = []
+      description_field = model['misc_info'][i]
+      description_field.pop(0)
+      description_field.pop()
+
+      # remove li tags
+      for tag in description_field:
+        tag_start = len('<li>')
+        tag_end = len('</li>')
+        result = tag[tag_start : -tag_end]
+        info.append(result)
+      res.append(info)
+
+    elif len(line) == 0 or '<h3>BASIC TOOLS</h3>' in line or '<h3>GP REVIEW</h3>' in line or '<br/>' in line or line[0].startswith('<iframe'):
+      continue
+    else:
+      res.append(line)
+  return res
+
+
+def process_product_spec(model):
+  spec_json = {}
+  if model.get('product_spec') == None:
+    return spec_json
+
+  for i, item in enumerate(model['product_spec']):
+    item = item.lower()
+    if item == 'brand':
+      spec_json[item] = model['product_spec'][i + 1].lower()
+    elif item == 'gundam series':
+      spec_json['timeline'] = model['product_spec'][i + 1].lower()
+    elif item == 'grade/scale':
+      spec_json['product_line'] = model['product_spec'][i + 1].lower()
+    elif item == 'series':
+      spec_json['series'] = model['product_spec'][i + 1].lower()
+    elif item == 'character video':
+      spec_json['model_video'] = None
+    elif item == 'edition':
+      spec_json['edition'] = model['product_spec'][i + 1].lower()
+    else:
+      continue
+  return spec_json
+
+
 
 if __name__ == '__main__':
   start_time = time.time()
