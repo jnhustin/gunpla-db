@@ -1,12 +1,8 @@
 import os
 import time
-import json
-import requests
 from bs4 import BeautifulSoup, element
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 
-
+from helper import Helper
 
 SITE_HTML_FOLDER = 'html/usa_gundam'
 BASE_PAGE_LINKS = {
@@ -20,16 +16,18 @@ BASE_PAGE_LINKS = {
 }
 
 
+HELPER = Helper()
 
 def main():
+
   for product_line, page_link in BASE_PAGE_LINKS.items():
     # download base pages
-    download_base_page(product_line, page_link)
+    download_dir =  f'{SITE_HTML_FOLDER}/base_pages'
+    HELPER.download_dynamic_html(page_link, download_dir, alt_filename=product_line)
 
     # get all kits in each base page
     get_model_details_page(product_line)
 
-  # pass
 
 
 
@@ -44,37 +42,46 @@ def get_model_details_page(product_line):
   a_tags        =  paginator_div.findAll('a')
 
   num_of_pages = get_num_of_pages(a_tags)
-  print(f'\n{product_line} has {num_of_pages} of pages')
+  print(f'\n{product_line} has {num_of_pages} of pages.')
 
-  # create the folder f'{SITE_HTML_FOLDER}/{product_line} if it doesn't exist
-
-  # get this page's content
+  # get initial page's content
+  print(f'downloading page : {product_line}.html')
   json_data = extract_table_contents(soup)
 
   # get any subsequent page contents
-  num_of_pages > 0:
+  if num_of_pages > 0:
     # iterate range up to num_of_ages
-    # visit page:   https://www.usagundamstore.com/pages/search-results-page?collection=model-kits&page={page_number}
-    # download the html to f'{SITE_HTML_FOLDER}/base_pages/{product_line}
-    # source soup the page from downloaded file
-    # send to extract_table_contents
-    # add sleep 1 second
-    pass
-    #
-    json_data.update(extract_table_contents(soup))
+    for page_num in range(2, num_of_pages + 1):
+      page_link         =  f'https://www.usagundamstore.com/pages/search-results-page?collection=model-kits&page={page_num}'
+      filename          =  f'{product_line}-{page_num}'
+      download_dir      =  f'{SITE_HTML_FOLDER}/base_pages'
+      download_location =  f'{download_dir}/{filename}'
 
-  json_data = json.dumps(json_data, indent=2)
-  print(json_data)
-  pass
+      # download page
+      HELPER.download_dynamic_html(page_link, download_dir, alt_filename=filename)
+      with open(f'{download_location}.html', 'r') as f:
+        html = f.read()
+        f.close()
+
+      soup =  BeautifulSoup(html, 'html.parser')
+
+      # extract page content
+      models_info = extract_table_contents(soup)
+      json_data.update(models_info)
+
+
+
+  output_file = 'output/usa_gundam.json'
+  HELPER.update_json_file_content(json_data, product_line, output_file)
+  print(f'finished extracting base pages, {output_file} updated')
+  return
 
 
 def extract_table_contents(soup):
-
   # loops through a tables worth of content and extracts model info of all models in the table
   # returns a dict of the models on the page
 
   product_info =  {}
-
   a_tags =  soup.findAll('a', class_ = 'snize-view-link')
   for tag in a_tags:
     page_link =  tag['href']
@@ -90,48 +97,16 @@ def extract_table_contents(soup):
   return product_info
 
 
-def download_base_page(product_line, page_link):
-  download_location = f'{SITE_HTML_FOLDER}/base_pages/{product_line}.html'
-  if os.path.exists(download_location):
-    print('page link already downloaded, skipping: ', page_link)
-    return
-
-  print('downloading base_page:', page_link)
-  try:
-    driver = webdriver.Firefox()
-    driver.implicitly_wait(10)
-    driver.get(page_link)
-    page_html = driver.page_source
-  finally:
-    driver.quit()
-
-  # page_html = requests.get(page_link).text
-  with open(download_location, 'w') as f:
-    f.write(page_html)
-
-  return
-
-
-
 
 def get_num_of_pages(a_tags):
   num = 0
   for tag in a_tags:
     if len(tag.contents):
-      int_val = safe_cast(tag.contents[0], int)
+      int_val = HELPER.safe_cast(tag.contents[0], int)
       if isinstance(int_val, int):
         num = int_val if num < int_val else num
   return num
 
 
-def safe_cast(val, to_type):
-  try:
-    return to_type(val)
-  except:
-    return val
-
-
-
-
 if __name__ == '__main__':
-  main()
+  HELPER.time_fn_execution(main)
