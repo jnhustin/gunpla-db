@@ -6,13 +6,13 @@ from helper import Helper
 
 SITE_HTML_FOLDER = 'html/usa_gundam'
 BASE_PAGE_LINKS = {
-  # 'rg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=rg-kits',
-  # 'p-bandai' :  'https://www.usagundamstore.com/pages/search-results-page?collection=p-bandai',
-  # 'pg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=pg-gundam-kits',
+  'rg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=rg-kits',
+  'p-bandai' :  'https://www.usagundamstore.com/pages/search-results-page?collection=p-bandai',
+  'pg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=pg-gundam-kits',
   'mg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=model-kits',
-  # 'sd'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=gundam-bb-sd',
-  # 'hguc'     :  'https://www.usagundamstore.com/pages/search-results-page?collection=hguc-gundam-kits',
-  # 're'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=re-100-reborn-model-kits',
+  'sd'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=gundam-bb-sd',
+  'hguc'     :  'https://www.usagundamstore.com/pages/search-results-page?collection=hguc-gundam-kits',
+  're'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=re-100-reborn-model-kits',
 }
 
 
@@ -32,6 +32,8 @@ def main():
 
 
 def get_model_details_page(product_line):
+  print('\n ================')
+  print('processing page: ', product_line)
   # open the page
   with open(f'{SITE_HTML_FOLDER}/base_pages/{product_line}.html') as f:
     page_html = f.read()
@@ -85,7 +87,7 @@ def extract_table_contents(soup):
   a_tags =  soup.findAll('a', class_ = 'snize-view-link')
   for tag in a_tags:
     page_link =  tag['href']
-    model     =  page_link.split('https://www.usagundamstore.com/collections/model-kits/products/')[1]
+    model     =  page_link.split('https://www.usagundamstore.com/collections/')[1]
     image     =  tag.find('img', class_ = 'snize-item-image')['src']
 
     product_info[model] = {

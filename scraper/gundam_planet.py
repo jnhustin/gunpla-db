@@ -167,8 +167,6 @@ def get_product_specifications(soup):
   return vals
 
 
-
-
 def cleanup():
   with open(OUTPUT_FILE, 'r') as f:
     json_data = json.load(f)
@@ -238,10 +236,12 @@ def process_product_spec(model):
 
 
 
-if __name__ == '__main__':
-  start_time = time.time()
-  # main()
-  cleanup()
-  seconds  =  time.time() - start_time
-  print('Time Taken:', time.strftime("%H:%M:%S",time.gmtime(seconds)))
 
+
+if __name__ == '__main__':
+  pass
+  # start_time = time.time()
+  # main()
+  # cleanup()
+  # seconds  =  time.time() - start_time
+  # print('Time Taken:', time.strftime("%H:%M:%S",time.gmtime(seconds)))
