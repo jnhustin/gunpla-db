@@ -25,22 +25,22 @@ class Helper():
     return
 
 
-  def download_dynamic_html(self, page_link, download_dir, alt_filename=None):
+  def download_dynamic_html(self, page_url, download_dir, alt_filename=None):
     # create dirs if needed
     self.compose_download_dir(download_dir)
 
     # check if file already exists (already downloaded)
-    download_location = f'{download_dir}/{alt_filename if alt_filename else page_link}.html'
+    download_location = f'{download_dir}/{alt_filename if alt_filename else page_url}.html'
 
     if os.path.exists(download_location):
-      print('page already downloaded, skipping: ', page_link)
+      print('page already downloaded, skipping: ', page_url)
       return
 
-    print('downloading page:', page_link)
+    print('downloading page:', page_url)
     try:
       driver = webdriver.Firefox()
       driver.implicitly_wait(20)
-      driver.get(page_link)
+      driver.get(page_url)
       page_html = driver.page_source
     finally:
       driver.quit()

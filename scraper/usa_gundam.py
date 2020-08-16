@@ -1,5 +1,9 @@
 import os
 import time
+import json
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
 from bs4 import BeautifulSoup, element
 
 from helper import Helper
@@ -20,13 +24,89 @@ HELPER = Helper()
 
 def main():
 
-  for product_line, page_link in BASE_PAGE_LINKS.items():
-    # download base pages
-    download_dir =  f'{SITE_HTML_FOLDER}/base_pages'
-    HELPER.download_dynamic_html(page_link, download_dir, alt_filename=product_line)
+  # for product_line, page_link in BASE_PAGE_LINKS.items():
+  #   # download base pages
+  #   download_dir =  f'{SITE_HTML_FOLDER}/base_pages'
+  #   HELPER.download_dynamic_html(page_link, download_dir, alt_filename=product_line)
 
-    # get all kits in each base page
-    get_model_details_page(product_line)
+  #   # get all kits in each base page
+  #   get_model_details_page(product_line)
+
+  with open('output/usa_gundam.json', 'r') as f:
+    json_data = json.load(f)
+    f.close()
+  # open json
+  # loop through top level keys (product_line)
+    # for each kit in the product_line:
+  for product_line in json_data:
+    print('product_line:' , product_line)
+    for model_kit, file_model_info in json_data[product_line].items():
+      print('model_kit:' , model_kit)
+      if file_model_info.get('is_visited'):
+        print('skipping, already extracted')
+        continue
+      # TODO - figure out a way to mark if a kit detailed page has already been visited
+        # key on the model_kit dict that marks that it has been visited
+      try:
+        page_url =  file_model_info['href']
+        driver   =  webdriver.Firefox()
+        driver.implicitly_wait(20)
+        driver.get(page_url)
+        page_html =  driver.page_source
+        soup      =  BeautifulSoup(page_html, 'html.parser')
+
+        html_model_info =  {}
+        # title = soup.find('h1', class_='product-single__title').contents
+        html_model_info['title'] = soup.find('h1', class_='product-single__title').contents
+        # sku = soup.find('p', class_='product-single__sku').contents
+        html_model_info['sku'] = soup.find('p', class_='product-single__sku').contents[1]
+        # print('sku: ', sku)
+
+
+        category_tags = soup.find('p', class_='product-single__cat')
+        # print('category_tags: ', category_tags)
+        # print('\ncategory')
+        html_model_info['categories'] = [el.contents for el in category_tags if type(el) == element.Tag and el != None and len(el)]
+        # for el in category_tags:
+        #   if type(el) == element.Tag:
+        #     print('category: ', el.contents)
+
+        # print('\ndescription')
+        product_description = soup.findAll('div', class_='productdescription')
+
+
+        html_model_info['product_description'] = [tags.text for tags in product_description]
+        # print('product_description: ', product_description)
+
+        # images
+        # print('\nimages')
+        main_img = soup.find('img', id='ProductPhotoImg')['src']
+        # print('main_img: ', main_img)
+
+        img_gallery = soup.find('div', class_='owl-stage-outer')
+        # print('img_gallery:' ,img_gallery)
+        a_tags = img_gallery.findAll('a', class_='product-single__thumbnail')
+        images = file_model_info['images']
+        images.append(main_img)
+        for tag in a_tags:
+          # print('tag: ', tag['data-zoom-image'])
+          images.append(tag['data-zoom-image'])
+        file_model_info['is_visited'] = True
+
+      finally:
+        driver.quit()
+        time.sleep(1)
+
+      json_data[product_line][model_kit] = { **file_model_info, **html_model_info }
+      with open('output/usa_gundam.json', 'w') as f:
+        f.write(json.dumps(json_data, indent=2))
+        f.close()
+
+  return
+
+
+def process_details_page(product_line):
+  pass
 
 
 
@@ -82,12 +162,12 @@ def get_model_details_page(product_line):
 def extract_table_contents(soup):
   # loops through a tables worth of content and extracts model info of all models in the table
   # returns a dict of the models on the page
-
   product_info =  {}
+
   a_tags =  soup.findAll('a', class_ = 'snize-view-link')
   for tag in a_tags:
     page_link =  tag['href']
-    model     =  page_link.split('https://www.usagundamstore.com/collections/')[1]
+    model     =  page_link.split('/products/')[1]
     image     =  tag.find('img', class_ = 'snize-item-image')['src']
 
     product_info[model] = {
@@ -97,7 +177,6 @@ def extract_table_contents(soup):
     print('finished processing: ', model)
 
   return product_info
-
 
 
 def get_num_of_pages(a_tags):
