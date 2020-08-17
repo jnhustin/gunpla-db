@@ -52,11 +52,13 @@ class Helper():
     return
 
 
-  def update_json_file_content(self, json_data, product_line, output_file):
-    with open(output_file, 'r+') as f:
+  def update_json_file_content(self, json_data, json_key, output_file):
+    with open(output_file, 'r') as f:
       file_data = json.load(f)
-      file_data[product_line] = json_data if file_data.get(product_line) == None else { **file_data[product_line], **json_data }
-      f.seek(0)
+      file_data[json_key] = json_data if file_data.get(json_key) == None else { **file_data[json_key], **json_data }
+      f.close()
+
+    with open(output_file, 'w') as f:
       f.write(json.dumps(file_data, indent=2))
       f.close()
     return

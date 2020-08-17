@@ -8,15 +8,16 @@ from bs4 import BeautifulSoup, element
 
 from helper import Helper
 
-SITE_HTML_FOLDER = 'html/usa_gundam'
+SITE = 'usa_gundam'
+SITE_HTML_FOLDER = f'html/{SITE}'
 BASE_PAGE_LINKS = {
   'rg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=rg-kits',
   'p-bandai' :  'https://www.usagundamstore.com/pages/search-results-page?collection=p-bandai',
   'pg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=pg-gundam-kits',
   'mg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=model-kits',
-  'sd'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=gundam-bb-sd',
-  'hguc'     :  'https://www.usagundamstore.com/pages/search-results-page?collection=hguc-gundam-kits',
-  're'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=re-100-reborn-model-kits',
+  # 'sd'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=gundam-bb-sd',
+  # 'hguc'     :  'https://www.usagundamstore.com/pages/search-results-page?collection=hguc-gundam-kits',
+  # 're'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=re-100-reborn-model-kits',
 }
 
 # TODO - figure out extra description tab, use this as sample: https://www.usagundamstore.com/collections/p-bandai/products/mg-1-100-shenlong-gundam-ew-liaoya-unit-p-bandai?variant=10395528101924
@@ -26,8 +27,9 @@ HELPER = Helper()
 def main():
 
   for product_line, page_link in BASE_PAGE_LINKS.items():
+    print('product_line: ', product_line)
     # download base pages
-    output_json_location =  f'output/usa_gundam-{product_line}.json'
+    output_json_location =  f'output/{SITE}-{product_line}.json'
     download_dir         =  f'{SITE_HTML_FOLDER}/base_pages/{product_line}'
     download_location    =  f'{download_dir}/{product_line}.html'
     HELPER.download_dynamic_html(page_link, download_dir, alt_filename=product_line)
@@ -43,7 +45,6 @@ def main():
   for product_line in BASE_PAGE_LINKS.keys():
     print('product_line:' , product_line)
 
-    output_json_location = f'output/usa_gundam-{product_line}.json'
     for model_kit, file_model_info in json_data.items():
 
       print('model_kit:' , model_kit)
@@ -53,11 +54,13 @@ def main():
         print('  skipping, already extracted')
         continue
 
-      html_model_info      =  process_details_page(file_model_info)
-      json_data[model_kit] =  { **file_model_info, **html_model_info }
+      html_model_info =  process_details_page(file_model_info)
+
+      output_json_location = f'output/{SITE}-{product_line}.json'
       with open(output_json_location, 'w') as f:
         f.write(json.dumps(json_data, indent=2))
         f.close()
+      return
 
   return
 
@@ -127,8 +130,9 @@ def clean_output_json():
 def get_model_details_page(product_line, download_dir, download_location, output_json_location):
   print('\n ================')
   print('processing page: ', product_line)
+
   # open the page
-  with open(download_location) as f:
+  with open(download_location, 'r') as f:
     page_html = f.read()
     f.close()
 
@@ -139,12 +143,18 @@ def get_model_details_page(product_line, download_dir, download_location, output
   num_of_pages = get_num_of_pages(a_tags)
   print(f'\n{product_line} has {num_of_pages} of pages.')
 
+  # content already in file, used as a base to append new content unto
+  with open(output_json_location, 'r') as f:
+    file_json = json.load(f)
+    f.close()
+
   # get initial page's content
   print(f'processing page : {product_line}.html')
-  json_data = extract_table_contents(soup)
+  html_json = extract_table_contents(soup, file_json)
 
   # get any subsequent page contents
   if num_of_pages > 0:
+
     # iterate range up to num_of_ages
     for page_num in range(2, num_of_pages + 1):
       page_link         =  f'{BASE_PAGE_LINKS[product_line]}&page={page_num}'
@@ -157,22 +167,23 @@ def get_model_details_page(product_line, download_dir, download_location, output
         html = f.read()
         f.close()
 
-      soup =  BeautifulSoup(html, 'html.parser')
-
       # extract page content
-      models_info = extract_table_contents(soup)
-      json_data.update(models_info)
+      soup        =  BeautifulSoup(html, 'html.parser')
+      models_info =  extract_table_contents(soup, file_json)
+      html_json.update(models_info)
 
+  # write data to file
+  for model, model_info in html_json.items():
+    HELPER.update_json_file_content(model_info, model, output_json_location)
 
-  update_json_file_content(json_data, output_json_location)
+  # update model key on json
   print(f'finished extracting base pages, {output_json_location} updated')
   return
 
 
-def extract_table_contents(soup):
+def extract_table_contents(soup, file_json):
   # loops through a tables worth of content and extracts model info of all models in the table
   # returns a dict of the models on the page
-  product_info =  {}
 
   a_tags =  soup.findAll('a', class_ = 'snize-view-link')
   for tag in a_tags:
@@ -180,13 +191,20 @@ def extract_table_contents(soup):
     model     =  page_link.split('/products/')[1]
     image     =  tag.find('img', class_ = 'snize-item-image')['src']
 
-    product_info[model] = {
-      'href'   :  page_link,
-      'images' :  [image],
-    }
+    # first time content, just assign a new dict
+    if file_json.get(model) == None:
+      file_json[model] = {
+        'href'   :  page_link,
+        'images' :  [image],
+      }
+    # else carefully append to existing content
+    else:
+      if image not in file_json[model].get('images'):
+        file_json[model]['images'].append(image)
+
     print('finished processing: ', model)
 
-  return product_info
+  return file_json
 
 
 def get_num_of_pages(a_tags):
@@ -198,16 +216,6 @@ def get_num_of_pages(a_tags):
         num = int_val if num < int_val else num
   return num
 
-
-
-def update_json_file_content(json_data, output_json_location):
-  with open(output_json_location, 'r+') as f:
-    file_data    =  json.load(f)
-    updated_data =  { **file_data, **json_data }
-    f.seek(0)
-    f.write(json.dumps(updated_data, indent=2))
-    f.close()
-  return
 
 if __name__ == '__main__':
   HELPER.time_fn_execution(main)
