@@ -19,103 +19,116 @@ BASE_PAGE_LINKS = {
   're'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=re-100-reborn-model-kits',
 }
 
+# TODO - figure out extra description tab, use this as sample: https://www.usagundamstore.com/collections/p-bandai/products/mg-1-100-shenlong-gundam-ew-liaoya-unit-p-bandai?variant=10395528101924
 
 HELPER = Helper()
 
 def main():
 
-  # for product_line, page_link in BASE_PAGE_LINKS.items():
-  #   # download base pages
-  #   download_dir =  f'{SITE_HTML_FOLDER}/base_pages'
-  #   HELPER.download_dynamic_html(page_link, download_dir, alt_filename=product_line)
+  for product_line, page_link in BASE_PAGE_LINKS.items():
+    # download base pages
+    output_json_location =  f'output/usa_gundam-{product_line}.json'
+    download_dir         =  f'{SITE_HTML_FOLDER}/base_pages/{product_line}'
+    download_location    =  f'{download_dir}/{product_line}.html'
+    HELPER.download_dynamic_html(page_link, download_dir, alt_filename=product_line)
 
-  #   # get all kits in each base page
-  #   get_model_details_page(product_line)
+    # get all kits in each base page
+    get_model_details_page(product_line, download_dir, download_location, output_json_location)
 
-  with open('output/usa_gundam.json', 'r') as f:
+  with open(output_json_location, 'r') as f:
     json_data = json.load(f)
     f.close()
+
   # open json
-  # loop through top level keys (product_line)
-    # for each kit in the product_line:
-  for product_line in json_data:
+  for product_line in BASE_PAGE_LINKS.keys():
     print('product_line:' , product_line)
-    for model_kit, file_model_info in json_data[product_line].items():
+
+    output_json_location = f'output/usa_gundam-{product_line}.json'
+    for model_kit, file_model_info in json_data.items():
+
       print('model_kit:' , model_kit)
-      if file_model_info.get('is_visited'):
-        print('skipping, already extracted')
+      if model_kit == 'mg-1-100-full-armor-unicorn-gundam-red-color-ver-p-bandai': # broken for idk why reasons
         continue
-      # TODO - figure out a way to mark if a kit detailed page has already been visited
-        # key on the model_kit dict that marks that it has been visited
-      try:
-        page_url =  file_model_info['href']
-        driver   =  webdriver.Firefox()
-        driver.implicitly_wait(20)
-        driver.get(page_url)
-        page_html =  driver.page_source
-        soup      =  BeautifulSoup(page_html, 'html.parser')
+      if file_model_info.get('is_visited'):
+        print('  skipping, already extracted')
+        continue
 
-        html_model_info =  {}
-        # title = soup.find('h1', class_='product-single__title').contents
-        html_model_info['title'] = soup.find('h1', class_='product-single__title').contents
-        # sku = soup.find('p', class_='product-single__sku').contents
-        html_model_info['sku'] = soup.find('p', class_='product-single__sku').contents[1]
-        # print('sku: ', sku)
-
-
-        category_tags = soup.find('p', class_='product-single__cat')
-        # print('category_tags: ', category_tags)
-        # print('\ncategory')
-        html_model_info['categories'] = [el.contents for el in category_tags if type(el) == element.Tag and el != None and len(el)]
-        # for el in category_tags:
-        #   if type(el) == element.Tag:
-        #     print('category: ', el.contents)
-
-        # print('\ndescription')
-        product_description = soup.findAll('div', class_='productdescription')
-
-
-        html_model_info['product_description'] = [tags.text for tags in product_description]
-        # print('product_description: ', product_description)
-
-        # images
-        # print('\nimages')
-        main_img = soup.find('img', id='ProductPhotoImg')['src']
-        # print('main_img: ', main_img)
-
-        img_gallery = soup.find('div', class_='owl-stage-outer')
-        # print('img_gallery:' ,img_gallery)
-        a_tags = img_gallery.findAll('a', class_='product-single__thumbnail')
-        images = file_model_info['images']
-        images.append(main_img)
-        for tag in a_tags:
-          # print('tag: ', tag['data-zoom-image'])
-          images.append(tag['data-zoom-image'])
-        file_model_info['is_visited'] = True
-
-      finally:
-        driver.quit()
-        time.sleep(1)
-
-      json_data[product_line][model_kit] = { **file_model_info, **html_model_info }
-      with open('output/usa_gundam.json', 'w') as f:
+      html_model_info      =  process_details_page(file_model_info)
+      json_data[model_kit] =  { **file_model_info, **html_model_info }
+      with open(output_json_location, 'w') as f:
         f.write(json.dumps(json_data, indent=2))
         f.close()
 
   return
 
 
-def process_details_page(product_line):
+def process_details_page(file_model_info):
+  try:
+    page_url =  file_model_info['href']
+    driver   =  webdriver.Firefox()
+    driver.implicitly_wait(20)
+    driver.get(page_url)
+    page_html =  driver.page_source
+    soup      =  BeautifulSoup(page_html, 'html.parser')
+
+    html_model_info =  {}
+    # title = soup.find('h1', class_='product-single__title').contents
+    html_model_info['title'] = soup.find('h1', class_='product-single__title').contents
+    sku = soup.find('p', class_='product-single__sku').contents
+    html_model_info['sku'] = sku[1] if len(sku) > 1 else None
+    # print('sku: ', sku)
+
+
+    category_tags = soup.find('p', class_='product-single__cat')
+    # print('category_tags: ', category_tags)
+    # print('\ncategory')
+    # TODO - merge categoies as list of lists into list of strings
+    # TODO - filter out "Categories:" item
+    html_model_info['categories'] = [el.contents for el in category_tags if type(el) == element.Tag and el != None and len(el)]
+    # for el in category_tags:
+    #   if type(el) == element.Tag:
+    #     print('category: ', el.contents)
+
+    # print('\ndescription')
+    product_description = soup.findAll('div', class_='productdescription')
+
+
+    html_model_info['product_description'] = [tags.text for tags in product_description]
+    # print('product_description: ', product_description)
+
+    # images
+    # print('\nimages')
+    main_img = soup.find('img', id='ProductPhotoImg')['src']
+    # print('main_img: ', main_img)
+
+    # TODO - if string startsWith "//cdn", add "https:" in front of it
+    img_gallery = soup.find('div', class_='owl-stage-outer')
+    if img_gallery != None:
+      # print('img_gallery:' ,img_gallery)
+      a_tags = img_gallery.findAll('a', class_='product-single__thumbnail')
+      images = file_model_info['images']
+      images.append(main_img)
+      for tag in a_tags:
+        # print('tag: ', tag['data-zoom-image'])
+        images.append(tag['data-zoom-image'])
+    file_model_info['is_visited'] = True
+  except Exception as e:
+    print('exception: ', e)
+  finally:
+    driver.quit()
+
+  return html_model_info
+
+
+def clean_output_json():
   pass
 
 
-
-
-def get_model_details_page(product_line):
+def get_model_details_page(product_line, download_dir, download_location, output_json_location):
   print('\n ================')
   print('processing page: ', product_line)
   # open the page
-  with open(f'{SITE_HTML_FOLDER}/base_pages/{product_line}.html') as f:
+  with open(download_location) as f:
     page_html = f.read()
     f.close()
 
@@ -127,16 +140,15 @@ def get_model_details_page(product_line):
   print(f'\n{product_line} has {num_of_pages} of pages.')
 
   # get initial page's content
-  print(f'downloading page : {product_line}.html')
+  print(f'processing page : {product_line}.html')
   json_data = extract_table_contents(soup)
 
   # get any subsequent page contents
   if num_of_pages > 0:
     # iterate range up to num_of_ages
     for page_num in range(2, num_of_pages + 1):
-      page_link         =  f'https://www.usagundamstore.com/pages/search-results-page?collection=model-kits&page={page_num}'
+      page_link         =  f'{BASE_PAGE_LINKS[product_line]}&page={page_num}'
       filename          =  f'{product_line}-{page_num}'
-      download_dir      =  f'{SITE_HTML_FOLDER}/base_pages'
       download_location =  f'{download_dir}/{filename}'
 
       # download page
@@ -152,10 +164,8 @@ def get_model_details_page(product_line):
       json_data.update(models_info)
 
 
-
-  output_file = 'output/usa_gundam.json'
-  HELPER.update_json_file_content(json_data, product_line, output_file)
-  print(f'finished extracting base pages, {output_file} updated')
+  update_json_file_content(json_data, output_json_location)
+  print(f'finished extracting base pages, {output_json_location} updated')
   return
 
 
@@ -188,6 +198,16 @@ def get_num_of_pages(a_tags):
         num = int_val if num < int_val else num
   return num
 
+
+
+def update_json_file_content(json_data, output_json_location):
+  with open(output_json_location, 'r+') as f:
+    file_data    =  json.load(f)
+    updated_data =  { **file_data, **json_data }
+    f.seek(0)
+    f.write(json.dumps(updated_data, indent=2))
+    f.close()
+  return
 
 if __name__ == '__main__':
   HELPER.time_fn_execution(main)
