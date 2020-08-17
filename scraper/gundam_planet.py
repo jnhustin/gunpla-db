@@ -4,7 +4,11 @@ import json
 import requests
 from bs4 import BeautifulSoup, element
 
-
+"""
+  - if you're looking to run this script I highly recommend not using this one
+  - it's written poorly, poorly documented, my 5 year brother wrote most of it, it's not very good, spaghetti
+  - I recommended using one of the other ones instead
+"""
 PAGE_LINKS = {
   'og' :  'https://www.gundamplanet.com/gundam/other-grade.html?product_list_limit=108',
   'mg' :  'https://www.gundamplanet.com/gundam/master-grade.html?product_list_limit=108',
