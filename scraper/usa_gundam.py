@@ -37,16 +37,19 @@ def main():
     # get all kits in each base page
     get_model_details_page(product_line, download_dir, download_location, output_json_location)
 
-  with open(output_json_location, 'r') as f:
-    json_data = json.load(f)
-    f.close()
 
   # open json
   for product_line in BASE_PAGE_LINKS.keys():
     print('product_line:' , product_line)
 
-    for model_kit, file_model_info in json_data.items():
+    # TODO - this is problematic
+    output_json_location =  f'output/{SITE}-{product_line}.json'
+    with open(output_json_location, 'r') as f:
+      json_data = json.load(f)
+      f.close()
 
+    for model_kit, file_model_info in json_data.items():
+      # TODO - add a counter to the print statement below
       print('model_kit:' , model_kit)
       if model_kit == 'mg-1-100-full-armor-unicorn-gundam-red-color-ver-p-bandai': # broken for idk why reasons
         continue
@@ -54,13 +57,12 @@ def main():
         print('  skipping, already extracted')
         continue
 
+      # get the extra model kit info from details page
       html_model_info =  process_details_page(file_model_info)
 
-      output_json_location = f'output/{SITE}-{product_line}.json'
-      with open(output_json_location, 'w') as f:
-        f.write(json.dumps(json_data, indent=2))
-        f.close()
-      return
+      # update json file
+      output_json_location =  f'output/{SITE}-{product_line}.json'
+      HELPER.update_json_file_content(html_model_info, model_kit, output_json_location)
 
   return
 
@@ -75,48 +77,58 @@ def process_details_page(file_model_info):
     soup      =  BeautifulSoup(page_html, 'html.parser')
 
     html_model_info =  {}
-    # title = soup.find('h1', class_='product-single__title').contents
+
+    # title
     html_model_info['title'] = soup.find('h1', class_='product-single__title').contents
+
+    # sku
     sku = soup.find('p', class_='product-single__sku').contents
     html_model_info['sku'] = sku[1] if len(sku) > 1 else None
-    # print('sku: ', sku)
 
-
+    # category
     category_tags = soup.find('p', class_='product-single__cat')
-    # print('category_tags: ', category_tags)
-    # print('\ncategory')
-    # TODO - merge categoies as list of lists into list of strings
-    # TODO - filter out "Categories:" item
     html_model_info['categories'] = [el.contents for el in category_tags if type(el) == element.Tag and el != None and len(el)]
-    # for el in category_tags:
-    #   if type(el) == element.Tag:
-    #     print('category: ', el.contents)
 
-    # print('\ndescription')
-    product_description = soup.findAll('div', class_='productdescription')
+    # description
+    product_description =  []
+
+    product_description_1_tag     =  soup.findAll('div', class_='productdescription')
+    product_description_1_content =  [tags.text for tags in product_description_1_tag]
+    if len(product_description_1_content):
+      product_description.append(product_description_1_content)
+
+    product_description_2_tag     =  soup.findAll('div', class_='product attibute description')
+    product_description_2_content =  [tags.text for tags in product_description_2_tag if len(tags)]
+    if len(product_description_2_content):
+      product_description.append(product_description_2_content)
+
+    product_description_3_tag     =  soup.findAll('div', id='proTabs1')
+    product_description_3_content =  [tags.text for tags in product_description_3_tag if len(tags)]
+    if len(product_description_3_content):
+      product_description.append(product_description_3_content)
+
+    for el in product_description_3_tag:
+      description_images = el.find('img')
+      if description_images:
+        product_description.append([description_images['src']])
 
 
-    html_model_info['product_description'] = [tags.text for tags in product_description]
-    # print('product_description: ', product_description)
+    # TODO add description image
+    html_model_info['product_description'] = product_description
 
     # images
-    # print('\nimages')
-    main_img = soup.find('img', id='ProductPhotoImg')['src']
-    # print('main_img: ', main_img)
+    main_img    =  soup.find('img', id='ProductPhotoImg')['src']
+    img_gallery =  soup.find('div', class_='owl-stage-outer')
 
-    # TODO - if string startsWith "//cdn", add "https:" in front of it
-    img_gallery = soup.find('div', class_='owl-stage-outer')
     if img_gallery != None:
-      # print('img_gallery:' ,img_gallery)
       a_tags = img_gallery.findAll('a', class_='product-single__thumbnail')
       images = file_model_info['images']
       images.append(main_img)
       for tag in a_tags:
-        # print('tag: ', tag['data-zoom-image'])
         images.append(tag['data-zoom-image'])
-    file_model_info['is_visited'] = True
-  except Exception as e:
-    print('exception: ', e)
+
+    # mark that the model has been updated
+    html_model_info['is_visited'] = True
   finally:
     driver.quit()
 
@@ -124,6 +136,13 @@ def process_details_page(file_model_info):
 
 
 def clean_output_json():
+  # categories section
+  # TODO - merge categoies as list of lists into list of strings
+  # TODO - filter out "Categories:" item
+  # TODO - add a scale field
+  # TODO - add a product_line field
+
+  # image section
   pass
 
 
