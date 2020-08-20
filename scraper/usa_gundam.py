@@ -19,50 +19,42 @@ BASE_PAGE_LINKS = {
   # 'hguc'     :  'https://www.usagundamstore.com/pages/search-results-page?collection=hguc-gundam-kits',
   # 're'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=re-100-reborn-model-kits',
 }
-
-# TODO - figure out extra description tab, use this as sample: https://www.usagundamstore.com/collections/p-bandai/products/mg-1-100-shenlong-gundam-ew-liaoya-unit-p-bandai?variant=10395528101924
-
 HELPER = Helper()
 
 def main():
 
-  for product_line, page_link in BASE_PAGE_LINKS.items():
-    print('product_line: ', product_line)
-    # download base pages
-    output_json_location =  f'output/{SITE}-{product_line}.json'
-    download_dir         =  f'{SITE_HTML_FOLDER}/base_pages/{product_line}'
-    download_location    =  f'{download_dir}/{product_line}.html'
-    HELPER.download_dynamic_html(page_link, download_dir, alt_filename=product_line)
+  # for product_line, page_link in BASE_PAGE_LINKS.items():
+  #   print('product_line: ', product_line)
+  #   # download base pages
+  #   output_json_location =  f'output/{SITE}-{product_line}.json'
+  #   download_dir         =  f'{SITE_HTML_FOLDER}/base_pages/{product_line}'
+  #   download_location    =  f'{download_dir}/{product_line}.html'
+  #   HELPER.download_dynamic_html(page_link, download_dir, alt_filename=product_line)
 
-    # get all kits in each base page
-    get_model_details_page(product_line, download_dir, download_location, output_json_location)
+  #   # get all kits in each base page
+  #   get_model_details_page(product_line, download_dir, download_location, output_json_location)
+  #   print('completed extracting base page data!\n\n\n')
 
 
-  # open json
+  # open json and update models in json data
   for product_line in BASE_PAGE_LINKS.keys():
-    print('product_line:' , product_line)
+    print(f'\n\n============== {product_line} ==============')
 
-    # TODO - this is problematic
     output_json_location =  f'output/{SITE}-{product_line}.json'
     with open(output_json_location, 'r') as f:
       json_data = json.load(f)
       f.close()
 
     for model_kit, file_model_info in json_data.items():
-      # TODO - add a counter to the print statement below
-      print('model_kit:' , model_kit)
-      if model_kit == 'mg-1-100-full-armor-unicorn-gundam-red-color-ver-p-bandai': # broken for idk why reasons
-        continue
-      if file_model_info.get('is_visited'):
-        print('  skipping, already extracted')
-        continue
+      print(f'{counter}/{num_of_kits_to_process} - {model_kit}')
 
-      # get the extra model kit info from details page
-      html_model_info =  process_details_page(file_model_info)
+      cleaned_model_info   =  clean_model_kit_json(product_line, file_model_info)
+      json_data[model_kit] =  cleaned_model_info
+      output_json_location =  f'output/{SITE}-cleaned.json'
+      HELPER.update_json_file_content(cleaned_model_info, model_kit, output_json_location)
 
-      # update json file
-      output_json_location =  f'output/{SITE}-{product_line}.json'
-      HELPER.update_json_file_content(html_model_info, model_kit, output_json_location)
+      counter += 1
+      # return # TODO
 
   return
 
@@ -112,8 +104,6 @@ def process_details_page(file_model_info):
       if description_images:
         product_description.append([description_images['src']])
 
-
-    # TODO add description image
     html_model_info['product_description'] = product_description
 
     # images
@@ -135,15 +125,18 @@ def process_details_page(file_model_info):
   return html_model_info
 
 
-def clean_output_json():
+def clean_model_kit_json(product_line, file_model_info):
+  # print(model_kit)
   # categories section
-  # TODO - merge categoies as list of lists into list of strings
-  # TODO - filter out "Categories:" item
+  file_model_info['categories'] =[ item[0].lower() for item in file_model_info['categories'] if not item[0].lower().startswith('categories')]
+
   # TODO - add a scale field
-  # TODO - add a product_line field
+
+  file_model_info['product_line'] = product_line
 
   # image section
-  pass
+
+  return file_model_info
 
 
 def get_model_details_page(product_line, download_dir, download_location, output_json_location):
@@ -221,7 +214,7 @@ def extract_table_contents(soup, file_json):
       if image not in file_json[model].get('images'):
         file_json[model]['images'].append(image)
 
-    print('finished processing: ', model)
+    print(f'  {model} processed')
 
   return file_json
 
