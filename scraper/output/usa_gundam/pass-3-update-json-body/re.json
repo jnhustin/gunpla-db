@@ -21,7 +21,8 @@
         ]
       ],
       "is_visited": true,
-      "product_line": "re"
+      "product_line": "re",
+      "scale": null
     },
     "pre-order-re-100-lm111e02-gun-ez": {
       "href": "https://www.usagundamstore.com/collections/re-100-reborn-model-kits/products/pre-order-re-100-lm111e02-gun-ez",
@@ -48,7 +49,8 @@
         ]
       ],
       "is_visited": true,
-      "product_line": "re"
+      "product_line": "re",
+      "scale": null
     },
     "pre-order-re-100-msn-03-jagd-doga": {
       "href": "https://www.usagundamstore.com/collections/re-100-reborn-model-kits/products/pre-order-re-100-msn-03-jagd-doga",
@@ -74,7 +76,8 @@
         ]
       ],
       "is_visited": true,
-      "product_line": "re"
+      "product_line": "re",
+      "scale": null
     },
     "pre-order-re-100-vigna-ghina-gundam-f91-bandai": {
       "href": "https://www.usagundamstore.com/collections/re-100-reborn-model-kits/products/pre-order-re-100-vigna-ghina-gundam-f91-bandai",
@@ -98,7 +101,8 @@
         ]
       ],
       "is_visited": true,
-      "product_line": "re"
+      "product_line": "re",
+      "scale": null
     },
     "pre-order-guncannon-detector-gundam-uc-bandai-re-100": {
       "href": "https://www.usagundamstore.com/collections/re-100-reborn-model-kits/products/pre-order-guncannon-detector-gundam-uc-bandai-re-100",
@@ -121,7 +125,8 @@
         ]
       ],
       "is_visited": true,
-      "product_line": "re"
+      "product_line": "re",
+      "scale": null
     },
     "pre-order-re-100-amx-103-hamma-hamma": {
       "href": "https://www.usagundamstore.com/collections/re-100-reborn-model-kits/products/pre-order-re-100-amx-103-hamma-hamma",
@@ -146,7 +151,8 @@
         ]
       ],
       "is_visited": true,
-      "product_line": "re"
+      "product_line": "re",
+      "scale": null
     },
     "pre-order-re-1-100-bawoo-zz-gundam-bandai": {
       "href": "https://www.usagundamstore.com/collections/re-100-reborn-model-kits/products/pre-order-re-1-100-bawoo-zz-gundam-bandai",
@@ -171,7 +177,8 @@
         ]
       ],
       "is_visited": true,
-      "product_line": "re"
+      "product_line": "re",
+      "scale": null
     },
     "pre-order-re-1-100-dijeh": {
       "href": "https://www.usagundamstore.com/collections/re-100-reborn-model-kits/products/pre-order-re-1-100-dijeh",
@@ -198,7 +205,8 @@
         ]
       ],
       "is_visited": true,
-      "product_line": "re"
+      "product_line": "re",
+      "scale": null
     },
     "pre-order-re-1-100-gundam-gp04-gerbera": {
       "href": "https://www.usagundamstore.com/collections/re-100-reborn-model-kits/products/pre-order-re-1-100-gundam-gp04-gerbera",
@@ -224,7 +232,8 @@
         ]
       ],
       "is_visited": true,
-      "product_line": "re"
+      "product_line": "re",
+      "scale": null
     },
     "pre-order-re-1-100-gundam-mk-iii": {
       "href": "https://www.usagundamstore.com/collections/re-100-reborn-model-kits/products/pre-order-re-1-100-gundam-mk-iii",
@@ -252,7 +261,8 @@
         ]
       ],
       "is_visited": true,
-      "product_line": "re"
+      "product_line": "re",
+      "scale": null
     }
   },
   "re-100-xm-07b-vigna-ghina-ii": {
@@ -281,7 +291,8 @@
       ]
     ],
     "is_visited": true,
-    "product_line": "re"
+    "product_line": "re",
+    "scale": null
   },
   "re-1-100-msn-04-ii-nightingale": {
     "href": "https://www.usagundamstore.com/collections/re-100-reborn-model-kits/products/re-1-100-msn-04-ii-nightingale",
@@ -303,7 +314,8 @@
       ]
     ],
     "is_visited": true,
-    "product_line": "re"
+    "product_line": "re",
+    "scale": null
   },
   "re-100-zaku-ii-kai": {
     "href": "https://www.usagundamstore.com/collections/re-100-reborn-model-kits/products/re-100-zaku-ii-kai",
@@ -328,6 +340,7 @@
       ]
     ],
     "is_visited": true,
-    "product_line": "re"
+    "product_line": "re",
+    "scale": null
   }
 }
