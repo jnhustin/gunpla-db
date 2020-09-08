@@ -14,12 +14,13 @@
       "Gundam High Grade 1/300: Dark Go-Saurer"
     ],
     "sku": "5056747",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "gundam-seed-destiny-1-1700-ex-model-arch-angel-coating-version": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/gundam-seed-destiny-1-1700-ex-model-arch-angel-coating-version",
@@ -34,13 +35,14 @@
       "Gundam Seed Destiny: 1/1700 EX Model Arch Angel Coating Version"
     ],
     "sku": "138860",
-    "categories": [
+    "tags": [
       "p-bandai",
       "seed"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "gundam-seed-destiny-1-1700-ex-model-eternal-coating-version": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/gundam-seed-destiny-1-1700-ex-model-eternal-coating-version",
@@ -55,13 +57,14 @@
       "Gundam Seed Destiny: 1/1700 EX Model Eternal Coating Version"
     ],
     "sku": "138861",
-    "categories": [
+    "tags": [
       "p-bandai",
       "seed"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "gundam-decal-dx-03-seed-series": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/gundam-decal-dx-03-seed-series",
@@ -73,10 +76,11 @@
       "Gundam Decal DX 03 [SEED series]"
     ],
     "sku": "4543112785282",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "gundam-decal-dx-02-unicorn": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/gundam-decal-dx-02-unicorn",
@@ -88,10 +92,11 @@
       "Gundam Decal DX 02 [Unicorn]"
     ],
     "sku": "4543112778826",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "vol-1-bulmas-capsule-no-9-motorcycle-clear-color-dragon-ball-bandai-mecha-collection": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/vol-1-bulmas-capsule-no-9-motorcycle-clear-color-dragon-ball-bandai-mecha-collection",
@@ -107,7 +112,7 @@
       "Vol. 1 Bulma's Capsule No.9 Motorcycle [Clear Color] \"Dragon Ball\", Bandai Mecha Collection"
     ],
     "sku": "4549660283102",
-    "categories": [
+    "tags": [
       "dbz",
       "dragon ball",
       "dragon ball z",
@@ -115,9 +120,10 @@
       "fsale",
       "sale"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "super-fumina-axis-angel-ver-mk-ii-axis-image-color-gundam-build-fighters-bandai-hgbf": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/super-fumina-axis-angel-ver-mk-ii-axis-image-color-gundam-build-fighters-bandai-hgbf",
@@ -134,14 +140,15 @@
       "Super Fumina Axis Angel Ver. (Mk-II Axis Image Color), \"Gundam Build Fighters\", Bandai HGBF"
     ],
     "sku": "4549660196259",
-    "categories": [
+    "tags": [
       "1/144",
       "build fighters",
       "fsale"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "realistic-model-1-144-white-base-catapult-deck-p-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/realistic-model-1-144-white-base-catapult-deck-p-bandai",
@@ -160,13 +167,14 @@
       "Mobile Suit Gundam Realistic Model Series 1/144 Scale White Base Catapult Deck (Renewal Ver.)"
     ],
     "sku": "MH82773",
-    "categories": [
+    "tags": [
       "p-bandai",
       "pre-order"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "mobile-suit-gundam-realistic-model-series-1-144-scale-z-gundam-argama-catapult-deck": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/mobile-suit-gundam-realistic-model-series-1-144-scale-z-gundam-argama-catapult-deck",
@@ -187,12 +195,13 @@
       "Mobile Suit Gundam Realistic Model Series 1/144 Scale Z Gundam Argama Catapult Deck"
     ],
     "sku": "MH82954",
-    "categories": [
+    "tags": [
       "pre-order"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "gundam-mg-1-100-gm-dominance-philip-hughes-custom-exclusive-model-kit": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/gundam-mg-1-100-gm-dominance-philip-hughes-custom-exclusive-model-kit",
@@ -215,12 +224,13 @@
       "Gundam MG 1/100 GM Dominance (Philip Hughes Custom) Exclusive Model Kit"
     ],
     "sku": "4573102587695",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "mg-rgz-91b-re-gz-custom-1-100-p-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/mg-rgz-91b-re-gz-custom-1-100-p-bandai",
@@ -244,16 +254,17 @@
       "MG RGZ-91B RE-GZ CUSTOM 1/100 P-Bandai"
     ],
     "sku": "4573102575661",
-    "categories": [
+    "tags": [
       "1/100",
       "best deals",
       "mg",
       "p-bandai",
       "uc"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "haropla-piggy-haro": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/haropla-piggy-haro",
@@ -268,14 +279,15 @@
       "Haropla Piggy Haro"
     ],
     "sku": "4573102568076",
-    "categories": [
+    "tags": [
       "build fighters",
       "haro",
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "hg-1-144-zeta-clear-color": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/hg-1-144-zeta-clear-color",
@@ -291,12 +303,13 @@
       "HG 1/144 Zeta Clear Color"
     ],
     "sku": "4549660207016",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "hg-1-144-bael-clear-color": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/hg-1-144-bael-clear-color",
@@ -312,12 +325,13 @@
       "HG 1/144 Bael Clear Color"
     ],
     "sku": "4549660216346",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "mg-1-100-seven-sword-clear-color": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/mg-1-100-seven-sword-clear-color",
@@ -333,12 +347,13 @@
       "MG 1/100 Seven Sword Clear Color"
     ],
     "sku": "4549660222552",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "mg-1-100-justice-gundam-clear-color": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/mg-1-100-justice-gundam-clear-color",
@@ -353,12 +368,13 @@
       "Mg 1/100 Justice Gundam Clear Color"
     ],
     "sku": "4549660216360",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "mg-1-100-full-armor-gundam-ver-ka-half-mechanical-clear": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/mg-1-100-full-armor-gundam-ver-ka-half-mechanical-clear",
@@ -374,12 +390,13 @@
       "MG 1/100 Full Armor Gundam Ver.ka Half Mechanical Clear"
     ],
     "sku": "4549660196235",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "re-1-100-efreet-custom-clear-color": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/re-1-100-efreet-custom-clear-color",
@@ -395,12 +412,13 @@
       "RE 1/100 Efreet Custom Clear Color"
     ],
     "sku": "4549660210191",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "rg-1-144-wing-gundam-zero-pearl-gloss-ver": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/rg-1-144-wing-gundam-zero-pearl-gloss-ver",
@@ -417,12 +435,13 @@
       "Rg 1/144 Wing Gundam Zero Pearl Gloss ver."
     ],
     "sku": "4543112967565",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "hg-1-144-barzam-clear-color-model-kit": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/hg-1-144-barzam-clear-color-model-kit",
@@ -438,12 +457,13 @@
       "HG 1/144 Barzam clear color model kit"
     ],
     "sku": "4549660216339",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "1-144-hgce-strike-freedom-gundam-clear-color": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/1-144-hgce-strike-freedom-gundam-clear-color",
@@ -459,12 +479,13 @@
       "1/144 HGCE Strike Freedom Gundam Clear Color"
     ],
     "sku": "4549660222545",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "hg-gundam-kimaris-vidar-clear-color": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/hg-gundam-kimaris-vidar-clear-color",
@@ -480,12 +501,13 @@
       "HG Gundam Kimaris Vidar (Clear Color)"
     ],
     "sku": "4549660210214",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "rg-1-144-tallegeese-iii-p-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/rg-1-144-tallegeese-iii-p-bandai",
@@ -507,16 +529,17 @@
       "RG 1/144 TALLEGEESE III P-Bandai"
     ],
     "sku": "11207146405924",
-    "categories": [
+    "tags": [
       "1/144",
       "p-bandai",
       "pre-order",
       "rg",
       "wing"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "mg-1-100-dwadge-zz-ver": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/mg-1-100-dwadge-zz-ver",
@@ -537,12 +560,13 @@
       "MG 1/100 DWADGE [ZZ Ver.]"
     ],
     "sku": "4573102570093",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "mg-1-100-shenlong-gundam-ew-liaoya-unit-p-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/mg-1-100-shenlong-gundam-ew-liaoya-unit-p-bandai",
@@ -564,10 +588,11 @@
       "MG 1/100 SHENLONG GUNDAM EW (Liaoya Unit) P-Bandai"
     ],
     "sku": null,
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "rg-1-144-ms-06r-1a-eric-manthfields-custom-zaku-ii-plastic-model-may-2019": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/rg-1-144-ms-06r-1a-eric-manthfields-custom-zaku-ii-plastic-model-may-2019",
@@ -588,10 +613,11 @@
       "RG 1/144 MS-06R-1A ERIC MANTHFIELD'S CUSTOM ZAKU II PLASTIC MODEL ( MAY 2019 )"
     ],
     "sku": "10249660727332",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "mg-1-100-rgm-96xs-jesta-shezarr-type-team-b-c-plastic-model-jun-2019": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/mg-1-100-rgm-96xs-jesta-shezarr-type-team-b-c-plastic-model-jun-2019",
@@ -613,10 +639,11 @@
       "MG 1/100 RGM-96XS JESTA (SHEZARR TYPE, TEAM B&C) PLASTIC MODEL ( JUN 2019 )"
     ],
     "sku": "10249646211108",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "gundam-decal-dx-06-unicorn-series-vol-2": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/gundam-decal-dx-06-unicorn-series-vol-2",
@@ -628,10 +655,11 @@
       "Gundam Decal DX 06 [Unicorn series Vol. 2]"
     ],
     "sku": "4543112895233",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "gundam-decal-dx-05": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/gundam-decal-dx-05",
@@ -643,10 +671,11 @@
       "Gundam Decal DX 05"
     ],
     "sku": "4543112823908",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "gundam-decal-dx-04-one-year-war-earth-federation": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/gundam-decal-dx-04-one-year-war-earth-federation",
@@ -658,10 +687,11 @@
       "Gundam Decal DX 04 [One Year War / Earth Federation]"
     ],
     "sku": "4543112823892",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "gundam-decal-dx-01-one-year-war-p-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/gundam-decal-dx-01-one-year-war-p-bandai",
@@ -673,13 +703,14 @@
       "GUNDAM DECAL DX 01 \u3010One Year War\u3011P-Bandai"
     ],
     "sku": "4543112769596",
-    "categories": [
+    "tags": [
       "decal",
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "rg-oz-00ms-tallgeese-ew-ver-titanium-finish-99-95": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/rg-oz-00ms-tallgeese-ew-ver-titanium-finish-99-95",
@@ -702,14 +733,15 @@
       "RG OZ-00MS TALLGEESE EW VER TITANIUM FINISH $99.95"
     ],
     "sku": "4573102553775",
-    "categories": [
+    "tags": [
       "1/144",
       "p-bandai",
       "rg"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "mg-1-100-gundam-astray-red-dragon-p-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/mg-1-100-gundam-astray-red-dragon-p-bandai",
@@ -732,10 +764,11 @@
       "MG 1/100 GUNDAM ASTRAY RED DRAGON P-Bandai"
     ],
     "sku": "10057065496612",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "gundam-barbatos-lupus-rex-clear-color-gundam-ibo-bandai-hg-1-144": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/gundam-barbatos-lupus-rex-clear-color-gundam-ibo-bandai-hg-1-144",
@@ -751,12 +784,13 @@
       "Gundam Barbatos Lupus Rex [Clear Color] \"Gundam IBO\", Bandai HG 1/144"
     ],
     "sku": "4549660196204",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "gundam-barbatos-lupus-clear-color-ver-gundam-ibo-1-100-full-mechanics": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/gundam-barbatos-lupus-clear-color-ver-gundam-ibo-1-100-full-mechanics",
@@ -773,12 +807,13 @@
       "Gundam Barbatos Lupus (Clear Color Ver), \"Gundam IBO\", 1/100 Full Mechanics"
     ],
     "sku": "4549660165774",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "mg-astray-red-frame-clear-part-set-p-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/mg-astray-red-frame-clear-part-set-p-bandai",
@@ -794,13 +829,14 @@
       "MG Astray Red Frame Clear part set P-Bandai"
     ],
     "sku": "9912712593444",
-    "categories": [
+    "tags": [
       "flash",
       "fsale"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "bandai-hg-1-144-build-strike-gundam-full-package-plavsky-particle-clear-ver": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/bandai-hg-1-144-build-strike-gundam-full-package-plavsky-particle-clear-ver",
@@ -815,10 +851,11 @@
       "BANDAI HG 1/144 BUILD STRIKE GUNDAM Full package Plavsky particle clear ver"
     ],
     "sku": "4543112865465",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "1-60-arbalest-ver-iv-ecs-image-clear-color": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/1-60-arbalest-ver-iv-ecs-image-clear-color",
@@ -837,13 +874,14 @@
       "1/60 Arbalest Ver. IV ECS Image Clear Color"
     ],
     "sku": "4549660308379",
-    "categories": [
+    "tags": [
       "fsale",
       "full metal panic"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "p-bandai-re-100-type-89-base-jabber": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/p-bandai-re-100-type-89-base-jabber",
@@ -866,10 +904,11 @@
       "P-Bandai: RE/100 Type 89 Base Jabber"
     ],
     "sku": "4573102553799",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "limited-mg-1-100-hyaku-shiki-ver-2-0-mechanical-clear-model-kit": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/limited-mg-1-100-hyaku-shiki-ver-2-0-mechanical-clear-model-kit",
@@ -885,12 +924,13 @@
       "Limited MG 1/100 HYAKU-SHIKI Ver.2.0 Mechanical Clear Model Kit"
     ],
     "sku": "4549660222538",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "mg-1-100-gundam-astray-gold-frame-special-coating-model-kit-p-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/mg-1-100-gundam-astray-gold-frame-special-coating-model-kit-p-bandai",
@@ -906,10 +946,11 @@
       "MG 1/100 Gundam Astray Gold Frame Special Coating Model Kit P-Bandai"
     ],
     "sku": "4549660210436",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "pre-order-1-12-shadow-stormtrooper": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/pre-order-1-12-shadow-stormtrooper",
@@ -932,10 +973,11 @@
       "1/12 SHADOW STORMTROOPER"
     ],
     "sku": "4549660058809",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "msm-07s-char-zgok-1-100-c3xhobby-2007-bandai-mg": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/msm-07s-char-zgok-1-100-c3xhobby-2007-bandai-mg",
@@ -950,10 +992,11 @@
       "MSM-07S CHAR Z\"GOK 1/100 C3XHobby 2007, Bandai MG"
     ],
     "sku": "5245158988021",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "ms-09r-rick-dom-c3xhobby-2007-bandai-hguc": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/ms-09r-rick-dom-c3xhobby-2007-bandai-hguc",
@@ -965,10 +1008,11 @@
       "MS-09R RICK DOM C3XHOBBY 2007, BANDAI HGUC"
     ],
     "sku": "4543112410374",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "expansion-effect-unit-for-neo-zeong-psycho-shard": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/expansion-effect-unit-for-neo-zeong-psycho-shard",
@@ -984,10 +1028,11 @@
       "Expansion Effect Unit For Neo Zeong \"Psycho Shard\""
     ],
     "sku": "4543112901644",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "pre-order-mg-1-100-gundam-avalanche-exia-dash": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/pre-order-mg-1-100-gundam-avalanche-exia-dash",
@@ -1011,16 +1056,17 @@
       "MG 1/100 Gundam Avalanche Exia Dash P-Bandai"
     ],
     "sku": "4549660299776",
-    "categories": [
+    "tags": [
       "00",
       "1/100",
       "gundam",
       "mg",
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "pre-order-mg-1-100-gundam-tr-1-hazel-kai-sheild-booster-set-gundam-hazel-not-included": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/pre-order-mg-1-100-gundam-tr-1-hazel-kai-sheild-booster-set-gundam-hazel-not-included",
@@ -1041,10 +1087,11 @@
       "MG 1/100 GUNDAM TR-1 HAZEL KAI SHEILD BOOSTER SET [GUNDAM HAZEL NOT INCLUDED]"
     ],
     "sku": "4659875403264",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "pre-order-hg-1-44-heavy-gundam-p-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/pre-order-hg-1-44-heavy-gundam-p-bandai",
@@ -1056,10 +1103,11 @@
       "HG 1/144 HEAVY GUNDAM P-Bandai"
     ],
     "sku": "4549660283263",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "pre-order-1-144-hguc-crossbone-gundam-x2-may-release-p-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/pre-order-1-144-hguc-crossbone-gundam-x2-may-release-p-bandai",
@@ -1077,10 +1125,11 @@
       "1/144 HGUC CROSSBONE GUNDAM X2 P-Bandai"
     ],
     "sku": "6967739482148",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "pre-order-mg-1-100-oo-qant-trans-am-mode-special-coating": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/pre-order-mg-1-100-oo-qant-trans-am-mode-special-coating",
@@ -1100,12 +1149,13 @@
       "MG 1/100 OO QAN[T]  (TRANS-AM MODE) [SPECIAL COATING]"
     ],
     "sku": "4549660283232",
-    "categories": [
+    "tags": [
       "fsale"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "hguc-1-144-rx-0-unicorn-gundam-destroy-mode-deactive-clear-color-ver": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/hguc-1-144-rx-0-unicorn-gundam-destroy-mode-deactive-clear-color-ver",
@@ -1121,10 +1171,11 @@
       "HGUC 1/144 RX-0 Unicorn Gundam (Destroy Mode) Deactive Clear Color Ver."
     ],
     "sku": "4543112909664",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "hguc-1-144-pale-riderground-heavy-equipment-type-hades-mode-extra-finish-ver-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/hguc-1-144-pale-riderground-heavy-equipment-type-hades-mode-extra-finish-ver-bandai",
@@ -1140,10 +1191,11 @@
       "HGUC 1/144 Pale Rider(Ground Heavy Equipment Type) Hades Mode Extra Finish Ver., Bandai"
     ],
     "sku": "4549660119531",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "hg-1-144-astray-blue-frame-second-l-metallic-clear-gundam-seed-astray-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/hg-1-144-astray-blue-frame-second-l-metallic-clear-gundam-seed-astray-bandai",
@@ -1158,10 +1210,11 @@
       "HG 1/144 Astray Blue Frame Second L (Metallic & Clear) \"Gundam SEED Astray\", Bandai"
     ],
     "sku": "4543112852472",
-    "categories": [],
-    "product_description": [],
+    "tags": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "mg-1-100-mbf-02vv-gundam-astray-turn-red-p-bandai": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/mg-1-100-mbf-02vv-gundam-astray-turn-red-p-bandai",
@@ -1183,16 +1236,17 @@
       "Gundam Astray Turn Red \"Gundam SEED VS Astray\", Bandai MG 1/100"
     ],
     "sku": "4549660248095",
-    "categories": [
+    "tags": [
       "1/100",
       "gundam",
       "mg",
       "p-bandai",
       "seed"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "pre-order-tallgeese-ew-special-coating-ver-gundam-wing-endless-waltz-bandai-mg": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/pre-order-tallgeese-ew-special-coating-ver-gundam-wing-endless-waltz-bandai-mg",
@@ -1208,12 +1262,13 @@
       "Tallgeese (EW) (Special Coating Ver), \"Gundam Wing: Endless Waltz\", Bandai MG"
     ],
     "sku": "4549660196198",
-    "categories": [
+    "tags": [
       "fsale"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   },
   "pre-order-sazabi-ver-ka-mechanical-clear-ver-chars-counterattack-bandai-mg-1-100-expo": {
     "href": "https://www.usagundamstore.com/collections/p-bandai/products/pre-order-sazabi-ver-ka-mechanical-clear-ver-chars-counterattack-bandai-mg-1-100-expo",
@@ -1230,11 +1285,12 @@
       "Sazabi Ver.Ka Mechanical Clear Ver. \"Char's Counterattack\", Bandai MG 1/100 Expo"
     ],
     "sku": "4549660119784",
-    "categories": [
+    "tags": [
       "p-bandai"
     ],
-    "product_description": [],
+    "scale": null,
     "product_line": "p-bandai",
-    "scale": null
+    "description": [],
+    "manufacturer": "bandai"
   }
 }

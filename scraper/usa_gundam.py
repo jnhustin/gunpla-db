@@ -15,9 +15,10 @@ BASE_PAGE_LINKS = {
   'p-bandai' :  'https://www.usagundamstore.com/pages/search-results-page?collection=p-bandai',
   'pg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=pg-gundam-kits',
   'mg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=model-kits',
-  # 'sd'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=gundam-bb-sd',
-  # 'hguc'     :  'https://www.usagundamstore.com/pages/search-results-page?collection=hguc-gundam-kits',
-  # 're'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=re-100-reborn-model-kits',
+  'sd'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=gundam-bb-sd',
+  're'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=re-100-reborn-model-kits',
+  'hguc'     :  'https://www.usagundamstore.com/pages/search-results-page?collection=hguc-gundam-kits',
+  'hg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=1-144&rb_tags=Gundam',
 }
 HELPER = Helper()
 
@@ -46,9 +47,31 @@ def main():
     # clean up json
     # run_pass_2(product_line)
 
-    # remove "other" kits from main json body
+    # update key names
     run_pass_3(product_line)
 
+
+    # process by grade
+    """ MG
+      - move everything from "other" out
+        - modify the key name
+          - remove "pre-order"
+    """
+
+    # create access_name field
+    """ requirements
+      - scale
+      - title
+      - grade
+    """
+
+
+
+
+
+
+    # add series
+    # add timeline
 
   return
 
@@ -133,13 +156,13 @@ def process_details_page(file_model_info):
     # images
     main_img    =  soup.find('img', id='ProductPhotoImg')['src']
     img_gallery =  soup.find('div', class_='owl-stage-outer')
-
     if img_gallery != None:
       a_tags = img_gallery.findAll('a', class_='product-single__thumbnail')
       images = file_model_info['images']
       images.append(main_img)
       for tag in a_tags:
         images.append(tag['data-zoom-image'])
+      html_model_info['images'] = images
 
     # mark that the model has been updated
     html_model_info['is_visited'] = True
@@ -147,92 +170,6 @@ def process_details_page(file_model_info):
     driver.quit()
 
   return html_model_info
-
-
-
-# PASS 2 STUFF
-def run_pass_2(product_line):
-  print('running pass 2 - cleaning json data')
-  input_json_location =  f'output/{SITE}/pass-1-original/{product_line}.json'
-  with open(input_json_location, 'r') as f:
-    json_data = json.load(f)
-    f.close()
-
-  for model_kit, file_model_info in json_data.items():
-    cleaned_model_info   =  clean_model_kit_json(product_line, file_model_info)
-    json_data[model_kit] =  cleaned_model_info
-    output_json_location =  f'output/{SITE}/pass-2-reduce-details/{product_line}.json'
-    HELPER.update_json_file_content(cleaned_model_info, model_kit, output_json_location)
-
-  print('pass 2 complete')
-  return
-
-def clean_model_kit_json(product_line, file_model_info):
-  # categories section
-  file_model_info['categories'] =[ item[0].lower() for item in file_model_info['categories'] if not item[0].lower().startswith('categories')]
-
-  # TODO - add a scale field
-  if product_line == 'sd':
-    scale = 'n/a'
-  elif product_line == 'mg':
-    scale = '1/100'
-  elif product_line == 'hg' or product_line == 'rg':
-    scale = '1/144'
-  else:
-    scale = None
-  file_model_info['scale'] = scale
-
-  # add product line
-  file_model_info['product_line'] = product_line
-
-  # image section
-  updated_imgs = []
-  for img in file_model_info['images']:
-    url = f'https:{img}' if img.startswith('//cdn.shopify') else img
-    updated_imgs.append(url)
-  file_model_info['images'] = updated_imgs
-
-  # access_name
-
-  return file_model_info
-
-
-
-
-# PASS 3 STUFF
-def run_pass_3(product_line):
-  print('running pass 3 - cleaning json_body')
-  input_json_location =  f'output/{SITE}/pass-2-reduce-details/{product_line}.json'
-  with open(input_json_location, 'r') as f:
-    json_data = json.load(f)
-    f.close()
-
-  updated_json = { 'other': {} }
-  for model_kit, file_model_info in json_data.items():
-    if is_other_kit(model_kit, file_model_info):
-      updated_json['other'][model_kit] = file_model_info
-    else:
-      updated_json[model_kit] = file_model_info
-
-  output_json_location =  f'output/{SITE}/pass-3-update-json-body/{product_line}.json'
-  with open(output_json_location, 'w') as f:
-    f.write(json.dumps(updated_json, indent=2))
-    f.close()
-
-  print('pass 3 complete')
-  return
-
-
-def is_other_kit(model_kit, file_model_info):
-  if 'pre-order' in model_kit or 'preorder' in model_kit:
-    return True
-
-  elif 'star-wars' in model_kit:
-    return True
-  elif 'decal' in model_kit:
-    return True
-  else:
-    return False
 
 
 def get_model_details_page(product_line, download_dir, download_location, output_json_location):
@@ -323,6 +260,143 @@ def get_num_of_pages(a_tags):
       if isinstance(int_val, int):
         num = int_val if num < int_val else num
   return num
+
+
+# PASS 2 STUFF
+def run_pass_2(product_line):
+  print('running pass 2 - cleaning json data')
+  input_json_location =  f'output/{SITE}/pass-1-original/{product_line}.json'
+  with open(input_json_location, 'r') as f:
+    json_data = json.load(f)
+    f.close()
+
+  cleaned_model_kits = {}
+  for model_kit, file_model_info in json_data.items():
+    cleaned_model_info = clean_model_kit_json(product_line, file_model_info)
+    cleaned_model_kits[model_kit] = cleaned_model_info
+
+  output_json_location =  f'output/{SITE}/pass-2-reduce-details'
+  HELPER.compose_download_dir(output_json_location)
+  with open(f'{output_json_location}/{product_line}.json', 'w') as f:
+    f.write(json.dumps(cleaned_model_kits, indent=2))
+    f.close()
+
+  print('pass 2 complete')
+  return
+
+
+def clean_model_kit_json(product_line, file_model_info):
+  # categories section
+  # change categories -> tags
+  file_model_info['tags'] =[ item[0].lower() for item in file_model_info['categories'] if not item[0].lower().startswith('categories')]
+  del file_model_info['categories']
+  # add a scale field
+  if product_line == 'sd':
+    scale = 'n/a'
+  elif product_line == 'mg' or product_line == 're':
+    scale = '1/100'
+  elif product_line == 'hg' or product_line == 'rg' or product_line == 'hguc':
+    scale = '1/144'
+  else:
+    scale = None
+  file_model_info['scale'] = scale
+
+  # add product line
+  file_model_info['product_line'] = product_line
+
+  # image section
+  updated_imgs = []
+  for img in file_model_info['images']:
+    url = f'https:{img}' if img.startswith('//cdn.shopify') else img
+    updated_imgs.append(url)
+  file_model_info['images'] = updated_imgs
+
+  # convert description value from list of list -> list of strings
+  file_model_info['description'] = [description[0] for description in file_model_info['product_description']]
+  del file_model_info['product_description']
+
+  # add manufacturer (all will be the same)
+  file_model_info['manufacturer'] = 'bandai'
+
+  return file_model_info
+
+
+# PASS 3 STUFF
+def run_pass_3(product_line):
+  print('running pass 3 - rename_keys')
+  input_json_location =  f'output/{SITE}/pass-2-reduce-details/{product_line}.json'
+  with open(input_json_location, 'r') as f:
+    json_data = json.load(f)
+    f.close()
+
+  updated_json = {}
+  for model_kit, file_model_info in json_data.items():
+    # rename
+    """ modify the key name
+      - remove "bandai-"
+      - remove "-bandai"
+      - change "hguc-"    to "hg-"
+      - add key-name to the product-line['title']
+    """
+
+    updated_model_kit = model_kit.lower()
+    updated_model_kit = updated_model_kit.replace('pre-order-', '')
+    updated_model_kit = updated_model_kit.replace('bandai-', '')
+    updated_model_kit = updated_model_kit.replace('-bandai', '')
+    updated_model_kit = updated_model_kit.replace('hguc-', 'hg-')
+
+    file_model_info.get('title', []).append(updated_model_kit)
+    updated_json[updated_model_kit] = file_model_info
+
+
+
+  output_json_location =  f'output/{SITE}/pass-3-update-key-names'
+  HELPER.compose_download_dir(output_json_location)
+  with open(f'{output_json_location}/{product_line}.json', 'w') as f:
+    f.write(json.dumps(updated_json, indent=2))
+    f.close()
+
+  print('pass 3 complete')
+  return
+
+
+# # PASS 3 STUFF TODO - move this to the last step
+  # remove evangelion kits
+  # remove starwars kits
+# def run_pass__(product_line):
+#   print('running pass 3 - cleaning json_body')
+#   input_json_location =  f'output/{SITE}/pass-2-reduce-details/{product_line}.json'
+#   with open(input_json_location, 'r') as f:
+#     json_data = json.load(f)
+#     f.close()
+
+#   updated_json = { 'other': {} }
+#   for model_kit, file_model_info in json_data.items():
+#     if is_other_kit(model_kit, file_model_info):
+#       updated_json['other'][model_kit] = file_model_info
+#     else:
+#       updated_json[model_kit] = file_model_info
+
+#   output_json_location =  f'output/{SITE}/pass-3-update-json-body/{product_line}.json'
+#   with open(output_json_location, 'w') as f:
+#     f.write(json.dumps(updated_json, indent=2))
+#     f.close()
+
+#   print('pass 3 complete')
+#   return
+
+
+def is_other_kit(model_kit, file_model_info):
+  if 'pre-order' in model_kit or 'preorder' in model_kit:
+    return True
+
+  elif 'star-wars' in model_kit:
+    return True
+  elif 'decal' in model_kit:
+    return True
+  else:
+    return False
+
 
 
 if __name__ == '__main__':
