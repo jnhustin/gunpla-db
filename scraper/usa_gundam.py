@@ -41,15 +41,30 @@ def main():
   for product_line in BASE_PAGE_LINKS.keys():
     print(f'\n\n============== {product_line} ==============')
 
-    # extract basic info into json format
-    # run_pass_1(product_line)
+    # scrape for basic info into json format
+    # scrape_details_page(product_line)
 
-    # clean up json
-    # run_pass_2(product_line)
+    # pass 2: clean up json
+    run_pass(
+      product_line    =  product_line,
+      input_location  =  f'output/{SITE}/pass-1-original/{product_line}.json',
+      output_location =  f'output/{SITE}/pass-2-reduce-details/',
+      operation       =  pass_2,
+      log             =  'pass 2: reduce json details'
+    )
 
-    # update key names
-    run_pass_3(product_line)
+    # pass 3: update key names
+    run_pass(
+      product_line    =  product_line,
+      input_location  =  f'output/{SITE}/pass-2-reduce-details/{product_line}.json',
+      output_location =  f'output/{SITE}/pass-3-update-key-names/',
+      operation       =  pass_3,
+      log             =  'pass 3: update key names'
+    )
 
+
+
+    # run_pass_4(product_line)
 
     # process by grade
     """ MG
@@ -67,16 +82,32 @@ def main():
 
 
 
-
-
-
     # add series
     # add timeline
 
   return
 
+
+
+def run_pass(product_line, input_location, output_location, operation, log=''):
+  print(f'running {log}')
+  with open(input_location, 'r') as f:
+    json_data = json.load(f)
+    f.close()
+
+  updated_json = operation(json_data)
+
+  HELPER.compose_download_dir(output_location)
+  with open(f'{output_location}/{product_line}.json', 'w') as f:
+    f.write(json.dumps(updated_json, indent=2))
+    f.close()
+
+  print(f'completed {log}')
+  return
+
+
 # PASS 1 STUFF
-def run_pass_1(product_line):
+def scrape_details_page(product_line):
   output_json_location =  f'output/{SITE}/pass-1-original/{product_line}.json'
   with open(output_json_location, 'r') as f:
     json_data = json.load(f)
@@ -263,72 +294,48 @@ def get_num_of_pages(a_tags):
 
 
 # PASS 2 STUFF
-def run_pass_2(product_line):
-  print('running pass 2 - cleaning json data')
-  input_json_location =  f'output/{SITE}/pass-1-original/{product_line}.json'
-  with open(input_json_location, 'r') as f:
-    json_data = json.load(f)
-    f.close()
-
-  cleaned_model_kits = {}
+def pass_2(json_data):
+  updated_json_data = {}
   for model_kit, file_model_info in json_data.items():
-    cleaned_model_info = clean_model_kit_json(product_line, file_model_info)
-    cleaned_model_kits[model_kit] = cleaned_model_info
+    # categories section
+    # change categories -> tags
+    file_model_info['tags'] =[ item[0].lower() for item in file_model_info['categories'] if not item[0].lower().startswith('categories')]
+    del file_model_info['categories']
+    # add a scale field
+    if product_line == 'sd':
+      scale = 'n/a'
+    elif product_line == 'mg' or product_line == 're':
+      scale = '1/100'
+    elif product_line == 'hg' or product_line == 'rg' or product_line == 'hguc':
+      scale = '1/144'
+    else:
+      scale = None
+    file_model_info['scale'] = scale
 
-  output_json_location =  f'output/{SITE}/pass-2-reduce-details'
-  HELPER.compose_download_dir(output_json_location)
-  with open(f'{output_json_location}/{product_line}.json', 'w') as f:
-    f.write(json.dumps(cleaned_model_kits, indent=2))
-    f.close()
+    # add product line
+    file_model_info['product_line'] = product_line
 
-  print('pass 2 complete')
-  return
+    # image section
+    updated_imgs = []
+    for img in file_model_info['images']:
+      url = f'https:{img}' if img.startswith('//cdn.shopify') else img
+      updated_imgs.append(url)
+    file_model_info['images'] = updated_imgs
 
+    # convert description value from list of list -> list of strings
+    file_model_info['description'] = [description[0] for description in file_model_info['product_description']]
+    del file_model_info['product_description']
 
-def clean_model_kit_json(product_line, file_model_info):
-  # categories section
-  # change categories -> tags
-  file_model_info['tags'] =[ item[0].lower() for item in file_model_info['categories'] if not item[0].lower().startswith('categories')]
-  del file_model_info['categories']
-  # add a scale field
-  if product_line == 'sd':
-    scale = 'n/a'
-  elif product_line == 'mg' or product_line == 're':
-    scale = '1/100'
-  elif product_line == 'hg' or product_line == 'rg' or product_line == 'hguc':
-    scale = '1/144'
-  else:
-    scale = None
-  file_model_info['scale'] = scale
+    # add manufacturer (all will be the same)
+    file_model_info['manufacturer'] = 'bandai'
 
-  # add product line
-  file_model_info['product_line'] = product_line
+    updated_json_data[model_kit] = file_model_info
 
-  # image section
-  updated_imgs = []
-  for img in file_model_info['images']:
-    url = f'https:{img}' if img.startswith('//cdn.shopify') else img
-    updated_imgs.append(url)
-  file_model_info['images'] = updated_imgs
-
-  # convert description value from list of list -> list of strings
-  file_model_info['description'] = [description[0] for description in file_model_info['product_description']]
-  del file_model_info['product_description']
-
-  # add manufacturer (all will be the same)
-  file_model_info['manufacturer'] = 'bandai'
-
-  return file_model_info
+  return updated_json_data
 
 
 # PASS 3 STUFF
-def run_pass_3(product_line):
-  print('running pass 3 - rename_keys')
-  input_json_location =  f'output/{SITE}/pass-2-reduce-details/{product_line}.json'
-  with open(input_json_location, 'r') as f:
-    json_data = json.load(f)
-    f.close()
-
+def pass_3(json_data):
   updated_json = {}
   for model_kit, file_model_info in json_data.items():
     # rename
@@ -348,21 +355,14 @@ def run_pass_3(product_line):
     file_model_info.get('title', []).append(updated_model_kit)
     updated_json[updated_model_kit] = file_model_info
 
+  return updated_json
 
 
-  output_json_location =  f'output/{SITE}/pass-3-update-key-names'
-  HELPER.compose_download_dir(output_json_location)
-  with open(f'{output_json_location}/{product_line}.json', 'w') as f:
-    f.write(json.dumps(updated_json, indent=2))
-    f.close()
 
-  print('pass 3 complete')
-  return
-
-
-# # PASS 3 STUFF TODO - move this to the last step
+# # PASS _ STUFF TODO - move this to the last step
   # remove evangelion kits
   # remove starwars kits
+  # remove rg kits from hg.json
 # def run_pass__(product_line):
 #   print('running pass 3 - cleaning json_body')
 #   input_json_location =  f'output/{SITE}/pass-2-reduce-details/{product_line}.json'
