@@ -23,55 +23,51 @@ BASE_PAGE_LINKS = {
 HELPER = Helper()
 
 def main():
-
-  # for product_line, page_link in BASE_PAGE_LINKS.items():
-  #   print('product_line: ', product_line)
-  #   # download base pages
-  #   output_json_location =  f'output/{SITE}/pass-1-original/{product_line}.json'
-  #   download_dir         =  f'{SITE_HTML_FOLDER}/base_pages/{product_line}'
-  #   download_location    =  f'{download_dir}/{product_line}.html'
-  #   HELPER.download_dynamic_html(page_link, download_dir, alt_filename=product_line)
-
-  #   # get all kits in each base page
-  #   get_model_details_page(product_line, download_dir, download_location, output_json_location)
-  #   print('completed extracting base page data!\n\n\n')
-
+  # download_html_pages_extract_basic_info()
 
   # open json and update models in json data
   for product_line in BASE_PAGE_LINKS.keys():
     print(f'\n\n============== {product_line} ==============')
 
-    # scrape for basic info into json format
+    # pass 1: scrape for basic info into json format
     # scrape_details_page(product_line)
 
     # pass 2: clean up json
     run_pass(
       product_line    =  product_line,
-      input_location  =  f'output/{SITE}/pass-1-original/{product_line}.json',
-      output_location =  f'output/{SITE}/pass-2-reduce-details/',
+      input_location  =  f'output/{SITE}/pass-1-original',
+      output_location =  f'output/{SITE}/pass-2-reduce-details',
       operation       =  pass_2,
+      operation_extra =  {'product_line': product_line}
       log             =  'pass 2: reduce json details'
     )
 
     # pass 3: update key names
     run_pass(
       product_line    =  product_line,
-      input_location  =  f'output/{SITE}/pass-2-reduce-details/{product_line}.json',
-      output_location =  f'output/{SITE}/pass-3-update-key-names/',
+      input_location  =  f'output/{SITE}/pass-2-reduce-details',
+      output_location =  f'output/{SITE}/pass-3-update-key-names',
       operation       =  pass_3,
       log             =  'pass 3: update key names'
     )
 
+    #
 
-
-    # run_pass_4(product_line)
-
-    # process by grade
+    # pass 4: process by grade
     """ MG
       - move everything from "other" out
         - modify the key name
           - remove "pre-order"
     """
+    run_pass(
+      product_line    =  product_line,
+      input_location  =  f'output/{SITE}/pass-3-update-key-names',
+      output_location =  f'output/{SITE}/pass-4-process-by-grade',
+      operation       =  pass_3,
+      operation_extra =  {}
+      log             =  'pass 3: update key names'
+    )
+
 
     # create access_name field
     """ requirements
@@ -88,14 +84,28 @@ def main():
   return
 
 
+def download_html_pages_extract_basic_info():
+  for product_line, page_link in BASE_PAGE_LINKS.items():
+    print('product_line: ', product_line)
+    # download base pages
+    output_json_location =  f'output/{SITE}/pass-1-original/{product_line}.json'
+    download_dir         =  f'{SITE_HTML_FOLDER}/base_pages/{product_line}'
+    download_location    =  f'{download_dir}/{product_line}.html'
+    HELPER.download_dynamic_html(page_link, download_dir, alt_filename=product_line)
 
-def run_pass(product_line, input_location, output_location, operation, log=''):
+    # get all kits in each base page
+    get_model_details_page(product_line, download_dir, download_location, output_json_location)
+    print('completed extracting base page data!')
+  return
+
+
+def run_pass(product_line, input_location, output_location, operation, operation_extra={} log=''):
   print(f'running {log}')
-  with open(input_location, 'r') as f:
+  with open(f'input_location/{product_line}.json', 'r') as f:
     json_data = json.load(f)
     f.close()
 
-  updated_json = operation(json_data)
+  updated_json = operation(json_data, extra=operation_extra)
 
   HELPER.compose_download_dir(output_location)
   with open(f'{output_location}/{product_line}.json', 'w') as f:
@@ -294,7 +304,9 @@ def get_num_of_pages(a_tags):
 
 
 # PASS 2 STUFF
-def pass_2(json_data):
+def pass_2(json_data, extra):
+  product_line = extra['product_line']
+
   updated_json_data = {}
   for model_kit, file_model_info in json_data.items():
     # categories section
@@ -335,7 +347,7 @@ def pass_2(json_data):
 
 
 # PASS 3 STUFF
-def pass_3(json_data):
+def pass_3(json_data, extra):
   updated_json = {}
   for model_kit, file_model_info in json_data.items():
     # rename
@@ -352,11 +364,15 @@ def pass_3(json_data):
     updated_model_kit = updated_model_kit.replace('-bandai', '')
     updated_model_kit = updated_model_kit.replace('hguc-', 'hg-')
 
-    file_model_info.get('title', []).append(updated_model_kit)
+    file_model_info.get('title', []).insert(0, updated_model_kit)
     updated_json[updated_model_kit] = file_model_info
 
   return updated_json
 
+
+def pass_4(json_data, extra):
+  updated_json = {}
+  for model_kit, file_model_info in json_data.items():
 
 
 # # PASS _ STUFF TODO - move this to the last step
