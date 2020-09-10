@@ -8,8 +8,9 @@ from bs4 import BeautifulSoup, element
 
 from helper import Helper
 
-SITE = 'usa_gundam'
-SITE_HTML_FOLDER = f'html/{SITE}'
+OTHER_KITS       =  'other_kits'
+SITE             =  'usa_gundam'
+SITE_HTML_FOLDER =  f'html/{SITE}'
 BASE_PAGE_LINKS = {
   'rg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=rg-kits',
   'p-bandai' :  'https://www.usagundamstore.com/pages/search-results-page?collection=p-bandai',
@@ -23,6 +24,7 @@ BASE_PAGE_LINKS = {
 HELPER = Helper()
 
 def main():
+    # TODO - NEED TO RUN PASS 1 ON sd kits
   # download_html_pages_extract_basic_info()
 
   # open json and update models in json data
@@ -31,14 +33,13 @@ def main():
 
     # pass 1: scrape for basic info into json format
     # scrape_details_page(product_line)
-
     # pass 2: clean up json
     run_pass(
       product_line    =  product_line,
       input_location  =  f'output/{SITE}/pass-1-original',
       output_location =  f'output/{SITE}/pass-2-reduce-details',
       operation       =  pass_2,
-      operation_extra =  {'product_line': product_line}
+      operation_extra =  {'product_line': product_line},
       log             =  'pass 2: reduce json details'
     )
 
@@ -51,8 +52,6 @@ def main():
       log             =  'pass 3: update key names'
     )
 
-    #
-
     # pass 4: process by grade
     """ MG
       - move everything from "other" out
@@ -63,10 +62,21 @@ def main():
       product_line    =  product_line,
       input_location  =  f'output/{SITE}/pass-3-update-key-names',
       output_location =  f'output/{SITE}/pass-4-process-by-grade',
-      operation       =  pass_3,
-      operation_extra =  {}
-      log             =  'pass 3: update key names'
+      operation       =  pass_4,
+      operation_extra =  {},
+      log             =  'pass 4: update by product_line'
     )
+
+    # pass 5: manual changes
+    # run_pass(
+    #   product_line    =  product_line,
+    #   input_location  =  f'output/{SITE}/pass-4-process-by-grade',
+    #   output_location =  f'output/{SITE}/pass-5-manaul-updates',
+    #   operation       =  pass_5,
+    #   operation_extra =  {},
+    #   log             =  'pass 5: manual updats'
+    # )
+
 
 
     # create access_name field
@@ -99,13 +109,18 @@ def download_html_pages_extract_basic_info():
   return
 
 
-def run_pass(product_line, input_location, output_location, operation, operation_extra={} log=''):
+def run_pass(product_line, input_location, output_location, operation, operation_extra={}, log=''):
   print(f'running {log}')
   with open(f'input_location/{product_line}.json', 'r') as f:
     json_data = json.load(f)
     f.close()
 
-  updated_json = operation(json_data, extra=operation_extra)
+  updated_json = { OTHER_KITS: {} }
+  for model_kit, file_model_info in json_data.items():
+    operation_extra[OTHER_KITS] = updated_json[OTHER_KITS]
+
+    model_kit, file_model_info =  operation(model_kit, file_model_info, extra=operation_extra)
+    updated_json[model_kit]    =  file_model_info
 
   HELPER.compose_download_dir(output_location)
   with open(f'{output_location}/{product_line}.json', 'w') as f:
@@ -304,70 +319,71 @@ def get_num_of_pages(a_tags):
 
 
 # PASS 2 STUFF
-def pass_2(json_data, extra):
+def pass_2(model_kit, file_model_info, extra):
   product_line = extra['product_line']
 
-  updated_json_data = {}
-  for model_kit, file_model_info in json_data.items():
-    # categories section
-    # change categories -> tags
-    file_model_info['tags'] =[ item[0].lower() for item in file_model_info['categories'] if not item[0].lower().startswith('categories')]
-    del file_model_info['categories']
-    # add a scale field
-    if product_line == 'sd':
-      scale = 'n/a'
-    elif product_line == 'mg' or product_line == 're':
-      scale = '1/100'
-    elif product_line == 'hg' or product_line == 'rg' or product_line == 'hguc':
-      scale = '1/144'
-    else:
-      scale = None
-    file_model_info['scale'] = scale
+  # categories section
+  # change categories -> tags
+  file_model_info['tags'] =[ item[0].lower() for item in file_model_info['categories'] if not item[0].lower().startswith('categories')]
+  del file_model_info['categories']
 
-    # add product line
-    file_model_info['product_line'] = product_line
+  # add a scale field
+  if product_line == 'sd':
+    scale = 'n/a'
+  elif product_line == 'mg' or product_line == 're':
+    scale = '1/100'
+  elif product_line == 'hg' or product_line == 'rg' or product_line == 'hguc':
+    scale = '1/144'
+  else:
+    scale = None
+  file_model_info['scale'] = scale
 
-    # image section
-    updated_imgs = []
-    for img in file_model_info['images']:
-      url = f'https:{img}' if img.startswith('//cdn.shopify') else img
-      updated_imgs.append(url)
-    file_model_info['images'] = updated_imgs
+  # add product line
+  file_model_info['product_line'] = product_line
 
-    # convert description value from list of list -> list of strings
-    file_model_info['description'] = [description[0] for description in file_model_info['product_description']]
-    del file_model_info['product_description']
+  # image section
+  updated_imgs = []
+  for img in file_model_info['images']:
+    url = f'https:{img}' if img.startswith('//cdn.shopify') else img
+    updated_imgs.append(url)
+  file_model_info['images'] = updated_imgs
 
-    # add manufacturer (all will be the same)
-    file_model_info['manufacturer'] = 'bandai'
+  # convert description value from list of list -> list of strings
+  file_model_info['description'] = [description[0] for description in file_model_info['product_description']]
+  del file_model_info['product_description']
 
-    updated_json_data[model_kit] = file_model_info
+  # add manufacturer (all will be the same)
+  file_model_info['manufacturer'] = 'bandai'
 
-  return updated_json_data
+  return model_kit, file_model_info
 
 
 # PASS 3 STUFF
-def pass_3(json_data, extra):
-  updated_json = {}
-  for model_kit, file_model_info in json_data.items():
-    # rename
-    """ modify the key name
-      - remove "bandai-"
-      - remove "-bandai"
-      - change "hguc-"    to "hg-"
-      - add key-name to the product-line['title']
-    """
+def pass_3(model_kit, file_model_info, extra):
+  # rename
+  """ modify the key name
+    - remove "bandai-"
+    - remove "-bandai"
+    - change "hguc-"    to "hg-"
+    - add key-name to the product-line['title']
+  """
 
-    updated_model_kit = model_kit.lower()
-    updated_model_kit = updated_model_kit.replace('pre-order-', '')
-    updated_model_kit = updated_model_kit.replace('bandai-', '')
-    updated_model_kit = updated_model_kit.replace('-bandai', '')
-    updated_model_kit = updated_model_kit.replace('hguc-', 'hg-')
+  updated_model_kit = model_kit.lower()
+  updated_model_kit = updated_model_kit.replace('pre-order-', '')
+  updated_model_kit = updated_model_kit.replace('bandai-', '')
+  updated_model_kit = updated_model_kit.replace('-bandai', '')
+  updated_model_kit = updated_model_kit.replace('hguc-', 'hg-')
+  updated_model_kit = updated_model_kit.replace('bb-', '')
+  updated_model_kit = updated_model_kit.replace('cross-sihouettte-', 'cs-')
+  updated_model_kit = updated_model_kit.replace('-model-kit', '')
+  updated_model_kit = updated_model_kit.replace('model-kit-', '')
+  updated_model_kit = updated_model_kit.replace('sd-gundam-', 'sd-')
+  updated_model_kit = updated_model_kit.replace('hobby-', '')
+  updated_model_kit = updated_model_kit.replace('realistic-model-', '')
 
-    file_model_info.get('title', []).insert(0, updated_model_kit)
-    updated_json[updated_model_kit] = file_model_info
+  file_model_info.get('title', []).insert(0, updated_model_kit)
+  return updated_model_kit, file_model_info
 
-  return updated_json
 
 
 def pass_4(json_data, extra):

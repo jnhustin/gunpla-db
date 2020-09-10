@@ -3954,7 +3954,7 @@
       "bb411-huanggai-gouf-six-combining-weapons-set-b-bb-senshi-sangokuden-sd"
     ],
     "sku": "4549660240303",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sangoku"
     ],
@@ -3975,7 +3975,7 @@
       "bb410-dianwei-asshimar-jiaxu-ashtaron-siege-weapon-six-combining-weapons-set-a-bb-senshi-sangokuden-sd"
     ],
     "sku": "4549660240310",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sangoku"
     ],
@@ -3996,7 +3996,7 @@
       "bb409-yuanshao-bawoo-yuxi-bb-senshi-sangokuden-sd"
     ],
     "sku": "4549660240273",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sangoku"
     ],
@@ -4017,7 +4017,7 @@
       "bb408-yuanshu-zssa-tiankaizhuang-bb-senshi-sangokuden-sd"
     ],
     "sku": "4549660240280",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sangoku"
     ],
@@ -4038,7 +4038,7 @@
       "bb407-dongzhuo-zaku-buduibing-dongzhuo-forces-bb-senshi-sangokuden-sd"
     ],
     "sku": "4549660240297",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sangoku"
     ],
@@ -4059,7 +4059,7 @@
       "bb406-gongsun-zan-ez-8-four-symbols-ogre-armor-chariot-bb-senshi-sangokuden-sd"
     ],
     "sku": "4549660240327",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sangoku"
     ],
@@ -4080,7 +4080,7 @@
       "bb405-huzhen-gyan-buduibing-dongzhuo-forces-bb-senshi-sangokuden-sd"
     ],
     "sku": "4549660240266",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sangoku"
     ],
@@ -4101,7 +4101,7 @@
       "bb332-uesugi-kenshin-gundam"
     ],
     "sku": null,
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4122,7 +4122,7 @@
       "bb350-date-masamune-gundam"
     ],
     "sku": null,
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4143,7 +4143,7 @@
       "bb339-naoe-kanetsugu-gundam"
     ],
     "sku": null,
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4164,7 +4164,7 @@
       "bb331-takeda-shingen-gundam"
     ],
     "sku": "46583025359",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4185,7 +4185,7 @@
       "bb343-sanada-yukimura-gundam"
     ],
     "sku": "46582891535",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4206,7 +4206,7 @@
       "sd-legend-bb-400-superior-dragon"
     ],
     "sku": null,
-    "is_visited": true,
+    "is_visited": false,
     "tags": [],
     "scale": "n/a",
     "product_line": "sd",
@@ -4226,7 +4226,7 @@
       "bb-344-oda-nobunaga-gundam"
     ],
     "sku": null,
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4247,7 +4247,7 @@
       "bb-242-g-gundam"
     ],
     "sku": "4543112142160",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "g gundam",
       "gundam",
@@ -4270,7 +4270,7 @@
       "bb402-gundam-barbatos-lupus-dx-gundam-ibo-sd"
     ],
     "sku": null,
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4292,7 +4292,7 @@
       "bb383-legend-bb-strike-ryubi-gundam"
     ],
     "sku": "4543112823274",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4313,7 +4313,7 @@
       "014-gundam-barbatos-lupus-ibo-2nd-season-sd-ex-standard"
     ],
     "sku": "4549660121992",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "fsale",
       "gundam",
@@ -4337,7 +4337,7 @@
       "bb-senshi-no-401-gundam-barbatos-dx"
     ],
     "sku": "4549660094326",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4358,7 +4358,7 @@
       "new-2016-limited-mc-nightingale-msn-04-02-pre-painted-sd-model-kit"
     ],
     "sku": "22516011524",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [],
     "scale": "n/a",
     "product_line": "sd",
@@ -4377,7 +4377,7 @@
       "bb-280-force-impulse-gundam-1"
     ],
     "sku": "4543112341068",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4398,7 +4398,7 @@
       "gg002-sazabi"
     ],
     "sku": "4902425727806",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [],
     "scale": "n/a",
     "product_line": "sd",
@@ -4417,7 +4417,7 @@
       "ex-standard-build-burning"
     ],
     "sku": "4549660090663",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "build fighters",
       "fsale",
@@ -4441,7 +4441,7 @@
       "bb276-duel-gundam"
     ],
     "sku": "4543112318787",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4462,7 +4462,7 @@
       "bb-231-ms-06s-zaku-ii-char"
     ],
     "sku": "4543112088291",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sd",
       "uc"
@@ -4484,7 +4484,7 @@
       "bb212-msz-010-zz-gundam"
     ],
     "sku": "4902425776286",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam",
       "sd",
@@ -4507,7 +4507,7 @@
       "bb370-legend-bb-knight-gundam"
     ],
     "sku": "4543112753243",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam",
       "sd"
@@ -4529,7 +4529,7 @@
       "bb-zeong"
     ],
     "sku": "4543112105370",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam",
       "sd",
@@ -4552,7 +4552,7 @@
       "bb-ms-06f-zaku"
     ],
     "sku": "4543112033307",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sd",
       "uc"
@@ -4574,7 +4574,7 @@
       "sd-gundam-ex-standard-010-gundam-barbatos"
     ],
     "sku": "4549660078555",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "fsale",
       "gundam",
@@ -4598,7 +4598,7 @@
       "ex-standard-008-oo-gundam"
     ],
     "sku": "4549660049364",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "fsale",
       "gundam"
@@ -4620,7 +4620,7 @@
       "ex-standard-009-destiny-gundam"
     ],
     "sku": "4549660078548",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "fsale",
       "gundam",
@@ -4644,7 +4644,7 @@
       "bb-sd-246-strike-gundam-seed"
     ],
     "sku": "45431121760420",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4665,7 +4665,7 @@
       "bb-sd-strike-freedom"
     ],
     "sku": "4543112410405",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [],
     "scale": "n/a",
     "product_line": "sd",
@@ -4684,7 +4684,7 @@
       "bb-sd-aegis-gundam"
     ],
     "sku": "4543112241245",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4705,7 +4705,7 @@
       "ex-standard-005-unicorn-gundam-destroy-mode"
     ],
     "sku": "4549660044338",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam",
       "sd",
@@ -4729,7 +4729,7 @@
       "ex-standard-004-wing-gundam-zero-ew"
     ],
     "sku": "4549660027546",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam",
       "sd",
@@ -4752,7 +4752,7 @@
       "ex-standard-003-gundam-exia"
     ],
     "sku": "4549660027539",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4773,7 +4773,7 @@
       "action-base-mini-gray-2pcs"
     ],
     "sku": "10414480772",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [],
     "scale": "n/a",
     "product_line": "sd",
@@ -4792,7 +4792,7 @@
       "ex-standard-006-strike-freedom-gundam"
     ],
     "sku": "4549660049340",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "fsale",
       "gundam"
@@ -4814,7 +4814,7 @@
       "ex-standard-007-gundam-astray-red-frame"
     ],
     "sku": "4549660049357",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam",
       "sd",
@@ -4837,7 +4837,7 @@
       "ex-standard-002-aile-strike-gunda"
     ],
     "sku": "4543112967282",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "fsale",
       "gundam",
@@ -4861,7 +4861,7 @@
       "ex-standard-001-rx-78-2-gundam"
     ],
     "sku": "4549660026419",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4882,7 +4882,7 @@
       "bb379-delta-plus"
     ],
     "sku": null,
-    "is_visited": true,
+    "is_visited": false,
     "tags": [],
     "scale": "n/a",
     "product_line": "sd",
@@ -4901,7 +4901,7 @@
       "bb367-kshatriya"
     ],
     "sku": "4543112709639",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [],
     "scale": "n/a",
     "product_line": "sd",
@@ -4921,7 +4921,7 @@
       "bb268-justice-gundam"
     ],
     "sku": "0798525106870",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -4942,7 +4942,7 @@
       "bb257-freedom-gundam"
     ],
     "sku": "4543112227140",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam",
       "sd",
@@ -4965,7 +4965,7 @@
       "bb382-sazabi"
     ],
     "sku": "4543112819413",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sd",
       "uc"
@@ -4987,7 +4987,7 @@
       "bb388-build-strike-gundam-full-package"
     ],
     "sku": "4543112865366",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "fsale",
       "gundam",
@@ -5010,7 +5010,7 @@
       "b393-legend-bb-full-armor-knight-gundam"
     ],
     "sku": "4543112913937",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -5031,7 +5031,7 @@
       "bb391-banshee-norn"
     ],
     "sku": "4543112894861",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sd",
       "unicorn"
@@ -5054,7 +5054,7 @@
       "sdbf-red-warrior-kurenai-musha-amazing"
     ],
     "sku": "4549660006336",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [],
     "scale": "n/a",
     "product_line": "sd",
@@ -5073,7 +5073,7 @@
       "bb399-legend-bb-versal-knight-gundam"
     ],
     "sku": null,
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam"
     ],
@@ -5094,7 +5094,7 @@
       "sd-bb-lightning-gundam"
     ],
     "sku": "4543112964243",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [],
     "scale": "n/a",
     "product_line": "sd",
@@ -5113,7 +5113,7 @@
       "bb390-full-armor-unicorn-gundam"
     ],
     "sku": "4543112894762",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sd",
       "uc",
@@ -5136,7 +5136,7 @@
       "bb-senshi-neo-zeong"
     ],
     "sku": "4543112895059",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sd",
       "uc",
@@ -5159,7 +5159,7 @@
       "bb-397-musha-victory-gundam-model-kit"
     ],
     "sku": "4543112943743",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "bb",
       "gundam",
@@ -5184,7 +5184,7 @@
       "hobby-bb-387-nu-gundam"
     ],
     "sku": "4543112851611",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "gundam",
       "sd",
@@ -5207,7 +5207,7 @@
       "hobby-bb-386-xi-gundam-model-kit"
     ],
     "sku": "4543112851604",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "bb",
       "gundam",
@@ -5233,7 +5233,7 @@
       "bb372-gundam-age-3-normal-fortress-orbital"
     ],
     "sku": "4543112764898",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "age",
       "bb",
@@ -5259,7 +5259,7 @@
       "bb369-gundam-age-1"
     ],
     "sku": "1148418712",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "bb",
       "gundam",
@@ -5284,7 +5284,7 @@
       "hobby-bb-394-unicorn-gundam-phenex-action-figure"
     ],
     "sku": "4543112913944",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "bb",
       "gundam",
@@ -5309,7 +5309,7 @@
       "hobby-bb-384-sd-hi-nu-gundam-action-figure-model-kit"
     ],
     "sku": "4543112836434",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "sd",
       "uc"
@@ -5331,7 +5331,7 @@
       "second-generation-imperator-sd-musha-gundam-395-legend-bb"
     ],
     "sku": null,
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "bb",
       "gundam",
@@ -5356,7 +5356,7 @@
       "hobby-sdbf-winning-gundam-model-kit"
     ],
     "sku": "4543112943675",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "build fighters",
       "gundam",
@@ -5381,7 +5381,7 @@
       "hobby-bb-396-sd-build-burning-gundam-model-kit"
     ],
     "sku": "4543112943682",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "build fighters",
       "gundam",
@@ -5406,7 +5406,7 @@
       "bb-sd-380-unicorn-gundam-02-banshee-model-kit"
     ],
     "sku": "4543112813442",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "bb",
       "gundam",
@@ -5433,7 +5433,7 @@
       "gundam-sd-super-deformed-bb-model-kit-bb365-uc-msn-06s-sinanju-figure"
     ],
     "sku": "5055880",
-    "is_visited": true,
+    "is_visited": false,
     "tags": [
       "bb",
       "gundam",
