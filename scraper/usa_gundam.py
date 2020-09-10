@@ -386,9 +386,88 @@ def pass_3(model_kit, file_model_info, extra):
 
 
 
-def pass_4(json_data, extra):
-  updated_json = {}
-  for model_kit, file_model_info in json_data.items():
+# PASS 4 STUFF
+def pass_4(model_kit, file_model_info, extra):
+  # [ ] - hg
+  # [ ] - hguc
+  # [ ] - mg
+  # [x] - p-bandai
+  # [x] - pg
+  # [x] - re
+  # [x] - rg
+  # [x] - sd
+
+  product_line =  extra['product_line']
+  other_kits   =  extra[OTHER_KITS]
+
+  # json doesnt require modification
+  if product_line in ['re']:
+    return model_kit, file_model_info
+
+  # grade specific cleaning
+  if product_line == 'rg':
+    fn = pass_4_rg
+  elif product_line == 'pg':
+    fn = pass_4_pg
+  elif product_line == 'sd':
+    fn = pass_4_sd
+  elif product_line == 'p-bandai':
+    fn = pass_4_pbandai
+
+  model_kit, file_model_info = fn(model_kit, file_model_info, other_kits)
+  return model_kit, file_model_info
+
+
+def pass_4_rg(model_kit, file_model_info, other_kits):
+  # remove evangelion models
+  if 'evangelion' in file_model_info['tags']:
+    other_kits[model_kit] = file_model_info
+    model_kit       =  OTHER_KITS
+    file_model_info =  other_kits
+
+  return model_kit, file_model_info
+
+
+def pass_4_pg(model_kit, file_model_info, other_kits):
+  # remove evangelion models
+  if 'led' in model_kit or 'mazinger' in model_kit or 'star-wars' in model_kit or 'mega' in model_kit:
+    other_kits[model_kit] = file_model_info
+    model_kit       =  OTHER_KITS
+    file_model_info =  other_kits
+
+  return model_kit, file_model_info
+
+
+def pass_4_sd(model_kit, file_model_info, other_kits):
+
+  # append sd- to start of all models
+  if not model_kit.startswith('sd-'):
+    model_kit = 'sd-' + model_kit
+
+  if 'sangoku-soketsuden-' in model_kit:
+    model_kit.replace('sangoku-soketsuden-', '')
+    file_model_info['tags'].append('sangoku-soketsuden')
+  elif 'sangokuden-animation-' in model_kit:
+    model_kit.replace('sangokuden-animation-', '')
+    file_model_info['tags'].append('sangokuden')
+
+  return model_kit, file_model_info
+
+
+def pass_4_pbandai(model_kit, file_model_info, other_kits):
+  if 'gunda-decal' in model_kit:
+    other_kits[model_kit] = file_model_info
+    model_kit       =  OTHER_KITS
+    file_model_info =  other_kits
+
+  return model_kit, file_model_info
+
+
+
+# PASS 5 STUFF
+def pass_5(json_data, extra):
+  return json_data
+
 
 
 # # PASS _ STUFF TODO - move this to the last step
