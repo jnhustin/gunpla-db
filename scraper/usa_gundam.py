@@ -67,7 +67,7 @@ def main():
     # run_pass(
     #   product_line    =  product_line,
     #   input_location  =  f'output/{SITE}/pass-4-process-name-by-grade',
-    #   output_location =  f'output/{SITE}/pass-5-manaul-updates',
+    #   output_location =  f'output/{SITE}/pass-4.5-manaul-updates',
     #   operation       =  pass_5,
     #   operation_extra =  {},
     #   log             =  'pass 5: manual updates'
@@ -524,6 +524,7 @@ def pass_4_mg(model_kit, file_model_info, other_kits):
 def pass_4_hg(model_kit, file_model_info, other_kits):
   replacement_list = [
     'hgbf-',
+    'hgfc-',
     'hgbd-',
     'hgcc-',
     'hgbc-',
@@ -541,8 +542,9 @@ def pass_4_hg(model_kit, file_model_info, other_kits):
     model_kit       =  OTHER_KITS
     file_model_info =  other_kits
 
-  if 'orphans-' in model_kit:
+  if 'orphans-' in model_kit or "-ibo" in model_kit:
     model_kit = model_kit.replace('orphans-', '')
+    model_kit = model_kit.replace('ibo-', '')
     file_model_info['tags']   =  file_model_info['tags'] + ['ibo', 'orphans', 'iron-blooded-orphans']
     file_model_info['series'] =  'ibo'
   elif 'endless-waltz-' in model_kit:
@@ -553,16 +555,34 @@ def pass_4_hg(model_kit, file_model_info, other_kits):
     model_kit = model_kit.replace('gundam-age-', '')
     file_model_info['tags']   =  file_model_info['tags'] + ['gundam-age']
     file_model_info['series'] =  'gundam-age'
-  elif 'build-fighters-' in model_kit:
+  elif 'build-fighters-' in model_kit or 'gundam-build-fighters-':
+    model_kit = model_kit.replace('gundam-build-fighters-', '')
     model_kit = model_kit.replace('build-fighters-', '')
     file_model_info['tags'] = file_model_info['tags'] + ['build-fighters']
     file_model_info['series'] = 'build-fighters'
+  elif 'build-divers-' in model_kit:
+    model_kit = model_kit.replace('build-divers-', '')
+    file_model_info['tags'] = file_model_info['tags'] + ['build-divers']
+    file_model_info['series'] = 'build-divers'
+  elif 'the-origin-' in model_kit:
+    model_kit = model_kit.replace('the-origin-', '')
+    model_kit = model_kit.replace('the-origin-1-144', '')
+    file_model_info['tags'] = file_model_info['tags'] + ['origin', 'the-origin']
+    file_model_info['series'] = 'the-origin'
 
   return model_kit, file_model_info
 
 
 # PASS 5 STUFF
-def pass_5(model_kit, file_model_info, other_kits):
+def pass_5(model_kit, file_model_info, extra):
+  # [ ] - hg
+  # [ ] - mg
+  # [ ] - pbandai
+  # [x] - re
+  # [x] - pg
+  # [ ] - re
+  # [x] - rg
+  # [ ] - sd
   return model_kit, file_model_info
 
 
