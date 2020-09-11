@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup, element
 
 from helper import Helper
 
-OTHER_KITS       =  'other_kits'
+OTHER_KITS       =  'other-kits'
 SITE             =  'usa_gundam'
 SITE_HTML_FOLDER =  f'html/{SITE}'
 BASE_PAGE_LINKS = {
@@ -18,7 +18,7 @@ BASE_PAGE_LINKS = {
   'mg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=model-kits',
   'sd'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=gundam-bb-sd',
   're'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=re-100-reborn-model-kits',
-  'hguc'     :  'https://www.usagundamstore.com/pages/search-results-page?collection=hguc-gundam-kits',
+  # 'hguc'     :  'https://www.usagundamstore.com/pages/search-results-page?collection=hguc-gundam-kits',
   'hg'       :  'https://www.usagundamstore.com/pages/search-results-page?collection=1-144&rb_tags=Gundam',
 }
 HELPER = Helper()
@@ -53,28 +53,24 @@ def main():
     )
 
     # pass 4: process by grade
-    """ MG
-      - move everything from "other" out
-        - modify the key name
-          - remove "pre-order"
-    """
+
     run_pass(
       product_line    =  product_line,
       input_location  =  f'output/{SITE}/pass-3-update-key-names',
-      output_location =  f'output/{SITE}/pass-4-process-by-grade',
+      output_location =  f'output/{SITE}/pass-4-process-name-by-grade',
       operation       =  pass_4,
-      operation_extra =  {},
+      operation_extra =  {'product_line': product_line},
       log             =  'pass 4: update by product_line'
     )
 
     # pass 5: manual changes
     # run_pass(
     #   product_line    =  product_line,
-    #   input_location  =  f'output/{SITE}/pass-4-process-by-grade',
+    #   input_location  =  f'output/{SITE}/pass-4-process-name-by-grade',
     #   output_location =  f'output/{SITE}/pass-5-manaul-updates',
     #   operation       =  pass_5,
     #   operation_extra =  {},
-    #   log             =  'pass 5: manual updats'
+    #   log             =  'pass 5: manual updates'
     # )
 
 
@@ -111,7 +107,7 @@ def download_html_pages_extract_basic_info():
 
 def run_pass(product_line, input_location, output_location, operation, operation_extra={}, log=''):
   print(f'running {log}')
-  with open(f'input_location/{product_line}.json', 'r') as f:
+  with open(f'{input_location}/{product_line}.json', 'r') as f:
     json_data = json.load(f)
     f.close()
 
@@ -367,19 +363,25 @@ def pass_3(model_kit, file_model_info, extra):
     - change "hguc-"    to "hg-"
     - add key-name to the product-line['title']
   """
-
+  replace_list = [
+    ('pre-order-', ''),
+    ('bandai-', ''),
+    ('-bandai', ''),
+    ('hguc-', 'hg-'),
+    ('bb-', ''),
+    ('cross-silhouette-', 'cs-'),
+    ('-model-kit', ''),
+    ('model-kit-', ''),
+    ('sd-gundam-', 'sd-'),
+    ('hobby-', ''),
+    ('realistic-model-', ''),
+    ('master-grade-', 'mg-'),
+  ]
   updated_model_kit = model_kit.lower()
-  updated_model_kit = updated_model_kit.replace('pre-order-', '')
-  updated_model_kit = updated_model_kit.replace('bandai-', '')
-  updated_model_kit = updated_model_kit.replace('-bandai', '')
-  updated_model_kit = updated_model_kit.replace('hguc-', 'hg-')
-  updated_model_kit = updated_model_kit.replace('bb-', '')
-  updated_model_kit = updated_model_kit.replace('cross-sihouettte-', 'cs-')
-  updated_model_kit = updated_model_kit.replace('-model-kit', '')
-  updated_model_kit = updated_model_kit.replace('model-kit-', '')
-  updated_model_kit = updated_model_kit.replace('sd-gundam-', 'sd-')
-  updated_model_kit = updated_model_kit.replace('hobby-', '')
-  updated_model_kit = updated_model_kit.replace('realistic-model-', '')
+  for pair in replace_list:
+    to_replace        =  pair[0]
+    replacement       =  pair[1]
+    updated_model_kit =  updated_model_kit.replace(to_replace, replacement)
 
   file_model_info.get('title', []).insert(0, updated_model_kit)
   return updated_model_kit, file_model_info
@@ -388,20 +390,11 @@ def pass_3(model_kit, file_model_info, extra):
 
 # PASS 4 STUFF
 def pass_4(model_kit, file_model_info, extra):
-  # [ ] - hg
-  # [ ] - hguc
-  # [ ] - mg
-  # [x] - p-bandai
-  # [x] - pg
-  # [x] - re
-  # [x] - rg
-  # [x] - sd
-
   product_line =  extra['product_line']
   other_kits   =  extra[OTHER_KITS]
 
   # json doesnt require modification
-  if product_line in ['re']:
+  if product_line in []:
     return model_kit, file_model_info
 
   # grade specific cleaning
@@ -409,18 +402,37 @@ def pass_4(model_kit, file_model_info, extra):
     fn = pass_4_rg
   elif product_line == 'pg':
     fn = pass_4_pg
+  elif product_line == 're':
+    fn = pass_4_re
   elif product_line == 'sd':
     fn = pass_4_sd
+  elif product_line == 'hg':
+    fn = pass_4_hg
+  elif product_line == 'mg':
+    fn = pass_4_mg
   elif product_line == 'p-bandai':
     fn = pass_4_pbandai
+  else:
+    raise Exception(f'this isnt accounted for: {product_line}')
 
   model_kit, file_model_info = fn(model_kit, file_model_info, other_kits)
   return model_kit, file_model_info
 
 
+def compose_model_name(product_line, scale, model_kit):
+  if model_kit == OTHER_KITS:
+    return OTHER_KITS
+
+  model_kit =  model_kit.replace(f'{scale}-', '')
+  model_kit =  model_kit.replace(f'{product_line}-', '')
+  return f'{product_line}-{scale}-{model_kit}'
+
+
 def pass_4_rg(model_kit, file_model_info, other_kits):
+  model_kit = compose_model_name('rg', '1-144', model_kit)
+
   # remove evangelion models
-  if 'evangelion' in file_model_info['tags']:
+  if 'evangelion' in file_model_info.get('tags', []) or 'evangelion' in model_kit:
     other_kits[model_kit] = file_model_info
     model_kit       =  OTHER_KITS
     file_model_info =  other_kits
@@ -428,7 +440,15 @@ def pass_4_rg(model_kit, file_model_info, other_kits):
   return model_kit, file_model_info
 
 
+def pass_4_re(model_kit, file_model_info, other_kits):
+  model_kit = compose_model_name('re', '1-100', model_kit)
+  model_kit = model_kit.replace('1-100-100', '1-100')
+  return model_kit, file_model_info
+
+
 def pass_4_pg(model_kit, file_model_info, other_kits):
+  model_kit = compose_model_name('pg', '1-60', model_kit)
+
   # remove evangelion models
   if 'led' in model_kit or 'mazinger' in model_kit or 'star-wars' in model_kit or 'mega' in model_kit:
     other_kits[model_kit] = file_model_info
@@ -439,23 +459,61 @@ def pass_4_pg(model_kit, file_model_info, other_kits):
 
 
 def pass_4_sd(model_kit, file_model_info, other_kits):
+  model_kit = model_kit.replace('-sd', '')
+  model_kit =  'sd-' + model_kit.replace(f'sd-', '')
 
-  # append sd- to start of all models
-  if not model_kit.startswith('sd-'):
-    model_kit = 'sd-' + model_kit
+  if 'sangoku-soketsuden-' in model_kit or '-sangoku-soketsuden' in model_kit or 'sangokusoketsuden' in model_kit:
+    model_kit = model_kit.replace('-sangokusoketsuden', '')
+    model_kit = model_kit.replace('-sangoku-soketsuden', '')
+    model_kit = model_kit.replace('sangoku-soketsuden-', '')
+    file_model_info.get('tags', []).append('sangoku-soketsuden')
+  if 'sangokuden-animation-' in model_kit:
+    model_kit = model_kit.replace('sangokuden-animation-', '')
+    file_model_info.get('tags', []).append('sangokuden')
+  if 'ex-standard-' in model_kit:
+    model_kit = model_kit.replace('ex-standard-', '')
+    file_model_info.get('tags', []).append('ex-standard')
+  if '-senshi-sangokuden' in model_kit or '-dongzhuo-forces-senshi-sangokuden' in model_kit:
+    model_kit = model_kit.replace('-dongzhuo-forces-senshi-sangokuden', '')
+    model_kit = model_kit.replace('-senshi-sangokuden', '')
+    file_model_info.get('tags', []).append('senshi-sangokuden')
 
-  if 'sangoku-soketsuden-' in model_kit:
-    model_kit.replace('sangoku-soketsuden-', '')
-    file_model_info['tags'].append('sangoku-soketsuden')
-  elif 'sangokuden-animation-' in model_kit:
-    model_kit.replace('sangokuden-animation-', '')
-    file_model_info['tags'].append('sangokuden')
+  #  remove bb designation
+  split_name = model_kit.split('-')
+  cleaned_name = []
+  for section in split_name:
+    if 'bb' in section:
+      file_model_info['tags'].append(section)
+    else:
+      cleaned_name.append(section)
+
+
+  return '-'.join(cleaned_name), file_model_info
+
+
+def pass_4_pbandai(model_kit, file_model_info, other_kits):
+  if 'gundam-decal' in model_kit:
+    other_kits[model_kit] = file_model_info
+    model_kit       =  OTHER_KITS
+    file_model_info =  other_kits
+
+  if not 'p-bandai' in file_model_info.get('tags', []):
+    file_model_info.get('tags', []).append('p-bandai')
 
   return model_kit, file_model_info
 
 
-def pass_4_pbandai(model_kit, file_model_info, other_kits):
-  if 'gunda-decal' in model_kit:
+def pass_4_mg(model_kit, file_model_info, other_kits):
+  model_kit = model_kit.replace('-1-100-scale-kit', '')
+  model_kit = compose_model_name('mg', '1-100', model_kit)
+
+  if model_kit.startswith('hirm') or 'hi-resolution-model' in model_kit:
+    model_kit  =  model_kit.replace('hirm', '')
+    model_kit  =  model_kit.replace('hi-resolution-model', '')
+    model_kit +=  '-hirm'
+    file_model_info['tags'] = file_model_info['tags'] + ['hi-resolution-model', 'hirm']
+
+  if 'figure-rise-jet-effect' in model_kit or 'led-' in model_kit:
     other_kits[model_kit] = file_model_info
     model_kit       =  OTHER_KITS
     file_model_info =  other_kits
@@ -463,38 +521,49 @@ def pass_4_pbandai(model_kit, file_model_info, other_kits):
   return model_kit, file_model_info
 
 
+def pass_4_hg(model_kit, file_model_info, other_kits):
+  replacement_list = [
+    'hgbf-',
+    'hgbd-',
+    'hgcc-',
+    'hgbc-',
+    'hgtb-',
+    'hgac-',
+    'hgce-',
+    'hgaw-',
+  ]
+  for keyword in replacement_list:
+    model_kit = model_kit.replace(keyword, 'hg-')
+  model_kit = compose_model_name('hg', '1-144', model_kit)
+
+  if 'rg-' in model_kit or 'no-grade' in model_kit:
+    other_kits[model_kit] = file_model_info
+    model_kit       =  OTHER_KITS
+    file_model_info =  other_kits
+
+  if 'orphans-' in model_kit:
+    model_kit = model_kit.replace('orphans-', '')
+    file_model_info['tags']   =  file_model_info['tags'] + ['ibo', 'orphans', 'iron-blooded-orphans']
+    file_model_info['series'] =  'ibo'
+  elif 'endless-waltz-' in model_kit:
+    model_kit = model_kit.replace('endless-waltz-', '')
+    file_model_info['tags']   =  file_model_info['tags'] + ['ew', 'endless-waltz', 'gundam-wing']
+    file_model_info['series'] =  'gundam_wing'
+  elif 'gundam-age-' in model_kit:
+    model_kit = model_kit.replace('gundam-age-', '')
+    file_model_info['tags']   =  file_model_info['tags'] + ['gundam-age']
+    file_model_info['series'] =  'gundam-age'
+  elif 'build-fighters-' in model_kit:
+    model_kit = model_kit.replace('build-fighters-', '')
+    file_model_info['tags'] = file_model_info['tags'] + ['build-fighters']
+    file_model_info['series'] = 'build-fighters'
+
+  return model_kit, file_model_info
+
 
 # PASS 5 STUFF
-def pass_5(json_data, extra):
-  return json_data
-
-
-
-# # PASS _ STUFF TODO - move this to the last step
-  # remove evangelion kits
-  # remove starwars kits
-  # remove rg kits from hg.json
-# def run_pass__(product_line):
-#   print('running pass 3 - cleaning json_body')
-#   input_json_location =  f'output/{SITE}/pass-2-reduce-details/{product_line}.json'
-#   with open(input_json_location, 'r') as f:
-#     json_data = json.load(f)
-#     f.close()
-
-#   updated_json = { 'other': {} }
-#   for model_kit, file_model_info in json_data.items():
-#     if is_other_kit(model_kit, file_model_info):
-#       updated_json['other'][model_kit] = file_model_info
-#     else:
-#       updated_json[model_kit] = file_model_info
-
-#   output_json_location =  f'output/{SITE}/pass-3-update-json-body/{product_line}.json'
-#   with open(output_json_location, 'w') as f:
-#     f.write(json.dumps(updated_json, indent=2))
-#     f.close()
-
-#   print('pass 3 complete')
-#   return
+def pass_5(model_kit, file_model_info, other_kits):
+  return model_kit, file_model_info
 
 
 def is_other_kit(model_kit, file_model_info):

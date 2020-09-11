@@ -1,62 +1,381 @@
 {
-  "other-kits": {},
-  "led-unit-white-12-lights-type": {
-    "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/led-unit-white-12-lights-type",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/led-unit-white-12-lights-type-tgp_large.jpg?v=1580241948",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/led-unit-white-12-lights-type-tgp_900x900.jpg?v=1580241948",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/led-unit-white-12-lights-type-tgp_1024x1024.jpg?v=1580241948",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/led-unit-white-12-lights-type-pa_1024x1024.jpg?v=1580241807",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/led-unit-white-12-lights-type-t02_1024x1024.jpg?v=1580241933"
-    ],
-    "is_visited": true,
-    "title": [
-      "led-unit-white-12-lights-type",
-      "LED UNIT (WHITE) 12 LIGHTS TYPE"
-    ],
-    "sku": "4573102582256",
-    "tags": [
-      "led"
-    ],
-    "scale": null,
-    "product_line": "pg",
-    "description": [
-      "\nA special 12 unit white LED that can be used on various Bandai Spirits plastic model kits such as the PG Millenium Falcon, 1/5000 Star Destroyer and others. Features standard white and a more bluish white LED combination in sets of 6. Approximately 2 hour operation time via 3 AAA batteries.\n",
-      "LED UNIT (WHITE) 12 LIGHTS TYPE\nPRODUCT DETAILS\n\nA special 12 unit white LED that can be used on various Bandai Spirits plastic model kits such as the PG Millenium Falcon, 1/5000 Star Destroyer and others. Features standard white and a more bluish white LED combination in sets of 6. Approximately 2 hour operation time via 3 AAA batteries.\n"
-    ],
-    "manufacturer": "bandai"
-  },
-  "1-60-mazinger-z-mazinger-z-infinity-ver": {
-    "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/1-60-mazinger-z-mazinger-z-infinity-ver",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_0_large.jpg?v=1576249412",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_0_900x900.jpg?v=1576249412",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_0_1024x1024.jpg?v=1576249412",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_1_1024x1024.jpg?v=1572774217",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_2_1024x1024.jpg?v=1572774121",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_3_1024x1024.jpg?v=1572773945",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_4_1024x1024.jpg?v=1572774011",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_5_1024x1024.jpg?v=1572773914",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_6_1024x1024.jpg?v=1572774103"
-    ],
-    "is_visited": true,
-    "title": [
-      "1-60-mazinger-z-mazinger-z-infinity-ver",
-      "1/60 MAZINGER Z (MAZINGER Z INFINITY VER.)"
-    ],
-    "sku": "31091443859492",
-    "tags": [
-      "august",
-      "mazinger",
-      "pre-order"
-    ],
-    "scale": null,
-    "product_line": "pg",
-    "description": [
-      "\nBandai presents an extremely detailed kit of Mazinger Z (Infinity Ver.) in 1/60th scale!\nThis kit of Mazinger Z is based on a concept design by popular mech designer Takayuki Yanase, and will measure an impressive 42.3cm tall when built. The Hover Pilder is removable with wings that can fold up, and Mazinger Z's own wings are also articulated, so you can display them open or in their stored position. Parts are included for the Iron Cutter, Drill Missile, and Rocket Punch, and an LED unit is even included so you can make Mazinger Z's eyes light up!\nBe sure to add this iconic mech to your collection!\n\n \u00a0\n \u00a0\n",
-      "1/60 MAZINGER Z (MAZINGER Z INFINITY VER.)\nEstimated Arrival: August\u00a02020\nDESCRIPTION\n\nThis is\u00a0an injection-plastic kit of a science-fiction/anime item.\n\nBandai presents an extremely detailed kit of Mazinger Z (Infinity Ver.) in 1/60th scale!\nThis kit of Mazinger Z is based on a concept design by popular mech designer Takayuki Yanase, and will measure an impressive 42.3cm tall when built. The Hover Pilder is removable with wings that can fold up, and Mazinger Z's own wings are also articulated, so you can display them open or in their stored position. Parts are included for the Iron Cutter, Drill Missile, and Rocket Punch, and an LED unit is even included so you can make Mazinger Z's eyes light up!\nBe sure to add this iconic mech to your collection!\n\n \u00a0\n \u00a0\n\n"
-    ],
-    "manufacturer": "bandai"
+  "other-kits": {
+    "pg-1-60-led-unit-white-12-lights-type": {
+      "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/led-unit-white-12-lights-type",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/led-unit-white-12-lights-type-tgp_large.jpg?v=1580241948",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/led-unit-white-12-lights-type-tgp_900x900.jpg?v=1580241948",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/led-unit-white-12-lights-type-tgp_1024x1024.jpg?v=1580241948",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/led-unit-white-12-lights-type-pa_1024x1024.jpg?v=1580241807",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/led-unit-white-12-lights-type-t02_1024x1024.jpg?v=1580241933"
+      ],
+      "is_visited": true,
+      "title": [
+        "led-unit-white-12-lights-type",
+        "LED UNIT (WHITE) 12 LIGHTS TYPE"
+      ],
+      "sku": "4573102582256",
+      "tags": [
+        "led"
+      ],
+      "scale": null,
+      "product_line": "pg",
+      "description": [
+        "\nA special 12 unit white LED that can be used on various Bandai Spirits plastic model kits such as the PG Millenium Falcon, 1/5000 Star Destroyer and others. Features standard white and a more bluish white LED combination in sets of 6. Approximately 2 hour operation time via 3 AAA batteries.\n",
+        "LED UNIT (WHITE) 12 LIGHTS TYPE\nPRODUCT DETAILS\n\nA special 12 unit white LED that can be used on various Bandai Spirits plastic model kits such as the PG Millenium Falcon, 1/5000 Star Destroyer and others. Features standard white and a more bluish white LED combination in sets of 6. Approximately 2 hour operation time via 3 AAA batteries.\n"
+      ],
+      "manufacturer": "bandai"
+    },
+    "pg-1-60-mazinger-z-mazinger-z-infinity-ver": {
+      "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/1-60-mazinger-z-mazinger-z-infinity-ver",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_0_large.jpg?v=1576249412",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_0_900x900.jpg?v=1576249412",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_0_1024x1024.jpg?v=1576249412",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_1_1024x1024.jpg?v=1572774217",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_2_1024x1024.jpg?v=1572774121",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_3_1024x1024.jpg?v=1572773945",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_4_1024x1024.jpg?v=1572774011",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_5_1024x1024.jpg?v=1572773914",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/bans58931_6_1024x1024.jpg?v=1572774103"
+      ],
+      "is_visited": true,
+      "title": [
+        "1-60-mazinger-z-mazinger-z-infinity-ver",
+        "1/60 MAZINGER Z (MAZINGER Z INFINITY VER.)"
+      ],
+      "sku": "31091443859492",
+      "tags": [
+        "august",
+        "mazinger",
+        "pre-order"
+      ],
+      "scale": null,
+      "product_line": "pg",
+      "description": [
+        "\nBandai presents an extremely detailed kit of Mazinger Z (Infinity Ver.) in 1/60th scale!\nThis kit of Mazinger Z is based on a concept design by popular mech designer Takayuki Yanase, and will measure an impressive 42.3cm tall when built. The Hover Pilder is removable with wings that can fold up, and Mazinger Z's own wings are also articulated, so you can display them open or in their stored position. Parts are included for the Iron Cutter, Drill Missile, and Rocket Punch, and an LED unit is even included so you can make Mazinger Z's eyes light up!\nBe sure to add this iconic mech to your collection!\n\n \u00a0\n \u00a0\n",
+        "1/60 MAZINGER Z (MAZINGER Z INFINITY VER.)\nEstimated Arrival: August\u00a02020\nDESCRIPTION\n\nThis is\u00a0an injection-plastic kit of a science-fiction/anime item.\n\nBandai presents an extremely detailed kit of Mazinger Z (Infinity Ver.) in 1/60th scale!\nThis kit of Mazinger Z is based on a concept design by popular mech designer Takayuki Yanase, and will measure an impressive 42.3cm tall when built. The Hover Pilder is removable with wings that can fold up, and Mazinger Z's own wings are also articulated, so you can display them open or in their stored position. Parts are included for the Iron Cutter, Drill Missile, and Rocket Punch, and an LED unit is even included so you can make Mazinger Z's eyes light up!\nBe sure to add this iconic mech to your collection!\n\n \u00a0\n \u00a0\n\n"
+      ],
+      "manufacturer": "bandai"
+    },
+    "pg-1-60-exia-none-led-set": {
+      "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-pg-1-60-exia-none-led-set",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/191_2130_o_1br3kbuvu1td198919hhcpjsb43g_large.jpg?v=1569526446",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/191_2130_o_1br3kbuvu1td198919hhcpjsb43g_900x900.jpg?v=1569526446",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/191_2130_o_1br3kbuvu1td198919hhcpjsb43g_1024x1024.jpg?v=1569526446",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_1_1024x1024.jpg?v=1569526436",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/193_2130_o_1br3kc5ce1pnq18hi1s611it9ce93q_1024x1024.jpg?v=1569526436",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_4_1024x1024.jpg?v=1569526436",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/190_2130_o_1br3kbrqt1ef9bc11rvp1f6p17as3b_1024x1024.jpg?v=1569526436",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/192_2130_o_1br3kc2771or21rh9n2u8mu1t1o3l_1024x1024.jpg?v=1569526436",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/155_2130_o_1br3kb9kt1gon1qparr1gqr16me2d_1024x1024.jpg?v=1569526436",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/153_2130_o_1br3kb2svuslkorsqkkgbr9u23_1024x1024.jpg?v=1569526436",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/DKTOS49UEAESmT9_1024x1024.jpg?v=1569526436",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/196_2130_o_1br3kc8n51lgkghc1o6isg110ur3v_1024x1024.jpg?v=1569526436",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_2_1024x1024.jpg?v=1569526436",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_3_1024x1024.jpg?v=1569526436",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_5_1024x1024.jpg?v=1569526436",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_6_1024x1024.jpg?v=1525653977",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_9_1024x1024.jpg?v=1525653977"
+      ],
+      "is_visited": true,
+      "title": [
+        "pg-1-60-exia-none-led-set",
+        "PG 1/60 Exia"
+      ],
+      "sku": "0222249",
+      "tags": [
+        "00",
+        "1/60",
+        "aug backorder",
+        "backorder",
+        "pg"
+      ],
+      "scale": null,
+      "product_line": "pg",
+      "description": [
+        "\u00a0\n\nPG 1/60 Exia None LED set\n",
+        "https://1.bp.blogspot.com/-rlCc0ksgh1M/Wc28p-3OuiI/AAAAAAAACWs/lrBOQuTPU9Q9Qa9g34z0Vq0gMx5tNtxrgCLcBGAs/s1600/pg-gundam-exia.jpg"
+      ],
+      "manufacturer": "bandai"
+    },
+    "pg-1-60-mega-size-model-1-48-scale-ms-06s-zaku-2": {
+      "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/mega-size-model-1-48-scale-ms-06s-zaku-2",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/71riZlFhG1L_SL1500__zps856b3844_large.jpg?v=1569601251",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/71riZlFhG1L_SL1500__zps856b3844_900x900.jpg?v=1569601251",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/71riZlFhG1L_SL1500__zps856b3844_1024x1024.jpg?v=1569601251",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/673_1024x1024.jpg?v=1569601251"
+      ],
+      "is_visited": true,
+      "title": [
+        "mega-size-model-1-48-scale-ms-06s-zaku-2",
+        "Mega Size Model - 1/48 Scale MS-06S Zaku 2"
+      ],
+      "sku": "4573102575937",
+      "tags": [
+        "1/48",
+        "mega size",
+        "uc"
+      ],
+      "scale": null,
+      "product_line": "pg",
+      "description": [
+        "Mega Size Model - 1/48 Scale MS-06S Zaku 2"
+      ],
+      "manufacturer": "bandai"
+    },
+    "pg-1-60-led-unit-for-gundam-exia-gundam-00-pg": {
+      "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-led-unit-for-pg-gundam-exia-gundam-00-bandai-pg",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_02_large.jpg?v=1569602900",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_02_900x900.jpg?v=1569602900",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_02_1024x1024.jpg?v=1569602900",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/gkgundamkit-PG-160-LED-UNIT-FOR-GUNDAM-EXIA-8d60cd9217b8d6f_1024x1024.jpg?v=1569602884",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_00_1024x1024.jpg?v=1569602884",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_01_1024x1024.jpg?v=1569602884",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_03_1024x1024.jpg?v=1569602884",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_04_1024x1024.jpg?v=1569602884",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_05_1024x1024.jpg?v=1569602884",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_06_1024x1024.jpg?v=1569602884",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_07_1024x1024.jpg?v=1569602884",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_08_1024x1024.jpg?v=1569602884",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_09_1024x1024.jpg?v=1569602884"
+      ],
+      "is_visited": true,
+      "title": [
+        "led-unit-for-pg-gundam-exia-gundam-00-pg",
+        "LED unit for PG Gundam Exia \"Gundam 00\", Bandai PG"
+      ],
+      "sku": "4549660304500",
+      "tags": [
+        "gundam"
+      ],
+      "scale": null,
+      "product_line": "pg",
+      "description": [
+        "An LED unit specifically made for the PG Gundam Exia! Pairs with the separately sold Gundam Exia\u00a0\n\u00a0"
+      ],
+      "manufacturer": "bandai"
+    },
+    "pg-1-60-millennium-falcon-standard-edition-star-wars-a-new-hope-1-72-perfect-grade-pg": {
+      "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/millennium-falcon-standard-edition-star-wars-a-new-hope-bandai-1-72-perfect-grade-pg",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/83a61742-5b9d-46b0-acc0-5aeff4d3be60_large.jpg?v=1569591105",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/83a61742-5b9d-46b0-acc0-5aeff4d3be60_900x900.jpg?v=1569591105",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/83a61742-5b9d-46b0-acc0-5aeff4d3be60_1024x1024.jpg?v=1569591105",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l225_5cc4278b-94e2-4668-ad22-86e2b9fd6c75_1024x1024.jpg?v=1569591105",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/pg_millenniumfalcon_standard_14_1024x1024.jpg?v=1569591105",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/Millennium-Falcon-Model-Kit-02__scaled_600_1024x1024.jpg?v=1569591105",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/ban-bandai-gundam-225727-millennium-falcon-standar_1024x1024.jpg?v=1569591105",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/pg_millenniumfalcon_standard_03_1024x1024.jpg?v=1569591105",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/pg_millenniumfalcon_standard_09_1024x1024.jpg?v=1569591105",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/pg_millenniumfalcon_standard_13_1024x1024.jpg?v=1569591105",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/7bca0902b5257894273f854f89f4e2ed_1024x1024.jpg?v=1569591105"
+      ],
+      "is_visited": true,
+      "title": [
+        "millennium-falcon-standard-edition-star-wars-a-new-hope-1-72-perfect-grade-pg",
+        "Millennium Falcon (Standard Edition) \"Star Wars: A New Hope\", Bandai 1/72 Perfect Grade (PG)"
+      ],
+      "sku": "4549660257271",
+      "tags": [],
+      "scale": null,
+      "product_line": "pg",
+      "description": [
+        "Millennium\u00a0Falcon(Standard Edition) \"Star Wars: A New Hope\", Bandai 1/72 Perfect Grade (PG)\nThis release of the\u00a0PG\u00a0Falcon\u00a0features stickers instead of water slides to decorate the various hull panels and a translucent light blue clear part in place of the LED system to simulate the color of the Sublight engine propulsion systems of the\u00a0Falcon\u00a0as seen in the digitally remastered releases of \"Star Wars.\"\u00a0Created through thousands of hours studying the studio model used to film \"Star Wars: A New Hope\u201d, it is the most accurate version ever to be released. Using Bandai's color injection technology, the kit has been engineered to even have its hull damage molded into the parts while still being snap together and requiring no glue. The model even creates inner details of the ship, ranging from the cockpit to the famous boarding ramp.\u00a0 At 19\" long this model stands out as the ultimate Millennium\u00a0Falcon\u00a0model kit. Set includes dedicated display base and seated figures of Han, Luke Chewbacca, Obi-wan, C-3P0, Princess Leia.\u00a0\u00a0\n\n\n\nMILLENNIUM FALCON\u2122\u00a0[STANDARD Ver.]\n\n\n\n1/72 scale\n\n\n",
+        "http://bandai-hobby.net/sw/products_img/millenniumfalcon_72_standard_00.jpg"
+      ],
+      "manufacturer": "bandai"
+    },
+    "pg-1-60-gundam-1-48-age-2-normal-megasize": {
+      "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/gundam-1-48-age-2-normal-bandai-megasize",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-1-48-gundam-age-2-normal-01_large.jpg?v=1569947646",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-1-48-gundam-age-2-normal-01_900x900.jpg?v=1569947646",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-1-48-gundam-age-2-normal-01_1024x1024.jpg?v=1569947646",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/71Ngd1xigHL._SL1500_1024x1024.jpg?v=1569947629",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/61WHY22PhaL._SL1370_1024x1024.jpg?v=1569947629",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-1-48-gundam-age-2-normal-02_1024x1024.jpg?v=1525654281",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-1-48-gundam-age-2-normal-04_1024x1024.jpg?v=1525654281"
+      ],
+      "is_visited": true,
+      "title": [
+        "gundam-1-48-age-2-normal-megasize",
+        "Gundam 1/48 AGE-2 Normal, Bandai Megasize"
+      ],
+      "sku": "4543112753212",
+      "tags": [
+        "gundam"
+      ],
+      "scale": null,
+      "product_line": "pg",
+      "description": [
+        "Gundam AGE-2 Normal, Bandai Megasize\n1/48 scale MEGA Size Model Gundam Plastic Model from BANDAI. MEGA Size Model AGE-2 Gundam AGE-2 Normal from Gundam AGE."
+      ],
+      "manufacturer": "bandai"
+    },
+    "pg-1-60-star-wars-kit-1-72-millennium-falcon": {
+      "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-bandai-star-wars-kit-pg-1-72-millennium-falcon",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_04_large.jpg?v=1570038604",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_04_900x900.jpg?v=1570038604",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_04_1024x1024.jpg?v=1570038604",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_special_01_1024x1024.jpg?v=1570038590",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_01_1024x1024.jpg?v=1570038590",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_02_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/136_55_o_1bhf82llu1vrgk8c17p29pe7567_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_00_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_03_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_05_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_06_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_07_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_08_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_09_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_10_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_11_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_12_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_13_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_15_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_17_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_18_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_19_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_20_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_21_1024x1024.jpg?v=1525654088",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_22_1024x1024.jpg?v=1525654088"
+      ],
+      "is_visited": true,
+      "title": [
+        "star-wars-kit-pg-1-72-millennium-falcon",
+        "BANDAI STAR WARS KIT PG 1/72 MILLENNIUM FALCON"
+      ],
+      "sku": "4549660163848",
+      "tags": [
+        "pg",
+        "star wars"
+      ],
+      "scale": null,
+      "product_line": "pg",
+      "description": [
+        "BANDAI STAR WARS KIT PG 1/72 MILLENNIUM FALCON\n\n\n\n\n\u00a0\n",
+        "https://4.bp.blogspot.com/-jl6cP7whpvY/WS-Ny6p5fRI/AAAAAAAASg4/7JfBJ9WCsqsXDZqaLGroQPBJ6IQZgXsWwCLcB/s1600/millenniumfalcon_72_1_special_01.jpg"
+      ],
+      "manufacturer": "bandai"
+    },
+    "pg-1-60-mega-size-1-48-rx-0-unicorn-gundam-destroy-mode": {
+      "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-mega-size-1-48-rx-0-unicorn-gundam-destroy-mode",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_2_large.jpg?v=1569601294",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_2_900x900.jpg?v=1569601294",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_2_1024x1024.jpg?v=1569601294",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_1_5ed8ed63-9f3e-46da-9cf6-0ef7482df67a_1024x1024.JPG?v=1569601280",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_3_1024x1024.jpg?v=1569601280",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_1_1024x1024.jpg?v=1569601280",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_4_1024x1024.jpg?v=1569601280",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_5_1024x1024.jpg?v=1569601280",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_6_1024x1024.jpg?v=1569601280",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_7_1024x1024.jpg?v=1569601280",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_8_1024x1024.jpg?v=1569601280",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_9_1024x1024.jpg?v=1569601280",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_10_1024x1024.jpg?v=1569601280"
+      ],
+      "is_visited": true,
+      "title": [
+        "mega-size-1-48-rx-0-unicorn-gundam-destroy-mode",
+        "Mega Size 1/48 RX-0 Unicorn Gundam [DESTROY MODE]"
+      ],
+      "sku": "4549660167426",
+      "tags": [
+        "1/48",
+        "gundam",
+        "mega size",
+        "uc",
+        "unicorn"
+      ],
+      "scale": null,
+      "product_line": "pg",
+      "description": [
+        "Mega Size 1/48 RX-0 Unicorn Gundam [DESTROY MODE]\n\u00a0\n\n",
+        "https://4.bp.blogspot.com/-2Ib-xYTGh1A/WZhbASw7q0I/AAAAAAAGt3o/xd4Ca2dA0zId-HWUeiXxKbk47ciEyhKXwCLcBGAs/s1600/destroy-mode-unicorn-gundam-mega-size.jpg"
+      ],
+      "manufacturer": "bandai"
+    },
+    "pg-1-60-mega-size-model-1-48-scale-zaku-2": {
+      "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/mega-size-model-1-48-scale-zaku-2",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/2_980d4fde-b910-4e7d-8b54-bc2b96f09a4f_large.jpg?v=1569601238",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/2_980d4fde-b910-4e7d-8b54-bc2b96f09a4f_900x900.jpg?v=1569601238",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/2_980d4fde-b910-4e7d-8b54-bc2b96f09a4f_1024x1024.jpg?v=1569601238",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/download_2_1178b6c7-b851-4f72-8fc9-632d16c3d6f1_1024x1024.jpg?v=1569601238"
+      ],
+      "is_visited": true,
+      "title": [
+        "mega-size-model-1-48-scale-zaku-2",
+        "Mega Size Model - 1/48 Scale Zaku 2"
+      ],
+      "sku": "4543112694805",
+      "tags": [],
+      "scale": null,
+      "product_line": "pg",
+      "description": [
+        "Mega Size Model - 1/48 Scale Zaku 2"
+      ],
+      "manufacturer": "bandai"
+    },
+    "pg-1-60-mega-size-model-1-48-scale-gundam": {
+      "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/mega-size-model-1-48-scale-gundam",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/littlethingsmeanalot_2267_351219140_large.jpg?v=1569601269",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/littlethingsmeanalot_2267_351219140_900x900.jpg?v=1569601269",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/littlethingsmeanalot_2267_351219140_1024x1024.jpg?v=1569601269",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/download_1_8b2e5507-ab7a-4f82-bea1-534bb5f92f2d_1024x1024.jpg?v=1569601259"
+      ],
+      "is_visited": true,
+      "title": [
+        "mega-size-model-1-48-scale-gundam",
+        "Mega Size Model - 1/48 Scale Gundam"
+      ],
+      "sku": "5058890",
+      "tags": [
+        "1/48",
+        "gundam",
+        "mega size",
+        "uc"
+      ],
+      "scale": null,
+      "product_line": "pg",
+      "description": [
+        "Mega Size Model - 1/48 Scale Gundam"
+      ],
+      "manufacturer": "bandai"
+    },
+    "pg-1-60-rx-0-unicorn-gundam-led-unit": {
+      "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pg-rx-0-unicorn-gundam-led-unit",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/61bsKW9XDsL._SL1500_large.jpg?v=1569526257",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/61bsKW9XDsL._SL1500_900x900.jpg?v=1569526257",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/61bsKW9XDsL._SL1500_1024x1024.jpg?v=1569526257",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/81liq4IDbML._SL1500_1024x1024.jpg?v=1569526240",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/71VyJW1Qr8L._SL1500_1024x1024.jpg?v=1569526240"
+      ],
+      "is_visited": true,
+      "title": [
+        "pg-rx-0-unicorn-gundam-led-unit",
+        "PG RX-0 Unicorn Gundam LED Unit"
+      ],
+      "sku": "4543112943668",
+      "tags": [
+        "gundam",
+        "pg"
+      ],
+      "scale": null,
+      "product_line": "pg",
+      "description": [
+        "PG RX-0 Unicorn Gundam LED Unit\n\nNo glue required for assembly, a hobby nipper is required to remove parts from runners\nColored plastic, little to no paint required to replicate appearance\n4 AA batteries required (not included)\n"
+      ],
+      "manufacturer": "bandai"
+    }
   },
   "pg-1-60-perfect-strike-gundam": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pg-1-60-perfect-strike-gundam",
@@ -95,75 +414,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-1-60-exia-none-led-set": {
-    "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-pg-1-60-exia-none-led-set",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/191_2130_o_1br3kbuvu1td198919hhcpjsb43g_large.jpg?v=1569526446",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/191_2130_o_1br3kbuvu1td198919hhcpjsb43g_900x900.jpg?v=1569526446",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/191_2130_o_1br3kbuvu1td198919hhcpjsb43g_1024x1024.jpg?v=1569526446",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_1_1024x1024.jpg?v=1569526436",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/193_2130_o_1br3kc5ce1pnq18hi1s611it9ce93q_1024x1024.jpg?v=1569526436",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_4_1024x1024.jpg?v=1569526436",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/190_2130_o_1br3kbrqt1ef9bc11rvp1f6p17as3b_1024x1024.jpg?v=1569526436",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/192_2130_o_1br3kc2771or21rh9n2u8mu1t1o3l_1024x1024.jpg?v=1569526436",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/155_2130_o_1br3kb9kt1gon1qparr1gqr16me2d_1024x1024.jpg?v=1569526436",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/153_2130_o_1br3kb2svuslkorsqkkgbr9u23_1024x1024.jpg?v=1569526436",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/DKTOS49UEAESmT9_1024x1024.jpg?v=1569526436",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/196_2130_o_1br3kc8n51lgkghc1o6isg110ur3v_1024x1024.jpg?v=1569526436",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_2_1024x1024.jpg?v=1569526436",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_3_1024x1024.jpg?v=1569526436",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_5_1024x1024.jpg?v=1569526436",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_6_1024x1024.jpg?v=1525653977",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/pg-gundam-exia-regular-edition_9_1024x1024.jpg?v=1525653977"
-    ],
-    "is_visited": true,
-    "title": [
-      "pg-1-60-exia-none-led-set",
-      "PG 1/60 Exia"
-    ],
-    "sku": "0222249",
-    "tags": [
-      "00",
-      "1/60",
-      "aug backorder",
-      "backorder",
-      "pg"
-    ],
-    "scale": null,
-    "product_line": "pg",
-    "description": [
-      "\u00a0\n\nPG 1/60 Exia None LED set\n",
-      "https://1.bp.blogspot.com/-rlCc0ksgh1M/Wc28p-3OuiI/AAAAAAAACWs/lrBOQuTPU9Q9Qa9g34z0Vq0gMx5tNtxrgCLcBGAs/s1600/pg-gundam-exia.jpg"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mega-size-model-1-48-scale-ms-06s-zaku-2": {
-    "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/mega-size-model-1-48-scale-ms-06s-zaku-2",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/71riZlFhG1L_SL1500__zps856b3844_large.jpg?v=1569601251",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/71riZlFhG1L_SL1500__zps856b3844_900x900.jpg?v=1569601251",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/71riZlFhG1L_SL1500__zps856b3844_1024x1024.jpg?v=1569601251",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/673_1024x1024.jpg?v=1569601251"
-    ],
-    "is_visited": true,
-    "title": [
-      "mega-size-model-1-48-scale-ms-06s-zaku-2",
-      "Mega Size Model - 1/48 Scale MS-06S Zaku 2"
-    ],
-    "sku": "4573102575937",
-    "tags": [
-      "1/48",
-      "mega size",
-      "uc"
-    ],
-    "scale": null,
-    "product_line": "pg",
-    "description": [
-      "Mega Size Model - 1/48 Scale MS-06S Zaku 2"
-    ],
-    "manufacturer": "bandai"
-  },
-  "pg-ms-06s-zaku-2": {
+  "pg-1-60-ms-06s-zaku-2": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pg-ms-06s-zaku-2",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/812pztaz3QL._SL1500_large.jpg?v=1569526281",
@@ -192,7 +443,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-ms-06-f-zaku-2": {
+  "pg-1-60-ms-06-f-zaku-2": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pg-ms-06-f-zaku-2",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/81c2eH2QFOL._SL1500_large.jpg?v=1569526288",
@@ -221,7 +472,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-rx-78-gp-01-zephyranthes": {
+  "pg-1-60-rx-78-gp-01-zephyranthes": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pg-rx-78-gp-01-zephyranthes",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/81b_GjNT22L._SL1500_large.jpg?v=1569526163",
@@ -251,7 +502,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-skygrasper-aile-striker": {
+  "pg-1-60-skygrasper-aile-striker": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-pg-skygrasper-aile-striker",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/81oAiJYLaWL._SL1500_large.jpg?v=1569526144",
@@ -281,7 +532,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-strike-rouge-sky-grasper": {
+  "pg-1-60-strike-rouge-sky-grasper": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-pg-strike-rouge-sky-grasper",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71OmgFlS0BL._SL1200_large.jpg?v=1569526105",
@@ -312,7 +563,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-wing-gundam-zero-custom": {
+  "pg-1-60-wing-gundam-zero-custom": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-pg-wing-gundam-zero-custom",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51H5cAYKaYL_large.jpg?v=1569526079",
@@ -350,7 +601,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-gundam-astray-red-frame": {
+  "pg-1-60-gundam-astray-red-frame": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-pg-gundam-astray-red-frame",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/81XN4aLg9hL._SL1500_large.jpg?v=1569526410",
@@ -383,7 +634,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "strike-gundam-seed-1-60-perfect-grade": {
+  "pg-1-60-strike-gundam-seed-perfect-grade": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/strike-gundam-seed-1-60-perfect-grade-model-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71fg95iHPUL._SL1500_large.jpg?v=1569520590",
@@ -417,7 +668,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-banshee-norn": {
+  "pg-1-60-banshee-norn": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-pg-banshee-norn",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/pg_banshee_norn_1_large.jpg?v=1569526320",
@@ -487,7 +738,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pre": {
+  "pg-1-60-pre": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51xToAAKXPL._SY355_large.jpg?v=1537319138",
@@ -518,7 +769,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-seven-sword-gundam": {
+  "pg-1-60-seven-sword-gundam": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pg-seven-sword-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/PG_00Gundam_seven_sword_G_2_large.jpg?v=1569513223",
@@ -560,7 +811,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-60-v2-gundam": {
+  "pg-1-60-hg-v2-gundam": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/hg-1-60-v2-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/4902425414201_large.jpg?v=1569933735",
@@ -585,70 +836,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "led-unit-for-pg-gundam-exia-gundam-00-pg": {
-    "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-led-unit-for-pg-gundam-exia-gundam-00-bandai-pg",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_02_large.jpg?v=1569602900",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_02_900x900.jpg?v=1569602900",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_02_1024x1024.jpg?v=1569602900",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/gkgundamkit-PG-160-LED-UNIT-FOR-GUNDAM-EXIA-8d60cd9217b8d6f_1024x1024.jpg?v=1569602884",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_00_1024x1024.jpg?v=1569602884",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_01_1024x1024.jpg?v=1569602884",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_03_1024x1024.jpg?v=1569602884",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_04_1024x1024.jpg?v=1569602884",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_05_1024x1024.jpg?v=1569602884",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_06_1024x1024.jpg?v=1569602884",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_07_1024x1024.jpg?v=1569602884",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_08_1024x1024.jpg?v=1569602884",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN230450_09_1024x1024.jpg?v=1569602884"
-    ],
-    "is_visited": true,
-    "title": [
-      "led-unit-for-pg-gundam-exia-gundam-00-pg",
-      "LED unit for PG Gundam Exia \"Gundam 00\", Bandai PG"
-    ],
-    "sku": "4549660304500",
-    "tags": [
-      "gundam"
-    ],
-    "scale": null,
-    "product_line": "pg",
-    "description": [
-      "An LED unit specifically made for the PG Gundam Exia! Pairs with the separately sold Gundam Exia\u00a0\n\u00a0"
-    ],
-    "manufacturer": "bandai"
-  },
-  "millennium-falcon-standard-edition-star-wars-a-new-hope-1-72-perfect-grade-pg": {
-    "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/millennium-falcon-standard-edition-star-wars-a-new-hope-bandai-1-72-perfect-grade-pg",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/83a61742-5b9d-46b0-acc0-5aeff4d3be60_large.jpg?v=1569591105",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/83a61742-5b9d-46b0-acc0-5aeff4d3be60_900x900.jpg?v=1569591105",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/83a61742-5b9d-46b0-acc0-5aeff4d3be60_1024x1024.jpg?v=1569591105",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l225_5cc4278b-94e2-4668-ad22-86e2b9fd6c75_1024x1024.jpg?v=1569591105",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/pg_millenniumfalcon_standard_14_1024x1024.jpg?v=1569591105",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/Millennium-Falcon-Model-Kit-02__scaled_600_1024x1024.jpg?v=1569591105",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/ban-bandai-gundam-225727-millennium-falcon-standar_1024x1024.jpg?v=1569591105",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/pg_millenniumfalcon_standard_03_1024x1024.jpg?v=1569591105",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/pg_millenniumfalcon_standard_09_1024x1024.jpg?v=1569591105",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/pg_millenniumfalcon_standard_13_1024x1024.jpg?v=1569591105",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/7bca0902b5257894273f854f89f4e2ed_1024x1024.jpg?v=1569591105"
-    ],
-    "is_visited": true,
-    "title": [
-      "millennium-falcon-standard-edition-star-wars-a-new-hope-1-72-perfect-grade-pg",
-      "Millennium Falcon (Standard Edition) \"Star Wars: A New Hope\", Bandai 1/72 Perfect Grade (PG)"
-    ],
-    "sku": "4549660257271",
-    "tags": [],
-    "scale": null,
-    "product_line": "pg",
-    "description": [
-      "Millennium\u00a0Falcon(Standard Edition) \"Star Wars: A New Hope\", Bandai 1/72 Perfect Grade (PG)\nThis release of the\u00a0PG\u00a0Falcon\u00a0features stickers instead of water slides to decorate the various hull panels and a translucent light blue clear part in place of the LED system to simulate the color of the Sublight engine propulsion systems of the\u00a0Falcon\u00a0as seen in the digitally remastered releases of \"Star Wars.\"\u00a0Created through thousands of hours studying the studio model used to film \"Star Wars: A New Hope\u201d, it is the most accurate version ever to be released. Using Bandai's color injection technology, the kit has been engineered to even have its hull damage molded into the parts while still being snap together and requiring no glue. The model even creates inner details of the ship, ranging from the cockpit to the famous boarding ramp.\u00a0 At 19\" long this model stands out as the ultimate Millennium\u00a0Falcon\u00a0model kit. Set includes dedicated display base and seated figures of Han, Luke Chewbacca, Obi-wan, C-3P0, Princess Leia.\u00a0\u00a0\n\n\n\nMILLENNIUM FALCON\u2122\u00a0[STANDARD Ver.]\n\n\n\n1/72 scale\n\n\n",
-      "http://bandai-hobby.net/sw/products_img/millenniumfalcon_72_standard_00.jpg"
-    ],
-    "manufacturer": "bandai"
-  },
-  "hg-1-60-strike-gundam-striker-weapon-system": {
+  "pg-1-60-hg-strike-gundam-striker-weapon-system": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/hg-1-60-strike-gundam-striker-weapon-system",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/download_4_19a8f65c-d6a6-472b-9e9e-0d134b8e31ea_large.jpg?v=1569933714",
@@ -707,7 +895,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "wing-gundam-zero-ew-pearl-coating-gundam-wing-endless-waltz-pg-1-60": {
+  "pg-1-60-wing-gundam-zero-ew-pearl-coating-gundam-wing-endless-waltz-1-60": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-wing-gundam-zero-ew-pearl-coating-gundam-wing-endless-waltz-bandai-pg-1-60",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/ban949843_2_1514430116_1_large.jpg?v=1569515686",
@@ -734,33 +922,6 @@
     "product_line": "pg",
     "description": [
       "Wing Gundam Zero (EW) Pearl Coating, \"Gundam Wing: Endless Waltz, Bandai PG 1/60\n\u00a0"
-    ],
-    "manufacturer": "bandai"
-  },
-  "gundam-1-48-age-2-normal-megasize": {
-    "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/gundam-1-48-age-2-normal-bandai-megasize",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-1-48-gundam-age-2-normal-01_large.jpg?v=1569947646",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-1-48-gundam-age-2-normal-01_900x900.jpg?v=1569947646",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-1-48-gundam-age-2-normal-01_1024x1024.jpg?v=1569947646",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/71Ngd1xigHL._SL1500_1024x1024.jpg?v=1569947629",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/61WHY22PhaL._SL1370_1024x1024.jpg?v=1569947629",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-1-48-gundam-age-2-normal-02_1024x1024.jpg?v=1525654281",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-1-48-gundam-age-2-normal-04_1024x1024.jpg?v=1525654281"
-    ],
-    "is_visited": true,
-    "title": [
-      "gundam-1-48-age-2-normal-megasize",
-      "Gundam 1/48 AGE-2 Normal, Bandai Megasize"
-    ],
-    "sku": "4543112753212",
-    "tags": [
-      "gundam"
-    ],
-    "scale": null,
-    "product_line": "pg",
-    "description": [
-      "Gundam AGE-2 Normal, Bandai Megasize\n1/48 scale MEGA Size Model Gundam Plastic Model from BANDAI. MEGA Size Model AGE-2 Gundam AGE-2 Normal from Gundam AGE."
     ],
     "manufacturer": "bandai"
   },
@@ -793,140 +954,6 @@
     ],
     "manufacturer": "bandai"
   },
-  "star-wars-kit-pg-1-72-millennium-falcon": {
-    "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-bandai-star-wars-kit-pg-1-72-millennium-falcon",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_04_large.jpg?v=1570038604",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_04_900x900.jpg?v=1570038604",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_04_1024x1024.jpg?v=1570038604",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_special_01_1024x1024.jpg?v=1570038590",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_01_1024x1024.jpg?v=1570038590",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_02_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/136_55_o_1bhf82llu1vrgk8c17p29pe7567_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_00_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_03_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_05_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_06_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_07_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_08_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_09_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_10_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_11_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_12_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_13_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_15_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_17_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_18_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_19_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_20_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_21_1024x1024.jpg?v=1525654088",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/millenniumfalcon_72_1_22_1024x1024.jpg?v=1525654088"
-    ],
-    "is_visited": true,
-    "title": [
-      "star-wars-kit-pg-1-72-millennium-falcon",
-      "BANDAI STAR WARS KIT PG 1/72 MILLENNIUM FALCON"
-    ],
-    "sku": "4549660163848",
-    "tags": [
-      "pg",
-      "star wars"
-    ],
-    "scale": null,
-    "product_line": "pg",
-    "description": [
-      "BANDAI STAR WARS KIT PG 1/72 MILLENNIUM FALCON\n\n\n\n\n\u00a0\n",
-      "https://4.bp.blogspot.com/-jl6cP7whpvY/WS-Ny6p5fRI/AAAAAAAASg4/7JfBJ9WCsqsXDZqaLGroQPBJ6IQZgXsWwCLcB/s1600/millenniumfalcon_72_1_special_01.jpg"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mega-size-1-48-rx-0-unicorn-gundam-destroy-mode": {
-    "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pre-order-mega-size-1-48-rx-0-unicorn-gundam-destroy-mode",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_2_large.jpg?v=1569601294",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_2_900x900.jpg?v=1569601294",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_2_1024x1024.jpg?v=1569601294",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_1_5ed8ed63-9f3e-46da-9cf6-0ef7482df67a_1024x1024.JPG?v=1569601280",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_3_1024x1024.jpg?v=1569601280",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_1_1024x1024.jpg?v=1569601280",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_4_1024x1024.jpg?v=1569601280",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_5_1024x1024.jpg?v=1569601280",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_6_1024x1024.jpg?v=1569601280",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_7_1024x1024.jpg?v=1569601280",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_8_1024x1024.jpg?v=1569601280",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_9_1024x1024.jpg?v=1569601280",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mega-size-unicorn-gundam-destroy-mode_10_1024x1024.jpg?v=1569601280"
-    ],
-    "is_visited": true,
-    "title": [
-      "mega-size-1-48-rx-0-unicorn-gundam-destroy-mode",
-      "Mega Size 1/48 RX-0 Unicorn Gundam [DESTROY MODE]"
-    ],
-    "sku": "4549660167426",
-    "tags": [
-      "1/48",
-      "gundam",
-      "mega size",
-      "uc",
-      "unicorn"
-    ],
-    "scale": null,
-    "product_line": "pg",
-    "description": [
-      "Mega Size 1/48 RX-0 Unicorn Gundam [DESTROY MODE]\n\u00a0\n\n",
-      "https://4.bp.blogspot.com/-2Ib-xYTGh1A/WZhbASw7q0I/AAAAAAAGt3o/xd4Ca2dA0zId-HWUeiXxKbk47ciEyhKXwCLcBGAs/s1600/destroy-mode-unicorn-gundam-mega-size.jpg"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mega-size-model-1-48-scale-zaku-2": {
-    "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/mega-size-model-1-48-scale-zaku-2",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/2_980d4fde-b910-4e7d-8b54-bc2b96f09a4f_large.jpg?v=1569601238",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/2_980d4fde-b910-4e7d-8b54-bc2b96f09a4f_900x900.jpg?v=1569601238",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/2_980d4fde-b910-4e7d-8b54-bc2b96f09a4f_1024x1024.jpg?v=1569601238",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/download_2_1178b6c7-b851-4f72-8fc9-632d16c3d6f1_1024x1024.jpg?v=1569601238"
-    ],
-    "is_visited": true,
-    "title": [
-      "mega-size-model-1-48-scale-zaku-2",
-      "Mega Size Model - 1/48 Scale Zaku 2"
-    ],
-    "sku": "4543112694805",
-    "tags": [],
-    "scale": null,
-    "product_line": "pg",
-    "description": [
-      "Mega Size Model - 1/48 Scale Zaku 2"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mega-size-model-1-48-scale-gundam": {
-    "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/mega-size-model-1-48-scale-gundam",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/littlethingsmeanalot_2267_351219140_large.jpg?v=1569601269",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/littlethingsmeanalot_2267_351219140_900x900.jpg?v=1569601269",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/littlethingsmeanalot_2267_351219140_1024x1024.jpg?v=1569601269",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/download_1_8b2e5507-ab7a-4f82-bea1-534bb5f92f2d_1024x1024.jpg?v=1569601259"
-    ],
-    "is_visited": true,
-    "title": [
-      "mega-size-model-1-48-scale-gundam",
-      "Mega Size Model - 1/48 Scale Gundam"
-    ],
-    "sku": "5058890",
-    "tags": [
-      "1/48",
-      "gundam",
-      "mega size",
-      "uc"
-    ],
-    "scale": null,
-    "product_line": "pg",
-    "description": [
-      "Mega Size Model - 1/48 Scale Gundam"
-    ],
-    "manufacturer": "bandai"
-  },
   "pg-1-60-rx-178-gundam-mk-ii-titans": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pg-1-60-rx-178-gundam-mk-ii-titans",
     "images": [
@@ -954,7 +981,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-rx-178-gundam-mk-ii-aeug": {
+  "pg-1-60-rx-178-gundam-mk-ii-aeug": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pg-rx-178-gundam-mk-ii-aeug",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/81RiPTOhTmL._SL1500_large.jpg?v=1569526171",
@@ -981,7 +1008,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-rx-78-2-gundam-1-60": {
+  "pg-1-60-rx-78-2-gundam-1-60": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pg-rx-78-2-gundam-1-60",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/81-MdQXWFDL._SL1500_large.jpg?v=1574448970",
@@ -1010,7 +1037,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-msz-006-z-gundam-1-60": {
+  "pg-1-60-msz-006-z-gundam-1-60": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pg-msz-006-z-gundam-1-60",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/817DpcIQBVL._SL1500_large.jpg?v=1569526273",
@@ -1041,33 +1068,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "pg-rx-0-unicorn-gundam-led-unit": {
-    "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pg-rx-0-unicorn-gundam-led-unit",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/61bsKW9XDsL._SL1500_large.jpg?v=1569526257",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/61bsKW9XDsL._SL1500_900x900.jpg?v=1569526257",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/61bsKW9XDsL._SL1500_1024x1024.jpg?v=1569526257",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/81liq4IDbML._SL1500_1024x1024.jpg?v=1569526240",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/71VyJW1Qr8L._SL1500_1024x1024.jpg?v=1569526240"
-    ],
-    "is_visited": true,
-    "title": [
-      "pg-rx-0-unicorn-gundam-led-unit",
-      "PG RX-0 Unicorn Gundam LED Unit"
-    ],
-    "sku": "4543112943668",
-    "tags": [
-      "gundam",
-      "pg"
-    ],
-    "scale": null,
-    "product_line": "pg",
-    "description": [
-      "PG RX-0 Unicorn Gundam LED Unit\n\nNo glue required for assembly, a hobby nipper is required to remove parts from runners\nColored plastic, little to no paint required to replicate appearance\n4 AA batteries required (not included)\n"
-    ],
-    "manufacturer": "bandai"
-  },
-  "pg-strike-freedom-gundam": {
+  "pg-1-60-strike-freedom-gundam": {
     "href": "https://www.usagundamstore.com/collections/pg-gundam-kits/products/pg-strike-freedom-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61fhjHtZi7L._SL1500_large.jpg?v=1569526131",
