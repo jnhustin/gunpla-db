@@ -205,7 +205,7 @@
       "manufacturer": "bandai"
     }
   },
-  "mg-1-100-wing-gundam-zero-ew-ver-ka": {
+  "mg-1-100-wing-zero-ew-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-wing-gundam-zero-ew-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/100051346_172684537558859_537720452236181504_n_large.png?v=1590818545"
@@ -228,7 +228,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gn-003-gundam-kyrios": {
+  "mg-1-100-gn-003-kyrios": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-gn-003-gundam-kyrios",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-gundam-kyrios_9_large.jpg?v=1588973081",
@@ -304,7 +304,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-barbatos": {
+  "mg-1-100-barbatos": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-gundam-barbatos",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/eedda8c4-a8d5-48b8-92e6-74cf1bf541f1_large.jpg?v=1576079578",
@@ -432,7 +432,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-age-ii-magnum-gundam-age-mg": {
+  "mg-1-100-magnum": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-gundam-age-ii-magnum-gundam-age-bandai-mg",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/bas5057065_gundam_age_ii_magnum_02_large.jpg?v=1569513476",
@@ -460,8 +460,10 @@
       "fsale",
       "gundam",
       "mg",
-      "sale"
+      "sale",
+      "age"
     ],
+    "series": "age",
     "scale": "1/100",
     "product_line": "mg",
     "description": [
@@ -470,7 +472,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-f91-ver-2-0": {
+  "mg-1-100-f91-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-gundam-f91-ver-2-0",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-gundam-f91-ver-2_2_large.jpg?v=1569594677",
@@ -513,7 +515,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-msa-0011-deep-striker": {
+  "mg-1-100-plan303e-deep-striker": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-bandai-mg-1-100-msa-0011-deep-striker",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg_plane303e_deep_striker_03_large.jpg?v=1570039326",
@@ -551,7 +553,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-oo-xn-raiser-p": {
+  "mg-1-100-00-xn-raiser": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-oo-xn-raiser-p-bandai",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1000114693_2_large.jpg?v=1569594049",
@@ -587,7 +589,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gf13_021ng-gundam-spiegel": {
+  "mg-1-100-spiegel": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-gf13_021ng-gundam-spiegel",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l500_2_fc1c5f87-6daf-4510-bd1c-cc29a536bbb7_large.jpg?v=1569593007",
@@ -614,7 +616,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gp-01-gundam": {
+  "mg-1-100-gp-01": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-gp-01-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_f36a35de-a0ba-4122-9b08-8e83810bca99_large.jpg?v=1569592961",
@@ -736,7 +738,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-78-2-gundam-ver-2-0": {
+  "mg-1-100-rx-78-2-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-rx-78-2-gundam-ver-2-0",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_5130e7bb-520c-4963-a03c-4246cf957547_large.jpg?v=1569593832",
@@ -796,7 +798,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-78gp02a-gundam": {
+  "mg-1-100-rx-78gp02a": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-rx-78gp02a-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l500_85f088c0-bbd9-4e05-932f-bbfe34824405_large.jpg?v=1569591446",
@@ -856,7 +858,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gp-01fb-gundam": {
+  "mg-1-100-gp-01fb": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-gp-01fb-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_1_3abceff2-2890-4703-bd3d-9a66f066ed55_large.jpg?v=1569592949",
@@ -884,7 +886,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-freedom-gundam-ver-2-0": {
+  "mg-1-100-freedom-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-freedom-gundam-ver-2-0",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-zgmf-x10a-freedom-gundam-ver-2-0-01_1-min_large.jpg?v=1569595065",
@@ -925,36 +927,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-re-efreet-kai": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-re-1-100-efreet-kai",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/20160401225316314_large.jpg?v=1569524909",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/20160401225316314_900x900.jpg?v=1569524909",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/20160401225316314_1024x1024.jpg?v=1569524909",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/Untitled-42_6f330bcd-29e1-483d-9d6a-88afa955905a_1024x1024.jpg?v=1569524899",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/20160401225315937_1024x1024.jpg?v=1569524899",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/10BBD15A-CA1F-11E5-98B9-A8F7006A6D39_1024x1024.png?v=1569524899"
-    ],
-    "is_visited": true,
-    "title": [
-      "re-1-100-efreet-kai",
-      "RE 1/100 Efreet Kai"
-    ],
-    "sku": "4549660048824",
-    "tags": [
-      "1/100",
-      "gundam",
-      "re",
-      "uc"
-    ],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "\nFrom the Video game \"Gundam the Blue Destiny\", the fearsome ground use mobile suit comes with 2 heat sabers reproduced in vibrant translucent orange plastic and detachable leg missile pods\nRunner x13, sticker sheet, and instruction manual\n"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-v2-gundam-ver-ka": {
+  "mg-1-100-victory-two-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-v2-gundam-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/banm151262_large.jpg?v=1569593541",
@@ -1022,7 +995,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-deathscythe-ew": {
+  "mg-1-100-deathscythe-ew": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-gundam-deathscythe-ew",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61Qh87C6rQL._SL1000_large.jpg?v=1569594809",
@@ -1051,35 +1024,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-re-msn-04-ii-nightingale": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/re-1-100-msn-04-ii-nightingale",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/71NFmcFtPYL._SL1500_large.jpg?v=1570040872",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/71NFmcFtPYL._SL1500_900x900.jpg?v=1570040872",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/71NFmcFtPYL._SL1500_1024x1024.jpg?v=1570040872",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_2b9eeaf7-b303-4a88-a499-208a6de173fd_1024x1024.JPG?v=1570040851",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/81QSM8i3ucL._SL1500_1024x1024.jpg?v=1570040851",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/71RGUOE9TGL._SL1500_1024x1024.jpg?v=1570040851"
-    ],
-    "is_visited": true,
-    "title": [
-      "re-1-100-msn-04-ii-nightingale",
-      "RE 1/100 MSN-04 II Nightingale"
-    ],
-    "sku": "4543112920829",
-    "tags": [
-      "1/100",
-      "gundam",
-      "uc"
-    ],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "RE 1/100 MSN-04 II Nightingale\n\nNo glue required for assembly, a hobby nipper is required to remove parts from runners\nColored plastic, little to no paint required to replicate appearance\nRunner x32 Tetron Sticker x1, instruction manual x1\n"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-gundam-exia-ignition-mode": {
+  "mg-1-100-exia-ignition-mode": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-gundam-exia-ignition-mode",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61SIlYsdswL._SL1205_large.jpg?v=1569594712",
@@ -1111,7 +1056,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-sandrock-ver-ew-master-grade": {
+  "mg-1-100-sandrock-ew-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-gundam-sandrock-ver-ew-1-100-master-grade",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61QbEQmcxAL._SL1024_large.jpg?v=1569613840",
@@ -1176,7 +1121,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-78-gp03s-gundam": {
+  "mg-1-100-rx-78-gp03s": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-rx-78-gp03s-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_7fa7d1b3-6f22-4843-9298-91f2c1c58ea7_large.JPG?v=1569591580",
@@ -1237,7 +1182,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-unicorn-gundam-03-phenex": {
+  "mg-1-100-unicorn-03-phenex": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-unicorn-gundam-03-phenex",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/289-731x1024_large.jpg?v=1569593621",
@@ -1299,7 +1244,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-turn-x-gundam": {
+  "mg-1-100-concept-x6-turn-x": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-turn-x-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/MGtunx_01_LRG_large.jpg?v=1569591325",
@@ -1330,7 +1275,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-178-gundam-mk-ii-ver-2-0-titans-scale": {
+  "mg-1-100-rx-178-mk-ii-ver-2-0-titans": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-rx-178-gundam-mk-ii-ver-2-0-titans-mg-1-100-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/MGtitans_01_LRG_large.jpg?v=1570038102",
@@ -1358,7 +1303,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-gat-x105e-strike-e-gundam-strike-noir-scale": {
+  "mg-1-100-gat-x105e-strike-noir": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-gundam-gat-x105e-strike-e-gundam-strike-noir-mg-1-100-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_bde96c81-2707-43eb-bd62-1c157cb84ee5_large.JPG?v=1569613829",
@@ -1388,7 +1333,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-wing-gundam-zero-version-ew-master-grade": {
+  "mg-1-100-wing-zero-ew-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-hobby-wing-gundam-zero-version-ew-1-100-master-grade",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_4597440c-5a47-467d-adf4-736e3f5430d4_large.JPG?v=1570039177",
@@ -1418,7 +1363,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-00-gundam-seven-sword-g-master-grade": {
+  "mg-1-100-00-seven-sword-g": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-00-gundam-seven-sword-g-1-100-master-grade",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_1_large.JPG?v=1569613451",
@@ -1451,7 +1396,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-msn-001a1-delta-plus-master-grade": {
+  "mg-1-100-msn-001a1-delta-plus": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-msn-001a1-delta-plus-1-100-master-grade",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71lNXUJOxmL._SL1500_large.jpg?v=1570037976",
@@ -1483,7 +1428,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-msz-006-zeta-gundam-ver-2-0-scale": {
+  "mg-1-100-msz-006-zeta-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/gundam-msz-006-zeta-gundam-ver-2-0-mg-1-100-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_1_5fefa560-a009-4583-978d-ede53bdcaef2_large.jpg?v=1572774002",
@@ -1517,7 +1462,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-seed-astray-gundam-astray-blue-frame-d-mbf-p03d-model": {
+  "mg-1-100-astray-blue-frame": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/gundam-seed-astray-1-100-mg-gundam-astray-blue-frame-d-mbf-p03d-model",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg_blued030_large.jpg?v=1569941598",
@@ -1552,7 +1497,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-double-x": {
+  "mg-1-100-double-x": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-gundam-double-x",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1622022_836973213015970_3566803343157560759_n_large.jpg?v=1569594767",
@@ -1580,7 +1525,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-zgmf-x20a-strike-freedom-gundam-full-burst-mode-seed": {
+  "mg-1-100-zgmf-x20a-strike-freedom-full-burst-mode": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-zgmf-x20a-strike-freedom-gundam-full-burst-mode-seed-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_2fe17166-eba9-402e-b699-a3a25ea59bc3_large.jpeg?v=1570037927",
@@ -1611,7 +1556,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-523730-gundam-ms-06r-zaku-ii-black-tri-stars-ver-2-0": {
+  "mg-1-100-ms-06r-zaku-ii-black-tri-stars-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-523730-gundam-ms-06r-zaku-ii-black-tri-stars-ver-2-0-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_d8ad30ef-6207-4d96-9f1b-839daa759ac2_large.jpeg?v=1596480558",
@@ -1645,7 +1590,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-003669-gundam-ms-18e-kampfer": {
+  "mg-1-100-ms-18e-kampfer": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-003669-gundam-ms-18e-kampfer-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_2b45b6e9-d0ba-44d5-bc9f-dbebab70e304_large.jpeg?v=1570039266",
@@ -1675,7 +1620,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-06s-chars-zaku-ii-ver-2-0": {
+  "mg-1-100-ms-06s-zaku-ii-chars-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-bandai-ms-06s-chars-zaku-ii-ver-2-0-model-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71SUqS8G7xL._SY606_large.jpg?v=1570380388",
@@ -1705,7 +1650,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-512437-gundam-zgmf-x42s-destiny-gundam": {
+  "mg-1-100-destiny": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-512437-gundam-zgmf-x42s-destiny-gundam-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_1db6b973-76db-4392-ad7a-923806abb938_large.jpeg?v=1570037767",
@@ -1736,7 +1681,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-040213-gundam-amx-004-qubeley": {
+  "mg-1-100-amx-004-qubeley": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-040213-gundam-amx-004-qubeley-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_349bee98-840b-433c-b8b0-cdb20e0d74e2_large.jpeg?v=1570039275",
@@ -1764,7 +1709,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-unicorn-msn-06s-sinanju-ova-animation-color-ver": {
+  "mg-1-100-msn-06s-sinanju-ova-animation-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/gundam-unicorn-1-100-mg-msn-06s-sinanju-ova-animation-color-ver-model-kit-bandai",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_13f3ad42-4752-4429-8fa4-0c57c21d5e0b_large.jpeg?v=1569941749",
@@ -1797,7 +1742,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-exia-gn-001-ban-159452": {
+  "mg-1-100-exia": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-1-100-mg-master-grade-gundam-exia-gn-001-model-kit-ban-159452",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_8d34809a-5403-4716-9677-b353e2fe73cc_large.jpeg?v=1569613461",
@@ -1827,7 +1772,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-699145-gundam-00-raiser": {
+  "mg-1-100-00-raiser": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-699145-gundam-00-raiser-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71jUvlJ-XVL._SL1500_large.jpg?v=1569781600",
@@ -1855,7 +1800,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-154-rx-0-unicorn-gundam-2-banshee-nib": {
+  "mg-1-100-rx-0-unicorn-2-banshee": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-154-rx-0-unicorn-gundam-2-banshee-1-100-model-kit-bandai-nib",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_4ea694bb-22ab-4860-bf09-74e8fba0d577_large.jpeg?v=1569593452",
@@ -1865,7 +1810,7 @@
     ],
     "is_visited": true,
     "title": [
-      "mg-154-rx-0-unicorn-gundam-2-banshee-1-100-nib",
+      "mg-154-rx-0-unicorn-gundam-2-banshee-1-100",
       "MG 154 RX-0 Unicorn Gundam 2 Banshee 1/100 Model Kit"
     ],
     "sku": "4543112753168",
@@ -1884,7 +1829,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-93-nu-gundam-ver-ka-gundam-u-c-0093": {
+  "mg-1-100-rx-93-nu-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-1-100-mg-rx-93-nu-gundam-ver-ka-gundam-model-kit-u-c-0093",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_694f378c-b1ff-4d92-8e38-99f409950c46_large.jpeg?v=1570809599",
@@ -1916,7 +1861,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-neo-zeon-msn-04-sazabi-ver-ka-mobile-suit": {
+  "mg-1-100-neo-zeon-msn-04-sazabi-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/gundam-1-100-mg-neo-zeon-msn-04-sazabi-ver-ka-mobile-suit-model-kit-bandai",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/7139riAj7_L._SL1396_large.jpg?v=1569781283",
@@ -1946,7 +1891,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-384126-rx-178-gundam-mk-ii-ver-2-0-a-e-u-g": {
+  "mg-1-100-rx-178-mk-ii-ver-2-0-aeug": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-384126-rx-178-gundam-mk-ii-ver-2-0-a-e-u-g-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_b9024af2-8457-4699-bf2a-818e0939098d_large.jpeg?v=1570039440",
@@ -1975,7 +1920,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-670786-gundam-deathscythe-hell-endless-walz-xxxg-01d2": {
+  "mg-1-100-deathscythe-hell-ew-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-670786-gundam-deathscythe-hell-endless-walz-xxxg-01d2-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/littlethingsmeanalot_2267_69125591_large.jpg?v=1575856432",
@@ -1996,7 +1941,8 @@
       "1/100",
       "gundam",
       "mg",
-      "wing"
+      "wing",
+      "xxxg-01d2"
     ],
     "scale": "1/100",
     "product_line": "mg",
@@ -2006,44 +1952,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rgz-91b-re-gz-custom-p": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-rgz-91b-re-gz-custom-1-100-p-bandai",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-01_large.jpg?v=1570380217",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-01_900x900.jpg?v=1570380217",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-01_1024x1024.jpg?v=1570380217",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-pa_1024x1024.jpg?v=1570380413",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-02_1024x1024.jpg?v=1570380326",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-03_1024x1024.jpg?v=1570379958",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-04_1024x1024.jpg?v=1570380039",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-05_1024x1024.jpg?v=1570379886",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-06_1024x1024.jpg?v=1570379773",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-07_1024x1024.jpg?v=1570380466",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-08_1024x1024.jpg?v=1570380075",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-09_1024x1024.jpg?v=1570379866",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rgz-91b-re-gz-custom-10_1024x1024.jpg?v=1570379660"
-    ],
-    "is_visited": true,
-    "title": [
-      "mg-rgz-91b-re-gz-custom-1-100-p",
-      "MG RGZ-91B RE-GZ CUSTOM 1/100 P-Bandai"
-    ],
-    "sku": "4573102575661",
-    "tags": [
-      "1/100",
-      "best deals",
-      "mg",
-      "p-bandai",
-      "uc"
-    ],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "MG RGZ-91B RE-GZ CUSTOM\u00a01/100 P-Bandai"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-hirm-god-gundam": {
+  "mg-1-100-god-hirm-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/hirm-1-100-god-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/02796f44-1414-4566-86f8-79279af17beb_large.jpg?v=1574514748",
@@ -2077,7 +1986,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-hirm-gundam-astray-noir": {
+  "mg-1-100-astray-noir-hirm-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/hirm-1-100-gundam-astray-noir",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/95ae0f48-5ee5-4c38-a98d-984f0f84e60c_large.jpg?v=1569781232",
@@ -2115,7 +2024,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-unicorn-gundam-coating-ver": {
+  "mg-1-100-unicorn-titanium-finish-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-unicorn-gundam-coating-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/4543112584717-j00_large.jpg?v=1569591306",
@@ -2140,7 +2049,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-lm312v04-v-dash-gundam-ver-ka": {
+  "mg-1-100-v-dash-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-lm312v04-v-dash-gundam-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-lm312v04-v-dash-gundam-ver-ka-01_large.jpg?v=1569592664",
@@ -2176,7 +2085,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ex-s-gundam-s-gundam": {
+  "mg-1-100-ex-s": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-ex-s-gundam-s-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/56706144_2626907247337759_2794372410734804992_n_large.jpg?v=1570836825",
@@ -2222,7 +2131,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-dynames": {
+  "mg-1-100-dynames": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-gundam-dynames",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/image_fe789f10-f4a4-4ca3-b33d-b381c6e7fdde_large.jpg?v=1571149629",
@@ -2255,7 +2164,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-msn-06s-2-sinanju-stein-narrative-ver-ka": {
+  "mg-1-100-msn-06s-2-sinanju-stein-narrative-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-msn-06s-2-sinanju-stein-narrative-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/44792198_837202073337766_4447815196265676800_n_large.jpg?v=1569594091",
@@ -2288,8 +2197,8 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100--wing-gundam-ew-hirm": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-hi-resolution-model-wing-gundam-ew",
+  "mg-1-100-wing-ew-hirm-ver": {
+    "href": "http/s://www.usagundamstore.com/collections/model-kits/products/pre-order-hi-resolution-model-wing-gundam-ew",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/42687393_2142114739335451_376177798701645824_n_large.jpg?v=1569605771",
       "https://cdn.shopify.com/s/files/1/0727/8355/products/42687393_2142114739335451_376177798701645824_n_900x900.jpg?v=1569605771",
@@ -2323,7 +2232,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100--gundam-astray-redframe-hirm": {
+  "mg-1-100-astray-redframe-hirm-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-hi-resolution-model-1-100-gundam-astray-redframe",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/hi-res-model-gundam-astray-red-frame_2_large.jpg?v=1569606231",
@@ -2375,7 +2284,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-00-quanta-full-saber": {
+  "mg-1-100-00-qant-full-saber": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-00-quanta-full-saber",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-00-quanta-full-saber_1_large.jpg?v=1569595332",
@@ -2436,7 +2345,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-sazabi-metallic-coating-ver": {
+  "mg-1-100-msn-04-sazabi-metallic-coating-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-sazabi-metallic-coating-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/4543112522467_1_1_large.jpg?v=1569593776",
@@ -2523,7 +2432,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-strike-gundam-iwsp": {
+  "mg-1-100-strike-iwsp": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-strike-gundam-iwsp",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51vAwcIzJVL._SY355_large.jpg?v=1569593662",
@@ -2551,7 +2460,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-first-gundam-rx-78-2": {
+  "mg-1-100-rx-78-2": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-first-gundam-rx-78-2",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/8d46a5039b62520756418282082ecba0_large.jpg?v=1569593226",
@@ -2597,7 +2506,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-05b-zaku-1": {
+  "mg-1-100-ms-05b-zaku-i": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-05b-zaku-1",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-ms-05b-zaku-i-00_large.jpg?v=1569592626",
@@ -2608,8 +2517,8 @@
     ],
     "is_visited": true,
     "title": [
-      "mg-ms-05b-zaku-1",
-      "MG MS-05B Zaku 1"
+      "mg-ms-05b-zaku-i",
+      "MG MS-05B Zaku i"
     ],
     "sku": "4902425725734",
     "tags": [
@@ -2623,7 +2532,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-05b-zaku-1-black-trinity": {
+  "mg-1-100-ms-05b-zaku-i-black-trinity": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-05b-zaku-1-black-trinity",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/4902425725758_1_1_large.jpg?v=1569592615",
@@ -2670,7 +2579,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-78-3-gundam": {
+  "mg-1-100-rx-78-3": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-rx-78-3-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/download_4_9e67607c-0bfa-485e-b9a8-9541c44bc853_large.jpg?v=1569591523",
@@ -2694,47 +2603,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-re-100-vigna-ghina-gundam-f91": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-re-100-vigna-ghina-gundam-f91-bandai",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100-vigna-ghina-box-art-and-official-images_2_large.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100-vigna-ghina-box-art-and-official-images_2_900x900.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100-vigna-ghina-box-art-and-official-images_2_1024x1024.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/45c0d620abd04d8ca97a0af926001a7c_1024x1024.jpeg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100-vigna-ghina-box-art-and-official-images_3_1024x1024.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100-vigna-ghina-box-art-and-official-images_4_1024x1024.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re_vigna_ghina_01m_1024x1024.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re_vigna_ghina_02_1024x1024.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re_vigna_ghina_03_1024x1024.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re_vigna_ghina_04_1024x1024.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re_vigna_ghina_05_1024x1024.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re_vigna_ghina_06_1024x1024.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re_vigna_ghina_07_1024x1024.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re_vigna_ghina_08_1024x1024.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re_vigna_ghina_09_1024x1024.jpg?v=1569524706",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100-vigna-ghina-box-art-and-official-images_5_1024x1024.jpg?v=1532112789",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100-vigna-ghina-box-art-and-official-images_6_1024x1024.jpg?v=1532112789",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100-vigna-ghina-box-art-and-official-images_7_1024x1024.jpg?v=1532112789"
-    ],
-    "is_visited": true,
-    "title": [
-      "re-100-vigna-ghina-gundam-f91",
-      "RE/100 Vigna-Ghina \"Gundam F91\", Bandai"
-    ],
-    "sku": "4549660257684",
-    "tags": [
-      "gundam",
-      "re"
-    ],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "RE/100 Vigna-Ghina \"Gundam F91\", Bandai\u00a0\n\n\n\n\nMachine used by Berah Ronah of the Crossbone Vanguard in the animated movie \u201cGundam F91\u201d now appears in an updated 1/100 model!\u00a0 Reborn in the RE/100 line it has been adjusted with refined proportions that allow increased range of motion without disrupting the sculpt of the mobile suit.\u00a0 Features 2 different cockpit hatches to replicate its initial and repaired states along with marking stickers for the Crossbone Vanguard symbol on its forehead.\u00a0 All 8 of its backpack fin nozzles can move independently, and the calf ducts move in-conjunction with knee bend.\u00a0 Runner x 14, stickers, instruction manual.\u00a0 Display it together with BAN225751 MG Gundam F91 Ver 2.0!\u00a0",
-      "https://2.bp.blogspot.com/-IfcimxNqfX8/WupzE4UYjCI/AAAAAAAG7BA/fx5NdH3CT2AbAnCur3om6cuJlC3ZenKJACLcBGAs/s1600/re-100-vigna-ghina.jpg"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-rx-78-2-gundam-oyw": {
+  "mg-1-100-rx-78-2-oyr-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-rx-78-2-gundam-oyw",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rx-78-2-gundam-ver-owy-0079-00_large.jpg?v=1569591552",
@@ -2759,7 +2628,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-unicorn-gundam": {
+  "mg-1-100-unicorn": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-unicorn-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/41kFC8s6lzL._SY450_large.jpg?v=1569593599",
@@ -2784,7 +2653,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-wing-gundam-zero-ew-plated-coating-gundam-wing-endless-waltz--1-100-hirm": {
+  "mg-1-100-wing-zero-ew-pearl-coating-hirm-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-wing-gundam-zero-ew-plated-coating-gundam-wing-endless-waltz-bandai-hi-resolution-model-1-100",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/hrm_wingzeroEW_01m_large.jpg?v=1569515723",
@@ -2849,74 +2718,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-mbf-02vv-gundam-astray-turn-red-p": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-mbf-02vv-gundam-astray-turn-red-p-bandai",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-gundam-astray-turn-red_2_large.jpg?v=1569594163",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-gundam-astray-turn-red_2_900x900.jpg?v=1569594163",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-gundam-astray-turn-red_2_1024x1024.jpg?v=1569594163",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/MG_Gundam_Astray_Turn_Red_1024x1024.jpg?v=1569594163",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-gundam-astray-turn-red_1_1024x1024.jpg?v=1569594163",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-gundam-astray-turn-red_3_1024x1024.jpg?v=1569594163",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-gundam-astray-turn-red_4_1024x1024.jpg?v=1569594163",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-gundam-astray-turn-red_5_1024x1024.jpg?v=1569594163",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-gundam-astray-turn-red_6_1024x1024.jpg?v=1569594163",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-gundam-astray-turn-red_7_1024x1024.jpg?v=1569594163",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-gundam-astray-turn-red_8_1024x1024.jpg?v=1569594163"
-    ],
-    "is_visited": true,
-    "title": [
-      "mg-1-100-mbf-02vv-gundam-astray-turn-red-p",
-      "Gundam Astray Turn Red \"Gundam SEED VS Astray\", Bandai MG 1/100"
-    ],
-    "sku": "4549660248095",
-    "tags": [
-      "1/100",
-      "gundam",
-      "mg",
-      "p-bandai",
-      "seed"
-    ],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "Gundam Astray Turn Red \"Gundam SEED VS Astray\", Bandai MG\n1/100A variant of the Gundam Astray Red Frame featured in the side story \"Gundam Seed VS Astray\" appears in MG form! Its characteristic red and white inverted colors along with giant V-Fin, chin guard, and original backpack have been faithfully recreated! Gundam Astray Turn Red features 2 Tactical Arms packs that can convert between massive buster sword and stationary chain gun. A small display base is provided to help balance the weight of the Tactical Arms. Hip mounted Armor Schneiders beam rifle, and shield round off its arsenal. Beam rifle and shield parts can be retrofitted on the MG Astray Red Frame to show its original form!\n\n\u00a0\n\n\u00a0\n\n\u00a0\n",
-      "https://3.bp.blogspot.com/-7v68bpq2H1Y/WinZ4IeK9_I/AAAAAAAG0n8/YnVASO40T1cNsV7-R0dIifiwCsgG4YJMACLcBGAs/s1600/MG-GUNDAM-ASTRAY-TURN-RED%2B%25281%2529.jpg"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-guncannon-detector-gundam-uc-re-100": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-guncannon-detector-gundam-uc-bandai-re-100",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_guncannon_detector_03_large.jpg?v=1569947539",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_guncannon_detector_03_900x900.jpg?v=1569947539",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_guncannon_detector_03_1024x1024.jpg?v=1569947539",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re-100-guncannon-detector-box-art_1024x1024.jpg?v=1569947518",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_guncannon_detector_01m_1024x1024.jpg?v=1569947518",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_guncannon_detector_02_1024x1024.jpg?v=1569947518",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_guncannon_detector_04_1024x1024.jpg?v=1525653761",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_guncannon_detector_05_1024x1024.jpg?v=1525653761",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_guncannon_detector_06_1024x1024.jpg?v=1525653761",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_guncannon_detector_07_1024x1024.jpg?v=1525653761"
-    ],
-    "is_visited": true,
-    "title": [
-      "guncannon-detector-gundam-uc-re-100",
-      "Guncannon Detector \"Gundam UC\", Bandai RE/100"
-    ],
-    "sku": "4549660210610",
-    "tags": [
-      "gundam"
-    ],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "Guncannon Detector \"Gundam UC\", Bandai RE/100\nThe Guncannon Detector from \u201cGundam UC\u201d is now available as a model kit for the first time! It was featured in a brutal battle with Zeon remnants at Torrington Base in \u201cEpisode 4: At the Bottom of the Gravity Well\u201d and is now making its debut in the RE/100 series! The intricately detailed parts specific to the RE/100 line, such as the armor and backpack, creates an easy assembly process that anyone can enjoy. Gimmicks in the legs and waist allow for an accurate recreation of iconic firing poses as seen in the series. The Guncannon Detector\u2019s designated Beam rifle has been recreated using precise detailing down to the grenade launcher and trigger. Most notable with this kit is the included 170mm (6.7\u201d) cannon used by the Nemo units deployed at Torrington Base. You can combine this weapon with other 1/100 scale kits from the Gundam UC series such as the (BAN181594) RGM-96X Jesta and (BAN141042) MSA-003 Nemo (each sold separately). Set includes Designated Beam rifle, Beam gun, Beam cannon x2, and 170mm (6.7\u201d). Runner x12. Sticker sheet x1. Marking sticker sheet x1. Instruction manual x1.\n\u00a0\n\u00a0\n\n\n\n\n\n\n\u00a0\n\u00a0\n",
-      "https://3.bp.blogspot.com/-7C-JT1L83js/WfxeypaWDeI/AAAAAAAGy3c/aBWljRW_06MN0sfT22iJsaPcQD70Eq5zQCLcBGAs/s1600/re-100-guncannon-detector%2B%25281%2529.png"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-gm-command-colony-type-gundam-0080-1-100": {
+  "mg-1-100-rgm-79g-gm-command-colony-type": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-gm-command-colony-type-gundam-0080-bandai-mg-1-100",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg_gm_command_colony_02_large.jpg?v=1569949040",
@@ -2951,7 +2753,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-14a-gelgoog-1": {
+  "mg-1-100-ms-14a-gelgoog-gato-custom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-14a-gelgoog-1",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/shopping_be84ab5d-bf37-44c5-93d6-e6181c5a3982_large.jpg?v=1569592363",
@@ -2974,7 +2776,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-pf-78-1-perfect-gundam": {
+  "mg-1-100-perfect": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-pf-78-1-perfect-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/14231877423_large.jpg?v=1569591974",
@@ -3000,7 +2802,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-06-f2-zake2-zeon-version": {
+  "mg-1-100-ms-06f-2-zaku-ii-f2": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-06-f2-zake2-zeon-version",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/download_1_42ee71cb-50fc-41a6-abf0-67c7cdcb514e_large.jpg?v=1569592569",
@@ -3024,7 +2826,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-hi-nu-gundam": {
+  "mg-1-100-rx-93-2-hi-nu": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-hi-nu-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/Master-Grade-Hi-Nu-Gundam-43_large.jpg?v=1569592749",
@@ -3051,7 +2853,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-full-armor-gundam": {
+  "mg-1-100-fa-78-1-full-armor": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-full-armor-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/TOY-GDM-1224_large.jpg?v=1569594999",
@@ -3077,7 +2879,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gm-sniper-custom-mobile-suit-gundam-msv-1-100": {
+  "mg-1-100-rgm-79sc-gm-sniper-custom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-gm-sniper-custom-mobile-suit-gundam-msv-bandai-mg-1-100",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg_gm_sniper_custom_02_large.jpg?v=1569949102",
@@ -3111,7 +2913,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-master-gundam-hyper-mode": {
+  "mg-1-100-hyper-mode-master": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-master-gundam-hyper-mode",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/4543112909220d_large.jpg?v=1569594173",
@@ -3134,7 +2936,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-06r-1a-zaku-2-black-trinity": {
+  "mg-1-100-ms-06r-1a-zaku-ii-black-trinity": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-06r-1a-zaku-2-black-trinity",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l225_92643676-c014-4f9f-9a96-c5f402dde99a_large.jpg?v=1569592451",
@@ -3156,7 +2958,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-anniversary-coating-version": {
+  "mg-1-100-rx-78-2-anniversary-coating-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-gundam-anniversary-coating-version",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mega_rx78_DSC_6443_copy_large.jpg?v=1569594858",
@@ -3181,7 +2983,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-msz-006-z-gundam-coating-version": {
+  "mg-1-100-msz-006-zeta-coating-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-msz-006-z-gundam-coating-version",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/10015476a_large.jpg?v=1569592082",
@@ -3205,7 +3007,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-06f-j-zaku-ii-coating-version": {
+  "mg-1-100-ms-06f-j-zaku-ii-coating-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-06f-j-zaku-ii-coating-version",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/10009288a_large.jpg?v=1569592524",
@@ -3228,7 +3030,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-06s-zaku-ii-coating-version": {
+  "mg-1-100-ms-06s-zaku-ii-coating-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-06s-zaku-ii-coating-version",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51UQy4e3q9L._SY355_large.jpg?v=1569592417",
@@ -3251,7 +3053,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-gp01-fb-coating-version": {
+  "mg-1-100-gp01-fb-coating-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-gundam-gp01-fb-coating-version",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/10009255a2_large.jpg?v=1569592806",
@@ -3276,7 +3078,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-gp02a-coating-version": {
+  "mg-1-100-gp02a-coating-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-gundam-gp02a-coating-version",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/2c8e1f05faf67f1d6c07fd5557f5862e--physalis-gundam-model_large.jpg?v=1569592784",
@@ -3301,7 +3103,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gf-13-017nj2-g-gundam-hyper-mode": {
+  "mg-1-100-hyper-mode-g-gundam": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-gf-13-017nj2-g-gundam-hyper-mode",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/download_8a1ea59c-59be-42cf-b38c-297c75164688_large.jpg?v=1569593053",
@@ -3327,7 +3129,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-zgmf-x10a-freedom-gundam-extra-finish": {
+  "mg-1-100-zgmf-x10a-freedom-extra-finish-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-zgmf-x10a-freedom-gundam-extra-finish",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/58_1d71ee68-1d24-4150-ada3-8e94befc818d_large.JPG?v=1569591219",
@@ -3350,7 +3152,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-nu-gundam-metallic-coating-ver": {
+  "mg-1-100-nu-metallic-coating-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-nu-gundam-metallic-coating-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51G_nGGX6QL._SY450_large.jpg?v=1569591996",
@@ -3380,7 +3182,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-sinanju-ver-ka": {
+  "mg-1-100-msn-06s-sinanju-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-sinanju-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51ERZBpWXJL._SL500_AC_SS350_large.jpg?v=1569591401",
@@ -3405,7 +3207,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-06r-2-zaku-2": {
+  "mg-1-100-ms-06r-2-zaku-ii": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-06r-2-zaku-2",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/spd_20080929154916_b_large.jpg?v=1569592424",
@@ -3458,7 +3260,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-freedom-gundam-ver-2-0-kira-yamato": {
+  "mg-1-100-freedom-ver-2-0-with-kira-yamato-bust": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-freedom-gundam-ver-2-0-kira-yamato",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/2017020920055400b_large.jpg?v=1569595023",
@@ -3557,7 +3359,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-06r-1-zaku-2": {
+  "mg-1-100-ms-06r-1-zaku-ii": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-06r-1-zaku-2",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_9_99_large.jpg?v=1569592489",
@@ -3579,43 +3381,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-re-100-amx-103-hamma-hamma": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-re-100-amx-103-hamma-hamma",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_hamma_hamma-min_large.jpg?v=1569524810",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_hamma_hamma-min_900x900.jpg?v=1569524810",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_hamma_hamma-min_1024x1024.jpg?v=1569524810",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re-100-hamma-hamma_1024x1024.jpg?v=1569524800",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_hamma_hamma2-min_1024x1024.jpg?v=1569524800",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_hamma_hamma3-min_1024x1024.jpg?v=1569524800",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_hamma_hamma4-min_1024x1024.jpg?v=1569524800",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_hamma_hamma5-min_1024x1024.jpg?v=1569524800",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/b177_1024x1024.jpg?v=1569524800",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/maxresdefault_18822820-0d5b-4e5c-b0a8-78533e4bc15b_1024x1024.jpg?v=1569524800",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/bann17614_3_1494467751_1024x1024.jpg?v=1569524800",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/bann17614_4_1494467750_1024x1024.jpg?v=1569524800",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/bann17614_5_1494467751_1024x1024.jpg?v=1569524800"
-    ],
-    "is_visited": true,
-    "title": [
-      "re-100-amx-103-hamma-hamma",
-      "RE/100 AMX-103 Hamma Hamma"
-    ],
-    "sku": "4549660176145",
-    "tags": [
-      "1/100",
-      "re",
-      "uc"
-    ],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "RE/100 AMX-103 Hamma Hamma\n\u00a0\n\n\u00a0\n",
-      "https://hobbyfrontline.com/wp-content/uploads/2017/07/re100-hamma-specj.jpg"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100--wing-gundam-zero-custom-ew-ver-hirm": {
+  "mg-1-100-wing-zero-custom-ew-ver-hirm": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-hi-resolution-model-1-100-wing-gundam-zero-custom-ew-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/hi-res-model-wing-gundam-zero-custom-ew-release_10_large.jpg?v=1569606211",
@@ -3656,7 +3422,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-zz-gundam-ver-ka": {
+  "mg-1-100-zz-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-zz-gundam-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-zz-gundam-ver-ka-release-info_1_large.jpg?v=1569593497",
@@ -3691,7 +3457,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-78-3-g-3-gundam-ver-2-0": {
+  "mg-1-100-rx-78-3-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-rx-78-3-g-3-gundam-ver-2-0",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/spd_20100122162742_b_large.jpg?v=1589292343",
@@ -3717,7 +3483,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-g-armor-real-type-color-version": {
+  "mg-1-100-g-armor-fighter-and-rx-78-real-type-color-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-g-armor-real-type-color-version",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/41HSHxyoeVL._SX425_large.jpg?v=1569781467",
@@ -3792,7 +3558,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-f91-harrisons": {
+  "mg-1-100-f91-harrison-custom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-gundam-f91-harrisons",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/download_1_16f56519-6920-476f-bfad-8ffa78d83011_large.jpg?v=1569592830",
@@ -3818,7 +3584,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-78-02-gundam-gundam-the-origin-special-edition": {
+  "mg-1-100-rx-78-02-special-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-rx-78-02-gundam-gundam-the-origin-special-edition",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rx-78-02-gundam-the-origin-special-edition_5_large.jpg?v=1570114524",
@@ -3835,7 +3601,10 @@
       "MG 1/100 RX-78-02 Gundam (Gundam The Origin) Special Edition"
     ],
     "sku": "42731334095",
-    "tags": [],
+    "tags": [
+      "the-origin"
+    ],
+    "series": "the-origin",
     "scale": "1/100",
     "product_line": "mg",
     "description": [
@@ -3844,7 +3613,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-justice-gundam": {
+  "mg-1-100-justice": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-justice-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-justice-gundam_1_large.jpg?v=1569594214",
@@ -3889,7 +3658,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-casval-rx-78-gundam": {
+  "mg-1-100-casval-rx-78": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/1-100-mg-casval-rx-78-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l500_1_8c6d44ba-c4cd-4338-a1c3-852bbc02ba10_large.jpg?v=1563384428",
@@ -3916,7 +3685,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-78-nt-1-gundam": {
+  "mg-1-100-rx-78-nt-i": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-rx-78-nt-1-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61ED8tl_dQL._SX466_large.jpg?v=1570380462",
@@ -3970,7 +3739,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-78-2-gundam-ver-ka": {
+  "mg-1-100-rx-78-2-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-rx-78-2-gundam-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/GDS-3814-57_large.jpg?v=1569591543",
@@ -4001,7 +3770,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-v-core-booster-ver-ka": {
+  "mg-1-100-core-booster-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-v-core-booster-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN164252A_large.jpg?v=1569593572",
@@ -4027,7 +3796,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-full-armor-unicorn-gundam-red-color-ver-p": {
+  "mg-1-100-full-armor-unicorn-red": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-full-armor-unicorn-gundam-red-color-ver-p-bandai",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1100004825_2_large.jpg?v=1569594959"
@@ -4092,7 +3861,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-06-f2-zaku-2-efsf-version": {
+  "mg-1-100-ms-06-2-zaku-ii-f2": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-06-f2-zaku-2-efsf-version",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/BAN913781_ml_large.jpg?v=1569592556",
@@ -4119,29 +3888,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-shield-booster-armed-amor-de-banshee-1-100": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/shield-booster-armed-amor-de-1-100-mg-banshee-mg-1-100",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l300_c9e56f88-7acc-48ef-beea-75b6ccc7a85f_large.jpg?v=1569521772",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l300_c9e56f88-7acc-48ef-beea-75b6ccc7a85f_900x900.jpg?v=1569521772",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l300_c9e56f88-7acc-48ef-beea-75b6ccc7a85f_1024x1024.jpg?v=1569521772",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/images_b4a7f2bc-e725-4200-9697-6f13cc6c3d76_1024x1024.jpg?v=1569521772"
-    ],
-    "is_visited": true,
-    "title": [
-      "shield-booster-armed-amor-de-1-100-mg-banshee-mg-1-100",
-      "Shield Booster \"ARMED AMOR DE\" 1/100 MG Banshee MG 1/100"
-    ],
-    "sku": null,
-    "tags": [],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "Shield Booster \"ARMED AMOR DE\" 1/100 MG Banshee MG 1/100"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-shield-booster-armed-amor-de-unicron-1-100": {
+  "mg-1-100-rx-0-unicorn-shield-booster-armed-amor-de-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/shield-booster-armed-amor-de-1-100-mg-unicron-mg-1-100",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l300_db9e3229-ccff-46bc-8068-0b6bb5900712_large.jpg?v=1569521760",
@@ -4165,7 +3912,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-strike-freedom-gundam-exf": {
+  "mg-1-100-strike-freedom-extra-finish-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-strike-freedom-gundam-exf",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l500_8_25bc6083-0390-420d-ab17-a86a5220612d_large.jpg?v=1569591383",
@@ -4213,7 +3960,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-05b-zaku-1-ranbaral": {
+  "mg-1-100-ms-05b-zaku-i-ranbaral-custom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-05b-zaku-1-ranbaral",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_1_1777bf40-74bd-4e1c-bcf5-a4167414138c_large.jpg?v=1569592588",
@@ -4236,7 +3983,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-fxa-05d-super-gundam": {
+  "mg-1-100-fxa-05d-rx-78-super": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-fxa-05d-super-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/10009243a_m_large.jpg?v=1569781668",
@@ -4262,7 +4009,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-providence-gundam": {
+  "mg-1-100-providence": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-providence-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/bandai-mg-providence-gundam_12_large.jpg?v=1569591954",
@@ -4296,7 +4043,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-78-4-gundam": {
+  "mg-1-100-rx-78-4": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-rx-78-4-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rx-78-4-gundam-unit-4-01_1_large.jpg?v=1569781390",
@@ -4324,7 +4071,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-nemo": {
+  "mg-1-100-msa-003-nemo": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-nemo",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1400-6383-thickbox_large.jpg?v=1569594067",
@@ -4349,7 +4096,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-msa-0011-s-gundam": {
+  "mg-1-100-msa-0011-s": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-msa-0011-s-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mgexsg_large.jpg?v=1569592215",
@@ -4374,7 +4121,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gf13_01nh2-master-gundam": {
+  "mg-1-100-master": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-gf13_01nh2-master-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/3_1_large.jpg?v=1569593019",
@@ -4404,7 +4151,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gf13-017nj-shining-gundam": {
+  "mg-1-100-shining": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-gf13-017nj-shining-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_1_1c8d4bfa-805a-4207-a8f3-2402fae3b43d_large.jpg?v=1569593029",
@@ -4435,7 +4182,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-re-zel-commander-type": {
+  "mg-1-100-rgz-95-rezel-commander-type": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-re-zel-commander-type",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71gi7tCQszL._SL1378_large.jpg?v=1569593963",
@@ -4460,7 +4207,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-exia-trans-am-mode": {
+  "mg-1-100-exia-trans-am-mode": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-gundam-exia-trans-am-mode",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51cT0-cYIgL_large.jpg?v=1569594703",
@@ -4489,7 +4236,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-0-unicorn-gundam-red-or-green-frame-twin-frame-edition-titanium-finish": {
+  "mg-1-100-rx-0-unicorn-red-or-green-frame-twin-frame-edition-titanium-finish": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-1-100-mg-rx-0-unicorn-gundam-red-or-green-frame-twin-frame-edition-titanium-finish",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/bann15089_0_1476945609_large.jpg?v=1569515513",
@@ -4554,7 +4301,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-age-2-dark-hound": {
+  "mg-1-100-age-2-dark-hound": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-gundam-age-2-dark-hound",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61SAIKvw_UL._SL1500_large.jpg?v=1569594914",
@@ -4677,40 +4424,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-re-bawoo-zz-gundam": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-re-1-100-bawoo-zz-gundam-bandai",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_amx107bawoo_02_large.jpg?v=1569524977",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_amx107bawoo_02_900x900.jpg?v=1569524977",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_amx107bawoo_02_1024x1024.jpg?v=1569524977",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re-100-bawoo-box-art_1_1024x1024.jpg?v=1569524962",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_amx107bawoo_01_1024x1024.jpg?v=1569524962",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_amx107bawoo_03_1024x1024.jpg?v=1569524962",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_amx107bawoo_04_1024x1024.jpg?v=1569524962",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_amx107bawoo_05_1024x1024.jpg?v=1569524962",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_amx107bawoo_06_1024x1024.jpg?v=1569524962",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re100_amx107bawoo_07_1024x1024.jpg?v=1569524962"
-    ],
-    "is_visited": true,
-    "title": [
-      "re-1-100-bawoo-zz-gundam",
-      "RE 1/100 Bawoo \"ZZ Gundam\", Bandai"
-    ],
-    "sku": "4549660105121",
-    "tags": [
-      "1/100",
-      "re",
-      "uc"
-    ],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "A long awaited release, the Bawoo from \u201cZZ Gundam\u201d appears for the first time in 1/100 form!\u00a0\u00a0 Can separate into Bawoo Nutter and Bawoo Attacker forms just like in the animation and includes rifle, shield, and missiles.\u00a0\u00a0 The unique marking on the front skirt armor is recreated through use of a tetron sticker. Runner x 13, foil sticker, tetron sticker.Product size: Approx 7\" tallPackage size: Approx 7.87\u201dx12\u201dx5\u201d\n\u00a0\n",
-      "https://3.bp.blogspot.com/-kTXHK-_XTI0/WC3D2gcljyI/AAAAAAALNRQ/2kI-zO6kiswulDZVFFNQOdZmh0r2wmqzACLcB/s1600/345435235.png"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-psycho-zaku-ver-ka-gundam-thunderbolt-1-100": {
+  "mg-1-100-psycho-zaku-thunderbolt-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-psycho-zaku-ver-ka-gundam-thunderbolt-bandai-mg-1-100",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-ver-ka-psycho-zaku-release_4_large.jpg?v=1590517400",
@@ -4754,7 +4468,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-nu-gundam-ver-ka-titanium-finish-ver": {
+  "mg-1-100-nu-ver-ka-titanium-finish-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/1-100-mg-nu-gundam-ver-ka-titanium-finish-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/nu-gundam-ver-ka-titanium-finish-ver-master-grade-model-kit-1-100-scale-6_1_large.png?v=1569515480",
@@ -4782,7 +4496,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-age-1-normal": {
+  "mg-1-100-age-1-normal": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-gundam-age-1-normal",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71TAiwOX36L._SL1500_large.jpg?v=1569594924",
@@ -4811,7 +4525,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-turn-a-gundam": {
+  "mg-1-100-turn-a": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-turn-a-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51dCUSyBi2L_large.jpg?v=1569591338",
@@ -4838,7 +4552,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-re-zel": {
+  "mg-1-100-rezel": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-re-zel",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/17_large.jpg?v=1569593953",
@@ -4869,7 +4583,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-msn-02-perfect-zeon": {
+  "mg-1-100-msn-02-perfect-zeong": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-msn-02-perfect-zeon",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/21cErZFP5sL_large.jpg?v=1569592114",
@@ -4891,7 +4605,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-78-5-gundam": {
+  "mg-1-100-rx-78-5": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-rx-78-5-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/rx7853_large.jpg?v=1569591454",
@@ -4919,7 +4633,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-strike-e-iwsp-astrays-lukas-odonnell-custom": {
+  "mg-1-100-lukas-strike-and-iwsp-custom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-strike-e-iwsp-astrays-lukas-odonnell-custom",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51uVAR2SuVL_large.jpg?v=1569591392",
@@ -4942,7 +4656,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-v-gundam-ver-ka": {
+  "mg-1-100-victory-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-v-gundam-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l500_1_7c430efc-6acf-499b-8133-6b8f3a98589a_large.jpg?v=1569593554",
@@ -4971,7 +4685,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-full-armor-gundam-ver-ka-gundam-thunderbolt": {
+  "mg-1-100-full-armor-gundam-thunderbolt-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-full-armor-gundam-ver-ka-gundam-thunderbolt",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/000Ph002_large.jpg?v=1569594978",
@@ -5002,7 +4716,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-cross-bone-gundam-x1-ver-ka": {
+  "mg-1-100-cross-bone-x1-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-cross-bone-gundam-x1-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61HjXn7gjKL._SL1000_large.jpg?v=1569593303",
@@ -5035,7 +4749,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-wing-gundam": {
+  "mg-1-100-wing": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-wing-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_cfa41a8a-23e9-43bf-9f7a-d38c7d3dc5fe_large.jpg?v=1569591285",
@@ -5093,7 +4807,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-79-g-gundam-ez8": {
+  "mg-1-100-rx-79-g-ez8": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-rx-79-g-gundam-ez8",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_0a4597d9-21b0-439d-a2c8-ccabc110765c_large.jpg?v=1569593797",
@@ -5126,7 +4840,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-shin-musha-gundam-mk2": {
+  "mg-1-100-shin-musha-mk2": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-shin-musha-gundam-mk2",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71smV1iuTYL._SL1332_large.jpg?v=1569593671",
@@ -5236,7 +4950,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-msa-0011-ex-s-gundam": {
+  "mg-1-100-msa-0011-ex-s": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-msa-0011-ex-s-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_1_-_Copy_large.jpg?v=1569592222",
@@ -5291,7 +5005,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-f91": {
+  "mg-1-100-f91": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-gundam-f91",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/41D3YDKSHYL_large.jpg?v=1569781665",
@@ -5317,7 +5031,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-chars-gelgoog-ver-2-0": {
+  "mg-1-100-ms-14s-gelgoog-char-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-chars-gelgoog-ver-2-0",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l500_1_421e47d5-421a-4c0d-ba07-cb837acdcf96_large.jpg?v=1569593329",
@@ -5346,7 +5060,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-ms-14a-gelgoog-ver-2-0-scale": {
+  "mg-1-100-ms-14a-gelgoog-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/gundam-ms-14a-gelgoog-ver-2-0-mg-1-100-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/41iB5MIJQ3L_large.jpg?v=1569941402",
@@ -5374,7 +5088,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-xxxg-01s-shenlong-gundam-ew-ver": {
+  "mg-1-100-shenlong-ew-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-xxxg-01s-shenlong-gundam-ew-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/612GVHaK-UL._SL1312_large.jpg?v=1569593516",
@@ -5404,7 +5118,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gf13-017njii-god-gundam-scale": {
+  "mg-1-100-g": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/gf13-017njii-god-gundam-mg-1-100-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l500_da9a049a-f880-4cb6-a697-6f87b05cd9b0_large.jpg?v=1569950191",
@@ -5432,7 +5146,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-78-gundam-origin": {
+  "mg-1-100-rx-78-02": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-rx-78-gundam-origin",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/20151102174410f0d_large.jpg?v=1569593873",
@@ -5460,8 +5174,11 @@
       "1/100",
       "gundam",
       "mg",
-      "uc"
+      "uc",
+      "the-origin",
+      "origin"
     ],
+    "series": "the-origin",
     "scale": "1/100",
     "product_line": "mg",
     "description": [
@@ -5469,64 +5186,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-positron-blaster-gun-for-banbai-seed-gundam-blue-red-astray": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-positron-blaster-gun-for-banbai-seed-gundam-blue-red-astray-model-kit",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_2_3ef77938-cc42-4df3-a6fa-e83ada04e0c8_large.JPG?v=1569594011",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_2_3ef77938-cc42-4df3-a6fa-e83ada04e0c8_900x900.JPG?v=1569594011",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_2_3ef77938-cc42-4df3-a6fa-e83ada04e0c8_1024x1024.JPG?v=1569594011",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_7_9e67bc53-983d-4ff9-a5d3-aacce73cd05f_1024x1024.JPG?v=1569594011",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_1_7b58414b-9817-498d-a7be-b3c7f8499278_1024x1024.JPG?v=1569594011",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_3_e2529ebc-5a52-4132-a343-f5e0b96f5e1c_1024x1024.JPG?v=1569594011",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_4_baf59935-3bf7-4fd0-a42b-89a90ba78abd_1024x1024.JPG?v=1569594011",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_5_0e07aac2-3580-41a9-ada1-6d4453177aef_1024x1024.JPG?v=1569594011",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_6_60578d41-edcf-4d55-8373-dd4f241a201b_1024x1024.JPG?v=1569594011",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_85ef1f21-4d59-4872-96e5-1f2179aa76fa_1024x1024.JPG?v=1569594011"
-    ],
-    "is_visited": true,
-    "title": [
-      "mg-1-100-positron-blaster-gun-for-banbai-seed-gundam-blue-red-astray",
-      "MG 1/100 Positron Blaster Gun For Banbai Seed Gundam Blue & Red Astray Model kit"
-    ],
-    "sku": "4785747256726",
-    "tags": [],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "MG 1/100 Positron Blaster Gun For Banbai Seed Gundam Blue & Red Astray Model kit"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-magictoys-ms-weapon-set-sniper-rifle-submachine-gun-for-gundam": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/magictoys-ms-weapon-set-sniper-rifle-submachine-gun-for-mg-1-100-gundam",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_3_14d6df6b-3db5-4142-bb34-59a0c6cdefcf_large.JPG?v=1525653388",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_3_14d6df6b-3db5-4142-bb34-59a0c6cdefcf_900x900.JPG?v=1525653388",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_3_14d6df6b-3db5-4142-bb34-59a0c6cdefcf_1024x1024.JPG?v=1525653388",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_2f9ca480-2dd3-4b55-a56f-21cce6162af5_1024x1024.JPG?v=1525653388",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_1_555cb2ca-93fd-4d76-afa3-70b2f596d7b7_1024x1024.JPG?v=1525653388",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_f40c9837-e6b5-4ba4-b93e-6ebe923e1d1f_1024x1024.JPG?v=1525653388",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_2_f8b49790-acc9-4e4b-a53d-b1f824e253d3_1024x1024.JPG?v=1525653388",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_4_b9516941-aae8-4ad3-9486-516cae297b71_1024x1024.JPG?v=1525653388",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_5_3a1af390-3ec2-45b9-9fbb-877b3865b8d4_1024x1024.JPG?v=1525653388",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_6_1024x1024.JPG?v=1525653389",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_7_1024x1024.JPG?v=1525653388"
-    ],
-    "is_visited": true,
-    "title": [
-      "magictoys-ms-weapon-set-sniper-rifle-submachine-gun-for-mg-1-100-gundam",
-      "Magictoys MS Weapon set sniper rifle submachine gun for MG 1/100 Gundam."
-    ],
-    "sku": "5380138820",
-    "tags": [],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "Magictoys MS Weapon set sniper rifle submachine gun for MG 1/100 Gundam."
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-ms-06f-zaku2-ver-2-0": {
+  "mg-1-100-ms-06f-zaku-ii-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-06f-zaku2-ver-2-0",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_1_ee9784c3-723f-46c9-8e71-7a0e154a73d2_large.JPG?v=1569592537",
@@ -5557,7 +5217,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-79-g-gundam": {
+  "mg-1-100-rx-79-g": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-rx-79-g-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_1_c0132cff-06b6-492f-9d5e-7e7d04e86c37_large.JPG?v=1569591437",
@@ -5586,7 +5246,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-msz-010-zz-gundam": {
+  "mg-1-100-msz-010-zz": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-msz-010-zz-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_5b978981-d7bc-4484-878e-a7a848ca842d_large.JPG?v=1569592034",
@@ -5618,7 +5278,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-msz-006c1-z-plus": {
+  "mg-1-100-msz-006c1-z-plus-c1": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-msz-006c1-z-plus",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_7c12e1c3-e37e-4c51-aa25-fbce652747bb_large.JPG?v=1569592047",
@@ -5702,7 +5362,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-09r-rickdom": {
+  "mg-1-100-ms-09r-rick-dom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-09r-rickdom",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_7_e12bd21b-64f1-4ad1-9e90-e7271ca4176e_large.JPG?v=1569592384",
@@ -5729,7 +5389,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-launcher-amp-sword-strike-gundam": {
+  "mg-1-100-launcher-amp-sword-strike": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-launcher-amp-sword-strike-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/41ATHjpbI2L_large.jpg?v=1569592674",
@@ -5795,7 +5455,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-heavyarms-ew-ver": {
+  "mg-1-100-heavyarms-ew-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-gundam-heavyarms-ew-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71ad7rE8mEL._SL1500_large.jpg?v=1569594618",
@@ -5827,7 +5487,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-xxxg-01w-wing-gundam-ver-ka": {
+  "mg-1-100-wing-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-xxxg-01w-wing-gundam-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_1_ecee4a2f-0c54-4598-a12b-112af51bf81f_large.JPG?v=1569591273",
@@ -5857,35 +5517,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-all-moving-finger-hands-full-action-palm": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-all-moving-finger-hands-full-action-palm",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_584f8921-c570-4d20-8180-d30d21ea2406_large.JPG?v=1525651047",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_584f8921-c570-4d20-8180-d30d21ea2406_900x900.JPG?v=1525651047",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_584f8921-c570-4d20-8180-d30d21ea2406_1024x1024.JPG?v=1525651047",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_1_5c9ca098-e8fb-4142-be0f-864979735e59_1024x1024.JPG?v=1525651047",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_1_69d0ce03-d4bd-4f63-a804-2cfa349b38a0_1024x1024.JPG?v=1525651047",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_2_a5f82242-d260-41cc-a28b-6a12f8c10773_1024x1024.JPG?v=1525651047",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_3_904225ee-ebba-4dac-a5db-b8eab0dc157d_1024x1024.JPG?v=1525651047",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_3_6bbc3503-0b5e-4962-bee0-dbfd74d4a7ec_1024x1024.JPG?v=1525651047",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/57_4_674cd45c-ef9e-474f-8819-e32fd6ed2e53_1024x1024.JPG?v=1525651047",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/12_2_19854a7f-0af4-4e75-ba09-f333659d2013_1024x1024.JPG?v=1525651047"
-    ],
-    "is_visited": true,
-    "title": [
-      "mg-1-100-all-moving-finger-hands-full-action-palm",
-      "MG 1/100 all moving finger hands Full Action Palm"
-    ],
-    "sku": "6923897166397",
-    "tags": [],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "MG 1/100 all moving finger hands Full Action Palm\nhigh Quality MG 1/100 Moving finger hands\u00a0"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-gundam-amazing-red-warrior": {
+  "mg-1-100-amazing-red-warrior-pf-78-3a": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-mg-1-100-gundam-amazing-red-warrior",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/banm150841_large.jpg?v=1569594889",
@@ -5951,7 +5583,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-age-1-titus-master-grade": {
+  "mg-1-100-age-1-titus": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-hobby-gundam-age-1-titus-1-100-master-grade",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61Kk7V6Li6L._SL1251_large.jpg?v=1569614366",
@@ -5980,42 +5612,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-re-dijeh": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-re-1-100-dijeh",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/3_large.jpg?v=1569524931",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/3_900x900.jpg?v=1569524931",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/3_1024x1024.jpg?v=1569524931",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/1_2d1dd1e0-9bb5-4dbd-b60c-270e24fcae15_1024x1024.jpg?v=1569524931",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/2-1024x1024_1024x1024.jpg?v=1569524931",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/6_1024x1024.jpg?v=1569524931",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/7_1024x1024.jpg?v=1569524931",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/104_1024x1024.jpg?v=1569524931",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/4_1024x1024.jpg?v=1569524931",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/5_1024x1024.jpg?v=1569524931"
-    ],
-    "is_visited": true,
-    "title": [
-      "re-1-100-dijeh",
-      "RE 1/100 Dijeh"
-    ],
-    "sku": "4543112967022",
-    "tags": [
-      "1/100",
-      "fsale",
-      "re",
-      "sale",
-      "uc"
-    ],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "RE 1/100 Dijeh\n\n\n\n",
-      "//3.bp.blogspot.com/-42fe11ypKkM/VXGxt8wICjI/AAAAAAAJDF4/5aS83XV0Jb8/s1600/23432423.jpg"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-rb-79-ball-igloo-version": {
+  "mg-1-100-rb-79-ball-igloo-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-rb-79-ball-igloo-version",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_99f9fec7-8b93-414a-b5da-90b827138010_large.JPG?v=1569591904",
@@ -6041,7 +5638,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-msz_010s-full-armor-zz-gundam": {
+  "mg-1-100-msz-010s-full-armor-zz": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-msz_010s-full-armor-zz-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_1_cd25c215-8de3-4396-8128-f5a203dd8067_large.JPG?v=1569592006",
@@ -6071,7 +5668,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-fa-010-a-fazz-sentinel-version": {
+  "mg-1-100-fa-010-a-fazz": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-fa-010-a-fazz-sentinel-version",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51o-9XbDKaL_large.jpg?v=1569593263",
@@ -6100,7 +5697,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-amx-004-3-qubeley-mk-2": {
+  "mg-1-100-amx-004-3-qubeley-mk-ii": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-amx-004-3-qubeley-mk-2",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/4549660058786_large.jpg?v=1569781614",
@@ -6149,7 +5746,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-09rs-rick-dom-char-custom-mg": {
+  "mg-1-100-ms-09rs-rick-dom-char-custom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/ms-09rs-rick-dom-char-custom-mg",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_1_a3be3b1c-a5e9-4e66-9638-a525c45b3203_large.JPG?v=1569588620",
@@ -6176,7 +5773,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-qubeley-mk-2-elpeo-puru": {
+  "mg-1-100-qubeley-mk-2-elpeo-puru-custom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-qubeley-mk-2-elpeo-puru",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_06e67f18-4648-45e4-90ab-7db5c514d1f6_large.jpg?v=1569591920",
@@ -6200,7 +5797,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-universe-booster": {
+  "mg-1-100-universe-booster-ub-01": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-universe-booster",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71bKHIr0vTL._SL1500_large.jpg?v=1569593590",
@@ -6223,7 +5820,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-shin-matsunaga-zaku-ver-2-0": {
+  "mg-1-100-ms-06r-1a-shin-matsunaga-zaku-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-shin-matsunaga-zaku-ver-2-0",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71Q5oQ_au1L._SL1197_large.jpg?v=1569593690",
@@ -6254,7 +5851,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-sengoku-astray-gundam": {
+  "mg-1-100-sengoku-astray": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-sengoku-astray-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71WDbs8lgUL._SL1500_large.jpg?v=1569593742",
@@ -6285,7 +5882,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-fenice-rinascita": {
+  "mg-1-100-fenice-rinascita": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-gundam-fenice-rinascita",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/20150402154644622_large.jpg?v=1570114443",
@@ -6318,7 +5915,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-0-full-armor-unicorn-gundam-ver-ka": {
+  "mg-1-100-rx-0-full-armor-unicorn-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-rx-0-full-armor-unicorn-gundam-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71sV7gUH-xL._SL1500_large.jpg?v=1569593912",
@@ -6350,7 +5947,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rms-099-rick-dias-quatro-use": {
+  "mg-1-100-rms-099-rick-dias-quatro-custom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-rms-099-rick-dias-quatro-use",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51310AYMF5L_large.jpg?v=1569591695",
@@ -6442,7 +6039,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-geara-doga-1-100": {
+  "mg-1-100-ams-119-geara-doga": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/master-grade-geara-doga-1-100",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71jLFF5EP0L._SL1500_large.jpg?v=1571420818",
@@ -6541,7 +6138,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-shin-musha-gundam-sengoku-no-jin": {
+  "mg-1-100-shin-musha-sengoku-no-jin": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-shin-musha-gundam-sengoku-no-jin",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71qBWEwPH4L._SL1500_large.jpg?v=1569591410",
@@ -6570,7 +6167,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-zgmf-x56s-b-gundam-sword-impulse-scale": {
+  "mg-1-100-x56s-b-sword-impulse": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/gundam-zgmf-x56s-b-gundam-sword-impulse-mg-1-100-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/6117Qkrn9oL._SL1500_large.jpg?v=1569941939",
@@ -6601,7 +6198,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-wing-epyon-ew-ver-oz-13ms-gmg05": {
+  "mg-1-100-epyon-ew-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-gundam-master-grade-mg-1-100-wing-epyon-ew-ver-oz-13ms-model-kit-gmg05",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-oz-13ms-gundam-epyon-ew-ver-01_large.jpg?v=1574952059",
@@ -6631,7 +6228,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-ms-06r-2-j-ridden-zaku-ver-2-0": {
+  "mg-1-100-ms-06r-2-zaku-ii-ver-2-0-ridden-custom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-ms-06r-2-j-ridden-zaku-ver-2-0",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51eukZP_vsL_large.jpg?v=1569592433",
@@ -6691,7 +6288,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-shin-musha-gundam": {
+  "mg-1-100-shin-musha": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-shin-musha-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71E6ULHzgjL._SL1500_large.jpg?v=1569593681",
@@ -6723,7 +6320,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-msm-07s-zgok-char-custom-scale": {
+  "mg-1-100-msm-07s-zgok-char-custom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/gundam-msm-07s-zgok-char-custom-mg-1-100-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71MI8bUdCwL._SL1389_large.jpg?v=1569941410",
@@ -6752,45 +6349,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-re-gundam-gp04-gerbera": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-re-1-100-gundam-gp04-gerbera",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/banm150492_large.jpg?v=1569517667",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/banm150492_900x900.jpg?v=1569517667",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/banm150492_1024x1024.jpg?v=1569517667",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/banm150490_1024x1024.jpg?v=1569517658",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/201504072324373d5_1024x1024.jpg?v=1569517658",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/201504072325448eb_1024x1024.jpg?v=1569517658",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/2015040723243821d_1024x1024.jpg?v=1569517658",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/20150407232436442_1024x1024.jpg?v=1569517658",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/20150407232436475_1024x1024.jpg?v=1569517658",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/banm150491_1024x1024.jpg?v=1569517658",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/banm1504115_1024x1024.jpg?v=1569517658",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/banm1504116_1024x1024.jpg?v=1569517658",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/banm1504117_1024x1024.jpg?v=1569517658",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/banm1504118_1024x1024.jpg?v=1569517658"
-    ],
-    "is_visited": true,
-    "title": [
-      "re-1-100-gundam-gp04-gerbera",
-      "RE 1/100 Gundam GP04 Gerbera"
-    ],
-    "sku": "4543112964205",
-    "tags": [
-      "1/100",
-      "gundam",
-      "re",
-      "uc"
-    ],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "RE 1/100 Gundam GP04 Gerbera\n\nIconic giant Sturm boosters can detach from main body, and bottom booster features a foldable landing skid for balance\nIncludes long beam rifle with beam jitte, beam rifle, shield, beam sabers\n\nRunner x 10, Foil Sticker, Tetron Sticker, Instruction Manual\n\n\n\n\n\n",
-      "//1.bp.blogspot.com/-oTnNW8o_3SM/VS0vQU5ixnI/AAAAAAAIt_4/LeNbai9_8zY/s1600/Untitled-2.jpg"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-mgbf-gundam-exia-dark-matter": {
+  "mg-1-100-exia-dark-matter": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-1-100-mgbf-gundam-exia-dark-matter",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg_gundam_exia_dark_matter_2_1_large.jpg?v=1569515607",
@@ -6826,7 +6385,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-0-unicorn-gundam-hd-color-with-ms-cage-ova-scale-1-100": {
+  "mg-1-100-rx-0-unicorn-hd-color-with-ms-cage-ova-ver": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-hobby-rx-0-unicorn-gundam-hd-color-with-ms-cage-master-grade-ova-scale-1-100",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/MGucovasp_01_LRG_large.jpg?v=1570039055",
@@ -6859,7 +6418,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-age-2-normal-master-grade": {
+  "mg-1-100-age-2-normal": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-hobby-gundam-age-2-normal-1-100-master-grade",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/MG2agen_01_LRG_large.jpg?v=1569614373",
@@ -6894,7 +6453,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-age-2-double-bullet-gundam-age": {
+  "mg-1-100-age-2-double-bullet": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-gundam-age-2-double-bullet-1-100-gundam-age",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/MGdbullet_01_LRG_large.jpg?v=1570037884",
@@ -6928,7 +6487,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-age-1-spallow-gundam-age": {
+  "mg-1-100-age-1-spallow": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-gundam-age-1-spallow-1-100-gundam-age",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/MGage1spal_01_LRG_large.jpg?v=1570037876",
@@ -6961,7 +6520,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-blitz-gundam-master-grade": {
+  "mg-1-100-blitz": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-blitz-gundam-1-100-master-grade",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/616uCYvwVZL._SL1074_large.jpg?v=1570037863",
@@ -6993,7 +6552,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-93-v2-hi-v-nu-gundam-ver-ka": {
+  "mg-1-100-rx-93-v2-hi-v-nu-ver-ka": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-1-100-rx-93-v2-hi-v-nu-gundam-ver-ka",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61nVBW_QB6L._SL1100_large.jpg?v=1570039334",
@@ -7022,7 +6581,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-zgmf-x10a-freedom-gundam-scale": {
+  "mg-1-100-freedom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-gundam-zgmf-x10a-freedom-gundam-mg-1-100-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71BO0G_large.jpg?v=1569613848",
@@ -7055,7 +6614,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-480835-gundam-strike-freedom-zgmf-x20a-1-100": {
+  "mg-1-100-striker-freedom": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-480835-gundam-strike-freedom-zgmf-x20a-1-100",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_8d11ba6f-7895-4fb2-9508-6a08f226d1d5_large.JPG?v=1570037736",
@@ -7086,7 +6645,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-wing-gundam-xxxg-01w0-ver-ew": {
+  "mg-1-100-wing-ver-ew": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-1-100-mg-master-grade-wing-gundam-xxxg-01w0-ver-ew",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/20110225204740939_large.jpg?v=1569513615",
@@ -7118,7 +6677,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-tallgeese-ver-ew-1-100": {
+  "mg-1-100-tallgeese-ver-ew": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-master-grade-tallgeese-ver-ew-1-100",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_1_474e7f5c-ba34-4b7e-9823-666c277f86dd_large.JPG?v=1570039207",
@@ -7147,7 +6706,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-zgmf-x42s-gundam-destiny-extreme-blast-mode-scale": {
+  "mg-1-100-destiny-extreme-blast-mode": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/gundam-zgmf-x42s-gundam-destiny-extreme-blast-mode-mg-1-100-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/IMGP1933_large.jpg?v=1569941922",
@@ -7179,7 +6738,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-strike-rouge-ootori-ver-rm-scale-action-figure": {
+  "mg-1-100-strike-rouge-ootori": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-hobby-mg-strike-rouge-ootori-ver-rm-1-100-scale-action-figure-model-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/52_large.jpg?v=1570039003",
@@ -7214,7 +6773,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-kai-scale-astray-red-frame": {
+  "mg-1-100-astray-red-frame": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-hobby-mg-gundam-kai-model-kit-1-100-scale-astray-red-frame",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/images_large.jpg?v=1569592774",
@@ -7246,7 +6805,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gat-x105-aile-strike-gundam-version-rm-remaster-gundam-1-100": {
+  "mg-1-100-aile-strike-remaster": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/gat-x105-aile-strike-gundam-version-rm-remaster-mg-gundam-master-grade-1-100",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/20130514_1188865_large.jpg?v=1569949560",
@@ -7276,7 +6835,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-buster-gundam-seed-master-grade": {
+  "mg-1-100-buster": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-hobby-buster-gundam-seed-1-100-master-grade",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/02f02901-s_large.jpg?v=1569614353",
@@ -7307,7 +6866,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-wing-gundam-proto-zero-version-ew-scale": {
+  "mg-1-100-wing-proto-zero-ew-version": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-hobby-mg-wing-gundam-proto-zero-version-ew-model-kit-1-100-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/10238881a_large.jpg?v=1570039034",
@@ -7342,7 +6901,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-build-strike-gundam-full-package-scale": {
+  "mg-1-100-build-strike-full-package": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-build-strike-gundam-full-package-model-kit-1-100-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/717-tObTcwL._SL1288_large.jpg?v=1569593345",
@@ -7373,40 +6932,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-re-gundam-mk-iii": {
-    "href": "https://www.usagundamstore.com/collections/model-kits/products/pre-order-re-1-100-gundam-mk-iii",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re-1-100-gundam-mk-iii_large.jpg?v=1569524862",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re-1-100-gundam-mk-iii_900x900.jpg?v=1569524862",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re-1-100-gundam-mk-iii_1024x1024.jpg?v=1569524862",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/20150106205818779_1024x1024.jpg?v=1569524852",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/banm150166_1024x1024.jpg?v=1569524852",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/re-1-100-gundam-mk-iii_1_1024x1024.jpg?v=1569524852",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/gfsgdfsgfd_1024x1024.jpg?v=1569524852"
-    ],
-    "is_visited": true,
-    "title": [
-      "re-1-100-gundam-mk-iii",
-      "RE 1/100 Gundam MK-III"
-    ],
-    "sku": "4543112948625",
-    "tags": [
-      "1/100",
-      "gundam",
-      "model",
-      "model kit",
-      "re",
-      "reborn"
-    ],
-    "scale": "1/100",
-    "product_line": "mg",
-    "description": [
-      "RE 1/100 Gundam MK-III\n\n",
-      "//1.bp.blogspot.com/-CDWwmF005HE/VK_rylt0pzI/AAAAAAAIJgg/cBKBXARex7k/s1600/Untitled-3.jpg"
-    ],
-    "manufacturer": "bandai"
-  },
-  "mg-1-100-492524-gundam-ms-06j-zaku-ii-ver-2-0": {
+  "mg-1-100-ms-06j-zaku-ii-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-492524-gundam-ms-06j-zaku-ii-ver-2-0-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_dba32cde-80aa-403f-a52b-b738b3e77c7a_large.jpeg?v=1570037756",
@@ -7435,7 +6961,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-infinite-justice-gundam-zgmf-x19a-156649": {
+  "mg-1-100-infinite-justice": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-1-100-mg-master-grade-infinite-justice-gundam-model-kit-zgmf-x19a-156649",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_812af2da-e04b-4d16-9ed0-24938c1fe5ce_large.jpeg?v=1569613488",
@@ -7466,7 +6992,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-865403-gundam-gx-9900-gundam-x": {
+  "mg-1-100-gx-9900-x": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-865403-gundam-gx-9900-gundam-x-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_280d8eb5-fe71-4940-bcd6-5787bc0571f4_large.jpeg?v=1570037905",
@@ -7497,7 +7023,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-139-gnt-0000-gundam-00-qant-nib": {
+  "mg-1-100-00-qant": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-139-gnt-0000-gundam-00-qant-1-100-model-kit-bandai-nib",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_0ebee4b5-42e5-433e-8aa7-9516a3d2065b_large.jpeg?v=1569593473",
@@ -7529,7 +7055,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-seed-force-impulse-gundam": {
+  "mg-1-100-force-impulse": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-1-100-mg-master-grade-gundam-seed-force-impulse-gundam-model-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_4c1aba9f-3fed-4a69-9d17-ea6bb7012746_large.jpeg?v=1573146758",
@@ -7562,7 +7088,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gat-x102-duel-gundam-assaultshroud-gundam-seed": {
+  "mg-1-100-duel-assaultshroud": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-gat-x102-duel-gundam-assaultshroud-gundam-seed-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_d3826c43-87ca-4151-a3fa-e4c35e03bc68_large.jpeg?v=1569601076",
@@ -7592,7 +7118,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-609984-gundam-astray-blue-frame-second-revise": {
+  "mg-1-100-astray-blue-frame-second-revise": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-609984-gundam-astray-blue-frame-second-revise-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_a93aa0cc-423c-4d6b-8a04-8dc72d8aaf34_large.jpeg?v=1570037835",
@@ -7620,7 +7146,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-gundam-unicorn-rgz-95c-rezel-type-c-defenser-a-b-unit": {
+  "mg-1-100-unicorn-rgz-95c-rezel-type-c-defenser-a-b-unit": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/gundam-unicorn-1-100-mg-rgz-95c-rezel-type-c-defenser-a-b-unit-model-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_139cd24d-25cf-431c-881a-80c838068323_large.jpeg?v=1569941778",
@@ -7649,7 +7175,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-unicorn-gundam-special-edition": {
+  "mg-1-10-rx-0-unicorn-special-edition": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-hobby-mg-1-100-unicorn-gundam-special-edition-model-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rx-0-unicorn-gundam-01_large.jpg?v=1570823581",
@@ -7685,7 +7211,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-836557-gundam-rx-78-2-ver-3-0-3-0": {
+  "mg-1-100-rx-78-2-ver-3-0": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-836557-gundam-rx-78-2-ver-3-0-master-grade-3-0-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/mg-rx-78-2-gundam-ver-3-0-01_1_large.jpg?v=1570037854",
@@ -7721,7 +7247,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-buildan-gundam-mk-ii-build-fighters-gunpla": {
+  "mg-1-100-build-mk-ii-rx-178b": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/1-100-mg-buildan-gundam-mk-ii-bandai-master-grade-build-fighters-gunpla",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_0cf9dbf0-dca3-41b9-a830-03df08a5f834_large.jpeg?v=1570034306",
@@ -7751,7 +7277,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-783837-aegis-gundam-gat-x303-gundam-seed": {
+  "mg-1-100-aegis": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/bandai-mg-783837-aegis-gundam-gat-x303-gundam-seed-1-100-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_1c056eff-5116-4eb6-bc1c-9c0255223c75_large.jpeg?v=1569601046",
@@ -7783,7 +7309,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "mg-1-100-rx-0-unicorn-gundam-unit-2-banshee-titanium-finish-ver": {
+  "mg-1-100-rx-02-unicorn-banshee-titanium-finish": {
     "href": "https://www.usagundamstore.com/collections/model-kits/products/mg-1-100-rx-0-unicorn-gundam-unit-2-banshee-titanium-finish-ver-bandai",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_483c0fab-b9a5-4b63-8585-75a0f98510a2_large.jpeg?v=1569593899",
