@@ -334,6 +334,30 @@
         "https://2.bp.blogspot.com/-DqxO955xiiU/Wd8BqkSO49I/AAAAAAAGxlU/sHJ0ZgY0iBMAcQkqnARgLMbYaEbZ51-FQCLcBGAs/s1600/hgbc-ballistic-weapons.jpg"
       ],
       "manufacturer": "bandai"
+    },
+    "hg-1-144-gya-eastern-weapons": {
+      "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgbc-1-144-gya-eastern-weapons",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/gya_eastern_weapons_2_large.jpg?v=1569614316",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/gya_eastern_weapons_2_900x900.jpg?v=1569614316",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/gya_eastern_weapons_2_1024x1024.jpg?v=1569614316",
+        "https://cdn.shopify.com/s/files/1/0727/8355/products/gya_eastern_weapons_1_1024x1024.jpg?v=1569614305"
+      ],
+      "title": [
+        "hgbc-1-144-gya-eastern-weapons",
+        "HGBC 1/144 Gya Eastern Weapons"
+      ],
+      "sku": "4549660076063",
+      "is_visited": true,
+      "tags": [
+        "gundam"
+      ],
+      "scale": "1/144",
+      "product_line": "hg",
+      "description": [
+        "Give your HGBC Build Fighters the gift of firepower with this array of support weapons! All parts come molded in light grey and snap together.\u00a0A perfect addition to any Gundam lineup!\u00a0"
+      ],
+      "manufacturer": "bandai"
     }
   },
   "hg-1-144-maganac": {
@@ -2496,7 +2520,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-120-gm-custom": {
+  "hg-1-144-gm-custom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-120-gm-custom",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61h6HXpgSuL._SL1308_large.jpg?v=1569609929",
@@ -2524,7 +2548,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-114-ball-twin-set": {
+  "hg-1-144-ball-twin-set": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-114-ball-twin-set",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71XeaEAjfxL._SL1500_large.jpg?v=1569609897",
@@ -2551,7 +2575,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-104-stark-jegan": {
+  "hg-1-144-stark-jegan": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-104-stark-jegan",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71HmT-cyfJL._SL1500_large.jpg?v=1569609768",
@@ -2582,7 +2606,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-69-raphael-gundam": {
+  "hg-1-144-raphael": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-69-raphael-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71_ds8EO-IL._SL1500_large.jpg?v=1569935882",
@@ -2610,7 +2634,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-67-gundam-zabanya": {
+  "hg-1-144-zabanya": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-67-gundam-zabanya",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/hg00-gundam-zabanya-00_large.jpg?v=1572773903",
@@ -2640,7 +2664,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-64-gundam-avalanche-exia-dash": {
+  "hg-1-144-avalanche-exia-dash": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-64-gundam-avalanche-exia-dash",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71QoZZ1HZZL._SL1432_large.jpg?v=1569935803",
@@ -2671,7 +2695,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-61-00-gundam-seven-sword-g": {
+  "hg-1-144-00-gundam-seven-sword-g": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-61-00-gundam-seven-sword-g",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/seven1_large.jpg?v=1569935647",
@@ -2700,7 +2724,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-53-reborns-gundam": {
+  "hg-1-144-reborns": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-53-reborns-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71KDSrkSJHL._SL1218_large.jpg?v=1569935525",
@@ -2732,7 +2756,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-48-cherudim-gundam-gnhw-r": {
+  "hg-1-144-cherudim-gnhw-r": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-48-cherudim-gundam-gnhw-r",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61s6BiQlBZL._SL1290_large.jpg?v=1569602739",
@@ -2762,7 +2786,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-13-gn-arms-gundam-exia": {
+  "hg-1-144-gn-arms-type-e-plus-exia-titans-mode": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-13-gn-arms-gundam-exia",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_09d77c9f-6590-4fe6-9130-0e9e6355ac46_large.JPG?v=1570043551",
@@ -2795,7 +2819,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-01-gundam-exia": {
+  "hg-1-144-exia": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-01-gundam-exia",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_74df4c57-d80d-4a76-80be-91014a826808_large.JPG?v=1570043109",
@@ -2824,7 +2848,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-69-gundam-hazel-tr-1-hazel-no-2": {
+  "hg-1-144-rx-121-2-hazel-tr-1-hazel-ii": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-69-gundam-hazel-tr-1-hazel-no-2",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71mkI-gvQXL._SX466_large.jpg?v=1569781328",
@@ -2854,7 +2878,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-21-3-normal": {
+  "hg-1-144-age-3-normal": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-21-gundam-age-3-normal",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71RmJCPSowL._SL1500_large.jpg?v=1569601301",
@@ -2887,7 +2911,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-10-2-normal": {
+  "hg-1-144-age-2-normal": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-10-gundam-age-2-normal",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/612xGfaY_RL._SL1049_large.jpg?v=1570043497",
@@ -2920,7 +2944,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-46-rgm-79g-gm-command-colony-use": {
+  "hg-1-144-rgm-79g-gm-command": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-46-rgm-79g-gm-command-colony-use",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/2162E59EENL_large.jpg?v=1569602045",
@@ -2949,7 +2973,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-35-super-gundam": {
+  "hg-1-144-super": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-35-super-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71lbo9SMWDL._SL1308_large.jpg?v=1569611001",
@@ -2979,7 +3003,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-154-ms-06r-1a-shin-matsunaga-zaku-ii": {
+  "hg-1-144-ms-06r-1a-zaku-ii-shin-matsunaga-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-154-ms-06r-1a-shin-matsunaga-zaku-ii",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/714xYvxeZIL._SL1500_large.jpg?v=1569610386",
@@ -3010,7 +3034,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-aile-strike-gundam": {
+  "hg-1-144-aile-strike": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hgce-1-144-aile-strike-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71ePVvtS5SL._SL1260_large.jpg?v=1569612499",
@@ -3039,7 +3063,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-full-armor-unicorn-gundam-destroy-mode": {
+  "hg-1-144-full-armor-unicorn-destroy-mode": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-full-armor-unicorn-gundam-destroy-mode",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71IZTdxdIPL._SL1307_large.jpg?v=1569607866",
@@ -3069,7 +3093,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-166-ms-06r-2-zaku-johnny-ridden-custom": {
+  "hg-1-144-166-ms-06r-2-zaku-ii-johnny-ridden-custom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-166-ms-06r-2-zaku-johnny-ridden-custom",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71FsG1fmt_L._SL1311_large.jpg?v=1569610544",
@@ -7622,10 +7646,6 @@
     ],
     "manufacturer": "bandai"
   },
-
-
-
-
   "hg-1-144-gn-002-dynames": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-03-gundam-dynamis",
     "images": [
@@ -7655,7 +7675,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-wing-gundam-zero": {
+  "hg-1-144-wing-zero": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hgac-1-144-wing-gundam-zero",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71G_kM0QlKL._SL1205_large.jpg?v=1569932258",
@@ -7713,7 +7733,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-100-rx-0-unicorn-gundam-destroy-mode-unicorn-head": {
+  "hg-1-144-100-rx-0-unicorn-destroy-mode-with-head-display": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-100-rx-0-unicorn-gundam-destroy-mode-unicorn-head",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51Akqnfe1uL_large.jpg?v=1569609608",
@@ -7739,7 +7759,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-turn-a-gunda": {
+  "hg-1-144-turn-a": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hgcc-1-144-turn-a-gunda",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71AUiPvIO1L._SL1500_large.jpg?v=1569612505",
@@ -7801,30 +7821,6 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gya-eastern-weapons": {
-    "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgbc-1-144-gya-eastern-weapons",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/gya_eastern_weapons_2_large.jpg?v=1569614316",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/gya_eastern_weapons_2_900x900.jpg?v=1569614316",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/gya_eastern_weapons_2_1024x1024.jpg?v=1569614316",
-      "https://cdn.shopify.com/s/files/1/0727/8355/products/gya_eastern_weapons_1_1024x1024.jpg?v=1569614305"
-    ],
-    "title": [
-      "hgbc-1-144-gya-eastern-weapons",
-      "HGBC 1/144 Gya Eastern Weapons"
-    ],
-    "sku": "4549660076063",
-    "is_visited": true,
-    "tags": [
-      "gundam"
-    ],
-    "scale": "1/144",
-    "product_line": "hg",
-    "description": [
-      "Give your HGBC Build Fighters the gift of firepower with this array of support weapons! All parts come molded in light grey and snap together.\u00a0A perfect addition to any Gundam lineup!\u00a0"
-    ],
-    "manufacturer": "bandai"
-  },
   "hg-1-144-the-northern-pod": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgbc-1-144-the-northern-pod",
     "images": [
@@ -7853,7 +7849,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-type-ms-from-another-story": {
+  "hg-1-144-astaroth-origin": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-orphans-hg-1-144-gundam-type-ms-from-another-story",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/gundam_astaroth_origin_2_large.jpg?v=1569934654",
@@ -7887,7 +7883,7 @@
     "manufacturer": "bandai",
     "series": "ibo"
   },
-  "hg-1-144-hgfc-noble-gundam": {
+  "hg-1-144-nobell": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hgfc-noble-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61X1kSf9KeL._SL1240_large.jpg?v=1569601649",
@@ -7915,7 +7911,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-strike-rouge-scale": {
+  "hg-1-144-strike-rouge": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hgce-strike-rouge-model-kit-1-144-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71RAe-CxNsL._SL1267_large.jpg?v=1569612417",
@@ -7943,7 +7939,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-r15-freedom-gundam": {
+  "hg-1-144-freedom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-r15-freedom-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71ofzYtaYZL._SL1500_large.jpg?v=1569933321",
@@ -7971,7 +7967,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-011-gundam-amx-004-2-qubeley-mk-ii": {
+  "hg-1-144-amx-004-2-qubeley-mk-ii": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-hguc-011-gundam-amx-004-2-qubeley-mk-ii",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l500_1_5cb0cdcb-e4c9-4a29-a5a5-688b5c8d1d5e_large.jpg?v=1569935035",
@@ -7998,7 +7994,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-zaku-i-gundam-thunderbolt-ver": {
+  "hg-1-144-zaku-i-thunderbolt-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgtb-1-144-zaku-i-gundam-thunderbolt-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/Untitled-10_large.png?v=1569611618",
@@ -8028,7 +8024,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-force-impulse-gundam": {
+  "hg-1-144-zgmf-x56s-force-impulse": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgce-1-144-force-impulse-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/im01_large.jpg?v=1569612486",
@@ -8058,7 +8054,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-full-armor-unicorn-gundam-destory-mode-red-color-ver": {
+  "hg-1-144-full-armor-unicorn-destory-mode-red-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hguc-1-144-full-armor-unicorn-gundam-destory-mode-red-color-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/hguc-199-1-144-full-armor-unicorn-gundam-destroy-mode-red-color-ver-pre-order-1_large.gif?v=1569607876",
@@ -8091,7 +8087,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-wing-gundam": {
+  "hg-1-144-wing": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hgac-1-144-wing-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71jzQglyvKL._SL1226_large.jpg?v=1569932264",
@@ -8119,7 +8115,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-hgfc-master-gundam-fuun-saiki": {
+  "hg-1-144-hg-master-fuun-saiki": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hgfc-master-gundam-fuun-saiki",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71zleFb2AOL._SL1500_large.jpg?v=1569593312",
@@ -8152,7 +8148,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-hgfc-god-gundam": {
+  "hg-1-144-hg-god": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hgfc-god-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/81DwHHUczEL._SL1500_large.jpg?v=1569612366",
@@ -8181,7 +8177,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-47-stargazer-gundam": {
+  "hg-1-144-stargazer": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-47-stargazer-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_36bd3e08-ee1f-4599-ae55-9aa944cfae09_large.jpg?v=1569937431",
@@ -8210,7 +8206,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-175-unicorn-gundam-2-banshee-norn-destroy-mode": {
+  "hg-1-144-unicorn-2-banshee-norn-destroy-mode": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-175-unicorn-gundam-2-banshee-norn-destroy-mode",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/7108zy0jsNL._SL1446_large.jpg?v=1569610663",
@@ -8239,7 +8235,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-rx-79g-gundam-the-ground-war-set": {
+  "hg-1-144-rx-79g-the-ground-war-set": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-rx-79g-gundam-the-ground-war-set",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71OXocZYfAL._SL1500_large.jpg?v=1569607184",
@@ -8267,7 +8263,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-45-ms-14jg-gelgoog-jager": {
+  "hg-1-144-ms-14jg-gelgoog-jager": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-45-ms-14jg-gelgoog-jager",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/hguc-ms-14jg-gelgoog-jager-00_large.jpg?v=1571661023",
@@ -8321,8 +8317,11 @@
       "gundam",
       "hg",
       "ibo",
-      "sale"
+      "sale",
+      "orphans",
+      "iron-blooded-orphans"
     ],
+    "series": "ibo",
     "scale": "1/144",
     "product_line": "hg",
     "description": [
@@ -8331,7 +8330,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-ibo-graze-ein": {
+  "hg-1-144-graze-ein": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hg-ibo-graze-ein",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/20160307122127837_large.jpg?v=1569932710",
@@ -8353,6 +8352,7 @@
       "hg",
       "ibo"
     ],
+    "series": "ibo",
     "scale": "1/144",
     "product_line": "hg",
     "description": [
@@ -8391,7 +8391,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gm-gundam-thunderbolt-anime-ver": {
+  "hg-1-144-rgm-79-gm-thunderbolt-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hguc-1-144-gm-gundam-thunderbolt-anime-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/017Ph001_1_large.jpg?v=1569607816",
@@ -8423,7 +8423,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-astaroth": {
+  "hg-1-144-astaroth": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hg-1-144-gundam-astaroth",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/Untitled-66_large.jpg?v=1569934627",
@@ -8463,7 +8463,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-barbatos-new-form": {
+  "hg-1-144-barbatos-new-form": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hg-1-144-gundam-barbatos-new-form",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/banm160277_large.jpg?v=1569934680",
@@ -8497,7 +8497,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-zaku-mass-production-type-big-gun-gundam-thunderbolt-anime-color-ver": {
+  "hg-1-144-zaku-ii-plus-big-gun-thunderbolt-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgtb-1-144-zaku-mass-production-type-big-gun-gundam-thunderbolt-anime-color-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/004Ph001_large.jpg?v=1569611555",
@@ -8529,7 +8529,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-62-gaza-c-haman-karns-mobile-suit": {
+  "hg-1-144-amx-003-gaza-c-haman-karns-custom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-62-gaza-c-haman-karns-mobile-suit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l500_1_d4f89e28-3391-4cf1-8481-13ce4fedce2c_large.jpg?v=1569608982",
@@ -8556,7 +8556,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-49-psycho-gundam": {
+  "hg-1-144-mrx-009-psycho": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-49-psycho-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71e2idH0laL._SL1500_large.jpg?v=1569604585",
@@ -8583,7 +8583,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-27-domtropen-sand-brown": {
+  "hg-1-144-ms-09f-domtropen": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-27-domtropen-sand-brown",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l500_83e1beb7-7e37-4a51-b58a-0bb7b6729106_large.jpg?v=1569610868",
@@ -8610,7 +8610,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-iron-blooded-graze-ms-b": {
+  "hg-1-144-gusion-rebake": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hg-1-144-iron-blooded-orphans-graze-ms-b",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/banm160134_large.jpg?v=1569527450",
@@ -8647,7 +8647,7 @@
     "manufacturer": "bandai",
     "series": "ibo"
   },
-  "hg-1-144-hgfc-127-shining-gundam-1-144": {
+  "hg-1-144-gf-13-017nj-shining": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hgfc-127-shining-gundam-1-144",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51F4pl2oAZL_large.jpg?v=1569612388",
@@ -8678,7 +8678,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-167-gundam-f91": {
+  "hg-1-144-f91": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-167-gundam-f91",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71LN-L0oqCL._SL1220_large.jpg?v=1569610552",
@@ -8706,7 +8706,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-r16-m1-astray": {
+  "hg-1-144-m1-astray": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-r16-m1-astray",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61nP9hgTaPL._SL1500_large.jpg?v=1569933358",
@@ -8735,7 +8735,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-r14-justice-gundam": {
+  "hg-1-144-justice": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-r14-justice-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/713yflSRXrL._SL1500_large.jpg?v=1569933308",
@@ -8762,7 +8762,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-r13-providence-gundam": {
+  "hg-1-144-providence": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-r13-providence-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_1_66d9ca0d-4769-4092-abe3-27361119b29d_large.jpg?v=1569933298",
@@ -8790,7 +8790,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-42-verde-buster-gundam": {
+  "hg-1-144-verde-buster": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-42-verde-buster-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_1_e844b3cb-ebcc-4ee8-a5b7-4eb36c21041a_large.jpg?v=1569937020",
@@ -8818,7 +8818,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-41-strike-noir-gundam": {
+  "hg-1-144-strike-noir": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-41-strike-noir-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l500_e3facbd4-b8d7-401f-af2c-ad1900e02b03_large.jpg?v=1569936997",
@@ -8847,7 +8847,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-40-oowashi-akatsuki-gunda": {
+  "hg-1-144-oowashi-akatsuki": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-40-oowashi-akatsuki-gunda",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_dbd27419-a792-4c26-ba38-d7c21b5bf139_large.jpg?v=1569936990",
@@ -8875,7 +8875,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-38-shiranui-akatsuki-gundam": {
+  "hg-1-144-shiranui-akatsuki": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-38-shiranui-akatsuki-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_c0e082b1-3c42-421e-b7a5-95ea53ab8540_large.jpg?v=1569936968",
@@ -8930,7 +8930,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-x-maoh": {
+  "hg-1-144-x-maoh": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-gundam-x-maoh",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/710azzoKoHL._SL1500_large.jpg?v=1569934997",
@@ -8986,7 +8986,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-barbatos-long-distance-transport-booster": {
+  "hg-1-144-barbatos-long-distance-transport-booster": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/orphans-hg-1-144-gundam-barbatos-long-distance-transport-booster",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/gundam_barbatos_long_distance_4_large.jpg?v=1569527493",
@@ -9021,7 +9021,7 @@
     "manufacturer": "bandai",
     "series": "ibo"
   },
-  "hg-1-144-09-g-exes": {
+  "hg-1-144-g-exes": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-09-gundam-age-g-exes",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/41ucQam6aHL_large.jpg?v=1570043470",
@@ -9054,7 +9054,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-07-1-spallow": {
+  "hg-1-144-1-spallow": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-07-gundam-age-1-spallow",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61lXXabDbSL._SL1159_large.jpg?v=1570043447",
@@ -9085,7 +9085,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-01-1-normal": {
+  "hg-1-144-1-normal": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-01-gundam-age-1-normal",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61ZzoT-bJIL._SL1024_large.jpg?v=1569601279",
@@ -9118,7 +9118,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-06-gundam-virtue": {
+  "hg-1-144-virtue": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-06-gundam-virtue",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_458c5caa-9ac6-4f76-9602-7683c6d37828_large.jpg?v=1570043318",
@@ -9146,7 +9146,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-24-saviour-gundam": {
+  "hg-1-144-saviour": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-24-saviour-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_26e4db6f-b74b-406b-a489-28794e733174_large.jpg?v=1570044549",
@@ -9173,7 +9173,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-cross-bone-gundam-maoh": {
+  "hg-1-144-cross-bone-maoh": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hgbf-1-144-cross-bone-gundam-maoh",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71_DLX6mHcL._SL1465_large.jpg?v=1569613272",
@@ -9198,7 +9198,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-59-dom-rickdom": {
+  "hg-1-144-dom-rickdom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-59-dom-rickdom",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_1_bf883e12-02cc-479f-b8ab-704c8106cd5f_large.jpg?v=1569602160",
@@ -9226,7 +9226,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-107-zaku-f2-earth-federation-type": {
+  "hg-1-144-ms-06f-2-zaku-ii-f2-efsf-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-107-zaku-f2-earth-federation-type",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l500_1_large.jpg?v=1569609840",
@@ -9253,7 +9253,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-32-infinite-justice-gundam": {
+  "hg-1-144-infinite-justice": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-32-infinite-justice-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/s-l1600_1_large.jpg?v=1569936758",
@@ -9282,7 +9282,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-66-gundam00-qant": {
+  "hg-1-144-00-qant": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-66-gundam00-qant",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/T2eC16hHJHYE9nzpgJFTBQc-kR7-hQ--60_12_large.JPG?v=1569935823",
@@ -9314,7 +9314,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-cross-bone-gundam-x1": {
+  "hg-1-144-cross-bone-x1": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-cross-bone-gundam-x1",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51QNcCHU1rL_large.jpg?v=1569607952",
@@ -9347,7 +9347,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-53-rx-178-gundam-mk2-flying-armor": {
+  "hg-1-144-rx-178-mk2-flying-armor": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-53-rx-178-gundam-mk2-flying-armor",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51fKMI7gK_L_large.jpg?v=1569609212",
@@ -9371,7 +9371,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-125-gm-cannon-2": {
+  "hg-1-144-rgc-83-gm-cannon-ii": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-125-gm-cannon-2",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_d5ff6c9e-413a-4270-a38b-b03e8d7ebaa6_large.JPG?v=1569609953",
@@ -9397,7 +9397,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-gusion": {
+  "hg-1-144-gusion": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-orphans-hg-1-144-gundam-gusion",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/6df77980jw1eykf6rp2euj20h40ci76f_large.jpg?v=1569513792",
@@ -9463,7 +9463,7 @@
     "manufacturer": "bandai",
     "series": "ibo"
   },
-  "hg-1-144-rx-178-gundam-mk-ii-aeug-revive": {
+  "hg-1-144-rx-178-mk-ii-aeug": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-1-144-hguc-rx-178-gundam-mk-ii-aeug-revive",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/20150902190011f7b_large.jpg?v=1569610542",
@@ -9503,7 +9503,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-101-rx-0-unicorn-gundam-unicorn-mode": {
+  "hg-1-144-rx-0-unicorn-unicorn-mode": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-101-rx-0-unicorn-gundam-unicorn-mode",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_2_3426f1ed-3c03-4150-8bd6-f7c84716f5a4_large.JPG?v=1569601770",
@@ -9534,7 +9534,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-36-destiny-gundam": {
+  "hg-1-144-destiny": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-36-destiny-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/41MYrcM4NIL._SX425_large.jpg?v=1569936880",
@@ -9563,7 +9563,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-17-force-impulse-gundam": {
+  "hg-1-144-force-impulse": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-17-force-impulse-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_220e2bd2-aae1-4531-9402-a7a5261cef3e_large.JPG?v=1570043720",
@@ -9590,7 +9590,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-35-1-full-glansa": {
+  "hg-1-144-full-glansa": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-35-gundam-age-1-full-glansa",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71S728JCfkL._SL1325_large.jpg?v=1569936841",
@@ -9620,7 +9620,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-111-zz-gundam": {
+  "hg-1-144-zz": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-111-zz-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71msrgzOb1L._SL1395_large.jpg?v=1569609857",
@@ -9652,7 +9652,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-ez8": {
+  "hg-1-144-rx-79-g-ez8": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-gundam-ez8",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71sZTH7osvL._SL1500_large.jpg?v=1569604629",
@@ -9685,7 +9685,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-56-rx-121-1-gundam-tr-1-hazel-custom": {
+  "hg-1-144-rx-121-1-tr-1-hazel-custom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-56-rx-121-1-gundam-tr-1-hazel-custom",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_2_b5d1c523-a760-485c-a635-a269ca963ba9_large.JPG?v=1569609116",
@@ -9714,7 +9714,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-40-ms-06f-zaku-2": {
+  "hg-1-144-ms-06-zaku-ii": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-40-ms-06f-zaku-2",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_aa109f7d-0266-472f-8a2b-4db667571928_large.JPG?v=1569601993",
@@ -9741,7 +9741,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-barbatos": {
+  "hg-1-144-barbatos": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-orphans-hg-1-144-gundam-barbatos",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61CSkpYEGSL._SL1500_large.jpg?v=1569527519",
@@ -9779,7 +9779,7 @@
     "manufacturer": "bandai",
     "series": "ibo"
   },
-  "hg-1-144-gundam-g-self-equiped-with-perfect-pack": {
+  "hg-1-144-g-self-perfect-pack": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hg-1-144-gundam-g-self-equiped-with-perfect-pack",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/7164pErzA6L._SL1500_large.jpg?v=1569934861",
@@ -9810,7 +9810,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-leopardo-da-vinci": {
+  "hg-1-144-leopard-da-vinci": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgbf-1-144-gundam-leopardo-da-vinci",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/710Ycj-04wL._SL1500_large.jpg?v=1569613160",
@@ -9837,7 +9837,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-rx-78-2-gundam": {
+  "hg-1-144-rx-78-2": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-1-144-hguc-rx-78-2-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71NDGlXMxCL._SL1500_large.jpg?v=1569610587",
@@ -9870,7 +9870,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-66-gundam-gp-02a": {
+  "hg-1-144-gp-02a": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-66-gundam-gp-02a",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_0a1fd48c-d2ba-4f76-8a11-2d0d56b109e9_large.JPG?v=1569608934",
@@ -9897,7 +9897,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-30-gundam-mk2-titans": {
+  "hg-1-144-mk2-titans": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-30-gundam-mk2-titans",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71wU2Q5TnIL._SL1409_large.jpg?v=1569610913",
@@ -9950,7 +9950,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-29-ex-s-gundam": {
+  "hg-1-144-ex-s": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-29-ex-s-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_1200d778-25ed-46cd-92cb-c64d68fe853d_large.JPG?v=1569610905",
@@ -9979,7 +9979,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-28-gp03d-dendrobium": {
+  "hg-1-144-gp03d-dendrobium": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-28-gp03d-dendrobium",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61-5ndeNWoL._SL1182_large.jpg?v=1569610875",
@@ -10007,7 +10007,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-142-rezel-defenser-b-unit": {
+  "hg-1-144-rgz-95c-rezel-type-c-defenser-b-unit": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-142-rezel-defenser-b-unit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61aWJK4aBJL._SL1301_large.jpg?v=1569610100",
@@ -10035,7 +10035,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-13-gp01-gundam": {
+  "hg-1-144-gp01": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-13-gp01-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_1_2a9c6cdc-c08c-41c6-950b-e3137d201f7c_large.JPG?v=1569601809",
@@ -10063,7 +10063,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-123-jegan-echoes-type": {
+  "hg-1-144-rgm-89de-jegan-echoes-type": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-123-jegan-echoes-type",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/719X3C-uSpL._SL1270_large.jpg?v=1569609939",
@@ -10091,7 +10091,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-68-gundam-harute": {
+  "hg-1-144-harute": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-68-gundam-harute",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71z9fO_nM8L._SL1500_large.jpg?v=1569935873",
@@ -10119,7 +10119,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-54-oo-raiser-gn-sword": {
+  "hg-1-144-00-raiser-gn-sword": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-54-oo-raiser-gn-sword",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71SY0Hv2juL._SL1362_large.jpg?v=1569935542",
@@ -10151,7 +10151,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-45-0-gundam-operation-mode": {
+  "hg-1-144-o-type-acd": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-45-0-gundam-operation-mode",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61xapO3OrPL._SL1500_large.jpg?v=1569937380",
@@ -10182,7 +10182,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-44-gundam-exia-repair-ii": {
+  "hg-1-144-exia-repair-ii": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-44-gundam-exia-repair-ii",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71voRPhfJ9L._SL1500_large.jpg?v=1569937367",
@@ -10211,7 +10211,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-34-gundam-virtue-transam-mode": {
+  "hg-1-144-virtue-transam-mode": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-34-gundam-virtue-transam-mode",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/TOY-GDM-0272_01_large.jpg?v=1569936820",
@@ -10246,7 +10246,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-22-00-gundam": {
+  "hg-1-144-00": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-22-00-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/41Xn7dW7AXL_large.jpg?v=1570044023",
@@ -10280,7 +10280,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-11-over-flag": {
+  "hg-1-144-over-flag": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-11-over-flag",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_cddd4da1-c94b-45fc-a86b-0ef6d96c086a_large.JPG?v=1570043523",
@@ -10307,7 +10307,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-74-gm-quel": {
+  "hg-1-144-rgm-79q-gm-quel": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-74-gm-quel",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51s0DqkffkL_large.jpg?v=1569608554",
@@ -10335,7 +10335,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-g-arcane": {
+  "hg-1-144-g-arcane": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-gundam-g-arcane",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/716nkaeIRsL._SL1500_large.jpg?v=1569934778",
@@ -10361,7 +10361,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-05-1-titus": {
+  "hg-1-144-titus": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-05-gundam-age-1-titus",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61GJ6T6T3KL._SL1098_large.jpg?v=1570043261",
@@ -10392,7 +10392,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-beargguy-iii": {
+  "hg-1-144-beargguy-iii-san": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-beargguy-iii",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71twuCA1ZlL._SL1500_large.jpg?v=1569935954",
@@ -10421,7 +10421,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-lightning-z-gundam": {
+  "hg-1-144-lightning-z": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgbf-1-144-lightning-z-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/20150701200345b77_large.jpg?v=1569612887",
@@ -10488,7 +10488,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-bolden-arm-arms": {
+  "hg-1-144-ballden-arm-arms": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgbc-1-144-bolden-arm-arms",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71jFmHweBAL._SL1500_large.jpg?v=1569517584",
@@ -10517,7 +10517,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-97-jegan": {
+  "hg-1-144-rgm-89-jegan": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-97-jegan",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_2_3b7a0161-9927-4965-814f-870f907d9372_large.JPG?v=1569608173",
@@ -10546,7 +10546,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-169-victory-two-gundam": {
+  "hg-1-144-victory-two": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-169-victory-two-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71pAK6tb5NL._SL1500_large.jpg?v=1569610576",
@@ -10574,7 +10574,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-168-gundam-f91-harrison-custom": {
+  "hg-1-144-f91-harrison-custom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-168-gundam-f91-harrison-custom",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71hop0fUl9L._SL1500_large.jpg?v=1569610570",
@@ -10599,7 +10599,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-denial-gundam": {
+  "hg-1-144-denial": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgbf-1-144-denial-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/BANM150590_large.png?v=1569613263",
@@ -10636,7 +10636,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-the-end": {
+  "hg-1-144-the-end": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgbf-1-144-gundam-the-end",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/banm150511_large.jpg?v=1569613067",
@@ -10666,7 +10666,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-tryon-3": {
+  "hg-1-144-tryon-3": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgbf-1-144-gundam-tryon-3",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/0003_large.jpg?v=1569613038",
@@ -10763,7 +10763,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-89-kampfer": {
+  "hg-1-144-kampfer": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-89-kampfer",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_1_c9cc83f0-e6ae-406d-9ea7-9aceac5ecba9_large.JPG?v=1569602235",
@@ -10793,7 +10793,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-151-ms-06r-1a-zaku-ii-black-tristars": {
+  "hg-1-144-ms-06r-1a-zaku-ii-black-tristars-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-151-ms-06r-1a-zaku-ii-black-tristars",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71DSR494QcL._SL1500_large.jpg?v=1569610329",
@@ -10823,7 +10823,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-144-base-jabber-unicorn-ver": {
+  "hg-1-144-base-jabber-unicorn-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-144-base-jabber-unicorn-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71OLKRe8wcL._SL1500_large.jpg?v=1569610135",
@@ -10852,7 +10852,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-134-banshee-destroy-mode": {
+  "hg-1-144-banshee-destroy-mode": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-134-banshee-destroy-mode",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/719QSbrHBZL._SL1236_large.jpg?v=1569609997",
@@ -10882,7 +10882,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-nataku-gundam": {
+  "hg-1-144-nataku": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/1-144-nataku-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/gundam-high-grade-endless-waltz-1-144-scale-model-kit-gundam-nataku-22217_large.jpg?v=1569781532",
@@ -10910,7 +10910,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-sandrock-custom": {
+  "hg-1-144-sandrock-custom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/1-144-gundam-sandrock-custom",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_77253e2d-68a5-432d-a598-a2f2ae4404a7_large.JPG?v=1569517966",
@@ -10934,7 +10934,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-r05-aegis-gundam": {
+  "hg-1-144-aegis": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-r05-aegis-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51bbWUiC1TL_large.jpg?v=1569933198",
@@ -10963,7 +10963,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-r04-blitz-gundam": {
+  "hg-1-144-blitz": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-r04-blitz-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71qkI0jR_zL._SL1500_large.jpg?v=1569933184",
@@ -10989,7 +10989,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-r03-buster-gundam": {
+  "hg-1-144-buster": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-r03-buster-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71xI5OkeZTL._SL1500_large.jpg?v=1569933158",
@@ -11017,7 +11017,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-r02-duel-gundam-assault-shroud": {
+  "hg-1-144-duel-assaultshroud": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-r02-duel-gundam-assault-shroud",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61iXbB21WlL._SL1000_large.jpg?v=1569933126",
@@ -11045,7 +11045,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-r01-aile-strike-gundam": {
+  "hg-1-144-aile-strike": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-r01-aile-strike-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71rBDtHkfeL._SL1500_large.jpg?v=1569933092",
@@ -11071,7 +11071,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-v-dash-gundam": {
+  "hg-1-144-lm312v04-plus-sd-vb03a-v-dash": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-v-dash-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71pPdhKsA7L._SL1500_large.jpg?v=1569606938",
@@ -11124,7 +11124,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-hi-v-gundam-vrabe": {
+  "hg-1-144-hi-v-vrabe": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hgbf-1-144-hi-v-gundam-vrabe",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/714hBPPaxTL._SL1500_large.jpg?v=1569612930",
@@ -11264,7 +11264,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-astray-gold-frame-amatsu-mina": {
+  "hg-1-144-astray-gold-frame-amatsu-mina": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-gundam-astray-gold-frame-amatsu-mina",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/716HmRhoKKL._SL1293_large.jpg?v=1569601440",
@@ -11293,7 +11293,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-34-strike-freedom-gundam": {
+  "hg-1-144-strike-freedom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-34-strike-freedom-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_1_db344fd4-bd5c-4008-91c7-6eba4696d2e3_large.JPG?v=1569936830",
@@ -11319,7 +11319,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-heavyarms-custom": {
+  "hg-1-144-heavyarms-custom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/1-144-gundam-heavyarms-custom",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/hg_heavyarms_custom_large.jpg?v=1525649506",
@@ -11380,7 +11380,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-ew-02-tallgeese-endless-waltz": {
+  "hg-1-144-tallgeese-iii-ew-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-ew-02-tallgeese-endless-waltz",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51VFKGRXG5L_large.jpg?v=1569936220",
@@ -11409,7 +11409,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-41-msz-006-z-gundam": {
+  "hg-1-144-41-msz-006-zeta": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-41-msz-006-z-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/gd_pg_zeta_gundam_b_large.jpg?v=1569609376",
@@ -11469,7 +11469,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-portent": {
+  "hg-1-144-portent": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgbf-1-144-gundam-portent",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/02_large.jpg?v=1569613103",
@@ -11504,7 +11504,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-space-jahannam-mass-production": {
+  "hg-1-144-space-jahannam": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-space-jahannam-mass-production",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/GFjahannam_01_LRG_large.jpg?v=1569933549",
@@ -11534,7 +11534,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-lightning-gundam": {
+  "hg-1-144-lightning": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hgbf-1-144-lightning-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/GFlightning_01_LRG_large.jpg?v=1569601615",
@@ -11595,7 +11595,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-39-msm-09e-zgok-experement": {
+  "hg-1-144-msm-09e-zgok-experiment": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-39-msm-09e-zgok-experement",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71NKg3umOLL._SX425_large.jpg?v=1569781704",
@@ -11625,7 +11625,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-25-gp03s-gundam": {
+  "hg-1-144-gp03s": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-25-gp03s-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/Bandai-Gundam-0083-Stardust-Memory-HGUC-025-RX-78GP03S_large.jpg?v=1569781636",
@@ -11654,7 +11654,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-165-v-gundam": {
+  "hg-1-144-lm312v04-victory": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-165-v-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71UwICJcaOL._SL1431_large.jpg?v=1569610536",
@@ -11684,7 +11684,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-160-doven-wolf-unicorn-ver": {
+  "hg-1-144-doven-wolf-unicorn-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-160-doven-wolf-unicorn-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71XqSVldUPL._SL1500_large.jpg?v=1569610510",
@@ -11716,7 +11716,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-04-qubeley": {
+  "hg-1-144-qubeley": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-04-qubeley",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71sN8mgs8HL._SL1304_large.jpg?v=1569609483",
@@ -11745,7 +11745,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-01-rx-77-2-guncannon": {
+  "hg-1-144-rx-77-2-guncannon-revive-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-01-rx-77-2-guncannon",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71ksJaPJFNL._SL1476_large.jpg?v=1569609465",
@@ -11834,7 +11834,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-33-shaldoll-rogue": {
+  "hg-1-144-shaldoll-rogue": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-33-gundam-age-shaldoll-rogue",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61AXoAoRRnL._SL1277_large.jpg?v=1569936788",
@@ -11867,7 +11867,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-32-fx-burst": {
+  "hg-1-144-fx-burst": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-32-gundam-age-fx-burst",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71hRMCF9boL._SL1329_large.jpg?v=1569936750",
@@ -11898,7 +11898,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-31-clanche-custom": {
+  "hg-1-144-clanche-custom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-31-gundam-age-clanche-custom",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61176KtfbtL._SL1137_large.jpg?v=1569936734",
@@ -11930,7 +11930,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-28-clanche": {
+  "hg-1-144-clanche": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-28-gundam-age-clanche",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61xhbhczN9L._SL1081_large.jpg?v=1569936564",
@@ -11964,7 +11964,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-23-ghirarga": {
+  "hg-1-144-ghirarga": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-23-gundam-age-ghirarga",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61sxMtB2XJL._SL1113_large.jpg?v=1570044269",
@@ -11995,7 +11995,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-22-danazine": {
+  "hg-1-144-danazine": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-22-gundam-age-danazine",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61iaAsYddlL._SL1500_large.jpg?v=1570044035",
@@ -12026,7 +12026,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-16-genoace-ii": {
+  "hg-1-144-genoace-ii": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-16-gundam-age-genoace-ii",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61LYGIrFlgL._SL1085_large.jpg?v=1570043622",
@@ -12061,7 +12061,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-13-adele": {
+  "hg-1-144-adele": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-13-gundam-age-adele",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/611yZxPKEFL._SL1083_large.jpg?v=1570043560",
@@ -12094,7 +12094,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-12-zedas-r": {
+  "hg-1-144-zedas-r": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-12-gundam-age-zedas-r",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/GFredas_01_LRG_large.jpg?v=1570043534",
@@ -12126,7 +12126,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-11-dorado": {
+  "hg-1-144-dorado": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-11-gundam-age-dorado",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/GFdorado_01_LRG_large.jpg?v=1570043512",
@@ -12159,7 +12159,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-08-baqto": {
+  "hg-1-144-baqto": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-08-gundam-age-baqto",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/GFbaqto_01_LRG_large.jpg?v=1570043457",
@@ -12190,7 +12190,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-06-zedas": {
+  "hg-1-144-zedas": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-06-gundam-age-zedas",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/GFzedas_02_LRG_large.jpg?v=1570043310",
@@ -12252,7 +12252,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-04-genoace-custom": {
+  "hg-1-144-genoace-custom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-04-gundam-age-genoace-custom",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51fT6s32TSL_large.jpg?v=1570043225",
@@ -12286,7 +12286,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-03-genoace": {
+  "hg-1-144-genoace": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-03-gundam-age-genoace",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/41ZaSZ9-8jL_large.jpg?v=1570043193",
@@ -12321,7 +12321,7 @@
     "manufacturer": "bandai",
     "series": "gundam-age"
   },
-  "hg-1-144-02-gafran": {
+  "hg-1-144-gafran": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-02-gundam-age-gafran",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/GFgafran_03_LRG_large.jpg?v=1570043127",
@@ -12418,7 +12418,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-12-hi-zack": {
+  "hg-1-144-hi-zack": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-12-hi-zack",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/55682065201103152135192088568203244_019_large.jpg?v=1569604477",
@@ -12510,7 +12510,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-mass-production-type-zaku-ii-gundam-thunderbolt-ver": {
+  "hg-1-144-ms-06-zaku-ii-thunderbolt-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-mass-production-type-zaku-ii-gundam-thunderbolt-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71UBPPq6EWL._SL1473_large.jpg?v=1569935325",
@@ -12540,7 +12540,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gm-gundam-thunderbolt-ver": {
+  "hg-1-144-rgm-79-gm-thunderbolt-ver-2-0": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-1-144-gm-gundam-thunderbolt-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71pSQdFI21L._SL1500_large.jpg?v=1569936426",
@@ -12573,7 +12573,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-crossbone-gundam-x1-full-cloth-ver-gbf": {
+  "hg-1-144-crossbone-x1-full-cloth-ver-gbft": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgbf-1-144-crossbone-gundam-x1-full-cloth-ver-gbf",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/6df77980gw1eqj6f9vn15j20sg0ob78x_large.jpg?v=1569517639",
@@ -12607,7 +12607,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-chars-zaku-ii": {
+  "hg-1-144-ms-06s-zaku-ii-char-custom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hg-1-144-chars-zaku-ii",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/20150203134841712_large.jpg?v=1569936158",
@@ -12643,7 +12643,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-g-self-assault-pack": {
+  "hg-1-144-g-self-assault-pack": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hg-1-144-gundam-g-self-assault-pack",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/banm150497_large.jpg?v=1569934831",
@@ -12677,7 +12677,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-26-gundam-amazing-red-warrior": {
+  "hg-1-144-amazing-red-warrior": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-1-144-hgbf-26-gundam-amazing-red-warrior",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/20141226154203d16_large.jpg?v=1569609957",
@@ -12713,7 +12713,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-transient-gundam": {
+  "hg-1-144-transient": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/pre-order-hgbf-1-144-transient-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/20150203135758025_large.jpg?v=1569612648",
@@ -12742,7 +12742,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-42-orx-005-gaplant": {
+  "hg-1-144-orx-005-gaplant": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-42-orx-005-gaplant",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_1_f59b5675-9466-4e34-bbca-fccb0236b3d6_large.JPG?v=1569609348",
@@ -12803,7 +12803,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-94-schuzrum-dias": {
+  "hg-1-144-schuzrum-dias": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-94-schuzrum-dias",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71ouMmDN-iL._SL1500_large.jpg?v=1569608332",
@@ -12834,7 +12834,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-140-nemo-unicorn-ver": {
+  "hg-1-144-msa-003-nemo-unicorn-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-140-nemo-unicorn-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/715xaT5fvbL._SL1268_large.jpg?v=1569610082",
@@ -12864,7 +12864,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-136-delta-gundam": {
+  "hg-1-144-delta": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-136-delta-gundam",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/418-7sZ6bxL_large.jpg?v=1569610015",
@@ -12897,7 +12897,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-133-dra-c": {
+  "hg-1-144-dra-c": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-133-dra-c",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71NdkI3VHTL._SL1377_large.jpg?v=1569609989",
@@ -12926,7 +12926,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-105-zaku-f2-zeon-type": {
+  "hg-1-144-ms-06f-2-zaku-ii-f2-zeon-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-105-zaku-f2-zeon-type",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71lc5YsFz2L._SL1500_large.jpg?v=1569609778",
@@ -12957,7 +12957,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-103-rezel": {
+  "hg-1-144-rgz-95-rezel": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-103-rezel",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_9bc665a9-7110-4520-a9b6-03bbae8a43d9_large.JPG?v=1569609736",
@@ -12990,7 +12990,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-g-reco-g-option-space-pack-for-gundam-g-self-scale": {
+  "hg-1-144-space-backpack-for-g-self": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-hobby-hg-g-reco-g-option-space-pack-for-gundam-g-self-model-kit-1-144-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_1_731dfe48-773a-4a99-9528-7b37d6915a07_large.jpg?v=1569614478",
@@ -13020,7 +13020,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-58-gundam-astray-red-frame-flight-unit-scale": {
+  "hg-1-144-58-astray-red-frame-flight-unit": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-hobby-58-hg-gundam-astray-red-frame-model-kit-flight-unit-1-144-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/711AdtngM0L._SL1364_large.jpg?v=1569614180",
@@ -13048,7 +13048,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-seed-12-mbf-p02-gundam-astray-red-frame-1-144": {
+  "hg-1-144-astray-red-frame": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-seed-12-mbf-p02-gundam-astray-red-frame-1-144-bandai",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_1_e3406a45-f41c-441a-a9d1-5b46c842f009_large.JPG?v=1569932421",
@@ -13077,7 +13077,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-02-grimoire-reconguista-in-g": {
+  "hg-1-144-grimoire": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-hobby-hg-1-144-02-grimoire-reconguista-in-g",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71sdVqWfgkL._SL15_large.jpg?v=1569614457",
@@ -13105,7 +13105,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-01-gundam-g-self-with-atmospheric-pack-reconguista-in-g-1-144": {
+  "hg-1-144-01-g-self": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-hobby-hg-01-gundam-g-self-with-atmospheric-pack-reconguista-in-g-1-144",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61PVan_y9qL._SL1208_large.jpg?v=1569614439",
@@ -13134,7 +13134,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-ew-01-xxxg-00w0-wing-zero-custom": {
+  "hg-1-144-wing-zero-custom-ew-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-endless-waltz-1-144-hg-ew-01-xxxg-00w0-wing-zero-custom-model-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/12_1_0a3f6736-8c7d-4ab1-b0d7-aa22a8f8c783_large.JPG?v=1569613821",
@@ -13167,7 +13167,7 @@
     "manufacturer": "bandai",
     "series": "gundam_wing"
   },
-  "hg-1-144-r-gyagya-scale": {
+  "hg-1-144-r-gyagya": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-hobby-hgbf-r-gyagya-model-kit-1-144-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71ig9GU9EyL._SL1500_large.jpg?v=1569618140",
@@ -13201,7 +13201,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-sdbf-winning-gundam": {
+  "hg-1-144-sdbf-winning": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-hobby-sdbf-winning-gundam-model-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71YYAhPVbaL._SL1500_large.jpg?v=1570039126",
@@ -13234,7 +13234,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-star-build-strike-gundam-plavsky-wing-scale": {
+  "hg-1-144-star-build-strike-plavsky-wing": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-hobby-hgbf-star-build-strike-gundam-plavsky-wing-model-kit-1-144-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/71adNbDP5XL._SL1200_large.jpg?v=1569618164",
@@ -13294,7 +13294,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-ams-119-geara-doga-scale": {
+  "hg-1-144-ams-119-geara-doga": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/gundam-ams-119-geara-doga-hguc-1-144-scale",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/51aRbAhNM-L_large.jpg?v=1569947715",
@@ -13324,7 +13324,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-marasai-138-unicorn-ver": {
+  "hg-1-144-rms-108-marasai-unicorn-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-marasai-138-1-144-unicorn-ver",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61Tl1jsdAoL._SL1500_large.jpg?v=1569606393",
@@ -13353,7 +13353,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-130-rgm-96x-jesta-e-f-s-f": {
+  "hg-1-144-rgm-96x-jesta-efsf": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/1-144-hguc-130-rgm-96x-jesta-e-f-s-f-model-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/713K4zZsaUL._SL1500_large.jpg?v=1569610081",
@@ -13381,7 +13381,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-msn-06s-sinanju-neo-zeon-mobile-suit": {
+  "hg-1-144-msn-06s-sinanju": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hguc-1-144-msn-06s-sinanju-neo-zeon-mobile-suit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/57_4_large.JPG?v=1569607349",
@@ -13411,7 +13411,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-183-gundam-amx-101e-schuzrum-galluss-scale-kit": {
+  "hg-1-144-amx-101e-schuzrum-galluss": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-hguc-183-gundam-amx-101e-schuzrum-galluss-1-144-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/download_2_bedc7da8-8530-46fc-b494-30a25db2b19f_large.jpg?v=1569781272",
@@ -13442,7 +13442,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-185-gundam-yams-132-rozen-zulu-episode-7-ver-scale-kit": {
+  "hg-1-144-yams-132-rozen-zulu": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-hguc-185-gundam-yams-132-rozen-zulu-episode-7-ver-1-144-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_e0450241-870d-4ce8-8a6a-9cb5e2294ce6_large.jpeg?v=1569614163",
@@ -13474,7 +13474,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-083-msn-03-jagd-doga-gunneys-plastic-nib": {
+  "hg-1-144-msn-03-jagd-doga": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/hg-gundam-hguc-083-msn-03-jagd-doga-gunneys-1-144-plastic-model-kit-bandai-nib",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/6_b82a0b86-b314-4ebc-9e4b-6ccc6f4db252_large.jpg?v=1569997139",
@@ -13501,7 +13501,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-019-gundam-msm-07s-zgok-chars-type-scale-kit": {
+  "hg-1-144-msm-07s-zgok-char-custom": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-hguc-019-gundam-msm-07s-zgok-chars-type-1-144-scale-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/hguc-msm-07s-z-gok-char-custom-00_large.jpg?v=1569613886",
@@ -13530,7 +13530,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-powered-gm-cardigan-gundam-try": {
+  "hg-1-144-powered-gm-cardigan": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-model-kit-hgbf-1-144-powered-gm-cardigan-gundam-build-fighters-try",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_6ca2021e-dc62-4646-80e8-11ef45b775a2_large.jpeg?v=1570037968",
@@ -13561,7 +13561,7 @@
     "manufacturer": "bandai",
     "series": "build-fighters"
   },
-  "hg-1-144-build-burning-gundam-try-from-usa": {
+  "hg-1-144-build-burning": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-model-kit-hgbf-1-144-build-burning-gundam-build-fighters-try-from-usa",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_7c20edc4-1ec5-4c50-832a-4b58e81b6120_large.jpeg?v=1570037948",
@@ -13591,7 +13591,7 @@
     "manufacturer": "bandai",
     "series": "build-fighters"
   },
-  "hg-1-144-gundam-z-ii-zeta-gundam-in-stock-usa-seller": {
+  "hg-1-144-msz-008-zeta-ii": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/gundam-1-144-hguc-z-ii-zeta-gundam-model-kit-bandai-in-stock-usa-seller",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/61QhzEQqNwL._SX425_large.jpg?v=1569781421",
@@ -13620,7 +13620,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-17-gundam-fenice-rinascita": {
+  "hg-1-144-fenice-rinascita": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/bandai-hobby-hgbf-1-144-17-gundam-fenice-rinascita-model-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/1_a30c1bc3-a65b-463a-b0ec-21f296962c07_large.jpeg?v=1569610355",
@@ -13649,7 +13649,7 @@
     ],
     "manufacturer": "bandai"
   },
-  "hg-1-144-gundam-wing-ew-05-xxxg-01d2-d-hell-custom": {
+  "hg-1-144-deathscythe-hell-custom-ew-ver": {
     "href": "https://www.usagundamstore.com/collections/1-144/products/gundam-wing-endless-waltz-1-144-hg-ew-05-xxxg-01d2-d-hell-custom-model-kit",
     "images": [
       "https://cdn.shopify.com/s/files/1/0727/8355/products/download_1_a43517eb-3675-41df-9099-97c16b6ff24e_large.jpg?v=1569781418",
