@@ -32,7 +32,8 @@ def main():
     print(f'\n\n============== {product_line} ==============')
 
     # pass 1: scrape for basic info into json format
-    # scrape_details_page(product_line)
+    scrape_details_page(product_line)
+
     # pass 2: clean up json
     run_pass(
       product_line    =  product_line,
@@ -53,7 +54,6 @@ def main():
     )
 
     # pass 4: process by grade
-
     run_pass(
       product_line    =  product_line,
       input_location  =  f'output/{SITE}/pass-3-update-key-names',
@@ -64,10 +64,20 @@ def main():
     )
 
     # pass 5: manual changes
+    if os.path.exists(f'output/{SITE}/pass-5-manaul-updates'):
+      print(
+        'yo are you sure you want to do that, this step is intended',
+        'for you to manually update the json, running this again',
+        'would overwrite any changes already made to those files in',
+        'the /pass-5-manual-updates/.\nif youre sure you want to continue',
+        'comment out this if case and uncomment the run_pass_5 code',
+        'in the script and goodluck!'
+      )
+      return
     # run_pass(
     #   product_line    =  product_line,
     #   input_location  =  f'output/{SITE}/pass-4-process-name-by-grade',
-    #   output_location =  f'output/{SITE}/pass-4.5-manaul-updates',
+    #   output_location =  f'output/{SITE}/pass-5-manaul-updates',
     #   operation       =  pass_5,
     #   operation_extra =  {},
     #   log             =  'pass 5: manual updates'
@@ -505,6 +515,8 @@ def pass_4_pbandai(model_kit, file_model_info, other_kits):
 
 def pass_4_mg(model_kit, file_model_info, other_kits):
   model_kit = model_kit.replace('-1-100-scale-kit', '')
+  model_kit = model_kit.replace('-master-grade', '')
+  model_kit = model_kit.replace('master-grade-', '')
   model_kit = compose_model_name('mg', '1-100', model_kit)
 
   if model_kit.startswith('hirm') or 'hi-resolution-model' in model_kit:
@@ -532,6 +544,7 @@ def pass_4_hg(model_kit, file_model_info, other_kits):
     'hgac-',
     'hgce-',
     'hgaw-',
+    'hgfc-',
   ]
   for keyword in replacement_list:
     model_kit = model_kit.replace(keyword, 'hg-')
@@ -575,14 +588,7 @@ def pass_4_hg(model_kit, file_model_info, other_kits):
 
 # PASS 5 STUFF
 def pass_5(model_kit, file_model_info, extra):
-  # [ ] - hg
-  # [ ] - mg
-  # [ ] - pbandai
-  # [x] - re
-  # [x] - pg
-  # [ ] - re
-  # [x] - rg
-  # [ ] - sd
+  # TODO - [ ] - sd
   return model_kit, file_model_info
 
 
