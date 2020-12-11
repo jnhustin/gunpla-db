@@ -618,6 +618,8 @@ def pass_6(model_kit, file_model_info, extra):
     'origins',
   ]
 
+  file_model_info['sku'] =file_model_info.get('sku', 'NULL')
+
   series       =  None
   timeline     =  None
   updated_tags =  []
