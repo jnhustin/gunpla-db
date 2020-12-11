@@ -738,8 +738,8 @@ def get_series_data(tag):
     },
     'beginning_g': {
       'series'      :  'beginning_g',
-      'timeline'    :  'builders',
-      'tags_to_add' :  ['bg', 'beginning_g', 'builders']
+      'timeline'    :  'build',
+      'tags_to_add' :  ['bg', 'beginning_g', 'build']
     },
     'reconguista_in_g': {
       'series'      :  'reconguista_in_g',
@@ -761,9 +761,21 @@ def get_series_data(tag):
       'timeline'    :  'universal_century',
       'tags_to_add' :  ['universal_century', 'z', 'zeta', 'zz']
     },
+    'g': {
+      'series'      :  'mobile_fighter_g',
+      'timeline'    :  'future_century',
+      'tags_to_add' :  ['future_century', 'fc', 'mobile_fighter_g', 'mobile_fighter_legend_g',]
+    },
+    'victory': {
+      'series'      :  'victory',
+      'timeline'    :  'universal_century',
+      'tags_to_add' :  ['universal_century', 'uc', 'victory',]
+    },
   }
-
+  print ('tag:', tag)
   series = None
+
+  # normalize series where name could listed as multiple things
   if tag in ['iron_blooded_orphans', 'ibo']:
     series = 'ibo'
   elif tag in ['endless_waltz', 'ew']:
@@ -772,6 +784,10 @@ def get_series_data(tag):
     series = 'universal_century'
   elif tag in ['08th_ms_team', '08', '08th', '08th_ms']:
     series = '08th_ms_team'
+  elif tag in ['gundam_00']:
+    series = '00'
+  elif tag in ['g_gundam']:
+    series = 'g'
   else:
     series = tag
 
@@ -780,8 +796,25 @@ def get_series_data(tag):
 
 # PASS 7 STUFF
 def pass_7(model_kit, file_model_info, extra):
-  file_model_info['access_name'] =  model_kit
+  model_scale = {
+    '1 144' :  '1/144',
+    '1 100' :  '1/100',
+    '1 60'  :  '1/60',
+  }
+
+  file_model_info['access_name'] =  model_kit.replace('-', '_')
   file_model_info['title']       =  [model_kit] + file_model_info.get('title', [])
+
+  display_name = model_kit.replace('-', ' ')
+
+  for k,v in model_scale.items():
+    if k in display_name:
+      file_model_info['display_name'] = display_name.replace(k, v)
+      break
+  file_model_info['display_name'] = file_model_info.get('display_name', model_kit)
+
+
+
 
   if file_model_info.get('description') == None:
     file_model_info['description'] = ''
@@ -844,8 +877,8 @@ def build_model_sql_vals(model_kit, file_model_info):
     print(model_kit)
 
   data = [
-    "'%s'" % file_model_info['title'][0].replace('-', '_'),
-    "'%s'" % file_model_info['title'][0].replace('-', ' '),
+    "'%s'" % file_model_info['access_name'],
+    "'%s'" % file_model_info['display_name'],
     "NULL",
     "%s" %file_model_info.get('sku', "NULL"),
     # "\n\n".join(file_model_info['description']),
@@ -853,7 +886,7 @@ def build_model_sql_vals(model_kit, file_model_info):
     "NULL",
     "(SELECT timeline_id from timelines WHERE access_name = '%s')" % file_model_info["timeline"],
     "(SELECT series_id from series WHERE access_name = '%s')" % file_model_info["series"],
-    "(SELECT product_line_id from product_lines WHERE access_name = '%s')" % file_model_info["product_line"],
+    "(SELECT product_line_id from product_lines WHERE short_name = '%s')" % file_model_info["product_line"],
     "(SELECT manufacturer_id from manufacturers WHERE access_name = '%s')" % file_model_info["manufacturer"],
     "(SELECT scale_id from scales WHERE scale_value = '%s')" % file_model_info["scale"],
     "CURRENT_TIMESTAMP",
