@@ -772,7 +772,7 @@ def get_series_data(tag):
       'tags_to_add' :  ['universal_century', 'uc', 'victory',]
     },
   }
-  print ('tag:', tag)
+  # print ('tag:', tag)
   series = None
 
   # normalize series where name could listed as multiple things
@@ -880,7 +880,7 @@ def build_model_sql_vals(model_kit, file_model_info):
     "'%s'" % file_model_info['access_name'],
     "'%s'" % file_model_info['display_name'],
     "NULL",
-    "%s" %file_model_info.get('sku', "NULL"),
+    "'%s'" % file_model_info.get('sku', "NULL"),
     # "\n\n".join(file_model_info['description']),
     "'usa_gundam'",
     "NULL",
