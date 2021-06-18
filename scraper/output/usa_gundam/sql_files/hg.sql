@@ -1,4 +1,5 @@
-INSERT INTO models ( access_name, display_name, japanese_name, sku, info_source, release_date, timeline_id, series_id, product_line_id, manufacturer_id, scale_id, updated_date, created_date, user_update_id ) VALUES (
+INSERT INTO models ( access_name, display_name, japanese_name, sku, info_source, release_date, timeline_id, series_id, product_line_id, manufacturer_id, scale_id, updated_date, created_date, user_update_id )
+VALUES (
   'hg_1_144_maganac',
   'hg 1/144 maganac',
   NULL,
@@ -14,6 +15,7 @@ INSERT INTO models ( access_name, display_name, japanese_name, sku, info_source,
   CURRENT_TIMESTAMP,
   (SELECT user_id from users WHERE user_name = 'initial_user')
 ),
+
 (
   'hg_1_144_222_narrative_c_packs',
   'hg 1/144 222 narrative c packs',

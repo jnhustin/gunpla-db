@@ -17,7 +17,8 @@ class Logger:
 
   def start_logger(self):
     # configure logging
-    formatter  = jsonlogger.JsonFormatter('(message), (module), (funcName), (levelname), (asctime), (process)')
+    formatter  = jsonlogger.JsonFormatter()
+    # formatter  = jsonlogger.JsonFormatter('(message), (module), (funcName), (levelname), (asctime), (process)') this was broken
     logger     = logging.getLogger(__name__)
     logHandler = logging.StreamHandler()
     logHandler.setFormatter(formatter)
